@@ -1,0 +1,433 @@
+- id: nsa-1947
+  title: National Security Act of 1947
+  short: National Security Act
+  year: 1947
+  enacted: "1947-07-26"
+  domain: intelligence
+  public_law: "80-253"
+  stat: "61 Stat. 495"
+  usc: "50 U.S.C. 3001 et seq."
+  usc_path: "50/3002"
+  status: in-force
+  status_note: >-
+    In force and amended many times. Its Title 50 sections were renumbered in 2013
+    (for example, old section 413b on covert action is now section 3093).
+  summary: >-
+    The founding charter of the modern national security system. It created the
+    National Security Council and the Central Intelligence Agency, established a
+    separate Air Force, and placed the military departments under a single
+    Secretary of Defense.
+  provisions:
+    - "Title I: National Security Council and Central Intelligence Agency; since 2004 also the Director of National Intelligence."
+    - "Title II: the National Military Establishment, which 1949 amendments turned into the Department of Defense."
+    - "Title V (added 1980, expanded 1991): congressional oversight of intelligence, including covert action findings at 50 U.S.C. 3093."
+    - "Sec. 108 (50 U.S.C. 3043): the annual National Security Strategy report, added in 1986."
+  significance: >-
+    Most later reorganizations are amendments to this act, including
+    the [[goldwater-nichols-1986]], the [[intel-oversight-1980]], and [[irtpa-2004]]. If a
+    question concerns who is in charge of what in national security, the answer
+    usually starts here.
+  tags: [National Security Council, CIA, Department of Defense, organization, covert action]
+
+- id: cia-act-1949
+  title: Central Intelligence Agency Act of 1949
+  short: CIA Act
+  year: 1949
+  enacted: "1949-06-20"
+  domain: intelligence
+  public_law: "81-110"
+  stat: "63 Stat. 208"
+  usc: "50 U.S.C. 3501-3523"
+  usc_path: "50/3501"
+  status: in-force
+  status_note: In force as amended.
+  summary: >-
+    Gave the CIA the administrative tools to operate in secret: authority to spend
+    money without the usual accounting rules, to withhold information about its
+    staff and structure, and to procure and transfer funds confidentially.
+  provisions:
+    - "Sec. 5: transfer and receipt of funds from other agencies without regard to normal appropriations limits."
+    - "Sec. 6: exemption from laws requiring disclosure of the agency's organization, functions, names, titles, salaries, or staff numbers."
+    - "Sec. 8: spending on confidential or emergency objects accounted for solely on the Director's certificate."
+  significance: >-
+    Where the [[nsa-1947]] created the agency, this act made clandestine work
+    administratively possible. It is also the root of the 'black budget' question,
+    since it permits intelligence funds to be hidden inside other appropriations.
+  tags: [CIA, secrecy, budget, administration]
+
+- id: espionage-1917
+  title: Espionage Act of 1917
+  short: Espionage Act
+  year: 1917
+  enacted: "1917-06-15"
+  domain: intelligence
+  public_law: "65-24"
+  stat: "40 Stat. 217"
+  usc: "18 U.S.C. 792-798"
+  usc_path: "18/793"
+  status: in-force
+  status_note: >-
+    In force. The 1918 Sedition Act amendments were repealed in 1921; section 798
+    on communications intelligence was added in 1950.
+  summary: >-
+    The principal criminal statute protecting national defense information. It
+    covers classic spying for a foreign power and also the unauthorized retention
+    or disclosure of defense information by people who had lawful access to it.
+  provisions:
+    - "18 U.S.C. 793: gathering, transmitting, retaining, or losing national defense information."
+    - "18 U.S.C. 794: delivering defense information to a foreign government, punishable by life imprisonment or death."
+    - "18 U.S.C. 798: disclosure of classified communications intelligence and cryptographic information."
+  significance: >-
+    The act predates the classification system and never mentions it, speaking
+    instead of 'information relating to the national defense'. That mismatch
+    drives most of the controversy over its use against leakers and over mishandling
+    cases. Prosecutions rely on [[cipa-1980]] to manage classified evidence.
+  tags: [espionage, leaks, classified information, criminal law]
+
+- id: hughes-ryan-1974
+  title: Hughes-Ryan Amendment
+  short: Hughes-Ryan Amendment
+  year: 1974
+  enacted: "1974-12-30"
+  domain: intelligence
+  public_law: "93-559"
+  stat: "88 Stat. 1795"
+  usc: "formerly 22 U.S.C. 2422"
+  status: superseded
+  status_note: >-
+    Repealed in 1991 and replaced by the covert action provisions now at
+    50 U.S.C. 3093.
+  summary: >-
+    Section 32 of the Foreign Assistance Act of 1974, which added section 662 to
+    the Foreign Assistance Act of 1961. It barred spending on CIA operations abroad
+    other than intelligence collection unless the President found the operation
+    important to national security and reported it to Congress.
+  provisions:
+    - "Required a presidential finding for each covert operation."
+    - "Required a timely report to the appropriate committees, which at the time meant as many as eight."
+  significance: >-
+    It ended plausible presidential deniability for covert action and was the
+    first statute to require notice to Congress. The [[intel-oversight-1980]] narrowed
+    the reporting to the two intelligence committees and the 1991 intelligence
+    authorization act replaced it outright.
+  tags: [covert action, presidential findings, congressional oversight, CIA]
+
+- id: fisa-1978
+  title: Foreign Intelligence Surveillance Act of 1978
+  short: FISA
+  year: 1978
+  enacted: "1978-10-25"
+  domain: intelligence
+  public_law: "95-511"
+  stat: "92 Stat. 1783"
+  usc: "50 U.S.C. 1801 et seq."
+  usc_path: "50/1801"
+  status: partly-expired
+  status_note: >-
+    The core titles on electronic surveillance, physical search, and pen registers
+    are in force. Title VII, including Section 702, lapsed in June 2026 (see the
+    FISA Amendments Act page). The business records, roving wiretap, and lone wolf
+    provisions lapsed in March 2020.
+  summary: >-
+    Created a judicial process for foreign intelligence surveillance inside the
+    United States. The government must persuade a special court that the target is
+    a foreign power or an agent of one before it may wiretap or search.
+  provisions:
+    - "Title I: electronic surveillance orders from the Foreign Intelligence Surveillance Court on probable cause that the target is a foreign power or its agent."
+    - "Title III (1994): physical searches. Title IV (1998): pen registers and trap-and-trace devices. Title V (1998): business records."
+    - "Minimization procedures limit retention and sharing of information about U.S. persons."
+    - "Declared to be the exclusive means for covered foreign intelligence surveillance."
+  significance: >-
+    Enacted after the Church Committee documented decades of warrantless
+    surveillance of Americans. It is the base statute that the [[patriot-2001]],
+    [[fisa-amendments-2008|the FISA Amendments Act]], the [[usa-freedom-2015]], and [[risaa-2024]] all amend.
+  tags: [surveillance, FISC, Fourth Amendment, counterintelligence]
+
+- id: intel-oversight-1980
+  title: Intelligence Oversight Act of 1980
+  short: Intel Oversight Act
+  year: 1980
+  enacted: "1980-10-14"
+  domain: intelligence
+  public_law: "96-450"
+  stat: "94 Stat. 1975"
+  usc: "50 U.S.C. 3091-3093"
+  usc_path: "50/3091"
+  status: in-force
+  status_note: >-
+    In force as strengthened by the Intelligence Authorization Act for Fiscal Year
+    1991 (Pub. L. 102-88) after Iran-Contra.
+  summary: >-
+    Enacted as part of the FY1981 intelligence authorization, it added the
+    oversight title to the National Security Act. The executive branch must keep
+    the two intelligence committees fully and currently informed of intelligence
+    activities, including significant anticipated ones.
+  provisions:
+    - "50 U.S.C. 3091: general duty to keep the intelligence committees fully and currently informed."
+    - "50 U.S.C. 3093: covert action requires a written presidential finding, may not be retroactive, and must be reported to the committees."
+    - "Limited notification in extraordinary circumstances to eight congressional leaders, the 'Gang of Eight'."
+  significance: >-
+    This is the standing legal basis for congressional intelligence oversight. It
+    cut the number of committees notified under the [[hughes-ryan-1974]] from eight to
+    two, and it is the source of the statutory definition of covert action that
+    separates CIA activity from traditional military activity.
+  tags: [congressional oversight, covert action, Gang of Eight, presidential findings]
+
+- id: cipa-1980
+  title: Classified Information Procedures Act
+  short: CIPA
+  year: 1980
+  enacted: "1980-10-15"
+  domain: intelligence
+  public_law: "96-456"
+  stat: "94 Stat. 2025"
+  usc: "18 U.S.C. App. 3"
+  status: in-force
+  status_note: In force.
+  summary: >-
+    Sets pretrial and trial procedures for handling classified information in
+    federal criminal cases, so that a defendant cannot force the government to
+    choose between dropping the case and disclosing secrets.
+  provisions:
+    - "Sec. 4: the court may allow deletions, summaries, or substitutions in classified discovery."
+    - "Sec. 5: the defendant must give notice of intent to disclose classified information."
+    - "Sec. 6: hearings on use, relevance, and admissibility, with substitutions or stipulations in place of the classified original."
+    - "Sec. 7: the government may take an interlocutory appeal."
+  significance: >-
+    It is procedural and creates no new secrecy privilege, but it is what makes
+    prosecutions under the [[espionage-1917]] and terrorism cases workable in ordinary
+    courts.
+  tags: [classified information, criminal procedure, graymail]
+
+- id: patriot-2001
+  title: USA PATRIOT Act
+  short: USA PATRIOT Act
+  year: 2001
+  enacted: "2001-10-26"
+  domain: intelligence
+  public_law: "107-56"
+  stat: "115 Stat. 272"
+  usc_titles: [50, 18, 31]
+  status: partly-expired
+  status_note: >-
+    Most of the act is permanent. Section 215 (business records) and section 206
+    (roving wiretaps), along with the lone wolf provision, expired on March 15,
+    2020 and have not been renewed.
+  summary: >-
+    An omnibus counterterrorism law passed six weeks after September 11. It
+    widened surveillance and information-sharing authorities, expanded
+    anti-money-laundering rules, and broadened terrorism offenses and immigration
+    exclusions.
+  provisions:
+    - "Sec. 215: orders for 'any tangible things' relevant to a terrorism or counterintelligence investigation."
+    - "Sec. 218: foreign intelligence need only be 'a significant purpose' of FISA surveillance, lowering the wall between intelligence and criminal investigators."
+    - "Sec. 505: broader use of national security letters."
+    - "Title III: anti-money-laundering measures, including Section 311 special measures against foreign jurisdictions and banks."
+    - "Sec. 805: expanded the definition of material support for terrorism."
+  significance: >-
+    It reshaped [[fisa-1978]] and the material support offenses created by
+    [[aedpa-1996|AEDPA]]. The bulk telephone metadata program later justified under
+    Section 215 led directly to the [[usa-freedom-2015]].
+  tags: [surveillance, counterterrorism, money laundering, sunset, information sharing]
+
+- id: hsa-2002
+  title: Homeland Security Act of 2002
+  short: Homeland Security Act
+  year: 2002
+  enacted: "2002-11-25"
+  domain: intelligence
+  public_law: "107-296"
+  stat: "116 Stat. 2135"
+  usc: "6 U.S.C. 101 et seq."
+  usc_path: "6/101"
+  status: in-force
+  status_note: In force as amended.
+  summary: >-
+    Created the Department of Homeland Security by merging 22 agencies, the largest
+    federal reorganization since 1947. It brought border security, immigration
+    enforcement, emergency management, transportation security, and infrastructure
+    protection under one cabinet department.
+  provisions:
+    - "Established the department and its mission to prevent terrorist attacks and reduce vulnerability."
+    - "Transferred the Coast Guard, Secret Service, Customs, FEMA, TSA, and the functions of the former Immigration and Naturalization Service."
+    - "Created an intelligence analysis and infrastructure protection function, later reorganized."
+    - "Amended in 2018 to create the Cybersecurity and Infrastructure Security Agency."
+  significance: >-
+    It defined homeland security as a field distinct from defense and intelligence.
+    The department is the civilian hub for cyber threat sharing under
+    the [[cisa-2015]], and its intelligence office joined the community later
+    reorganized by [[irtpa-2004]].
+  tags: [homeland security, organization, border security, cybersecurity]
+
+- id: irtpa-2004
+  title: Intelligence Reform and Terrorism Prevention Act of 2004
+  short: IRTPA
+  year: 2004
+  enacted: "2004-12-17"
+  domain: intelligence
+  public_law: "108-458"
+  stat: "118 Stat. 3638"
+  usc: "50 U.S.C. 3023 et seq."
+  usc_path: "50/3023"
+  usc_titles: [50]
+  status: in-force
+  status_note: >-
+    In force. Its lone wolf amendment to FISA carried a sunset and lapsed in March
+    2020.
+  summary: >-
+    Carried out the main recommendations of the 9/11 Commission. It separated
+    leadership of the intelligence community from leadership of the CIA by creating
+    the Director of National Intelligence.
+  provisions:
+    - "Created the Director of National Intelligence with budget and tasking authority across the intelligence community."
+    - "Established the National Counterterrorism Center."
+    - "Created the Privacy and Civil Liberties Oversight Board."
+    - "Sec. 6001: the lone wolf provision, allowing FISA surveillance of non-U.S. persons engaged in terrorism without a link to a foreign power."
+    - "Mandated an information sharing environment and security clearance reform."
+  significance: >-
+    The most significant restructuring of intelligence since the [[nsa-1947]], which it
+    amends. How much real authority the Director has over agencies inside the
+    Defense Department remains the standing question about it.
+  tags: [intelligence community, Director of National Intelligence, counterterrorism, organization]
+
+- id: fisa-amendments-2008
+  title: FISA Amendments Act of 2008
+  short: FISA Amendments Act (702)
+  year: 2008
+  enacted: "2008-07-10"
+  domain: intelligence
+  public_law: "110-261"
+  stat: "122 Stat. 2436"
+  usc: "50 U.S.C. 1881-1881g"
+  usc_path: "50/1881a"
+  status: lapsed
+  status_note: >-
+    Title VII, including Section 702, lapsed in mid-June 2026 for the first time
+    since 2008, after two short extensions in April 2026 and a failed Senate vote.
+    Collection can continue under existing court certifications, reported to run to
+    March 2027. No reauthorization had been enacted as of this wiki's last review
+    (November 10, 2026). Check current status before relying on this page.
+  summary: >-
+    Added Title VII to FISA. Section 702 lets the government target non-U.S.
+    persons reasonably believed to be abroad, with compelled help from U.S.
+    communications providers, under annual court-approved certifications instead of
+    individual warrants.
+  provisions:
+    - "Sec. 702: programmatic collection approved by the Foreign Intelligence Surveillance Court through annual certifications, with targeting, minimization, and querying procedures."
+    - "Secs. 703-704: individualized court orders required to target U.S. persons abroad."
+    - "Title II: retroactive liability protection for telecommunications companies that assisted the post-2001 warrantless program."
+    - "Reauthorized in 2012, in 2018 (FISA Amendments Reauthorization Act of 2017), and in 2024."
+  significance: >-
+    It replaced the temporary Protect America Act of 2007 and gave a statutory
+    footing to collection that began under claims of authority from the [[aumf-2001]].
+    The persistent dispute is over 'backdoor searches': queries of 702 data using
+    Americans' identifiers without a warrant. That dispute shaped [[risaa-2024]]
+    and the 2026 lapse.
+  tags: [surveillance, Section 702, sunset, backdoor searches, FISC]
+  sources:
+    - label: "Brennan Center, Section 702 of FISA: 2026 Resource Page"
+      url: "https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page"
+    - label: "EPIC, 'FISA Section 702 Almost Certain to Expire After House Votes Against Extension' (June 11, 2026)"
+      url: "https://epic.org/fisa-section-702-almost-certain-to-expire-after-house-votes-against-extension-epic-continues-to-urge-reforms/"
+    - label: "CRS R48592, FISA Section 702 and the 2024 Reforming Intelligence and Securing America Act"
+      url: "https://www.congress.gov/crs-product/R48592"
+
+- id: usa-freedom-2015
+  title: USA FREEDOM Act of 2015
+  short: USA FREEDOM Act
+  year: 2015
+  enacted: "2015-06-02"
+  domain: intelligence
+  public_law: "114-23"
+  stat: "129 Stat. 268"
+  usc_titles: [50]
+  status: partly-expired
+  status_note: >-
+    Its structural reforms are in force. The authorities it extended (business
+    records, roving wiretaps, lone wolf) expired on March 15, 2020.
+  summary: >-
+    The legislative response to the 2013 Snowden disclosures. It ended bulk
+    collection of domestic telephone records and required that records requests be
+    tied to a specific selection term.
+  provisions:
+    - "Banned bulk collection under Section 215, pen register authority, and national security letters."
+    - "Replaced the bulk telephone metadata program with targeted requests to carriers."
+    - "Created a panel of outside experts who can argue before the Foreign Intelligence Surveillance Court in novel cases."
+    - "Required declassification review of significant court opinions and added transparency reporting."
+  significance: >-
+    It was the first statute since [[fisa-1978]] to cut back surveillance
+    authority. It amended both that act and the [[patriot-2001]]. The replacement call
+    records program was shut down by the National Security Agency in 2019.
+  tags: [surveillance, bulk collection, transparency, FISC, sunset]
+
+- id: risaa-2024
+  title: Reforming Intelligence and Securing America Act
+  short: RISAA
+  year: 2024
+  enacted: "2024-04-20"
+  domain: intelligence
+  public_law: "118-49"
+  stat: "138 Stat. 862"
+  usc_titles: [50]
+  status: lapsed
+  status_note: >-
+    Its two-year reauthorization of Section 702 ran to April 20, 2026. Congress
+    passed a 10-day and then a 45-day extension, and the authority lapsed in
+    mid-June 2026. Check current status before relying on this page.
+  summary: >-
+    Reauthorized Section 702 for two years, the shortest extension to date, and
+    made the most extensive changes to FISA since 2008, concentrated on how the FBI
+    may search collected data for information about Americans.
+  provisions:
+    - "Extended Title VII of FISA to April 2026."
+    - "Tightened FBI query rules: fewer authorized personnel, supervisor or attorney approval, and a ban on queries meant only to find evidence of a crime."
+    - "Broadened the definition of electronic communication service provider, the most contested change."
+    - "Barred any restart of 'abouts' collection and added counternarcotics to the definition of foreign intelligence."
+  significance: >-
+    A warrant requirement for U.S. person queries failed in the House on a tie
+    vote, which set the terms of the 2026 fight. It amends [[fisa-1978]] and
+    reauthorized [[fisa-amendments-2008|the FISA Amendments Act]].
+  tags: [surveillance, Section 702, FBI queries, sunset]
+  sources:
+    - label: "CRS R48592, FISA Section 702 and the 2024 Reforming Intelligence and Securing America Act"
+      url: "https://www.congress.gov/crs-product/R48592"
+    - label: "Washington Times, 'Congress passes 45-day extension of federal surveillance law' (Apr. 30, 2026)"
+      url: "https://www.washingtontimes.com/news/2026/apr/30/congress-passes-45-day-extension-federal-surveillance-law-extending/"
+
+- id: cisa-2015
+  title: Cybersecurity Information Sharing Act of 2015
+  short: Cyber Info Sharing Act
+  year: 2015
+  enacted: "2015-12-18"
+  domain: intelligence
+  public_law: "114-113"
+  stat: "129 Stat. 2935"
+  usc: "6 U.S.C. 1501-1510"
+  usc_path: "6/1501"
+  status: partly-expired
+  status_note: >-
+    Running on short extensions. The original ten-year term ended September 30,
+    2025 and the law lapsed twice before being extended through September 30, 2026.
+    A continuing resolution then carried it into December 2026. A long-term renewal
+    is tied to the FY2027 defense bill. Check current status.
+  summary: >-
+    Enacted as Division N of the Consolidated Appropriations Act, 2016. It set up
+    a voluntary system for companies and the federal government to share cyber
+    threat indicators and defensive measures, with legal protection for companies
+    that take part.
+  provisions:
+    - "Authorizes private entities to monitor their own systems and operate defensive measures."
+    - "Protects companies from liability for sharing indicators in the manner the act prescribes."
+    - "Requires removal of personal information not directly related to a threat before sharing."
+    - "Makes the Department of Homeland Security the main civilian portal for receiving indicators."
+  significance: >-
+    Not to be confused with the 2018 law that created the agency with the same
+    initials. Its repeated lapses in 2025 and 2026 are a case study in how sunset
+    clauses interact with the congressional calendar. It relies on the department
+    created by the [[hsa-2002]].
+  tags: [cybersecurity, information sharing, liability protection, sunset]
+  sources:
+    - label: "Davis Wright Tremaine, 'Congress Extends CISA 2015 Through September 2026' (Feb. 2026)"
+      url: "https://www.dwt.com/blogs/privacy--security-law-blog/2026/02/congress-extends-cisa-2015-thru-september"
+    - label: "Federal News Network, 'Dems point to CISA staffing, AI security and other cyber priorities' (Nov. 2026)"
+      url: "https://federalnewsnetwork.com/cybersecurity/2026/11/dems-point-to-cisa-staffing-ai-security-and-other-cyber-priorities"
