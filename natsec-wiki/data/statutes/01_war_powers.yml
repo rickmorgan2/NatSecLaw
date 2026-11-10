@@ -4,6 +4,7 @@
   year: 1973
   enacted: "1973-11-07"
   domain: war-powers
+  layer: framework
   public_law: "93-148"
   stat: "87 Stat. 555"
   usc: "50 U.S.C. 1541-1550"
@@ -36,10 +37,10 @@
     was filed under Sec. 4(a)(1), which is what starts the clock.
   tags: [war powers, congressional oversight, hostilities, reporting]
   sources:
-    - label: "CO-06 House office, War Powers Resolution on Venezuela (Jan. 8, 2026)"
+    - label: "Rep. Jason Crow's office, War Powers Resolution on Venezuela (Jan. 8, 2026)"
       url: "https://crow.house.gov/media/press-releases/crow-introduces-war-powers-resolution-to-rein-in-trump-military-action-in-venezuela"
-    - label: "CO-06 House office, press releases (Iran resolutions, May to July 2026)"
-      url: "https://crow.house.gov/media/press-releases"
+    - label: "Rep. Jason Crow's office, press releases (Iran resolutions, May to July 2026)"
+      url: "https://crow.house.gov/news/press-releases"
 
 - id: aumf-2001
   title: Authorization for Use of Military Force (2001)
@@ -47,6 +48,7 @@
   year: 2001
   enacted: "2001-09-18"
   domain: war-powers
+  layer: authorizing
   public_law: "107-40"
   stat: "115 Stat. 224"
   usc: "50 U.S.C. 1541 note"
@@ -78,6 +80,7 @@
   year: 2002
   enacted: "2002-10-16"
   domain: war-powers
+  layer: authorizing
   public_law: "107-243"
   stat: "116 Stat. 1498"
   usc: "50 U.S.C. 1541 note"
@@ -113,6 +116,7 @@
   year: 1991
   enacted: "1991-01-14"
   domain: war-powers
+  layer: authorizing
   public_law: "102-1"
   stat: "105 Stat. 3"
   usc: "50 U.S.C. 1541 note"
@@ -144,6 +148,7 @@
   year: 1964
   enacted: "1964-08-10"
   domain: war-powers
+  layer: authorizing
   public_law: "88-408"
   stat: "78 Stat. 384"
   status: repealed
@@ -170,6 +175,7 @@
   year: 1976
   enacted: "1976-09-14"
   domain: war-powers
+  layer: framework
   public_law: "94-412"
   stat: "90 Stat. 1255"
   usc: "50 U.S.C. 1601-1651"
@@ -201,6 +207,7 @@
   short: Insurrection Act
   year: 1807
   domain: war-powers
+  layer: framework
   stat: "2 Stat. 443"
   usc: "10 U.S.C. 251-255"
   usc_path: "10/251"
@@ -230,6 +237,7 @@
   year: 1878
   enacted: "1878-06-18"
   domain: war-powers
+  layer: framework
   stat: "20 Stat. 152"
   usc: "18 U.S.C. 1385"
   usc_path: "18/1385"
@@ -257,6 +265,7 @@
   year: 1972
   enacted: "1972-08-22"
   domain: war-powers
+  layer: provision
   public_law: "92-403"
   stat: "86 Stat. 619"
   usc: "1 U.S.C. 112b"
@@ -286,6 +295,7 @@
   year: 1945
   enacted: "1945-12-20"
   domain: war-powers
+  layer: framework
   public_law: "79-264"
   stat: "59 Stat. 619"
   usc: "22 U.S.C. 287-287e"
@@ -313,6 +323,7 @@
   year: 2005
   enacted: "2005-12-30"
   domain: war-powers
+  layer: provision
   public_law: "109-148"
   stat: "119 Stat. 2739"
   usc: "42 U.S.C. 2000dd"
@@ -346,6 +357,7 @@
   year: 2006
   enacted: "2006-10-17"
   domain: war-powers
+  layer: authorizing
   public_law: "109-366"
   stat: "120 Stat. 2600"
   usc: "10 U.S.C. 948a-950t"

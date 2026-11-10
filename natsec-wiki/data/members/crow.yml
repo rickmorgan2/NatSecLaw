@@ -1,8 +1,9 @@
-# The member this copy of the wiki is tailored to, identified by district only.
-# The site is public, so the member's name is deliberately left out of all text and labels.
-# member.qmd is built entirely from this file, so swapping it retargets the lens.
-name: U.S. Representative for Colorado's 6th District (CO-06)
-short: CO-06
+# Member lens: Rep. Jason Crow (CO-06).
+# members/crow.qmd is generated from this file. Every item carries its own source.
+slug: crow
+name: Rep. Jason Crow
+short: Crow (CO-06)
+district: CO-06
 seat: Colorado's 6th Congressional District
 party: Democrat
 as_of: "2026-11-10"
@@ -10,13 +11,16 @@ background: >-
   Former Army Ranger and paratrooper with three combat tours in Iraq and
   Afghanistan. First elected in 2018 and reelected to a fifth term on November 3,
   2026. In the 119th Congress he serves on the House Armed Services Committee and
-  the House Permanent Select Committee on Intelligence. Committee assignments for
-  the 120th Congress had not been announced when this page was last reviewed.
+  the House Permanent Select Committee on Intelligence, and he co-founded and
+  co-chairs the Protection of Civilians in Conflict Caucus. Committee assignments
+  for the 120th Congress had not been announced when this page was last reviewed.
 profile_sources:
-  - label: "CO-06 House office, Committees and Caucuses"
+  - label: "Rep. Jason Crow's office, Committees and Caucuses"
     url: "https://crow.house.gov/about/committees-and-caucuses"
-  - label: "CO-06 House office, About"
+  - label: "Rep. Jason Crow's office, About"
     url: "https://crow.house.gov/about"
+  - label: "Office of the Clerk, U.S. House, member profile (C001121)"
+    url: "https://clerk.house.gov/members/C001121"
   - label: "Colorado Public Radio, 6th District election result (Nov. 3, 2026)"
     url: "https://www.cpr.org/2026/11/03/colorado-election-results-congressional-district-6-crow-clark/"
 
@@ -33,7 +37,8 @@ committees:
     code_titles: [10, 32]
     statutes: [ndaa-annual, title10-usc, goldwater-nichols-1986, nunn-cohen-1986,
                sec127e-2004, sec394-cyber-2018, seccoop-2016, leahy-laws,
-               reserve-mobilization, ucmj-1950, dpa-1950, wpr-1973, aumf-2001]
+               reserve-mobilization, ucmj-1950, dpa-1950, wpr-1973, aumf-2001,
+               civcas-policy-2018, cp-coe-2022]
     source:
       label: "New America, member profile (committee roles)"
       url: "https://www.newamerica.org/people/rep-jason-crow/"
@@ -51,7 +56,7 @@ committees:
                fisa-1978, fisa-amendments-2008, risaa-2024, irtpa-2004,
                sec394-cyber-2018, cisa-2015]
     source:
-      label: "CO-06 House office, appointment to the Intelligence Committee (Jan. 22, 2025)"
+      label: "Rep. Jason Crow's office, appointment to the Intelligence Committee (Jan. 22, 2025)"
       url: "https://crow.house.gov/media/press-releases/congressman-crow-appointed-to-the-house-permanent-select-committee-on-intelligence"
 
 initiatives:
@@ -66,7 +71,7 @@ initiatives:
       here.
     statutes: [wpr-1973, constitution-war-powers]
     source:
-      label: "CO-06 House office, press release (Jan. 8, 2026)"
+      label: "Rep. Jason Crow's office, press release (Jan. 8, 2026)"
       url: "https://crow.house.gov/media/press-releases/crow-introduces-war-powers-resolution-to-rein-in-trump-military-action-in-venezuela"
   - id: iran-wpr-2026
     title: War Powers Resolution on Iran
@@ -79,8 +84,8 @@ initiatives:
       Pramila Jayapal, for July 22, 2026. The outcome is not recorded here.
     statutes: [wpr-1973, constitution-war-powers, declarations-of-war]
     source:
-      label: "CO-06 House office, press releases (May 1 and July 22, 2026)"
-      url: "https://crow.house.gov/media/press-releases"
+      label: "Rep. Jason Crow's office, press releases (May 1 and July 22, 2026)"
+      url: "https://crow.house.gov/news/press-releases"
   - id: no-funds-iran-2026
     title: No Funds for Iran War Act
     short: No Funds for Iran War Act
@@ -92,8 +97,99 @@ initiatives:
       War Powers Resolution's procedures.
     statutes: [constitution-war-powers, wpr-1973]
     source:
-      label: "CO-06 House office, press releases (May 6, 2026)"
-      url: "https://crow.house.gov/media/press-releases"
+      label: "Rep. Jason Crow's office, press releases (May 6, 2026)"
+      url: "https://crow.house.gov/news/press-releases"
+  - id: civharm-dod-response-2026
+    title: Civilian harm in Operation Epic Fury
+    short: Iran school strike inquiry
+    date: "2026-04-07"
+    kind: Oversight letter
+    summary: >-
+      With Reps. Sara Jacobs and Yassamin Ansari, led a group of House members
+      seeking information on a reported U.S. strike on the Shajareh Tayyebeh girls'
+      school in Iran, the targeting decisions behind it, and the steps taken to
+      mitigate and respond to civilian harm. On April 7, 2026 they called the
+      Department's reply "completely unacceptable."
+    statutes: [civcas-policy-2018, civcas-report-2017, wpr-1973]
+    source:
+      label: "Rep. Jason Crow's office, press release (Apr. 7, 2026)"
+      url: "https://crow.house.gov/media/press-releases/crow-jacobs-ansari-blast-unacceptable-response-from-dod-on-civilian-harm"
+  - id: civharm-ig-letter-2026
+    title: Letter on the dismantling of civilian harm programs
+    short: CHMR compliance letter
+    date: "2026-07-09"
+    kind: Oversight letter
+    summary: >-
+      With Sen. Elizabeth Warren, Rep. Sara Jacobs, and seven other senators, asked
+      Secretary Hegseth to explain why civilian protection policies had not been
+      implemented, account for staffing and resource cuts, and explain how the
+      Department was complying with the statutes that require those policies and
+      institutions. The letter followed an Inspector General finding that the
+      action plan's objectives were at risk.
+    statutes: [civcas-policy-2018, cp-coe-2022, ex-gratia-2019]
+    source:
+      label: "Rep. Jason Crow's office, press release (July 9, 2026)"
+      url: "https://crow.house.gov/media/press-releases/crow-warren-demand-answers-on-dismantling-of-civilian-protections-by-defense-department"
+  - id: nigeria-strikes-2026
+    title: Briefing demand on the Christmas Day strikes in Nigeria
+    short: Nigeria strikes briefing
+    date: "2026-03-09"
+    kind: Oversight letter
+    summary: >-
+      With Rep. Sara Jacobs, as co-chairs of the Protection of Civilians in
+      Conflict Caucus, asked the Defense Secretary for a briefing and written
+      answers on U.S. strikes in Sokoto State, Nigeria on December 25, 2025,
+      including the legal authority relied on.
+    statutes: [aumf-2001, wpr-1973, civcas-report-2017]
+    source:
+      label: "Rep. Sara Jacobs's office, press release (Mar. 9, 2026)"
+      url: "https://sarajacobs.house.gov/news/press-releases/reps-sara-jacobs-jason-crow-demand-pentagon-briefing-on-christmas-day-airstrikes-on-nigeria"
+  - id: civharm-partnerships-2023
+    title: Civilian Harm Transparency in Partnerships Act of 2023
+    short: Civilian Harm in Partnerships Act
+    date: "2023-11-30"
+    kind: Bill introduced
+    summary: >-
+      Sponsored, with Rep. Sara Jacobs, a bill directing the Director of National
+      Intelligence to report annually to Congress on civilian casualties caused by
+      certain operations of foreign governments, extending civilian harm reporting
+      to partner operations. It was not enacted in the 118th Congress.
+    statutes: [leahy-laws, aeca-1976, seccoop-2016, civcas-report-2017]
+    bill: {congress: 118, type: hr, number: 6517}
+    source:
+      label: "Rep. Jason Crow's office, press release (Nov. 30, 2023)"
+      url: "https://crow.house.gov/media/press-releases/reps-crow-jacobs-introduce-bill-to-increase-oversight-of-civilian-casualties-in-conflict-zones"
+  - id: civharm-transparency-2022
+    title: Department of Defense Civilian Harm Transparency Act
+    short: Civilian Harm Transparency Act
+    date: "2022-04-28"
+    kind: Bill introduced
+    summary: >-
+      Sponsored a bill to widen the annual civilian casualty report and designate
+      a senior official to coordinate civilian harm investigations, introduced
+      alongside the Protection of Civilians in Military Operations Act (H.R. 7625).
+      His office says major portions of the two bills were enacted in the FY2023
+      defense authorization, which created the Civilian Protection Center of
+      Excellence.
+    statutes: [civcas-report-2017, civcas-policy-2018, cp-coe-2022, ndaa-annual]
+    bill: {congress: 117, type: hr, number: 7621}
+    source:
+      label: "Rep. Jason Crow's office, press release (Apr. 28, 2022)"
+      url: "https://crow.house.gov/media/press-releases/congressman-jason-crow-leads-colleagues-in-introducing-two-bicameral-bills-overhauling-us-approach-to-civilian-harm-in-military-operations"
+  - id: poc-caucus-2022
+    title: Protection of Civilians in Conflict Caucus
+    short: Civilians in Conflict Caucus
+    date: "2022-08-26"
+    kind: Caucus founded
+    summary: >-
+      Launched the caucus with Reps. Sara Jacobs, Ro Khanna, Andy Kim, and Tom
+      Malinowski after the Defense Department released its civilian harm action
+      plan, to press for oversight and policy that reduce civilian harm from U.S.
+      and partner operations.
+    statutes: [civcas-policy-2018, civcas-report-2017, ex-gratia-2019, leahy-laws]
+    source:
+      label: "Rep. Jason Crow's office, press release on launching the caucus (Aug. 2022)"
+      url: "https://crow.house.gov/media/press-releases/rep-crow-joins-colleagues-in-launching-new-caucus-to-prevent-civilian-harm"
   - id: afghan-adjustment
     title: Afghan Adjustment Act
     short: Afghan Adjustment Act
@@ -105,7 +201,7 @@ initiatives:
       vetting.
     statutes: [aumf-2001]
     source:
-      label: "CO-06 House office, press release on the Afghan Adjustment Act"
+      label: "Rep. Jason Crow's office, press release on the Afghan Adjustment Act"
       url: "https://crow.house.gov/media/press-releases/crow-introduces-bipartisan-legislation-to-help-afghans-who-assisted-american-servicemembers-resettle-in-us"
   - id: afghan-tps-2026
     title: Afghanistan TPS Act of 2026
@@ -118,7 +214,7 @@ initiatives:
       discharge petition to force a House vote.
     statutes: [aumf-2001]
     source:
-      label: "CO-06 House office, press release (July 23, 2026)"
+      label: "Rep. Jason Crow's office, press release (July 23, 2026)"
       url: "https://crow.house.gov/media/press-releases/crow-introduces-bill-to-grant-vulnerable-afghans-temporary-protected-status"
   - id: afghanistan-oversight-2020
     title: Afghanistan drawdown oversight bill
@@ -131,7 +227,7 @@ initiatives:
       Afghanistan were reduced.
     statutes: [ndaa-annual, aumf-2001]
     source:
-      label: "CO-06 House office, press release on the Afghanistan oversight bill"
+      label: "Rep. Jason Crow's office, press release on the Afghanistan oversight bill"
       url: "https://crow.house.gov/media/press-releases/representatives-crow-and-cheney-introduce-bipartisan-afghanistan-oversight"
   - id: space-guard
     title: Space National Guard Establishment Act of 2025
@@ -170,7 +266,7 @@ equities:
       Services and convenes a Future of Buckley Task Force.
     statutes: [ndaa-annual, title10-usc, title32-usc, reserve-mobilization]
     source:
-      label: "CO-06 House office, appointment to the Armed Services Committee (Jan. 2025)"
+      label: "Rep. Jason Crow's office, appointment to the Armed Services Committee (Jan. 2025)"
       url: "https://crow.house.gov/media/press-releases/congressman-crow-appointed-to-the-house-armed-services-committee"
   - id: aerospace
     title: Colorado aerospace and defense industry
@@ -192,7 +288,7 @@ equities:
       reach them through the defense authorization.
     statutes: [ndaa-annual, ucmj-1950, selective-service-1948]
     source:
-      label: "CO-06 House office, About"
+      label: "Rep. Jason Crow's office, About"
       url: "https://crow.house.gov/about"
 
 # parts of the member's record that the wiki does not yet cover
@@ -201,3 +297,4 @@ gaps:
   - "The annual Intelligence Authorization Act, the Intelligence Committee's counterpart to the defense authorization."
   - "10 U.S.C. 130f on notice of sensitive military operations, and the irregular warfare authority that began as Section 1202 of the FY2018 defense authorization, both within the Intelligence and Special Operations Subcommittee's remit."
   - "Space Force organic provisions in Title 10 and any enacted Space National Guard or Space Force reserve legislation."
+  - "DoD Instruction 3000.17 and the 2022 Civilian Harm Mitigation and Response Action Plan, which implement the civilian harm statutes but are not statutes themselves."

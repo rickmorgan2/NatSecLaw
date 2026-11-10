@@ -1,0 +1,117 @@
+---
+title: "Sources"
+subtitle: "Everything this wiki draws on, with the official text of every statute first."
+toc: true
+page-layout: full
+---
+
+```{r}
+source("R/helpers.R")
+statutes <- load_statutes()
+members  <- load_members()
+links    <- official_links(statutes)
+src_links <- build_sources(statutes)
+refs     <- readr::read_csv("data/reference_sources.csv", col_types = "cccc")
+research <- readr::read_csv("data/research_sources.csv", col_types = "cccc")
+all_src  <- readr::read_csv("data/all_sources.csv", col_types = "cccccl")
+
+page_link <- function(id, text) paste0("<a href=\"statutes/", id, ".html\">", text, "</a>")
+ext_link  <- function(url, text) dplyr::if_else(
+  is.na(url), "", paste0("<a href=\"", url, "\" target=\"_blank\" rel=\"noopener\">", text, "</a>")
+)
+flag <- function(official) dplyr::if_else(official, "Official", "Secondary")
+
+src_table <- function(df, page = 25) {
+  DT::datatable(
+    df, escape = FALSE, rownames = FALSE, filter = "top", extensions = "Buttons",
+    options = list(dom = "Bfrtip", buttons = c("copy", "csv"), pageLength = page, autoWidth = FALSE)
+  )
+}
+```
+
+```{r}
+#| results: asis
+n_off <- sum(all_src$official)
+cat(
+  "The wiki cites ", nrow(all_src), " distinct source links, ", n_off, " of them on official U.S. government sites. ",
+  "**Official** means a federal government domain (.gov or .mil): GovInfo, Congress.gov, the U.S. Code, the House Clerk, and members' official House sites. ",
+  "Everything else, such as news reports, think tank analysis, and trackers, is marked **secondary** and is used for current status or for facts no official page states. ",
+  "The full list is also a plain file: [all_sources.csv](data/all_sources.csv).\n",
+  sep = ""
+)
+```
+
+## How statute links are built
+
+Each statute page links to two official texts, both on [GovInfo](https://www.govinfo.gov), the Government Publishing Office's authenticated repository:
+
+- **Enacted text.** The public law as passed, for the 104th Congress (1995) onward, or otherwise the law as printed in the Statutes at Large. GovInfo holds every volume of the Statutes at Large back to 1789, so even the Militia Acts of 1792 link to their original printing.
+- **Current U.S. Code.** The section as codified today, from GovInfo's edition of the Code. Where a law sits in a statutory note, the link opens the section that carries the note.
+
+Links are built from each statute's citation by the patterns in the [GovInfo link service documentation](https://www.govinfo.gov/link-docs), so they are only as accurate as the citation. Two kinds of entry have no citation of their own: the Constitution page links to Constitution Annotated on Congress.gov, and composite pages such as the annual defense authorization link to specific enacted laws listed in their sources.
+
+## Official text of every statute
+
+```{r}
+links |>
+  dplyr::arrange(year) |>
+  dplyr::transmute(
+    Statute = page_link(id, title),
+    Year = year,
+    Status = factor(status_label),
+    `Enacted text` = ext_link(enact_link, enact_label),
+    `Current U.S. Code` = ext_link(code_link, code_label),
+    `Other official sources` = purrr::map_chr(id, \(x) {
+      s <- src_links |> dplyr::filter(statute_id == x, source_type == "Official government source")
+      paste(ext_link(s$url, s$label), collapse = "<br>")
+    })
+  ) |>
+  src_table(page = 100)
+```
+
+## Member lenses
+
+Every claim on the member pages carries a source. Bills link to Congress.gov; statements and letters link to the member's official House site where one exists.
+
+```{r}
+purrr::map(members, member_sources) |>
+  purrr::list_rbind() |>
+  dplyr::distinct(member, item, url, .keep_all = TRUE) |>
+  dplyr::transmute(
+    Member = factor(member), Kind = factor(kind), Item = item,
+    Source = ext_link(url, label), Type = factor(flag(official))
+  ) |>
+  src_table()
+```
+
+## Status and secondary sources on statute pages
+
+Reports, articles, and official pages used for current-status notes and for facts beyond the statute's own text.
+
+```{r}
+src_links |>
+  dplyr::filter(!grepl("GovInfo", source_type)) |>
+  dplyr::left_join(dplyr::select(statutes, statute_id = id, short), by = "statute_id") |>
+  dplyr::transmute(Statute = page_link(statute_id, short), Source = ext_link(url, label), Type = factor(flag(official))) |>
+  src_table()
+```
+
+## Reference sources
+
+General sources used across the wiki and the first places to check when verifying or extending a page.
+
+```{r}
+refs |>
+  dplyr::transmute(Source = ext_link(url, name), Type = type, `Used for` = used_for) |>
+  DT::datatable(escape = FALSE, rownames = FALSE, options = list(dom = "t", pageLength = 50))
+```
+
+## Research for this edition
+
+Sources consulted for version 2 (November 2026): the civilian harm statutes, the second member lens, bill numbers, and the switch to GovInfo links.
+
+```{r}
+research |>
+  dplyr::transmute(Source = ext_link(url, name), Type = type, `Used for` = used_for) |>
+  DT::datatable(escape = FALSE, rownames = FALSE, options = list(dom = "t", pageLength = 50))
+```

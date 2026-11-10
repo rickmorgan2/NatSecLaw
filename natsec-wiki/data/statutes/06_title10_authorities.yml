@@ -4,6 +4,7 @@
   year: 1950
   enacted: "1950-05-05"
   domain: defense-arms
+  layer: framework
   public_law: "81-506"
   stat: "64 Stat. 107"
   usc: "10 U.S.C. 801-946a"
@@ -39,6 +40,7 @@
   year: 1958
   enacted: "1958-08-06"
   domain: defense-arms
+  layer: framework
   public_law: "85-599"
   stat: "72 Stat. 514"
   usc: "10 U.S.C. 113, 162, 164"
@@ -71,6 +73,7 @@
   short: Reserve & Guard Mobilization
   year: 1952
   domain: war-powers
+  layer: framework
   public_law: "82-476"
   stat: "66 Stat. 481"
   usc: "10 U.S.C. 12301-12304b, 12406"
@@ -114,6 +117,7 @@
   year: 2004
   enacted: "2004-10-28"
   domain: war-powers
+  layer: provision
   public_law: "108-375"
   stat: "118 Stat. 1811"
   usc: "10 U.S.C. 127e"
@@ -146,6 +150,7 @@
   year: 2018
   enacted: "2018-08-13"
   domain: war-powers
+  layer: provision
   public_law: "115-232"
   stat: "132 Stat. 1636"
   usc: "10 U.S.C. 394-395"
@@ -177,6 +182,7 @@
   year: 1990
   enacted: "1990-11-05"
   domain: war-powers
+  layer: provision
   public_law: "101-510"
   stat: "104 Stat. 1485"
   usc: "10 U.S.C. 284; 10 U.S.C. 124"
@@ -208,6 +214,7 @@
   year: 1982
   enacted: "1982-07-12"
   domain: war-powers
+  layer: provision
   public_law: "97-214"
   stat: "96 Stat. 153"
   usc: "10 U.S.C. 2808"

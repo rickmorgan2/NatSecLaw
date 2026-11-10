@@ -4,6 +4,7 @@
   year: 1956
   enacted: "1956-08-01"
   domain: foreign-policy
+  layer: framework
   public_law: "84-885"
   stat: "70 Stat. 890"
   usc: "22 U.S.C. 2651a et seq."
@@ -32,6 +33,7 @@
   year: 1980
   enacted: "1980-10-17"
   domain: foreign-policy
+  layer: framework
   public_law: "96-465"
   stat: "94 Stat. 2071"
   usc: "22 U.S.C. 3901 et seq."
@@ -61,6 +63,7 @@
   year: 1938
   enacted: "1938-06-08"
   domain: foreign-policy
+  layer: framework
   public_law: "75-583"
   stat: "52 Stat. 631"
   usc: "22 U.S.C. 611-621"
@@ -90,6 +93,7 @@
   year: 1948
   enacted: "1948-01-27"
   domain: foreign-policy
+  layer: framework
   public_law: "80-402"
   stat: "62 Stat. 6"
   usc: "22 U.S.C. 1431 et seq."
@@ -120,6 +124,7 @@
   year: 1962
   enacted: "1962-10-11"
   domain: foreign-policy
+  layer: provision
   public_law: "87-794"
   stat: "76 Stat. 872"
   usc: "19 U.S.C. 1862"
@@ -149,6 +154,7 @@
   year: 1996
   enacted: "1996-04-24"
   domain: foreign-policy
+  layer: authorizing
   public_law: "104-132"
   stat: "110 Stat. 1214"
   usc: "8 U.S.C. 1189; 18 U.S.C. 2339B"

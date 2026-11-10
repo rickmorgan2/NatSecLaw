@@ -1,0 +1,9 @@
+name,type,url,used_for
+"GovInfo (U.S. Government Publishing Office)",Primary,https://www.govinfo.gov,"Authenticated text of public laws and the Statutes at Large. Statute pages link here through the GovInfo link service."
+"GovInfo link service documentation",Primary,https://www.govinfo.gov/link-docs,"Explains the URL patterns that R/helpers.R uses to build public law and Statutes at Large links."
+"U.S. Code, Office of the Law Revision Counsel",Primary,https://uscode.house.gov,"Official codification. Use it to confirm current section numbers and classification notes."
+"Cornell Legal Information Institute, U.S. Code",Primary,https://www.law.cornell.edu/uscode/text,"Readable copy of the U.S. Code. Statute pages link to sections here."
+"Congress.gov",Primary,https://www.congress.gov,"Bill status, legislative history, and Congressional Research Service products."
+"Federal Register",Primary,https://www.federalregister.gov,"Executive orders, emergency declarations, and implementing regulations."
+"Office of Foreign Assets Control",Primary,https://ofac.treasury.gov,"Current sanctions programs and the executive orders that implement sanctions statutes."
+"EveryCRSReport.com",Secondary,https://www.everycrsreport.com,"Archive of Congressional Research Service reports, including earlier versions."

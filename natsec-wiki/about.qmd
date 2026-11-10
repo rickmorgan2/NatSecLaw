@@ -4,29 +4,42 @@ title: "About this wiki"
 
 ## Scope
 
-The wiki covers the federal statutes that most shape U.S. national security policy, in four core areas, plus a fifth group of foreign policy laws they connect to:
+The wiki covers the federal statutes that most shape U.S. national security policy, in five core areas, plus a group of foreign policy laws they connect to:
 
 - War powers and use of force
 - Intelligence and surveillance
 - Foreign aid, fragility, and sanctions
 - Defense organization and arms transfers
+- Civilian harm and protection
 - Related foreign policy legislation
 
-A sixth group, constitutional and code foundations, holds what the rest is built on: the Constitution's war and foreign affairs clauses, the founding-era statutes, the laws that created the National Guard, and overview pages for Titles 10, 22, 32, and 50 of the U.S. Code. Each title page lists every statute in the wiki codified in that title.
+A further group, constitutional and code foundations, holds what the rest is built on: the Constitution's war and foreign affairs clauses, the founding-era statutes, the laws that created the National Guard, and overview pages for Titles 10, 22, 32, and 50 of the U.S. Code. Each title page lists every statute in the wiki codified in that title.
 
-A few entries are single U.S. Code provisions, such as 10 U.S.C. 127e, where the provision matters more than the act that carried it. The [Title 10 and Title 50](title10-title50.qmd) page explains the divide between military and intelligence authorities and lists the statutes in each title.
+A few entries are single U.S. Code provisions, such as 10 U.S.C. 127e or the civilian harm sections of recent defense authorizations, where the provision matters more than the act that carried it. The [Title 10 and Title 50](title10-title50.qmd) page explains the divide between military and intelligence authorities.
 
-Apart from the Constitution page, it covers statutes only. Treaties, executive orders, court decisions, and regulations appear where they explain a statute, but they do not have their own pages.
+Apart from the Constitution page, it covers statutes only. Treaties, executive orders, Defense Department instructions, court decisions, and regulations appear where they explain a statute, but they do not have their own pages.
 
-## Member lens
+## What changed in version 2
 
-This copy of the wiki is tailored to one member of Congress. The [Member lens](member.qmd) page maps that member's committee seats, legislative record, and district interests onto the statutes. It is an independent reference built from public sources, it is not affiliated with or endorsed by the member's office, and it describes the record without taking a position on it.
+- **Study guide.** An [eleven-unit curriculum](study/index.qmd) with reading paths, key terms, and review questions, plus [flashcards](study/flashcards.qmd), a [timeline](study/timeline.qmd), and a [glossary](study/glossary.qmd).
+- **Authority layers.** Every statute is placed in a layer: Constitution, framework statute, specific authorization, or targeted provision, with the U.S. Code titles as the filing system. Statute pages say what each law builds on, and the graph has a layered view.
+- **Civilian harm.** A new domain and study unit covering the Foreign Claims Act, the annual civilian casualty report, the civilian casualty policy requirement, the ex gratia payment authority, and the Civilian Protection Center of Excellence.
+- **Two member lenses.** [Rep. Jason Crow (CO-06)](members/crow.qmd) and [Rep. Sara Jacobs (CA-51)](members/jacobs.qmd), with a [comparison page](members/index.qmd). Members are now named.
+- **Official links.** Every statute links to its enacted text and its current U.S. Code section on GovInfo, the Government Publishing Office's official repository, in place of the unofficial Cornell copy. Bills link to Congress.gov. The [Sources](sources.qmd) page lists everything the wiki draws on.
+- **Current law only.** A switch in the top bar hides repealed and superseded laws from lists, tables, and graphs across the site.
+- **Graph.** Click a domain to fade the others; click a statute to filter the connections table to it.
+
+[Version 1](v1/index.html), the October to November 2026 edition with one anonymized member lens, is archived unchanged. On the published site it lives under `v1/`; locally it appears after a full render.
+
+## Member lenses
+
+The [member lenses](members/index.qmd) map each member's committee seats, legislative record, and district interests onto the statutes. They are independent references built from public sources, not affiliated with or endorsed by either member's office, and they describe the record without taking a position on it.
 
 ## Reading a statute page
 
-Each page has the same parts: a citation bar with the law's status, a short summary, key provisions, why the law matters, its current status, its connections to other statutes, and source links.
+Each page has the same parts: a citation bar whose citations link to the official text, the law's status and layer, a short summary, buttons to read the enacted text and current code, key provisions, why the law matters, its current status, where it sits (layer, what it builds on, code title, era, study units, member lenses), its connections to other statutes, and sources.
 
-Links between statutes in the text and in the Connections table are the wiki's cross-references. The [knowledge graph](graph.qmd) draws the same connections.
+Links to repealed and superseded statutes are marked with a dagger (†).
 
 ## Relationship types
 
@@ -42,6 +55,20 @@ Connections are directional and use a fixed vocabulary.
 | enacted in | The first statute was passed as part of the second, usually a defense authorization. |
 | related to | A thematic or historical link without a direct legal dependency. |
 
+The first four count as dependencies: they make up a statute's "builds on" and "built upon by" lists.
+
+## Layers
+
+| Layer | Meaning |
+|---|---|
+| Constitution | The grants and limits every statute draws on. |
+| Framework statute | A standing law that creates an institution or a general procedure other laws plug into. |
+| Specific authorization | A law aimed at a particular conflict, country, program, or problem, usually working through a framework statute. |
+| Targeted provision | A single section that grants a narrow authority, imposes a condition, or requires a report. |
+| U.S. Code title | The subject shelf where enacted law is filed. |
+
+Layer assignments are editorial judgments, not legal categories.
+
 ## Status labels
 
 | Status | Meaning |
@@ -54,22 +81,17 @@ Connections are directional and use a fixed vocabulary.
 
 ## Accuracy and limits
 
-The summaries were drafted with Claude, an AI model, and reviewed on November 10, 2026. Items that changed in 2025 and 2026 were checked against current reporting, and those sources are listed on the relevant pages. Citations and section numbers were written from reference knowledge and have not each been checked against the primary text.
+The summaries were drafted with Claude, an AI model, and reviewed on November 10, 2026. Items that changed in 2025 and 2026 were checked against current reporting, and those sources are listed on the relevant pages. The civilian harm entries were checked against the GovInfo text of the U.S. Code, and bill numbers on the member pages were checked against GovInfo bill status records. Other citations and section numbers were written from reference knowledge and have not each been checked against the primary text.
 
-Treat the wiki as a map for finding and relating statutes. Before citing a provision in your own work, confirm it in the primary source linked at the bottom of each page. Statutes with sunset clauses change fastest; the pages for Section 702, the Cybersecurity Information Sharing Act, the Defense Production Act, the Iran Sanctions Act, and the annual defense authorization all carry a note to check current status.
-
-Primary links are built from citations using fixed URL patterns. The GovInfo link service covers public laws from the 104th Congress (1995) onward and the Statutes at Large from volume 65 (1951) onward, so older laws link to the U.S. Code instead.
+Treat the wiki as a map for finding and relating statutes. Before citing a provision in your own work, confirm it in the official text linked on each page. Statutes with sunset clauses or disputed implementation change fastest; their pages end their status note with "Check current status."
 
 This is a reference tool and not legal advice.
 
 ## Adding or changing content
 
-All content lives in `data/`. The pages in `statutes/` are generated and should not be edited by hand.
+All content lives in `data/`. The pages in `statutes/`, `members/` (apart from `index.qmd` and `_lens.qmd`), and `study/units/` are generated and should not be edited by hand.
 
-1. Add or edit an entry in one of the files in `data/statutes/`. Copy an existing entry to get the fields right.
+1. Add or edit an entry in one of the files in `data/statutes/`. Copy an existing entry to get the fields right, including `layer`.
 2. Add rows to `data/edges.csv` for its connections, using the relationship types above.
-3. Run `quarto preview`. The build script checks the data and stops with a message if an ID, domain, status, or relationship is not recognized.
-
-Each statute's U.S. Code titles are read from its `usc` citation. To add a title that the citation does not show, list it under `usc_titles`, for example `usc_titles: [10]`.
-
-To link to another statute inside a summary, write its ID in double square brackets, for example `[[fisa-1978]]`.
+3. Add the statute to a unit in `data/study/units.yml`.
+4. Run `Rscript R/deploy.R`. The build script checks the data and stops with a message if an ID, domain, layer, status, or relationship is not recognized.

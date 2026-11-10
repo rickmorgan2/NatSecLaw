@@ -4,6 +4,7 @@
   year: 1961
   enacted: "1961-09-04"
   domain: aid-sanctions
+  layer: framework
   public_law: "87-195"
   stat: "75 Stat. 424"
   usc: "22 U.S.C. 2151 et seq."
@@ -36,6 +37,7 @@
   short: Leahy Laws
   year: 1997
   domain: aid-sanctions
+  layer: provision
   usc: "22 U.S.C. 2378d; 10 U.S.C. 362"
   usc_path: "22/2378d"
   status: in-force
@@ -67,6 +69,7 @@
   year: 1998
   enacted: "1998-10-21"
   domain: aid-sanctions
+  layer: framework
   public_law: "105-277"
   stat: "112 Stat. 2681-761"
   usc: "22 U.S.C. 6501 et seq."
@@ -99,6 +102,7 @@
   year: 2004
   enacted: "2004-01-23"
   domain: aid-sanctions
+  layer: authorizing
   public_law: "108-199"
   stat: "118 Stat. 211"
   usc: "22 U.S.C. 7701 et seq."
@@ -128,6 +132,7 @@
   year: 2019
   enacted: "2019-12-20"
   domain: aid-sanctions
+  layer: authorizing
   public_law: "116-94"
   stat: "133 Stat. 2534"
   usc: "22 U.S.C. 9801 et seq."
@@ -170,6 +175,7 @@
   year: 2019
   enacted: "2019-01-14"
   domain: aid-sanctions
+  layer: authorizing
   public_law: "115-441"
   stat: "132 Stat. 5586"
   usc: "22 U.S.C. 2656 note"
@@ -195,6 +201,7 @@
   year: 2017
   enacted: "2017-10-06"
   domain: aid-sanctions
+  layer: authorizing
   public_law: "115-68"
   stat: "131 Stat. 1202"
   usc: "22 U.S.C. 2152j et seq."
@@ -221,6 +228,7 @@
   year: 1917
   enacted: "1917-10-06"
   domain: aid-sanctions
+  layer: framework
   public_law: "65-91"
   stat: "40 Stat. 411"
   usc: "50 U.S.C. 4301-4341"
@@ -251,6 +259,7 @@
   year: 1977
   enacted: "1977-12-28"
   domain: aid-sanctions
+  layer: framework
   public_law: "95-223"
   stat: "91 Stat. 1625"
   usc: "50 U.S.C. 1701 et seq."
@@ -290,6 +299,7 @@
   year: 1996
   enacted: "1996-08-05"
   domain: aid-sanctions
+  layer: authorizing
   public_law: "104-172"
   stat: "110 Stat. 1541"
   usc: "50 U.S.C. 1701 note"
@@ -319,6 +329,7 @@
   year: 2015
   enacted: "2015-05-22"
   domain: aid-sanctions
+  layer: authorizing
   public_law: "114-17"
   stat: "129 Stat. 201"
   usc: "42 U.S.C. 2160e"
@@ -346,6 +357,7 @@
   year: 1996
   enacted: "1996-03-12"
   domain: aid-sanctions
+  layer: authorizing
   public_law: "104-114"
   stat: "110 Stat. 785"
   usc: "22 U.S.C. 6021 et seq."
@@ -375,6 +387,7 @@
   year: 2016
   enacted: "2016-12-23"
   domain: aid-sanctions
+  layer: authorizing
   public_law: "114-328"
   stat: "130 Stat. 2533"
   usc: "22 U.S.C. 10101 et seq."
@@ -405,6 +418,7 @@
   year: 2017
   enacted: "2017-08-02"
   domain: aid-sanctions
+  layer: authorizing
   public_law: "115-44"
   stat: "131 Stat. 886"
   usc: "22 U.S.C. 9401 et seq."
@@ -433,6 +447,7 @@
   year: 2019
   enacted: "2019-12-20"
   domain: aid-sanctions
+  layer: authorizing
   public_law: "116-92"
   stat: "133 Stat. 1198"
   usc: "22 U.S.C. 8791 note"

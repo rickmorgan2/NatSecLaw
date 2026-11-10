@@ -1,0 +1,107 @@
+---
+title: "Study guide"
+subtitle: "How U.S. national security law is layered, and an eleven-unit path through it."
+toc: true
+page-layout: full
+---
+
+```{r}
+source("R/helpers.R")
+statutes <- load_statutes()
+units    <- load_units()
+edges    <- load_edges()
+```
+
+This guide turns the wiki into a course. It answers two questions: how the laws fit together, and in what order to learn them. Work through the units in order, or jump to the one you need. Progress you tick off is saved in your own browser only, so each person in a study group keeps their own.
+
+## Is there a hierarchy?
+
+Yes, in three senses, and each part of the site shows one of them.
+
+1. **Authority.** Every statute draws on a constitutional power, and many work only through another statute. A sanctions act needs IEEPA, and IEEPA needs a national emergency declared under the National Emergencies Act. The authority stack below sorts every law in the wiki by its place in that chain. The knowledge graph's **Authority layers** view draws the same stack with its connections, and each statute page lists what it **builds on** and what is **built upon** it.
+2. **Codification.** Enacted laws are filed by subject into titles of the U.S. Code: Title 10 for the armed forces, Title 50 for war and national defense, Title 22 for foreign relations, Title 32 for the National Guard. The [title pages](../statutes/title10-usc.qmd) and the [Title 10 and Title 50](../title10-title50.qmd) explainer show this shelf.
+3. **Time.** Each generation of law answered the failures of the one before: the 1947 system, the 1970s reassertion after Vietnam and Watergate, the post-September 11 expansion, and the recent turn to sanctions, cyber, and civilian harm. The [timeline](timeline.qmd) groups the statutes by era.
+
+## The authority stack
+
+Read from the top down. Chips are colored by domain; hover for the year and status, click to open. Repealed and superseded laws are marked with a dagger and disappear when the **Current law only** switch is on.
+
+```{r}
+#| results: asis
+stack <- purrr::map_chr(names(layer_labels), \(l) {
+  s <- statutes |> dplyr::filter(layer == l) |> dplyr::arrange(year)
+  chips <- paste0(
+    "<a class=\"stack-chip\" data-statute=\"", s$id, "\" href=\"../statutes/", s$id, ".html\" ",
+    "style=\"border-left-color:", domain_colors[s$domain], "\" title=\"", s$title, " (", s$year, ", ", s$status_label, ")\">",
+    s$short, "</a>", collapse = ""
+  )
+  paste0(
+    "<div class=\"stack-band stack-", l, "\">",
+    "<div class=\"stack-head\"><span class=\"stack-name\">", layer_labels[[l]], "</span>",
+    "<span class=\"stack-count\">", nrow(s), "</span></div>",
+    "<p class=\"stack-desc\">", layer_desc[[l]], "</p>",
+    "<div class=\"stack-chips\">", chips, "</div></div>"
+  )
+})
+cat("<div class=\"authority-stack\">", stack, "</div>", sep = "\n")
+cat(
+  "<div class=\"graph-legend\"><div><strong>Domain</strong>",
+  paste0("<span class=\"legend-item\"><span class=\"swatch\" style=\"background:", domain_colors,
+         "\"></span>", domain_short, "</span>", collapse = " "),
+  "</div></div>", sep = "\n"
+)
+```
+
+Layer assignments are editorial judgments recorded in each statute's `layer` field, not legal categories. Some laws straddle two layers: the annual defense authorization is listed as a specific authorization, though it often carries framework changes.
+
+## The units
+
+```{r}
+#| results: asis
+rows <- purrr::map_chr(units, \(u) paste0(
+  "<tr><td class=\"unit-num\">", u$number, "</td>",
+  "<td><a href=\"units/", u$id, ".html\"><strong>", u$title, "</strong></a><br><span class=\"unit-q\">", u$question, "</span></td>",
+  "<td class=\"unit-n\">", length(u$core), " core, ", length(u$further), " further</td>",
+  "<td class=\"unit-progress\" data-unit=\"", u$id, "\" data-core=\"", paste(u$core, collapse = " "), "\"></td></tr>"
+))
+cat(
+  "<table class=\"table unit-table\"><thead><tr><th>Unit</th><th>Topic and guiding question</th>",
+  "<th>Readings</th><th>Your progress</th></tr></thead><tbody>", rows, "</tbody></table>",
+  sep = "\n"
+)
+```
+
+```{=html}
+<script>
+// progress per unit from the reading checkboxes saved in this browser
+(function () {
+  function read(id) { try { return localStorage.getItem("wiki-read-" + id) === "1"; } catch (e) { return false; } }
+  function draw() {
+    document.querySelectorAll(".unit-progress").forEach(function (td) {
+      var ids = td.getAttribute("data-core").split(" ");
+      var done = ids.filter(read).length;
+      td.innerHTML = '<span class="bar"><span style="width:' + Math.round(100 * done / ids.length) + '%"></span></span> ' +
+        done + " of " + ids.length;
+    });
+  }
+  document.addEventListener("DOMContentLoaded", draw);
+})();
+</script>
+```
+
+## Study tools
+
+- **[Flashcards](flashcards.qmd).** Every statute and every key term, filterable by unit or domain, with a shuffle and a tally of the cards you know.
+- **[Timeline](timeline.qmd).** The statutes in order, grouped by era.
+- **[Glossary](glossary.qmd).** Every key term from the units in one alphabetical list.
+- **[Knowledge graph](../graph.qmd).** Switch to *Authority layers* to see the stack with its connections; click a domain to isolate it.
+- **[Title 10 and Title 50](../title10-title50.qmd).** The best single page for the military and intelligence divide.
+- **[Member lenses](../members/index.qmd).** How two members of Congress work through these statutes, including on civilian harm.
+
+## Studying as a group
+
+- **Split the reading, then teach back.** Each person takes two or three core readings in a unit and explains them to the group in five minutes, using the statute page's "Why it matters" and "Where it sits" sections.
+- **Trace a chain.** Pick a current event, such as a strike, a sanctions designation, or a Guard deployment, and trace its legal basis down the stack: which constitutional power, which framework statute, which specific authorization, and which provision. The graph's *Authority layers* view helps.
+- **Quiz with the check-yourself questions.** Each unit ends with questions whose answers are hidden. One person asks, the others answer, then open the answer to check.
+- **Read the primary text.** Every reading card links to the official text on GovInfo. For the key statutes, read the actual sections the provisions list cites.
+- **Watch the moving parts.** Statutes whose status note says "Check current status" are where the law is changing. The member lens pages show where the two members are pushing on them.

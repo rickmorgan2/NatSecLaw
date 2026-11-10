@@ -4,6 +4,7 @@
   year: 1986
   enacted: "1986-10-01"
   domain: defense-arms
+  layer: framework
   public_law: "99-433"
   stat: "100 Stat. 992"
   usc: "10 U.S.C. 151 et seq."
@@ -35,6 +36,7 @@
   year: 1986
   enacted: "1986-11-14"
   domain: defense-arms
+  layer: framework
   public_law: "99-661"
   stat: "100 Stat. 3816"
   usc: "10 U.S.C. 167"
@@ -62,6 +64,7 @@
   short: NDAA (annual)
   year: 1961
   domain: defense-arms
+  layer: authorizing
   usc: "Title 10 U.S.C. (various)"
   usc_titles: [10, 50]
   status: in-force
@@ -103,6 +106,7 @@
   year: 2016
   enacted: "2016-12-23"
   domain: defense-arms
+  layer: framework
   public_law: "114-328"
   stat: "130 Stat. 2000"
   usc: "10 U.S.C. 301-386"
@@ -133,6 +137,7 @@
   year: 1950
   enacted: "1950-09-08"
   domain: defense-arms
+  layer: framework
   public_law: "81-774"
   stat: "64 Stat. 798"
   usc: "50 U.S.C. 4501 et seq."
@@ -168,6 +173,7 @@
   year: 1976
   enacted: "1976-06-30"
   domain: defense-arms
+  layer: framework
   public_law: "94-329"
   stat: "90 Stat. 729"
   usc: "22 U.S.C. 2751 et seq."
@@ -198,6 +204,7 @@
   short: Symington-Glenn Amendments
   year: 1976
   domain: defense-arms
+  layer: provision
   usc: "22 U.S.C. 2799aa, 2799aa-1"
   usc_path: "22/2799aa"
   status: in-force
@@ -225,6 +232,7 @@
   year: 1954
   enacted: "1954-08-30"
   domain: defense-arms
+  layer: framework
   public_law: "83-703"
   stat: "68 Stat. 919"
   usc: "42 U.S.C. 2011 et seq."
@@ -255,6 +263,7 @@
   year: 1991
   enacted: "1991-12-12"
   domain: defense-arms
+  layer: authorizing
   public_law: "102-228"
   stat: "105 Stat. 1691"
   usc: "22 U.S.C. 2551 note; 50 U.S.C. 3701 et seq."
@@ -284,6 +293,7 @@
   year: 2018
   enacted: "2018-08-13"
   domain: defense-arms
+  layer: framework
   public_law: "115-232"
   stat: "132 Stat. 1636"
   usc: "50 U.S.C. 4801-4852"
@@ -313,6 +323,7 @@
   year: 2018
   enacted: "2018-08-13"
   domain: defense-arms
+  layer: framework
   public_law: "115-232"
   stat: "132 Stat. 1636"
   usc: "50 U.S.C. 4565"
@@ -341,6 +352,7 @@
   year: 1979
   enacted: "1979-04-10"
   domain: defense-arms
+  layer: authorizing
   public_law: "96-8"
   stat: "93 Stat. 14"
   usc: "22 U.S.C. 3301 et seq."

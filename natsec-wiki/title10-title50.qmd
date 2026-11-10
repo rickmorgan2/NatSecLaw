@@ -13,7 +13,7 @@ title_table <- function(n) {
   statutes |>
     dplyr::filter(purrr::map_lgl(usc_titles, \(x) n %in% x)) |>
     dplyr::transmute(
-      Statute = paste0("[", short, "](statutes/", id, ".qmd)"),
+      Statute = paste0("[", short, "](statutes/", id, ".qmd){.subj}"),
       Year = year,
       Citation = usc,
       Status = status_label

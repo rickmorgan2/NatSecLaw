@@ -3,6 +3,7 @@
   short: Constitution (war powers)
   year: 1788
   domain: foundations
+  layer: constitution
   status: in-force
   status_note: In force. Its allocation of war and foreign affairs powers is settled more by practice than by court rulings.
   summary: >-
@@ -26,6 +27,10 @@
     [[insurrection-1807]].
   tags: [Constitution, separation of powers, commander in chief, declare war, militia clauses]
   sources:
+    - label: "Constitution Annotated (Congress.gov), Article I, Section 8: powers of Congress"
+      url: "https://constitution.congress.gov/browse/article-1/section-8/"
+    - label: "Constitution Annotated (Congress.gov), Article II, Section 2: commander in chief, treaties, appointments"
+      url: "https://constitution.congress.gov/browse/article-2/section-2/"
     - label: "Constitution Annotated (Congress.gov)"
       url: "https://constitution.congress.gov"
     - label: "National Archives, Constitution of the United States: A Transcription"
@@ -36,6 +41,7 @@
   short: Declarations of War
   year: 1812
   domain: foundations
+  layer: authorizing
   status: in-force
   status_note: >-
     No declaration has been enacted since June 1942. Statutes triggered by a
@@ -65,6 +71,7 @@
   year: 1792
   enacted: "1792-05-02"
   domain: foundations
+  layer: framework
   stat: "1 Stat. 264; 1 Stat. 271"
   usc: "10 U.S.C. 246"
   usc_path: "10/246"
@@ -96,6 +103,7 @@
   year: 1794
   enacted: "1794-06-05"
   domain: foundations
+  layer: framework
   stat: "1 Stat. 381"
   usc: "18 U.S.C. 958-962"
   usc_path: "18/960"
@@ -123,6 +131,7 @@
   year: 1798
   enacted: "1798-07-06"
   domain: foundations
+  layer: framework
   stat: "1 Stat. 577"
   usc: "50 U.S.C. 21-24"
   usc_path: "50/21"
@@ -163,6 +172,7 @@
   year: 1799
   enacted: "1799-01-30"
   domain: foundations
+  layer: provision
   stat: "1 Stat. 613"
   usc: "18 U.S.C. 953"
   usc_path: "18/953"
@@ -190,6 +200,7 @@
   year: 1903
   enacted: "1903-01-21"
   domain: foundations
+  layer: framework
   public_law: "57-33"
   stat: "32 Stat. 775"
   usc: "32 U.S.C. 101 et seq."
@@ -217,6 +228,7 @@
   year: 1916
   enacted: "1916-06-03"
   domain: foundations
+  layer: framework
   public_law: "64-85"
   stat: "39 Stat. 166"
   usc: "10 U.S.C. 10101 et seq."
@@ -247,6 +259,7 @@
   year: 1949
   enacted: "1949-08-10"
   domain: defense-arms
+  layer: framework
   public_law: "81-216"
   stat: "63 Stat. 578"
   usc: "10 U.S.C. 111, 151"
@@ -275,6 +288,7 @@
   year: 1941
   enacted: "1941-03-11"
   domain: defense-arms
+  layer: authorizing
   public_law: "77-11"
   stat: "55 Stat. 31"
   status: superseded
@@ -303,6 +317,7 @@
   year: 1951
   enacted: "1951-10-10"
   domain: aid-sanctions
+  layer: authorizing
   public_law: "82-165"
   stat: "65 Stat. 373"
   status: superseded
@@ -328,6 +343,7 @@
   year: 1948
   enacted: "1948-06-24"
   domain: defense-arms
+  layer: framework
   public_law: "80-759"
   stat: "62 Stat. 604"
   usc: "50 U.S.C. 3801 et seq."
@@ -359,6 +375,7 @@
   year: 1956
   enacted: "1956-08-10"
   domain: foundations
+  layer: code
   code_title: 10
   public_law: "84-1028"
   stat: "70A Stat. 1"
@@ -391,6 +408,7 @@
   short: Title 50 U.S.C.
   year: 1926
   domain: foundations
+  layer: code
   code_title: 50
   usc: "50 U.S.C. 1 et seq."
   usc_path: "50"
@@ -422,6 +440,7 @@
   short: Title 22 U.S.C.
   year: 1926
   domain: foundations
+  layer: code
   code_title: 22
   usc: "22 U.S.C. 1 et seq."
   usc_path: "22"
@@ -449,6 +468,7 @@
   year: 1956
   enacted: "1956-08-10"
   domain: foundations
+  layer: code
   code_title: 32
   public_law: "84-1028"
   stat: "70A Stat. 596"

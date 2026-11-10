@@ -6,14 +6,16 @@ $ink-soft:   #4a5668;
 $paper:      #f7f8fa;
 $rule:       #d9dde3;
 $link:       #274b7a;
+$official:   #1f5f8b;
 
 // domain colors, matched to R/helpers.R
-$war-powers:     #b5403a;
-$intelligence:   #3b5b92;
-$aid-sanctions:  #2e7d6b;
-$defense-arms:   #b07a1e;
-$foreign-policy: #6b4c8a;
-$foundations:    #44505f;
+$war-powers:          #b5403a;
+$intelligence:        #3b5b92;
+$aid-sanctions:       #2e7d6b;
+$defense-arms:        #b07a1e;
+$foreign-policy:      #6b4c8a;
+$civilian-protection: #a23b72;
+$foundations:         #44505f;
 
 $body-bg:    $paper;
 $body-color: $ink;
@@ -31,9 +33,20 @@ $font-size-root: 17px;
 
 /*-- scss:rules --*/
 
+$domains: (
+  "war-powers": $war-powers,
+  "intelligence": $intelligence,
+  "aid-sanctions": $aid-sanctions,
+  "defense-arms": $defense-arms,
+  "foreign-policy": $foreign-policy,
+  "civilian-protection": $civilian-protection,
+  "foundations": $foundations
+);
+
 // serif for reading text, sans for navigation and data
 main.content p,
-main.content li {
+main.content li,
+main.content dd {
   font-family: $font-family-serif;
   line-height: 1.6;
 }
@@ -41,7 +54,7 @@ main.content li {
 main.content > p,
 main.content section > p,
 main.content li {
-  max-width: 42rem;
+  max-width: 44rem;
 }
 
 h1.title {
@@ -51,7 +64,7 @@ h1.title {
 
 .subtitle {
   color: $ink-soft;
-  max-width: 44rem;
+  max-width: 46rem;
 }
 
 h2 {
@@ -81,26 +94,33 @@ h2 {
   }
 }
 
-.cite-bar .cite {
+.cite-bar .cite,
+.cite-bar a.cite {
   padding: 0.1rem 0.55rem;
   border: 1px solid $rule;
   border-radius: 3px;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
+  color: $ink;
+  text-decoration: none;
 }
 
-.cite-bar.domain-war-powers     { border-left-color: $war-powers; }
-.cite-bar.domain-intelligence   { border-left-color: $intelligence; }
-.cite-bar.domain-aid-sanctions  { border-left-color: $aid-sanctions; }
-.cite-bar.domain-defense-arms   { border-left-color: $defense-arms; }
-.cite-bar.domain-foreign-policy { border-left-color: $foreign-policy; }
-.cite-bar.domain-foundations    { border-left-color: $foundations; }
+.cite-bar a.cite:hover { border-color: $official; color: $official; }
+
+@each $name, $color in $domains {
+  .cite-bar.domain-#{$name},
+  .domain-chip.domain-#{$name},
+  .reading-card.domain-#{$name},
+  .tl-item.domain-#{$name} { border-left-color: $color; }
+}
 
 // status badge
 .status {
   padding: 0.1rem 0.6rem;
   border-radius: 3px;
   font-weight: 600;
+  font-family: $font-family-sans-serif;
+  font-size: 0.85rem;
   color: #ffffff;
   white-space: nowrap;
 }
@@ -110,6 +130,97 @@ h2 {
 .status-lapsed         { background: #a8501c; }
 .status-repealed       { background: #8c2f39; }
 .status-superseded     { background: #5c6670; }
+
+.layer-badge {
+  padding: 0.05rem 0.55rem;
+  border-radius: 3px;
+  border: 1px dashed $ink-soft;
+  color: $ink-soft;
+  font-family: $font-family-sans-serif;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+// official text buttons on statute pages
+.official-links {
+  margin: 0 0 1.5rem;
+  padding: 0.7rem 1rem;
+  background: #eef4f9;
+  border: 1px solid #c9dbe9;
+  font-family: $font-family-sans-serif;
+
+  p { font-family: $font-family-sans-serif; margin: 0 0 0.4rem; }
+  p:last-child { margin: 0; }
+}
+
+a.btn-official {
+  display: inline-block;
+  margin: 0.15rem 0.4rem 0.15rem 0;
+  padding: 0.3rem 0.8rem;
+  background: $official;
+  color: #ffffff;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  &:hover, &:focus-visible { background: darken($official, 8%); color: #ffffff; }
+}
+
+// repealed and superseded marking, and the site-wide switch
+a.is-historic::after {
+  content: "\2020";
+  margin-left: 0.15em;
+  font-size: 0.8em;
+  color: $ink-soft;
+}
+
+body.hide-historic .historic-row { display: none !important; }
+
+.historic-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0 0.8rem 0 0;
+  color: #ffffff;
+  font-family: $font-family-sans-serif;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  cursor: pointer;
+
+  input { accent-color: #9cc3e4; }
+}
+
+.inline-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  color: $ink-soft;
+  cursor: pointer;
+  margin: 0.3rem 0 0.8rem;
+}
+
+.link-button {
+  background: none;
+  border: 1px solid $rule;
+  border-radius: 3px;
+  padding: 0.25rem 0.7rem;
+  color: $link;
+  font-family: $font-family-sans-serif;
+  font-size: 0.88rem;
+  cursor: pointer;
+
+  &:hover { background: #eef1f5; }
+}
+
+.start-here {
+  padding: 0.8rem 1rem;
+  background: #ffffff;
+  border: 1px solid $rule;
+  border-left: 6px solid $official;
+  margin: 1rem 0;
+}
 
 // domain chips on the home page
 .domain-chips {
@@ -133,11 +244,16 @@ h2 {
   font-size: 0.95rem;
 
   &:hover,
-  &:focus-visible {
+  &:focus-visible,
+  &.active {
     background: #eef1f5;
     color: $ink;
   }
+
+  &.active { outline: 2px solid $ink; }
 }
+
+.chip-clear { border-left-color: $rule; color: $ink-soft; }
 
 .chip-count {
   font-weight: 700;
@@ -146,24 +262,14 @@ h2 {
   text-align: center;
 }
 
-.domain-chip.domain-war-powers     { border-left-color: $war-powers; }
-.domain-chip.domain-intelligence   { border-left-color: $intelligence; }
-.domain-chip.domain-aid-sanctions  { border-left-color: $aid-sanctions; }
-.domain-chip.domain-defense-arms   { border-left-color: $defense-arms; }
-.domain-chip.domain-foreign-policy { border-left-color: $foreign-policy; }
-.domain-chip.domain-foundations    { border-left-color: $foundations; }
-
 // knowledge graph
 .visNetwork {
   background: #ffffff !important;
   border: 1px solid $rule;
-}
-
-.visNetwork {
   position: relative;
 }
 
-// the two menus sit over the top-left corner of the canvas
+// built-in menus on the member lens graph sit over the top-left corner of the canvas
 .visNetwork select.dropdown {
   position: absolute;
   top: 10px;
@@ -177,6 +283,94 @@ h2 {
 
 .visNetwork select[id^="nodeSelect"] { left: 10px; }
 .visNetwork select[id^="selectedBy"] { left: calc(10px + min(46%, 260px) + 8px); }
+
+.graph-controls {
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  margin: 1rem 0 0.6rem;
+  display: grid;
+  gap: 0.5rem;
+
+  label { display: inline-flex; align-items: center; gap: 0.35rem; margin-right: 0.6rem; }
+  select { border: 1px solid $rule; border-radius: 3px; padding: 0.2rem 0.3rem; background: #ffffff; max-width: 16rem; }
+}
+
+.graph-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.graph-row-label { font-weight: 600; width: 4.5rem; }
+
+.graph-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid $rule;
+  border-radius: 999px;
+  background: #ffffff;
+  color: $ink;
+  cursor: pointer;
+
+  &:hover { background: #eef1f5; }
+  &.active { border-color: $ink; background: #e9edf3; box-shadow: inset 0 0 0 1px $ink; }
+  .chip-n { color: $ink-soft; font-size: 0.8rem; }
+}
+
+.view-switch {
+  display: inline-flex;
+  border: 1px solid $rule;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-right: 0.6rem;
+
+  button {
+    border: 0;
+    background: #ffffff;
+    padding: 0.25rem 0.7rem;
+    color: $ink;
+    cursor: pointer;
+  }
+
+  button.active { background: $ink; color: #ffffff; }
+}
+
+.graph-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 19rem;
+  gap: 1rem;
+  align-items: start;
+}
+
+@media (max-width: 991px) {
+  .graph-wrap { grid-template-columns: 1fr; }
+}
+
+.graph-info {
+  background: #ffffff;
+  border: 1px solid $rule;
+  padding: 0.9rem 1rem;
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  position: sticky;
+  top: 4.5rem;
+
+  p { font-family: $font-family-serif; font-size: 0.95rem; }
+  .graph-info-empty { color: $ink-soft; font-style: italic; }
+  .graph-info-head { display: flex; gap: 0.5rem; align-items: baseline; font-size: 1.05rem; }
+  .graph-info-meta { color: $ink-soft; margin: 0.3rem 0 0.6rem; }
+  .graph-info-links { font-family: $font-family-sans-serif; font-size: 0.88rem; }
+  .swatch { flex: none; }
+}
+
+.conn-status {
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  color: $ink-soft;
+}
 
 .graph-legend {
   font-family: $font-family-sans-serif;
@@ -206,7 +400,7 @@ h2 {
   white-space: nowrap;
 }
 
-.legend-item .swatch {
+.swatch {
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
@@ -235,6 +429,222 @@ h2 {
   display: inline-block;
   width: 1.6rem;
   border-top: 3px solid;
+}
+
+// study guide: the authority stack
+.authority-stack {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.stack-band {
+  background: #ffffff;
+  border: 1px solid $rule;
+  border-left: 8px solid $ink;
+  padding: 0.7rem 1rem 0.8rem;
+}
+
+.stack-constitution { border-left-color: #1b2a41; }
+.stack-framework    { border-left-color: #3d5476; }
+.stack-authorizing  { border-left-color: #6a7f9e; }
+.stack-provision    { border-left-color: #a3b2c7; }
+.stack-code         { border-left-color: #cfd6df; background: #fbfbfc; }
+
+.stack-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-family: $font-family-sans-serif;
+
+  .stack-name { font-weight: 700; font-size: 1.05rem; }
+  .stack-count { color: $ink-soft; font-size: 0.85rem; }
+}
+
+main.content p.stack-desc {
+  margin: 0.2rem 0 0.5rem;
+  color: $ink-soft;
+  font-size: 0.93rem;
+  max-width: 60rem;
+}
+
+.stack-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+a.stack-chip {
+  padding: 0.12rem 0.5rem;
+  border: 1px solid $rule;
+  border-left: 4px solid $ink;
+  border-radius: 2px;
+  background: #fafbfc;
+  color: $ink;
+  font-family: $font-family-sans-serif;
+  font-size: 0.82rem;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover { background: #eef1f5; }
+}
+
+// study guide: units table and reading cards
+.unit-table {
+  td { vertical-align: top; }
+  .unit-num { font-weight: 700; font-size: 1.2rem; width: 3rem; }
+  .unit-q { color: $ink-soft; font-family: $font-family-serif; }
+  .unit-n, .unit-progress { white-space: nowrap; font-size: 0.85rem; }
+}
+
+.bar {
+  display: inline-block;
+  width: 5rem;
+  height: 0.45rem;
+  background: $rule;
+  border-radius: 999px;
+  vertical-align: middle;
+  overflow: hidden;
+
+  span { display: block; height: 100%; background: #2f6f4f; }
+}
+
+.reading-card {
+  background: #ffffff;
+  border: 1px solid $rule;
+  border-left: 6px solid $ink;
+  padding: 0.7rem 1rem;
+  margin: 0 0 0.7rem;
+
+  p { margin: 0.2rem 0; }
+  p:first-child a { font-weight: 700; font-family: $font-family-sans-serif; font-size: 1.05rem; }
+  .reading-year { color: $ink-soft; font-family: $font-family-sans-serif; margin: 0 0.3rem; }
+  .reading-links { font-family: $font-family-sans-serif; font-size: 0.88rem; }
+}
+
+.read-check {
+  float: right;
+  font-family: $font-family-sans-serif;
+  font-size: 0.85rem;
+  color: $ink-soft;
+  cursor: pointer;
+
+  input { margin-right: 0.3rem; }
+}
+
+.unit-nav {
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  border-top: 1px solid $rule;
+  border-bottom: 1px solid $rule;
+}
+
+dl dt { font-family: $font-family-sans-serif; margin-top: 0.8rem; }
+
+// flashcards
+.fc-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  align-items: center;
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+
+  select { border: 1px solid $rule; border-radius: 3px; padding: 0.2rem; background: #ffffff; max-width: 18rem; }
+}
+
+.fc-stage { max-width: 46rem; }
+
+.fc-card {
+  min-height: 16rem;
+  background: #ffffff;
+  border: 1px solid $rule;
+  border-top: 8px solid $ink;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(27, 42, 65, 0.08);
+  padding: 1.6rem 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+
+  &:focus-visible { box-shadow: 0 0 0 3px #9cc3e4; }
+  &.flipped { text-align: left; justify-content: flex-start; }
+  &.is-known { border-top-style: double; }
+
+  .fc-title { font-family: $font-family-sans-serif; font-size: 1.8rem; font-weight: 700; }
+  .fc-hint { color: $ink-soft; margin-top: 0.4rem; font-family: $font-family-sans-serif; }
+  .fc-tap { color: #9aa3b0; font-size: 0.8rem; margin-top: 1.5rem; font-family: $font-family-sans-serif; }
+  .fc-back p { font-family: $font-family-serif; font-size: 1.05rem; }
+  .fc-meta { color: $ink-soft; font-size: 0.9rem !important; font-family: $font-family-sans-serif !important; }
+  .fc-links { font-family: $font-family-sans-serif !important; font-size: 0.9rem !important; }
+}
+
+@each $name, $color in $domains {
+  .fc-card[data-domain="#{$name}"] { border-top-color: $color; }
+}
+
+.fc-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0.8rem 0 0.3rem;
+
+  button {
+    border: 1px solid $rule;
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 0.35rem 0.9rem;
+    font-family: $font-family-sans-serif;
+    cursor: pointer;
+  }
+
+  .fc-know { background: #2f6f4f; color: #ffffff; border-color: #2f6f4f; }
+  .fc-again { background: #fff6e8; border-color: #e3c690; }
+}
+
+.fc-status { text-align: center; color: $ink-soft; font-family: $font-family-sans-serif; font-size: 0.88rem; }
+
+// timeline
+.timeline {
+  border-left: 2px solid $rule;
+  margin: 0.5rem 0 1.5rem 0.5rem;
+}
+
+.tl-item {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 0.6rem;
+  padding: 0.45rem 0 0.45rem 0.8rem;
+  border-left: 4px solid $ink;
+  margin-left: -3px;
+  margin-bottom: 0.35rem;
+  background: #ffffff;
+
+  .tl-year { font-family: $font-family-sans-serif; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .tl-body a { text-decoration: none; }
+  .tl-text { font-family: $font-family-serif; color: $ink-soft; font-size: 0.95rem; margin-top: 0.15rem; }
+}
+
+// member lenses
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
+}
+
+.member-card {
+  background: #ffffff;
+  border: 1px solid $rule;
+  border-top: 6px solid $ink;
+  padding: 0.6rem 1rem;
+
+  h3 { margin-top: 0.3rem; }
 }
 
 // tables

@@ -4,6 +4,7 @@
   year: 1947
   enacted: "1947-07-26"
   domain: intelligence
+  layer: framework
   public_law: "80-253"
   stat: "61 Stat. 495"
   usc: "50 U.S.C. 3001 et seq."
@@ -35,6 +36,7 @@
   year: 1949
   enacted: "1949-06-20"
   domain: intelligence
+  layer: framework
   public_law: "81-110"
   stat: "63 Stat. 208"
   usc: "50 U.S.C. 3501-3523"
@@ -61,6 +63,7 @@
   year: 1917
   enacted: "1917-06-15"
   domain: intelligence
+  layer: framework
   public_law: "65-24"
   stat: "40 Stat. 217"
   usc: "18 U.S.C. 792-798"
@@ -90,6 +93,7 @@
   year: 1974
   enacted: "1974-12-30"
   domain: intelligence
+  layer: provision
   public_law: "93-559"
   stat: "88 Stat. 1795"
   usc: "formerly 22 U.S.C. 2422"
@@ -118,6 +122,7 @@
   year: 1978
   enacted: "1978-10-25"
   domain: intelligence
+  layer: framework
   public_law: "95-511"
   stat: "92 Stat. 1783"
   usc: "50 U.S.C. 1801 et seq."
@@ -149,6 +154,7 @@
   year: 1980
   enacted: "1980-10-14"
   domain: intelligence
+  layer: framework
   public_law: "96-450"
   stat: "94 Stat. 1975"
   usc: "50 U.S.C. 3091-3093"
@@ -179,6 +185,7 @@
   year: 1980
   enacted: "1980-10-15"
   domain: intelligence
+  layer: framework
   public_law: "96-456"
   stat: "94 Stat. 2025"
   usc: "18 U.S.C. App. 3"
@@ -205,6 +212,7 @@
   year: 2001
   enacted: "2001-10-26"
   domain: intelligence
+  layer: authorizing
   public_law: "107-56"
   stat: "115 Stat. 272"
   usc_titles: [50, 18, 31]
@@ -236,6 +244,7 @@
   year: 2002
   enacted: "2002-11-25"
   domain: intelligence
+  layer: framework
   public_law: "107-296"
   stat: "116 Stat. 2135"
   usc: "6 U.S.C. 101 et seq."
@@ -265,6 +274,7 @@
   year: 2004
   enacted: "2004-12-17"
   domain: intelligence
+  layer: framework
   public_law: "108-458"
   stat: "118 Stat. 3638"
   usc: "50 U.S.C. 3023 et seq."
@@ -296,6 +306,7 @@
   year: 2008
   enacted: "2008-07-10"
   domain: intelligence
+  layer: authorizing
   public_law: "110-261"
   stat: "122 Stat. 2436"
   usc: "50 U.S.C. 1881-1881g"
@@ -338,6 +349,7 @@
   year: 2015
   enacted: "2015-06-02"
   domain: intelligence
+  layer: authorizing
   public_law: "114-23"
   stat: "129 Stat. 268"
   usc_titles: [50]
@@ -366,6 +378,7 @@
   year: 2024
   enacted: "2024-04-20"
   domain: intelligence
+  layer: authorizing
   public_law: "118-49"
   stat: "138 Stat. 862"
   usc_titles: [50]
@@ -400,6 +413,7 @@
   year: 2015
   enacted: "2015-12-18"
   domain: intelligence
+  layer: authorizing
   public_law: "114-113"
   stat: "129 Stat. 2935"
   usc: "6 U.S.C. 1501-1510"

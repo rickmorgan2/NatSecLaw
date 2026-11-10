@@ -1,0 +1,141 @@
+---
+title: "Flashcards"
+subtitle: "Every statute and every key term. Click a card or press the space bar to flip it."
+toc: false
+---
+
+```{r}
+source("R/helpers.R")
+statutes <- load_statutes()
+units    <- load_units()
+links    <- official_links(statutes)
+
+unit_of <- function(id) {
+  hits <- purrr::keep(units, \(u) id %in% c(u$core, u$further))
+  paste(purrr::map_chr(hits, "id"), collapse = " ")
+}
+
+statute_cards <- statutes |>
+  dplyr::left_join(dplyr::select(links, id, enact_link, code_link), by = "id") |>
+  dplyr::transmute(
+    kind = "statute", id, front = short, hint = paste(year, "·", domain_name),
+    back = plain_wiki(summary, statutes),
+    meta = paste(status_label, "·", layer_label, dplyr::if_else(is.na(usc), "", paste("·", usc))),
+    domain, historic, url = paste0("../statutes/", id, ".html"),
+    official = dplyr::coalesce(enact_link, code_link),
+    units = purrr::map_chr(id, unit_of)
+  )
+
+term_cards <- purrr::map(units, \(u) purrr::map(u$terms, \(t) tibble::tibble(
+  kind = "term", id = paste0(u$id, "-", tolower(gsub("[^A-Za-z]+", "-", t$term))),
+  front = t$term, hint = paste0("Key term, Unit ", u$number), back = t$definition,
+  meta = u$title, domain = "", historic = FALSE, url = paste0("units/", u$id, ".html"),
+  official = NA_character_, units = u$id
+)) |> purrr::list_rbind()) |>
+  purrr::list_rbind()
+
+cards <- dplyr::bind_rows(statute_cards, term_cards)
+```
+
+```{r}
+#| results: asis
+unit_opts <- paste0("<option value=\"", purrr::map_chr(units, "id"), "\">Unit ", purrr::map_int(units, "number"), ": ",
+                    purrr::map_chr(units, "title"), "</option>", collapse = "")
+dom_opts <- paste0("<option value=\"", names(domain_short), "\">", domain_short, "</option>", collapse = "")
+cat(
+  "<div class=\"fc-controls\">",
+  "<label>Deck <select id=\"fc-kind\"><option value=\"all\">Statutes and terms</option>",
+  "<option value=\"statute\">Statutes</option><option value=\"term\">Key terms</option></select></label>",
+  "<label>Unit <select id=\"fc-unit\"><option value=\"\">All units</option>", unit_opts, "</select></label>",
+  "<label>Domain <select id=\"fc-domain\"><option value=\"\">All domains</option>", dom_opts, "</select></label>",
+  "<label class=\"inline-toggle\"><input type=\"checkbox\" id=\"fc-unknown\"> Only cards I don't know yet</label>",
+  "<button type=\"button\" id=\"fc-shuffle\" class=\"link-button\">Shuffle</button>",
+  "</div>",
+  "<div class=\"fc-stage\">",
+  "<div id=\"fc-card\" class=\"fc-card\" tabindex=\"0\" role=\"button\" aria-label=\"Flip card\"></div>",
+  "<div class=\"fc-buttons\">",
+  "<button type=\"button\" id=\"fc-prev\">Previous</button>",
+  "<button type=\"button\" id=\"fc-again\" class=\"fc-again\">Still learning</button>",
+  "<button type=\"button\" id=\"fc-know\" class=\"fc-know\">I know this</button>",
+  "<button type=\"button\" id=\"fc-next\">Next</button>",
+  "</div>",
+  "<p id=\"fc-status\" class=\"fc-status\"></p>",
+  "</div>",
+  "<script>window.FLASHCARDS = ", jsonlite::toJSON(cards, na = "null"), ";</script>",
+  sep = "\n"
+)
+```
+
+```{=html}
+<script>
+(function () {
+  var all = window.FLASHCARDS || [];
+  var deck = [], i = 0, flipped = false;
+  function known(id) { try { return localStorage.getItem("wiki-card-" + id) === "1"; } catch (e) { return false; } }
+  function setKnown(id, v) { try { localStorage.setItem("wiki-card-" + id, v ? "1" : "0"); } catch (e) {} }
+  function val(id) { return document.getElementById(id).value; }
+
+  function build(shuffle) {
+    var kind = val("fc-kind"), unit = val("fc-unit"), dom = val("fc-domain");
+    var onlyUnknown = document.getElementById("fc-unknown").checked;
+    var hide = window.wikiHideHistoric && window.wikiHideHistoric();
+    deck = all.filter(function (c) {
+      if (kind !== "all" && c.kind !== kind) return false;
+      if (unit && (" " + c.units + " ").indexOf(" " + unit + " ") < 0) return false;
+      if (dom && c.domain !== dom) return false;
+      if (hide && c.historic) return false;
+      if (onlyUnknown && known(c.id)) return false;
+      return true;
+    });
+    if (shuffle) for (var k = deck.length - 1; k > 0; k--) {
+      var j = Math.floor(Math.random() * (k + 1)); var t = deck[k]; deck[k] = deck[j]; deck[j] = t;
+    }
+    i = 0; flipped = false; draw();
+  }
+
+  function draw() {
+    var card = document.getElementById("fc-card");
+    var status = document.getElementById("fc-status");
+    var knownCount = deck.filter(function (c) { return known(c.id); }).length;
+    if (!deck.length) {
+      card.innerHTML = '<div class="fc-front"><p>No cards match. Change the filters above.</p></div>';
+      status.textContent = ""; return;
+    }
+    var c = deck[i];
+    card.classList.toggle("flipped", flipped);
+    card.classList.toggle("is-known", known(c.id));
+    card.setAttribute("data-domain", c.domain || "");
+    card.innerHTML = flipped
+      ? '<div class="fc-back"><p>' + c.back + '</p><p class="fc-meta">' + c.meta + '</p><p class="fc-links"><a href="' + c.url + '">Open the page</a>' +
+        (c.official ? ' · <a href="' + c.official + '" target="_blank" rel="noopener">Official text</a>' : '') + '</p></div>'
+      : '<div class="fc-front"><div class="fc-title">' + c.front + '</div><div class="fc-hint">' + c.hint + '</div><div class="fc-tap">Click or press space to flip</div></div>';
+    status.textContent = "Card " + (i + 1) + " of " + deck.length + " · You know " + knownCount + " of these";
+  }
+
+  function move(d) { if (!deck.length) return; i = (i + d + deck.length) % deck.length; flipped = false; draw(); }
+  function flip() { flipped = !flipped; draw(); }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    ["fc-kind", "fc-unit", "fc-domain", "fc-unknown"].forEach(function (id) {
+      document.getElementById(id).addEventListener("change", function () { build(false); });
+    });
+    document.getElementById("fc-shuffle").addEventListener("click", function () { build(true); });
+    document.getElementById("fc-card").addEventListener("click", function (e) { if (e.target.tagName !== "A") flip(); });
+    document.getElementById("fc-prev").addEventListener("click", function () { move(-1); });
+    document.getElementById("fc-next").addEventListener("click", function () { move(1); });
+    document.getElementById("fc-know").addEventListener("click", function () { if (deck.length) { setKnown(deck[i].id, true); move(1); } });
+    document.getElementById("fc-again").addEventListener("click", function () { if (deck.length) { setKnown(deck[i].id, false); move(1); } });
+    document.addEventListener("keydown", function (e) {
+      if (e.target.tagName === "SELECT" || e.target.tagName === "INPUT") return;
+      if (e.key === " ") { e.preventDefault(); flip(); }
+      if (e.key === "ArrowRight") move(1);
+      if (e.key === "ArrowLeft") move(-1);
+    });
+    document.addEventListener("wiki:historic", function () { build(false); });
+    build(false);
+  });
+})();
+</script>
+```
+
+Your tally is saved in this browser only. Keyboard: space flips, left and right arrows move.

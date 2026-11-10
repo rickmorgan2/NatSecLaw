@@ -2,18 +2,25 @@ project:
   type: website
   # GitHub Pages serves the site from the docs/ folder
   output-dir: docs
-  # regenerate statute pages and manifest CSVs from data/ before each render
+  # R code in every page runs from the project root, so pages in subfolders can source R/helpers.R
+  execute-dir: project
+  # regenerate statute, member, and study pages and the manifests from data/ before each render
   pre-render: R/build_pages.R
+  # copy the archived first version into docs/v1
+  post-render: R/post_render.R
   render:
     - "*.qmd"
     - "statutes/*.qmd"
+    - "members/*.qmd"
+    - "study/*.qmd"
+    - "study/units/*.qmd"
   resources:
     - "data/*.csv"
     - ".nojekyll"
 
 website:
   title: "U.S. National Security Legislation"
-  description: "A wiki and knowledge graph of key U.S. national security and foreign policy statutes."
+  description: "A wiki, study guide, and knowledge graph of key U.S. national security and foreign policy statutes."
   search:
     location: navbar
     type: overlay
@@ -21,19 +28,39 @@ website:
     left:
       - text: "Statutes"
         href: index.qmd
+      - text: "Study guide"
+        menu:
+          - text: "Overview and the authority stack"
+            href: study/index.qmd
+          - text: "Flashcards"
+            href: study/flashcards.qmd
+          - text: "Timeline"
+            href: study/timeline.qmd
+          - text: "Glossary"
+            href: study/glossary.qmd
       - text: "Knowledge graph"
         href: graph.qmd
       - text: "Title 10 and Title 50"
         href: title10-title50.qmd
-      - text: "Member lens"
-        href: member.qmd
-      - text: "Manifest"
-        href: manifest.qmd
+      - text: "Members"
+        menu:
+          - text: "Compare the two lenses"
+            href: members/index.qmd
+          - text: "Rep. Jason Crow (CO-06)"
+            href: members/crow.qmd
+          - text: "Rep. Sara Jacobs (CA-51)"
+            href: members/jacobs.qmd
+      - text: "Sources"
+        href: sources.qmd
       - text: "About"
-        href: about.qmd
+        menu:
+          - text: "About this wiki"
+            href: about.qmd
+          - text: "Manifest"
+            href: manifest.qmd
   page-footer:
-    left: "Independent reference project. Not affiliated with any congressional office. Not legal advice; check citations against the linked primary sources."
-    right: "Content last reviewed November 10, 2026"
+    left: "Independent reference project. Not affiliated with any congressional office. Not legal advice; check citations against the linked official text."
+    right: "Version 2. Content last reviewed November 10, 2026"
 
 format:
   html:
@@ -44,6 +71,9 @@ format:
     smooth-scroll: true
     # no MathJax download, so the site works offline
     html-math-method: plain
+    include-after-body:
+      - _includes/wiki-data.html
+      - _includes/site.html
 
 execute:
   echo: false

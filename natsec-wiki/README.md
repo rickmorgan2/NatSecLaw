@@ -1,79 +1,68 @@
-# U.S. National Security Legislation Wiki
+# U.S. National Security Legislation Wiki (version 2)
 
-A Quarto website: one wiki page per statute, an interactive knowledge graph of how the statutes relate, and a manifest of every document and source link.
+A Quarto website and study guide: one wiki page per statute, an eleven-unit curriculum, an interactive knowledge graph, member lenses for Rep. Jason Crow (CO-06) and Rep. Sara Jacobs (CA-51), and a Sources page listing everything the wiki draws on. Every statute links to its official text on GovInfo.
+
+Version 1 is archived unchanged in `../archive/natsec-wiki-v1/` and published under `v1/`.
 
 ## Run it locally
 
-Requirements: [Quarto](https://quarto.org) 1.4 or later, R 4.1 or later, and these packages:
+Requirements: R 4.1 or later and [Quarto](https://quarto.org) 1.4 or later. The copy of Quarto bundled with RStudio or Positron is enough; it does not need to be on your PATH. `R/deploy.R` finds Quarto and installs any missing R packages.
 
-```r
-install.packages(c("yaml", "dplyr", "purrr", "readr", "stringr", "tibble", "knitr", "rmarkdown", "DT", "visNetwork"))
-```
-
-From the project folder:
+From this folder:
 
 ```bash
-quarto preview    # builds the site and serves it at a local address with live reload
-quarto render     # builds the static site into docs/
+Rscript R/deploy.R          # render, then serve at http://localhost:4321 with live reload
+Rscript R/deploy.R render   # build the static site into docs/
+Rscript R/deploy.R serve    # serve the existing docs/ as static files, no rebuild
+Rscript R/deploy.R zip      # render, then write natsec-wiki-site.zip for offline sharing
 ```
 
-A prebuilt copy is already in `docs/`. To browse it without rebuilding, serve that folder (full-text search needs a local server and will not work from a `file://` address):
+From RStudio or Positron, `source("R/deploy.R")` runs the preview; set `options(deploy.mode = "render")` first for another mode. Set `QUARTO_PATH` to force a specific Quarto binary, or `WIKI_PORT` to change the port.
 
-```r
-servr::httd("docs")
-```
+Stop `serve` before running `render`: on Windows the server holds `docs/` open and Quarto cannot replace it.
 
-The site makes no network requests, so it works offline. Links to primary sources need a connection.
+Full-text search needs a server, so it does not work when `docs/index.html` is opened straight from disk (for example from the zip). Everything else does. The site makes no network requests, so it works offline; links to official sources need a connection.
 
 ## Host it on GitHub Pages
 
-The site is static, so GitHub Pages can serve it for free. The project renders into `docs/`, which Pages can publish directly, so no build runs on GitHub and it needs no R setup there.
+The workflow `.github/workflows/pages.yml` at the repo root publishes `natsec-wiki/docs`. No R runs on GitHub; it publishes the `docs/` you built locally, including `docs/v1`.
 
-1. Create a new repository on github.com (no README, no .gitignore).
-2. Put this folder under version control and push it. With GitHub Desktop: File, Add Local Repository, choose this folder, then Publish. From a terminal:
+One-time setup: on github.com open the repository's Settings, then Pages, and under "Build and deployment" set Source to "GitHub Actions". The site is then live at `https://rickmorgan2.github.io/house-knowledge/`. Pages on a private repository needs a paid GitHub plan; on a free account the repository must be public.
 
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial site"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
-   git push -u origin main
-   ```
+To update the site: edit files in `data/`, run `Rscript R/deploy.R render`, then commit (including `docs/`) and push. The workflow runs on any push to `main` that changes `docs/`, and can also be started by hand from the Actions tab.
 
-3. On github.com open the repository's Settings, then Pages. Under "Build and deployment" choose "Deploy from a branch", branch `main`, folder `/docs`, and save.
-4. After a minute or two the site is live at `https://YOUR-USERNAME.github.io/YOUR-REPO/`.
-
-To update the site: edit files in `data/`, run `quarto render`, then commit and push. The `docs/` folder must be committed, because it is what Pages serves.
-
-Before publishing, note that a GitHub Pages site is public even when it is built from a private repository, unless the account is on an Enterprise plan with private Pages. Anyone with the address can read it, so check citations first and keep the "independent reference" notices in place.
-
-## Tailor it to a member
-
-`member.qmd` (the "Member lens" page) is generated from `data/member.yml`: committees, initiatives, and district interests, each listing the statute IDs it touches. Edit that file to update the lens or to point the wiki at a different member.
+A GitHub Pages site is public even when it is built from a private repository, unless the account is on an Enterprise plan with private Pages. Keep the "independent reference" notices in place.
 
 ## How it is organized
 
 | Path | What it is |
 |---|---|
-| `data/statutes/*.yml` | All wiki content. One entry per statute, in files grouped by domain, plus one for Title 10 operational authorities and one for foundations. |
+| `data/statutes/*.yml` | All statute content, one entry per statute, in files grouped by domain. Each entry has a `layer`. |
 | `data/edges.csv` | The knowledge graph. One row per relationship. |
-| `data/reference_sources.csv` | General reference sources shown in the manifest. |
-| `data/member.yml` | The member the wiki is tailored to. Drives the Member lens page. |
-| `R/helpers.R` | Data loading, vocabularies, colors, citation link builders. |
-| `R/build_pages.R` | Validates the data, writes `statutes/*.qmd` and the manifest CSVs. Quarto runs it before every render. |
-| `statutes/*.qmd` | Generated pages. Do not edit by hand. |
-| `index.qmd`, `graph.qmd`, `title10-title50.qmd`, `member.qmd`, `manifest.qmd`, `about.qmd` | Top-level pages. |
+| `data/members/*.yml` | One file per member lens. Add a file to add a member. |
+| `data/study/units.yml` | The study guide's units. |
+| `data/reference_sources.csv`, `data/research_sources.csv` | General references, and sources consulted for this edition. |
+| `R/helpers.R` | Data loading, vocabularies, layers, eras, colors, official link builders. |
+| `R/build_pages.R` | Validates the data, writes the statute, member, and unit pages, the site data, and the manifests. Quarto runs it before every render. |
+| `R/post_render.R` | Copies the archived version 1 into `docs/v1` after a full render. |
+| `R/deploy.R` | Local runner: finds Quarto, installs packages, then previews, renders, serves, or zips the site. |
+| `assets/graph.js` | The knowledge graph's controls (domain focus, layered view, linked table). |
+| `_includes/site.html` | Site-wide script: the "Current law only" switch, historic link marks, study progress. |
+| `statutes/*.qmd`, `members/<slug>.qmd`, `study/units/*.qmd` | Generated pages. Do not edit by hand. |
+| `members/_lens.qmd`, `members/index.qmd` | The shared member lens body and the comparison page. |
+| `study/index.qmd`, `study/flashcards.qmd`, `study/timeline.qmd`, `study/glossary.qmd` | Study guide pages. |
+| `index.qmd`, `graph.qmd`, `title10-title50.qmd`, `sources.qmd`, `manifest.qmd`, `about.qmd` | Top-level pages. |
 | `docs/` | Generated site. Commit it; GitHub Pages serves it. |
 | `styles.scss` | Theme. Domain colors here must match `R/helpers.R`. |
 | `CLAUDE_README.md` | Context file for working on the project in a Claude session. |
 
 ## Add or change a statute
 
-1. Copy an existing entry in `data/statutes/` and edit it.
+1. Copy an existing entry in `data/statutes/` and edit it, including `layer`.
 2. Add rows to `data/edges.csv`.
-3. Run `quarto preview`. The build stops with a named error if an ID, domain, status, relationship, or `[[wiki link]]` is not recognized.
+3. Add the statute to a unit in `data/study/units.yml`.
+4. Run `Rscript R/deploy.R`. The build stops with a named error if an ID, domain, layer, status, relationship, or `[[wiki link]]` is not recognized.
 
 ## Accuracy
 
-Summaries were drafted with Claude and reviewed on November 10, 2026. Recent status changes were checked against current reporting. Citations and section numbers were not each checked against the primary text, and the generated GovInfo and Cornell links were not individually tested. Verify before citing. Not legal advice.
+Summaries were drafted with Claude and reviewed on November 10, 2026. Recent status changes were checked against current reporting. The civilian harm entries were checked against the GovInfo text of the U.S. Code and bill numbers against GovInfo bill status records. Other citations and section numbers were not each checked against the primary text. Every source link was requested on November 10, 2026: GovInfo, House, and other links resolved; Congress.gov refuses automated requests, so its links follow its documented URL pattern but were not fetched. Verify before citing. Not legal advice.

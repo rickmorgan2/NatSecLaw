@@ -1,0 +1,78 @@
+---
+title: "Member lenses"
+subtitle: "Two members of Congress, their committee seats and records, and the statutes they work through."
+toc: true
+page-layout: full
+---
+
+```{r}
+source("R/helpers.R")
+statutes <- load_statutes()
+members  <- load_members()
+short_of <- stats::setNames(statutes$short, statutes$id)
+
+lens_ids <- function(m) unique(unlist(purrr::map(c(m$committees, m$initiatives, m$equities), "statutes")))
+link_ids <- function(ids) paste(statute_md(ids, short_of, prefix = "../statutes/", subject = FALSE), collapse = ", ")
+```
+
+Each lens maps one member's committee seats, legislative record, and district interests onto the wiki. They are independent references built from public sources, not affiliated with either office, and they describe the record without taking a position on it.
+
+## Side by side
+
+```{r}
+#| results: asis
+cards <- purrr::map_chr(members, \(m) paste0(
+  "::: {.member-card}\n",
+  "### [", m$name, "](", m$slug, ".qmd)\n\n",
+  m$seat, ". ", m$party, ".\n\n",
+  "**Committees.** ", paste(purrr::map_chr(m$committees, \(c) paste0(c$name, " (", sub("\\..*$", "", c$role), ")")), collapse = "; "), ".\n\n",
+  "**Record items mapped.** ", length(m$initiatives), ". **Statutes touched.** ", length(lens_ids(m)), ".\n",
+  ":::\n"
+))
+cat("::: {.member-grid}\n", cards, ":::\n", sep = "\n")
+```
+
+## Where the lenses overlap
+
+```{r}
+#| results: asis
+ids <- purrr::map(members, lens_ids)
+both <- Reduce(intersect, ids)
+cat("**Statutes in both lenses** (", length(both), "): ", link_ids(both), ".\n\n", sep = "")
+for (m in members) {
+  only <- setdiff(ids[[m$slug]], unlist(ids[names(ids) != m$slug]))
+  cat("**Only in ", m$name, "'s lens** (", length(only), "): ", link_ids(only), ".\n\n", sep = "")
+}
+```
+
+## Shared work on civilian harm
+
+Both members co-founded and co-chair the Protection of Civilians in Conflict Caucus, launched in August 2022, and much of their oversight on civilian harm is joint. The table lists record items that appear in both lenses.
+
+```{r}
+shared <- purrr::map(members, \(m) purrr::map_chr(m$initiatives, "id"))
+common <- Reduce(intersect, shared)
+m1 <- members[[1]]
+purrr::keep(m1$initiatives, \(x) x$id %in% common) |>
+  purrr::map(\(x) tibble::tibble(Date = x$date, Item = x$title, Type = x$kind,
+                                 `Existing law` = link_ids(unlist(x$statutes)),
+                                 Source = paste0("[", x$source$label, "](", x$source$url, ")"))) |>
+  purrr::list_rbind() |>
+  dplyr::arrange(dplyr::desc(Date)) |>
+  knitr::kable(format = "pipe")
+```
+
+The civilian harm statutes themselves are covered in [Unit 11 of the study guide](../study/units/civilian-harm.qmd).
+
+## Committees and the code titles they oversee
+
+```{r}
+purrr::map(members, \(m) purrr::map(m$committees, \(c) tibble::tibble(
+  Member = m$name, Committee = c$name, Role = c$role,
+  `Code titles` = paste(c$code_titles, collapse = ", ")
+)) |> purrr::list_rbind()) |>
+  purrr::list_rbind() |>
+  knitr::kable(format = "pipe")
+```
+
+To add a member, copy a file in `data/members/`, change the `slug`, and render. The build checks that every statute ID exists.

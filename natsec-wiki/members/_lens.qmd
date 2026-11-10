@@ -1,0 +1,186 @@
+```{r}
+# shared body for every member page; the page's params$slug picks the member
+source("R/helpers.R")
+statutes <- load_statutes()
+edges    <- load_edges()
+m        <- load_members()[[params$slug]]
+short_of <- stats::setNames(statutes$short, statutes$id)
+links    <- official_links(statutes)
+
+s_links <- function(ids, subject = FALSE) {
+  paste(statute_md(unlist(ids), short_of, prefix = "../statutes/", subject = subject), collapse = ", ")
+}
+src <- function(x) paste0("[", x$label, "](", x$url, ")")
+bill <- function(x) if (is.null(x$bill)) "" else
+  paste0(" [", bill_label(x$bill$type, x$bill$number), "](", bill_url(x$bill$congress, x$bill$type, x$bill$number), ")")
+```
+
+```{r}
+#| results: asis
+cat(m$seat, ". ", m$party, ".\n\n", m$background, "\n\n", sep = "")
+cat(
+  "::: {.callout-note}\n",
+  "This page is an independent reference built from public sources. It is not affiliated with, ",
+  "endorsed by, or produced for the member's office. It describes committee roles and the public record ",
+  "so the wiki can be read from that vantage point, and it takes no position on them. ",
+  "Bill numbers link to Congress.gov; statements link to the member's official site where one exists. ",
+  "Last reviewed ", m$as_of, ".\n:::\n\n",
+  sep = ""
+)
+cat("Profile sources: ", paste(purrr::map_chr(m$profile_sources, src), collapse = "; "), ".\n", sep = "")
+```
+
+## Committee jurisdiction
+
+Each committee seat maps to a slice of the wiki. The lists below are the statutes most central to that committee's work.
+
+```{r}
+#| results: asis
+for (cm in m$committees) {
+  cat("### ", cm$name, "\n\n", sep = "")
+  cat("**Role.** ", cm$role, "\n\n", sep = "")
+  cat("**Jurisdiction.** ", cm$jurisdiction, "\n\n", sep = "")
+  cat("**Core statutes.** ", s_links(cm$statutes), ".\n\n", sep = "")
+  title_ids <- intersect(paste0("title", cm$code_titles, "-usc"), statutes$id)
+  cat(
+    "**Code titles.** ", s_links(title_ids), ". Source: ", src(cm$source), ".\n\n",
+    sep = ""
+  )
+}
+```
+
+## Lens graph
+
+Committees, record, and district interests, connected to the statutes they touch. Statute-to-statute links from the main graph are included where both ends appear here. Click to highlight, double-click a statute to open its page.
+
+```{r}
+# one row per lens item (committee, initiative, or district interest)
+lens_items <- dplyr::bind_rows(
+  purrr::map(m$committees,  \(x) tibble::tibble(id = paste0("m-", x$id), label = x$short, kind = "Committee", statutes = list(unlist(x$statutes)))),
+  purrr::map(m$initiatives, \(x) tibble::tibble(id = paste0("m-", x$id), label = x$short, kind = "Record", statutes = list(unlist(x$statutes)))),
+  purrr::map(m$equities,    \(x) tibble::tibble(id = paste0("m-", x$id), label = x$short, kind = "District interest", statutes = list(unlist(x$statutes))))
+)
+
+kind_shape <- c("Committee" = "box", "Record" = "diamond", "District interest" = "star")
+kind_color <- c("Committee" = "#1b2a41", "Record" = "#c2571a", "District interest" = "#6b7d2a")
+
+lens_edges <- purrr::map2(lens_items$id, lens_items$statutes, \(id, s) tibble::tibble(from = id, to = s)) |>
+  purrr::list_rbind()
+
+used <- unique(lens_edges$to)
+
+nodes <- dplyr::bind_rows(
+  # the member at the center
+  tibble::tibble(id = "member", label = m$short, group = "Member", shape = "ellipse",
+                 color = "#1b2a41", value = 30L, font.color = "#ffffff", title = m$name, url = NA_character_),
+  lens_items |>
+    dplyr::transmute(id, label, group = kind, shape = unname(kind_shape[kind]),
+                     color = unname(kind_color[kind]), value = 12L,
+                     font.color = dplyr::if_else(kind == "Committee", "#ffffff", "#1b2a41"),
+                     title = paste0("<b>", label, "</b><br>", kind), url = NA_character_),
+  statutes |>
+    dplyr::filter(id %in% used) |>
+    dplyr::transmute(id, label = short, group = "Statute", shape = "dot",
+                     color = unname(domain_colors[domain]), value = 6L, font.color = "#1b2a41",
+                     title = paste0("<b>", title, "</b><br>", year, " | ", status_label,
+                                    "<br><i>Double-click to open the page</i>"),
+                     url = paste0("../statutes/", id, ".html"))
+)
+
+vis_edges <- dplyr::bind_rows(
+  tibble::tibble(from = "member", to = lens_items$id, color = "#8a94a3", dashes = FALSE, arrows = "", title = lens_items$kind),
+  lens_edges |> dplyr::mutate(color = "#8a94a3", dashes = FALSE, arrows = "to", title = "touches"),
+  edges |>
+    dplyr::filter(from %in% used, to %in% used) |>
+    dplyr::transmute(from, to, color = unname(relation_colors[relation]), dashes = TRUE,
+                     arrows = dplyr::if_else(relation == "related", "", "to"),
+                     title = paste0(short_of[from], " <b>", relation_labels[relation], "</b> ", short_of[to], "<br>", note))
+)
+
+menu_style <- "width: 46%; max-width: 260px; height: 32px;"
+
+visNetwork::visNetwork(nodes, vis_edges, width = "100%", height = "720px") |>
+  visNetwork::visNodes(
+    font = list(size = 20, strokeWidth = 0),
+    scaling = list(min = 12, max = 34, label = list(enabled = TRUE, min = 18, max = 26)),
+    margin = 8
+  ) |>
+  visNetwork::visEdges(width = 1.4, smooth = list(type = "continuous")) |>
+  visNetwork::visOptions(
+    highlightNearest = list(enabled = TRUE, degree = 1),
+    nodesIdSelection = list(enabled = TRUE, main = "Find an item", style = menu_style),
+    selectedBy = list(variable = "group", main = "Filter by type", style = menu_style)
+  ) |>
+  visNetwork::visPhysics(
+    solver = "forceAtlas2Based",
+    forceAtlas2Based = list(gravitationalConstant = -120, springLength = 140),
+    stabilization = list(iterations = 400)
+  ) |>
+  visNetwork::visLayout(randomSeed = 6) |>
+  visNetwork::visInteraction(navigationButtons = FALSE, tooltipDelay = 120) |>
+  visNetwork::visEvents(
+    doubleClick = "function(p) {
+      if (p.nodes.length) {
+        var url = this.body.data.nodes.get(p.nodes[0]).url;
+        if (url) { window.location.href = url; }
+      }
+    }"
+  ) |>
+  htmlwidgets::onRender("function(el) { if (window.wikiWatchGraph) window.wikiWatchGraph(el); }")
+```
+
+Boxes are committees, diamonds are items in the record, stars are district interests, and circles are statutes colored by domain. Solid lines connect a lens item to a statute; dashed lines are statute-to-statute relationships.
+
+## Record mapped to statutes
+
+Bills, resolutions, letters, and public statements, newest first, with the existing law each one works through or would change.
+
+```{r}
+purrr::map(m$initiatives, \(x) tibble::tibble(
+  Date = x$date,
+  Item = paste0(x$title, bill(x)),
+  Type = x$kind,
+  Summary = gsub("\\s+", " ", x$summary),
+  `Existing law` = s_links(x$statutes),
+  Source = src(x$source)
+)) |>
+  purrr::list_rbind() |>
+  dplyr::arrange(dplyr::desc(Date)) |>
+  knitr::kable(format = "pipe")
+```
+
+## District interests mapped to statutes
+
+```{r}
+purrr::map(m$equities, \(x) tibble::tibble(
+  Interest = x$title, Summary = gsub("\\s+", " ", x$summary),
+  `Relevant law` = s_links(x$statutes), Source = src(x$source)
+)) |>
+  purrr::list_rbind() |>
+  knitr::kable(format = "pipe")
+```
+
+## Watch list for these committees
+
+Statutes in the committee lists above that have lapsed, partly expired, or been repealed, or whose status note asks to check current status. These are the places where a deadline, a gap in law, or a compliance dispute creates work for the committees.
+
+```{r}
+committee_ids <- unique(unlist(purrr::map(m$committees, "statutes")))
+
+statutes |>
+  dplyr::filter(id %in% committee_ids, status != "in-force" | grepl("Check current status", status_note)) |>
+  dplyr::transmute(Statute = statute_md(id, short_of, prefix = "../statutes/"), Status = status_label,
+                   `Where it stands` = gsub("\\s+", " ", status_note)) |>
+  knitr::kable(format = "pipe")
+```
+
+## Not yet covered by the wiki
+
+```{r}
+#| results: asis
+cat(paste0("- ", unlist(m$gaps)), sep = "\n")
+```
+
+## Editing this page
+
+Everything above is generated from `data/members/`, `r m$slug`.yml. Edit that file and render to update the page and its graph; add a new file to add a member.

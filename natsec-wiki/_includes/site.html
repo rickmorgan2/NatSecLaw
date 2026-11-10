@@ -1,0 +1,108 @@
+<!-- Site-wide behavior: the repealed/superseded switch, historic link marking, and study progress. -->
+<script>
+(function () {
+  var KEY = "wiki-hide-historic";
+  var WIKI = window.WIKI || {};
+
+  function store(key, value) {
+    try {
+      if (value === undefined) return window.localStorage.getItem(key);
+      window.localStorage.setItem(key, value);
+    } catch (e) { return null; }
+  }
+
+  // statute id from a link, wherever on the site the link sits
+  function statuteOf(a) {
+    var m = (a.href || "").match(/\/statutes\/([a-z0-9-]+)\.html(?:[?#].*)?$/);
+    return m && WIKI[m[1]] ? m[1] : null;
+  }
+
+  var hide = store(KEY) === "1";
+  window.wikiHideHistoric = function () { return hide; };
+
+  // mark links to repealed or superseded laws, and the rows or items they head
+  function mark() {
+    document.querySelectorAll("main a[href]").forEach(function (a) {
+      var id = statuteOf(a);
+      if (!id || !WIKI[id].h) return;
+      a.classList.add("is-historic");
+      a.title = a.title || ("This law is " + WIKI[id].s);
+      if (a.classList.contains("subj")) {
+        var row = a.closest("tr, li");
+        if (row) row.classList.add("historic-row");
+      }
+    });
+    // the statute list: the first link in each row names the statute
+    document.querySelectorAll(".quarto-listing-table tbody tr, .quarto-listing-table tr.listing-row").forEach(function (tr) {
+      var a = tr.querySelector("a[href]");
+      var id = a && statuteOf(a);
+      if (id && WIKI[id].h) tr.classList.add("historic-row");
+    });
+    document.querySelectorAll("[data-statute]").forEach(function (el) {
+      var id = el.getAttribute("data-statute");
+      if (WIKI[id] && WIKI[id].h) el.classList.add("historic-row");
+    });
+  }
+
+  function apply() {
+    document.body.classList.toggle("hide-historic", hide);
+    document.querySelectorAll("input[data-wiki-toggle]").forEach(function (box) { box.checked = hide; });
+    document.dispatchEvent(new CustomEvent("wiki:historic", { detail: { hide: hide } }));
+  }
+
+  function setHide(value) {
+    hide = value;
+    store(KEY, hide ? "1" : "0");
+    apply();
+  }
+  window.wikiSetHideHistoric = setHide;
+
+  // the switch in the top bar
+  function addSwitch() {
+    var tools = document.querySelector(".quarto-navbar-tools") || document.querySelector("#quarto-header .navbar-collapse");
+    if (!tools || document.getElementById("historic-switch")) return;
+    var label = document.createElement("label");
+    label.id = "historic-switch";
+    label.className = "historic-switch";
+    label.title = "Hide repealed and superseded laws from lists, tables, and graphs across the site";
+    label.innerHTML = '<input type="checkbox" data-wiki-toggle> <span>Current law only</span>';
+    tools.insertBefore(label, tools.firstChild);
+  }
+
+  // repealed and superseded nodes in any graph built with mini_graph or the lens graph
+  window.wikiWatchGraph = function (el) {
+    function update() {
+      var inner = document.getElementById("graph" + el.id);
+      var net = inner && inner.chart;
+      if (!net) return;
+      var nodes = net.body.data.nodes;
+      nodes.update(nodes.get().filter(function (n) { return WIKI[n.id] && WIKI[n.id].h; })
+        .map(function (n) { return { id: n.id, hidden: hide }; }));
+    }
+    document.addEventListener("wiki:historic", update);
+    update();
+  };
+
+  // study progress: reading checkboxes saved in this browser
+  function progress() {
+    document.querySelectorAll("input[data-read]").forEach(function (box) {
+      var key = "wiki-read-" + box.getAttribute("data-read");
+      box.checked = store(key) === "1";
+      box.addEventListener("change", function () {
+        store(key, box.checked ? "1" : "0");
+        document.dispatchEvent(new CustomEvent("wiki:progress"));
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    addSwitch();
+    mark();
+    progress();
+    document.addEventListener("change", function (e) {
+      if (e.target.matches && e.target.matches("input[data-wiki-toggle]")) setHide(e.target.checked);
+    });
+    apply();
+  });
+})();
+</script>

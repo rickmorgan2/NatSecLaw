@@ -1,0 +1,32 @@
+---
+title: "Timeline"
+subtitle: "The statutes in the order they were enacted, grouped by era."
+toc: true
+---
+
+```{r}
+source("R/helpers.R")
+statutes <- load_statutes()
+```
+
+Each generation of national security law answered the problems of the one before. Read an era's laws together to see the pattern: a crisis, a grant of power, and later a constraint. Dates are years of enactment; for code-title and composite entries they are the year the title or authority began.
+
+```{r}
+#| results: asis
+for (e in era_breaks$era) {
+  s <- statutes |> dplyr::filter(era == e) |> dplyr::arrange(year, title)
+  if (!nrow(s)) next
+  span <- era_breaks[era_breaks$era == e, ]
+  cat("## ", e, "\n\n", sep = "")
+  cat("<div class=\"timeline\">\n")
+  cat(paste0(
+    "<div class=\"tl-item domain-", s$domain, "\" data-statute=\"", s$id, "\">",
+    "<div class=\"tl-year\">", s$year, "</div>",
+    "<div class=\"tl-body\"><a href=\"../statutes/", s$id, ".html\"><strong>", s$title, "</strong></a> ",
+    "<span class=\"status status-", s$status, "\">", s$status_label, "</span> ",
+    "<span class=\"layer-badge\">", s$layer_label, "</span>",
+    "<div class=\"tl-text\">", plain_wiki(first_sentence(s$summary), statutes), "</div></div></div>"
+  ), sep = "\n")
+  cat("\n</div>\n\n")
+}
+```

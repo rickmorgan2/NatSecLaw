@@ -1,70 +1,86 @@
 ---
 title: "U.S. National Security Legislation"
-subtitle: "A working wiki of the statutes that organize, authorize, and limit American national security policy, with the foreign policy laws they connect to."
+subtitle: "A working wiki and study guide to the statutes that organize, authorize, and limit American national security policy, with the foreign policy laws they connect to."
 toc: false
 page-layout: full
 listing:
   id: statute-list
   contents: statutes
   type: table
-  fields: [title, year, domain, status, cite]
+  fields: [title, year, domain, layer, status, cite]
   field-display-names:
     title: Statute
     year: Year
     domain: Domain
+    layer: Layer
     status: Status
     cite: Citation
   sort: "year"
-  sort-ui: [title, year, domain, status]
+  sort-ui: [title, year, domain, layer, status]
   filter-ui: true
   categories: true
-  page-size: 100
+  page-size: 200
 ---
 
 ```{r}
 source("R/helpers.R")
 statutes <- load_statutes()
 edges    <- load_edges()
+members  <- load_members()
+units    <- load_units()
 ```
 
 ```{r}
 #| results: asis
 # one chip per domain, linking to the filtered list below
 counts <- statutes |>
-  dplyr::count(domain, domain_label) |>
+  dplyr::count(domain, domain_name, domain_label) |>
   dplyr::arrange(match(domain, names(domain_labels)))
 
 chips <- paste0(
   "<button type=\"button\" class=\"domain-chip domain-", counts$domain,
-  "\" data-category=\"", counts$domain_label, "\">",
+  "\" data-category=\"", counts$domain_name, "\" title=\"", counts$domain_label, "\">",
   "<span class=\"chip-count\">", counts$n, "</span> ", counts$domain_label, "</button>"
 )
 
-cat("<div class=\"domain-chips\">", chips, "</div>", sep = "\n")
+cat("<div class=\"domain-chips\">", chips,
+    "<button type=\"button\" class=\"domain-chip chip-clear\" data-category=\"\">Show all</button>",
+    "</div>", sep = "\n")
 cat(
-  "\n", nrow(statutes), " statutes and ", nrow(edges), " recorded connections. ",
-  "Open the [knowledge graph](graph.qmd) to see how they fit together, or the ",
-  "[manifest](manifest.qmd) for every citation and source link.\n",
+  "\n", nrow(statutes), " statutes, ", nrow(edges), " recorded connections, ",
+  length(units), " [study units](study/index.qmd), and ", length(members), " [member lenses](members/index.qmd). ",
+  "Every statute page links to its official text on GovInfo; the [Sources](sources.qmd) page lists everything the wiki draws on.\n",
   sep = ""
 )
 ```
 
+::: {.start-here}
+**New here?** The [study guide](study/index.qmd) explains how these laws fit together, from the Constitution down to single code sections, and walks through them in eleven units. The [knowledge graph](graph.qmd) shows the same connections visually.
+:::
+
 ## All statutes
 
-Type in the filter box to search titles and citations, click a column to sort, or pick a category on the right to narrow by domain, status, or U.S. Code title. The search icon in the top bar searches the full text of every page.
+Type in the filter box to search titles and citations, click a column to sort, or pick a category on the right to narrow by domain, status, layer, or U.S. Code title. The search icon in the top bar searches the full text of every page. Links to repealed and superseded laws are marked with a dagger (†).
+
+<label class="inline-toggle"><input type="checkbox" data-wiki-toggle> Show current law only (hide repealed and superseded). The same switch is in the top bar and applies across the site.</label>
 
 ::: {#statute-list}
 :::
 
 ```{=html}
 <script>
-// a domain chip clicks the matching entry in the Categories list
+// a domain chip clicks the matching entry in the Categories list; "Show all" clicks All
 document.querySelectorAll(".domain-chip").forEach(function (chip) {
   chip.addEventListener("click", function () {
     var wanted = chip.dataset.category;
     document.querySelectorAll(".quarto-listing-category .category").forEach(function (el) {
-      if (el.textContent.trim().indexOf(wanted) === 0) { el.click(); }
+      // category text reads like "War powers (19)"
+      var name = el.textContent.trim().replace(/\s*\(\d+\)$/, "");
+      if (wanted === "" ? name === "All" : name === wanted) {
+        el.click();
+      }
     });
+    document.querySelectorAll(".domain-chip").forEach(function (c) { c.classList.toggle("active", c === chip && wanted !== ""); });
     document.getElementById("all-statutes").scrollIntoView({ behavior: "smooth" });
   });
 });

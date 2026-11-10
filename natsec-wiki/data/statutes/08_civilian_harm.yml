@@ -1,0 +1,196 @@
+# Civilian harm mitigation and response.
+# Citations checked against the GovInfo 2024 edition of the U.S. Code on November 10, 2026.
+
+- id: foreign-claims-1942
+  title: Foreign Claims Act
+  short: Foreign Claims Act
+  year: 1942
+  enacted: "1942-01-02"
+  domain: civilian-protection
+  layer: provision
+  stat: "55 Stat. 880"
+  usc: "10 U.S.C. 2734"
+  usc_path: "10/2734"
+  status: in-force
+  status_note: >-
+    In force. Restated in 1943 and codified in Title 10 in 1956. It does not
+    cover harm caused by combat, which is why Congress later created a separate
+    ex gratia authority.
+  summary: >-
+    Lets the military departments appoint claims commissions to settle claims by
+    inhabitants of foreign countries for property loss, injury, or death caused by
+    U.S. forces or incident to their noncombat activities abroad. The statute
+    states its purpose as promoting and maintaining friendly relations through the
+    prompt settlement of meritorious claims.
+  provisions:
+    - "10 U.S.C. 2734(a): claims commissions may settle foreign claims for property loss, personal injury, or death caused by, or incident to noncombat activities of, the armed forces outside the United States."
+    - "10 U.S.C. 2734(b)(1): a claim must be presented within two years after it accrues."
+    - "10 U.S.C. 2734(b)(3): no claim may arise from enemy action or result directly or indirectly from combat by U.S. forces, apart from certain aircraft accidents or malfunctions."
+    - "10 U.S.C. 2734(d): for a meritorious claim above $100,000, the department may pay $100,000 and refer the rest to the Treasury for payment."
+  significance: >-
+    The combat exclusion is the gap that shapes the rest of the civilian harm
+    framework. People harmed in combat operations cannot claim under this act, so
+    the military relied for decades on discretionary condolence payments and now
+    on the statutory [[ex-gratia-2019|ex gratia authority]], which by its terms
+    applies only where harm is not compensable under this act.
+  tags: [civilian harm, claims, compensation]
+
+- id: civcas-report-2017
+  title: Annual Report on Civilian Casualties (FY2018 NDAA Sec. 1057)
+  short: Civilian Casualty Report
+  year: 2017
+  enacted: "2017-12-12"
+  domain: civilian-protection
+  layer: provision
+  public_law: "115-91"
+  stat: "131 Stat. 1572"
+  usc: "10 U.S.C. 113 note"
+  usc_path: "10/113"
+  status: in-force
+  status_note: >-
+    In force. Amended by the defense authorizations for FY2019, FY2020, FY2023,
+    and FY2025. The current text sets the reporting requirement to expire on
+    December 31, 2030.
+  summary: >-
+    Requires the Secretary of Defense to report to the congressional defense
+    committees by May 1 each year on civilian casualties caused by U.S. military
+    operations in the previous year. The unclassified report must be made public
+    when it is submitted unless the Secretary certifies in writing that publication
+    would threaten U.S. national security interests.
+  provisions:
+    - "Sec. 1057(a): annual report, due May 1, on civilian casualties from U.S. military operations in the preceding year."
+    - "Sec. 1057(b)(1)-(2): each operation, strike, raid, or incident with confirmed or reasonably suspected civilian casualties, with its date, location, whether it was inside a declared theater of active armed conflict, the authority used, and casualty estimates."
+    - "Sec. 1057(b)(6): the general reasons for discrepancies between U.S. assessments and nongovernmental reporting."
+    - "Sec. 1057(c): the Department must take into account credible all-source reporting, including public and nongovernmental reports."
+    - "Sec. 1057(d): unclassified form, published when submitted, with an optional classified annex."
+  significance: >-
+    It is the main public accounting of civilian harm from U.S. operations and the
+    document most often cited when the Department and outside monitors dispute
+    casualty counts. Congress has widened it in most later [[ndaa-annual|defense
+    authorizations]]. It works alongside the [[civcas-policy-2018|civilian casualty
+    policy]], which governs how allegations are assessed and investigated.
+  tags: [civilian harm, reporting, transparency]
+
+- id: civcas-policy-2018
+  title: Civilian Casualty Policy (FY2019 NDAA Sec. 936)
+  short: Civilian Casualty Policy
+  year: 2018
+  enacted: "2018-08-13"
+  domain: civilian-protection
+  layer: provision
+  public_law: "115-232"
+  stat: "132 Stat. 1939"
+  usc: "10 U.S.C. 134 note"
+  usc_path: "10/134"
+  status: in-force
+  status_note: >-
+    In force. A June 2026 analysis of a Defense Department Inspector General
+    evaluation reported that civilian harm staff had been cut to about a tenth of
+    their earlier size in 2025 and 2026. It also reported that the Department and
+    the Inspector General disagreed over what the statute requires of the
+    designated senior official. Check current status.
+  summary: >-
+    Directs the Under Secretary of Defense for Policy to designate a senior
+    civilian official, at or above the Assistant Secretary level, to develop and
+    oversee compliance with Defense Department policy on civilian casualties from
+    U.S. military operations. The statute lists what that policy must cover, from
+    recording strikes to acknowledging harm and offering payments.
+  provisions:
+    - "Sec. 936(a): a senior civilian official in the Office of the Secretary of Defense develops, coordinates, and oversees compliance with civilian casualty policy."
+    - "Sec. 936(b)(1), (4): uniform standards across combatant commands for recording kinetic strikes and for reviewing and investigating civilian casualty allegations."
+    - "Sec. 936(b)(3): public means, including an internet-based mechanism, for submitting allegations of civilian casualties."
+    - "Sec. 936(b)(5): uniform processes for acknowledging responsibility, including for people first believed to be combatants and later found to be non-combatants, and for offering ex gratia payments or other assistance."
+    - "Sec. 936(c): coordination with chiefs of mission and the State Department on civilian harm."
+  significance: >-
+    This section is the statutory root of the Department's civilian harm
+    mitigation and response program, which was set out in a 2022 action plan and a
+    2023 Defense Department instruction (DoDI 3000.17). The [[cp-coe-2022|Civilian
+    Protection Center of Excellence]] and the allegation procedures added to the
+    [[ex-gratia-2019|ex gratia authority]] build on it, and the public
+    [[civcas-report-2017|annual report]] measures its results.
+  tags: [civilian harm, policy, investigations]
+  sources:
+    - label: "Just Security, 'Congress Can Act Now on U.S. DoD Inspector's Report Revealing Violations of Civilian Harm Policy and Law' (June 3, 2026)"
+      url: "https://www.justsecurity.org/140235/defense-department-report-civilian-harm/"
+
+- id: ex-gratia-2019
+  title: Ex Gratia Payments for Civilian Harm (FY2020 NDAA Sec. 1213)
+  short: Ex Gratia Payments
+  year: 2019
+  enacted: "2019-12-20"
+  domain: civilian-protection
+  layer: provision
+  public_law: "116-92"
+  stat: "133 Stat. 1629"
+  usc: "10 U.S.C. 2731 note"
+  usc_path: "10/2731"
+  status: in-force
+  status_note: >-
+    In force through December 31, 2033 under the current text, with up to $3
+    million a year available. Amended by the defense authorizations for FY2022,
+    FY2023, and FY2024.
+  summary: >-
+    Authorizes the Secretary of Defense to make ex gratia payments to foreign
+    civilians for property damage, injury, or death incident to the use of force by
+    U.S. forces, a coalition that includes the United States, or a military
+    organization supporting either. A payment is not an admission of legal
+    liability, and the section is the sole authority for such payments.
+  provisions:
+    - "Sec. 1213(a): up to $3,000,000 a year from Defense-wide operation and maintenance funds, through December 31, 2033."
+    - "Sec. 1213(b): conditions, including that the harm is not compensable under the Foreign Claims Act, was not caused by an enemy, was caused by U.S., coalition, or supporting forces, and befell a recipient with no part in the hostile act."
+    - "Sec. 1213(c): a payment is not an admission or acknowledgment of any legal obligation to compensate."
+    - "Sec. 1213(d): procedures, added in 2021, to receive and respond to civilian harm allegations through formal acknowledgment, a nonmonetary expression of condolence, or a payment."
+    - "Sec. 1213(h): quarterly reports to the congressional defense committees on payments made, refused, denied, or pending."
+    - "Sec. 1213(i): the sole authority for ex gratia payments for harm incident to the use of force."
+  significance: >-
+    It fills the combat gap left by the [[foreign-claims-1942]]. Earlier ex gratia
+    programs ran through provisions in annual appropriations acts; Sec. 1213(i)
+    now makes this the sole authority. Its 2021 amendments tied the payment and
+    acknowledgment process to the [[civcas-policy-2018|civilian casualty policy]].
+  tags: [civilian harm, compensation, ex gratia]
+
+- id: cp-coe-2022
+  title: Civilian Protection Center of Excellence (10 U.S.C. 184)
+  short: Civilian Protection Center
+  year: 2022
+  enacted: "2022-12-23"
+  domain: civilian-protection
+  layer: provision
+  public_law: "117-263"
+  stat: "136 Stat. 2799"
+  usc: "10 U.S.C. 184"
+  usc_path: "10/184"
+  status: in-force
+  status_note: >-
+    In force. The center was established under the statute. A June 2026 analysis
+    of a Defense Department Inspector General evaluation reported that its staff
+    had fallen from nearly 40 to seven and that senior Defense officials had asked
+    to eliminate it, which would require Congress to change the statute. Check
+    current status.
+  summary: >-
+    Requires the Secretary of Defense to operate a Civilian Protection Center of
+    Excellence as the Department's focal point for civilian casualties and other
+    civilian harm from U.S. military operations. The statute assigns it specific
+    functions, from standardized harm reporting to a repository of casualty data
+    and lessons learned.
+  provisions:
+    - "10 U.S.C. 184(a): the center is the focal point for civilian harm matters and institutionalizes practices for preventing, mitigating, and responding to harm."
+    - "10 U.S.C. 184(b)(1), (5): standardized civilian harm reporting and data processes, and a repository of civilian casualty and harm information."
+    - "10 U.S.C. 184(b)(6): lessons learned from assessments and investigations, built into policy, doctrine, training, and tactics."
+    - "10 U.S.C. 184(b)(7)-(8): coordination with the combatant commands and the State Department, and engagement with nongovernmental organizations."
+    - "10 U.S.C. 184(c): a public annual report on the center's activities."
+  significance: >-
+    Enacted as Sec. 1082 of the FY2023 [[ndaa-annual|defense authorization]], it
+    wrote into permanent law an institution proposed in the Protection of Civilians
+    in Military Operations Act (H.R. 7625, 117th Congress). Because it sits in Title
+    10, the Department cannot abolish it administratively, which made the statute
+    the center of the 2025 and 2026 dispute over civilian harm staffing. It carries
+    out the [[civcas-policy-2018|civilian casualty policy]].
+  tags: [civilian harm, institutions, lessons learned]
+  sources:
+    - label: "Just Security, 'Congress Can Act Now on U.S. DoD Inspector's Report Revealing Violations of Civilian Harm Policy and Law' (June 3, 2026)"
+      url: "https://www.justsecurity.org/140235/defense-department-report-civilian-harm/"
+    - label: "Rep. Jason Crow's office, Protection of Civilians in Military Operations Act and DoD Civilian Harm Transparency Act (Apr. 28, 2022)"
+      url: "https://crow.house.gov/media/press-releases/congressman-jason-crow-leads-colleagues-in-introducing-two-bicameral-bills-overhauling-us-approach-to-civilian-harm-in-military-operations"
+    - label: "Congress.gov, H.R. 7625 (117th Congress), Protection of Civilians in Military Operations Act"
+      url: "https://www.congress.gov/bill/117th-congress/house-bill/7625"

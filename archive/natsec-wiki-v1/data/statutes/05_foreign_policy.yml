@@ -1,0 +1,173 @@
+- id: state-basic-1956
+  title: State Department Basic Authorities Act of 1956
+  short: State Basic Authorities Act
+  year: 1956
+  enacted: "1956-08-01"
+  domain: foreign-policy
+  public_law: "84-885"
+  stat: "70 Stat. 890"
+  usc: "22 U.S.C. 2651a et seq."
+  usc_path: "22/2651a"
+  status: in-force
+  status_note: In force and amended by most State Department authorization acts.
+  summary: >-
+    The organic statute of the State Department. It sets out the Secretary's
+    management authorities, the department's senior positions, and a long list of
+    operating powers that have been added over the decades.
+  provisions:
+    - "Sec. 1: organization of the department, including the Secretary, deputies, and under secretaries."
+    - "General authorities to operate posts abroad, protect personnel, and pay for representation and emergencies."
+    - "Sec. 36: the Rewards for Justice program."
+    - "Authority for the Secretary to delegate and reorganize within statutory limits."
+  significance: >-
+    When Congress wants to create, rename, or protect a State Department bureau
+    or office, it usually amends this act. The [[farra-1998]] used it to absorb two
+    independent agencies, and the [[fsa-1980]] supplies the personnel system that
+    staffs the structure it sets up.
+  tags: [State Department, organization, diplomacy, authorities]
+
+- id: fsa-1980
+  title: Foreign Service Act of 1980
+  short: Foreign Service Act
+  year: 1980
+  enacted: "1980-10-17"
+  domain: foreign-policy
+  public_law: "96-465"
+  stat: "94 Stat. 2071"
+  usc: "22 U.S.C. 3901 et seq."
+  usc_path: "22/3901"
+  status: in-force
+  status_note: In force as amended.
+  summary: >-
+    The personnel law for U.S. diplomats. It establishes a career Foreign Service
+    based on merit, with rank held by the person and not the job, competitive
+    promotion, and worldwide availability.
+  provisions:
+    - "Created the Senior Foreign Service and an up-or-out promotion system."
+    - "Sec. 207 (22 U.S.C. 3927): the chief of mission has authority over all executive branch personnel in a country, except those under a military commander."
+    - "Sec. 304: ambassadors should be chosen for competence, and campaign contributions should not be a factor."
+    - "Labor-management and grievance systems for Foreign Service members."
+  significance: >-
+    Chief of mission authority is the legal basis for an ambassador's control
+    over other agencies in country, which matters for intelligence and military
+    activity overseas. The act sits beside the [[state-basic-1956]], and its service
+    covered USAID officers affected by the changes described under
+    the [[farra-1998]].
+  tags: [Foreign Service, diplomacy, chief of mission, personnel]
+
+- id: fara-1938
+  title: Foreign Agents Registration Act of 1938
+  short: FARA
+  year: 1938
+  enacted: "1938-06-08"
+  domain: foreign-policy
+  public_law: "75-583"
+  stat: "52 Stat. 631"
+  usc: "22 U.S.C. 611-621"
+  usc_path: "22/611"
+  status: in-force
+  status_note: In force. Enforcement priorities have shifted with each recent administration.
+  summary: >-
+    A disclosure law. People who act in the United States on behalf of foreign
+    governments, parties, or other foreign principals in political or public
+    relations work must register with the Justice Department and report their
+    activities and payments.
+  provisions:
+    - "Registration and periodic disclosure by agents of foreign principals."
+    - "Labeling of informational materials distributed for a foreign principal."
+    - "Exemptions for diplomats, commercial activity, lawyers in legal proceedings, and those registered under the Lobbying Disclosure Act for non-government foreign clients."
+    - "Criminal penalties for willful violations."
+  significance: >-
+    Written to expose Nazi propaganda before the Second World War and refocused
+    on lobbying in 1966, it became prominent again after 2016. It regulates
+    influence through transparency where the [[espionage-1917]] regulates it through
+    prohibition, and it bears on the same concerns as the [[smith-mundt-1948]].
+  tags: [foreign influence, lobbying, disclosure, counterintelligence]
+
+- id: smith-mundt-1948
+  title: U.S. Information and Educational Exchange Act of 1948 (Smith-Mundt)
+  short: Smith-Mundt Act
+  year: 1948
+  enacted: "1948-01-27"
+  domain: foreign-policy
+  public_law: "80-402"
+  stat: "62 Stat. 6"
+  usc: "22 U.S.C. 1431 et seq."
+  usc_path: "22/1431"
+  status: in-force
+  status_note: >-
+    In force as amended by the Smith-Mundt Modernization Act of 2012 (FY2013
+    National Defense Authorization Act, section 1078).
+  summary: >-
+    The legal foundation of U.S. public diplomacy. It authorized the State
+    Department to explain the United States to foreign audiences through
+    broadcasting, publications, and educational and cultural exchanges.
+  provisions:
+    - "Authorized international information activities, including what became the Voice of America."
+    - "Authorized educational and technical exchanges."
+    - "Later amendments barred domestic dissemination of material produced for foreign audiences."
+    - "2012 amendments allowed that material to be made available in the United States on request, while still barring programs aimed at influencing domestic opinion."
+  significance: >-
+    It draws the line between informing foreign publics and propagandizing
+    Americans, a line that also shapes military information operations. The 2012
+    change came through [[ndaa-annual|the annual NDAA]], and the agency that long ran these
+    programs was folded into State by the [[farra-1998]].
+  tags: [public diplomacy, information operations, broadcasting, exchanges, propaganda]
+
+- id: sec232-1962
+  title: Trade Expansion Act of 1962, Section 232
+  short: Section 232 (trade)
+  year: 1962
+  enacted: "1962-10-11"
+  domain: foreign-policy
+  public_law: "87-794"
+  stat: "76 Stat. 872"
+  usc: "19 U.S.C. 1862"
+  usc_path: "19/1862"
+  status: in-force
+  status_note: >-
+    In force and heavily used. It was not affected by the Supreme Court's February
+    2026 ruling that IEEPA does not authorize tariffs.
+  summary: >-
+    Allows the President to restrict imports that threaten to impair national
+    security. The Commerce Department investigates and reports, and the President
+    then decides whether to impose tariffs, quotas, or negotiated limits.
+  provisions:
+    - "Investigation by the Secretary of Commerce, in consultation with the Secretary of Defense, within 270 days."
+    - "Presidential decision on whether to 'adjust the imports' of the article."
+    - "'National security' is undefined and has been read to include the health of domestic industries."
+  significance: >-
+    Little used for decades, it has been the basis for tariffs on steel, aluminum,
+    automobiles, and other goods since 2018. It is the main example of national
+    security language used as trade authority, and its importance grew after the
+    limits placed on [[ieepa-1977]] in 2026.
+  tags: [trade, tariffs, national security exception, economic security]
+
+- id: aedpa-1996
+  title: Antiterrorism and Effective Death Penalty Act of 1996
+  short: AEDPA (terrorism)
+  year: 1996
+  enacted: "1996-04-24"
+  domain: foreign-policy
+  public_law: "104-132"
+  stat: "110 Stat. 1214"
+  usc: "8 U.S.C. 1189; 18 U.S.C. 2339B"
+  usc_path: "8/1189"
+  status: in-force
+  status_note: In force as amended.
+  summary: >-
+    Passed after the Oklahoma City bombing. Its national security significance
+    lies in two linked provisions: the Secretary of State's power to designate
+    foreign terrorist organizations, and the crime of giving such organizations
+    material support.
+  provisions:
+    - "Sec. 302 (8 U.S.C. 1189): designation of foreign terrorist organizations by the Secretary of State."
+    - "Sec. 303 (18 U.S.C. 2339B): criminal ban on knowingly providing material support or resources to a designated organization."
+    - "Removed sovereign immunity for state sponsors of terrorism in certain suits by victims."
+    - "Also restricted federal habeas corpus review, a domestic matter outside this wiki's scope."
+  significance: >-
+    Designation is a foreign policy decision with criminal law consequences
+    inside the United States, upheld by the Supreme Court in Holder v.
+    Humanitarian Law Project (2010). It was broadened by the [[patriot-2001]] and
+    works in parallel with terrorism sanctions under [[ieepa-1977]].
+  tags: [counterterrorism, terrorist designations, material support, criminal law]

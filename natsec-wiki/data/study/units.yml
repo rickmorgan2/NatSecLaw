@@ -1,0 +1,382 @@
+# Study guide units, in curriculum order.
+# R/build_pages.R writes study/units/<id>.qmd from each entry.
+# core: the reading path, in order. further: optional reading.
+# Answers may use [[id]] wiki links. Every id must exist in data/statutes.
+
+- id: foundations
+  number: 1
+  title: Where the power comes from
+  question: What does the Constitution give each branch, and how did the first Congresses use it?
+  overview: >-
+    Every statute in this wiki rests on a handful of clauses in Articles I and II.
+    Congress holds the war, money, and military-rulemaking powers; the President
+    is commander in chief and conducts diplomacy. The founding-era statutes show
+    Congress using those powers early: calling out the militia, policing private
+    war-making, and controlling enemy aliens. Start here, then learn how the U.S.
+    Code files the laws that followed.
+  objectives:
+    - Name the constitutional clauses that divide war and foreign affairs powers.
+    - Explain why formal declarations of war stopped after 1942.
+    - Distinguish an enacted statute from its place in the U.S. Code.
+  core: [constitution-war-powers, declarations-of-war, militia-acts-1792, neutrality-1794, alien-enemies-1798, logan-1799]
+  further: [title10-usc, title50-usc, title22-usc, title32-usc]
+  terms:
+    - term: Positive law title
+      definition: A U.S. Code title Congress has itself enacted, so the Code text is the law. Titles 10 and 32 are positive law; Titles 22 and 50 are not, so for them the Statutes at Large control.
+    - term: Statutes at Large
+      definition: The official chronological publication of every law as enacted, cited by volume and page, for example 87 Stat. 555.
+    - term: Declaration of war
+      definition: A joint resolution or act under Article I declaring that a state of war exists. Congress has passed eleven, in five wars, the last in 1942.
+  questions:
+    - q: Which branch holds the power to declare war, and which commands the forces once committed?
+      a: Congress declares war, raises and supports armies, provides a navy, and makes rules for the forces under Article I, Section 8; the President is commander in chief under Article II. The [[constitution-war-powers]] page lays out the clauses and the undefined ground between them.
+    - q: How many declarations of war has Congress passed, and in which conflicts?
+      a: Eleven, in five conflicts, from the War of 1812 through the Second World War. See [[declarations-of-war]]. Later conflicts were fought under statutory authorizations instead.
+    - q: Which of the Alien and Sedition Acts is still in force, and what triggers it?
+      a: The [[alien-enemies-1798]]. It applies during a declared war or an invasion or predatory incursion by a foreign nation or government, and lets the President detain, restrict, and remove nationals of the hostile country.
+    - q: Why does it matter whether a U.S. Code title is positive law?
+      a: In a positive law title, such as [[title10-usc|Title 10]], the Code text is the law itself. In a non-positive title such as [[title50-usc|Title 50]], the Code is only evidence of the law, and the enacted text in the Statutes at Large controls if they differ.
+
+- id: national-security-state
+  number: 2
+  title: Building the national security state, 1947 to 1958
+  question: How did Congress build the institutions that still run national security policy?
+  overview: >-
+    In a little over a decade Congress created the National Security Council, the
+    CIA, the Air Force, and a single Department of Defense, then gave that
+    department a working chain of command. It also wrote one code of military
+    justice, a standing draft law, and a tool for mobilizing industry. These are
+    framework statutes: most later laws plug into the institutions they created.
+  objectives:
+    - Describe what the National Security Act of 1947 created and what the 1949 and 1958 amendments fixed.
+    - Explain why the operational chain of command bypasses the military departments.
+    - Identify the Korean War era statutes still used today.
+  core: [nsa-1947, nsa-amendments-1949, cia-act-1949, dod-reorg-1958, ucmj-1950, dpa-1950, selective-service-1948]
+  further: [smith-mundt-1948, lend-lease-1941, mutual-security-1951, aea-1954]
+  terms:
+    - term: Framework statute
+      definition: A standing law that creates an institution or a general procedure that later laws and executive actions depend on.
+    - term: Operational chain of command
+      definition: The line of authority for military operations, which since 1958 runs from the President through the Secretary of Defense to the unified commands, not through the service departments.
+    - term: Unified combatant command
+      definition: A command with forces from more than one service under a single commander, organized by region or function.
+  questions:
+    - q: Name three things the National Security Act of 1947 created.
+      a: The National Security Council, the Central Intelligence Agency, and a separate Air Force, with the military departments placed under a single Secretary of Defense. See [[nsa-1947]].
+    - q: What did the 1949 amendments change?
+      a: They turned the loose National Military Establishment into the Department of Defense, an executive department, and reduced the Army, Navy, and Air Force to military departments under the Secretary. See [[nsa-amendments-1949]].
+    - q: What did the 1958 reorganization do to the operational chain of command?
+      a: It took the military departments out of it, so that orders run from the President and Secretary of Defense to the unified commands. See [[dod-reorg-1958]], and later [[goldwater-nichols-1986]].
+    - q: Which Korean War statute lets the government put defense orders first in line at private companies?
+      a: The [[dpa-1950]], which also finances new production capacity and organizes industry cooperation. Parts of it depend on periodic reauthorization.
+
+- id: war-powers
+  number: 3
+  title: Deciding to use force
+  question: Who decides when the United States goes to war, and how is that decision written into law?
+  overview: >-
+    After Vietnam, Congress tried to rebuild its share of the decision to fight.
+    The War Powers Resolution set a framework of consultation, reports, and a
+    60-day clock. Every later authorization for use of military force was written
+    to satisfy it. This unit traces the line from the Tonkin Gulf Resolution to the
+    2001 AUMF, and to the repeal of the two Iraq authorizations in 2025.
+  objectives:
+    - Explain the War Powers Resolution's reporting requirement and 60-day clock.
+    - Compare the scope of the 1991, 2001, and 2002 authorizations.
+    - Describe how U.N. Security Council mandates relate to congressional authorization.
+  core: [wpr-1973, tonkin-1964, aumf-gulf-1991, aumf-2001, aumf-iraq-2002, unpa-1945]
+  further: [case-zablocki-1972, declarations-of-war, constitution-war-powers]
+  terms:
+    - term: AUMF
+      definition: An authorization for use of military force, a joint resolution that gives the President statutory authority to use force for a stated purpose. Modern AUMFs declare themselves the specific authorization the War Powers Resolution requires.
+    - term: Hostilities
+      definition: The War Powers Resolution's trigger term, which it never defines. Most disputes over the resolution turn on whether an operation amounts to hostilities.
+    - term: 60-day clock
+      definition: Under WPR Sec. 5(b), forces must be withdrawn within 60 days of a required report, plus 30 days for safe withdrawal, unless Congress authorizes the operation.
+  questions:
+    - q: What starts the War Powers Resolution's 60-day clock?
+      a: A report under Sec. 4(a)(1), due within 48 hours of introducing forces into hostilities or imminent hostilities. Presidents often file reports 'consistent with' the resolution instead, which is why the clock rarely binds. See [[wpr-1973]].
+    - q: Whom does the 2001 AUMF authorize force against?
+      a: The nations, organizations, or persons the President determines planned, authorized, committed, or aided the September 11 attacks, or harbored those who did. It has no sunset. See [[aumf-2001]].
+    - q: What happened to the 1991 and 2002 Iraq authorizations?
+      a: Both were repealed by the FY2026 defense authorization in December 2025. See [[aumf-gulf-1991]] and [[aumf-iraq-2002]].
+    - q: Why was the Tonkin Gulf Resolution's history central to the War Powers Resolution?
+      a: Its open-ended approval of 'all necessary measures' became the legal basis for escalating the Vietnam War, and Congress designed the [[wpr-1973]] to prevent another open-ended grant. See [[tonkin-1964]].
+
+- id: emergencies-sanctions
+  number: 4
+  title: Emergency and economic powers
+  question: How does a presidential emergency declaration become a sanctions program?
+  overview: >-
+    Most U.S. sanctions run through a two-step framework: the National Emergencies
+    Act sets how emergencies are declared and ended, and IEEPA supplies the
+    economic powers once one is declared. Country-specific acts then write some
+    programs into statute and limit the President's ability to lift them. This is
+    the clearest example in the wiki of the layer structure: framework statutes
+    below, specific authorizations on top.
+  objectives:
+    - Trace a sanctions program from emergency declaration to blocking order.
+    - Explain what changed when IEEPA replaced the peacetime use of TWEA.
+    - Identify statutes that limit a President's ability to lift sanctions.
+  core: [nea-1976, ieepa-1977, twea-1917, caatsa-2017, glomag-2016, iran-sanctions-1996, inara-2015]
+  further: [helms-burton-1996, caesar-2019, sec232-1962, aedpa-1996, sec2808-milcon-1982]
+  terms:
+    - term: National emergency
+      definition: A presidential declaration under the National Emergencies Act that unlocks standby statutory powers. The President must specify which powers are being used, and emergencies lapse unless renewed each year.
+    - term: Blocking
+      definition: Freezing property and interests in property within U.S. jurisdiction and prohibiting transactions in them, the core tool of IEEPA sanctions.
+    - term: Secondary sanctions
+      definition: Penalties on foreign persons, not just U.S. persons, for dealing with a sanctioned country or sector. The Iran Sanctions Act pioneered them.
+  questions:
+    - q: What must a President do before using IEEPA's powers?
+      a: Declare a national emergency under the [[nea-1976]] over an unusual and extraordinary threat that originates largely outside the United States. See [[ieepa-1977]].
+    - q: Why did Congress pass IEEPA in 1977?
+      a: Between 1933 and 1977 Section 5(b) of the [[twea-1917]] was used in peacetime emergencies as an all-purpose sanctions power. IEEPA moved peacetime use into a separate statute tied to the new emergency procedures.
+    - q: How did CAATSA change the President's control of Russia sanctions?
+      a: Its Russia title wrote existing executive order sanctions into statute and gave Congress a procedure to block the President from easing them. See [[caatsa-2017]].
+    - q: What does the Global Magnitsky Act let the executive do, and to whom?
+      a: Impose visa bans and asset freezes on foreign individuals and entities responsible for serious human rights abuse or significant corruption anywhere in the world. See [[glomag-2016]].
+
+- id: intelligence-oversight
+  number: 5
+  title: Intelligence and its oversight
+  question: How does Congress oversee secret activity it cannot debate in public?
+  overview: >-
+    The intelligence oversight system grew out of the 1970s investigations. It
+    moved from Hughes-Ryan's requirement of a presidential finding for CIA
+    operations abroad to the current rule that the intelligence committees be
+    kept fully and currently informed. After September 11, Congress separated
+    leadership of the intelligence community from leadership of the CIA. Read this
+    unit with the Title 10 and Title 50 page.
+  objectives:
+    - Explain what a covert action finding is and who must receive notice.
+    - Describe what IRTPA changed about intelligence community leadership.
+    - Explain how CIPA lets classified cases go to trial.
+  core: [hughes-ryan-1974, intel-oversight-1980, nsa-1947, cia-act-1949, irtpa-2004, espionage-1917, cipa-1980]
+  further: [sec394-cyber-2018, sec127e-2004, fara-1938]
+  pages: [{label: "Title 10 and Title 50", href: "../../title10-title50.qmd"}]
+  terms:
+    - term: Covert action
+      definition: Activity to influence conditions abroad where the U.S. role is intended not to be apparent or acknowledged. It requires a written presidential finding and notice to the intelligence committees. Defined at 50 U.S.C. 3093(e).
+    - term: Finding
+      definition: A written presidential determination that a covert action is necessary to support identifiable foreign policy objectives.
+    - term: Traditional military activities
+      definition: The exception that keeps military operations out of the covert action definition, and with it outside the finding process.
+  questions:
+    - q: What did the Hughes-Ryan Amendment require?
+      a: That no funds be spent on CIA operations abroad other than intelligence collection unless the President found the operation important to national security and reported it to Congress. It has been superseded. See [[hughes-ryan-1974]] and [[intel-oversight-1980]].
+    - q: What standard of notice does the oversight title of the National Security Act set?
+      a: The executive must keep the two intelligence committees fully and currently informed of intelligence activities, including significant anticipated ones. See [[intel-oversight-1980]].
+    - q: What office did IRTPA create, and why?
+      a: The Director of National Intelligence, to separate leadership of the whole intelligence community from leadership of the CIA, as the 9/11 Commission recommended. See [[irtpa-2004]].
+    - q: What problem does CIPA solve?
+      a: It sets pretrial and trial procedures for classified information in criminal cases, so a defendant cannot force the government to choose between dropping a case and disclosing secrets. See [[cipa-1980]].
+
+- id: surveillance
+  number: 6
+  title: Surveillance law
+  question: When may the government collect communications, and what limits apply to Americans' data?
+  overview: >-
+    FISA created a court process for foreign intelligence surveillance inside the
+    United States. After September 11 Congress widened collection, then in 2008
+    added Section 702 for targeting foreigners abroad through U.S. providers, then
+    in 2015 ended bulk telephone records collection. The live questions concern
+    sunsets and how agencies may search lawfully collected data for Americans'
+    information.
+  objectives:
+    - Explain what the FISA court must find before approving traditional surveillance.
+    - Describe how Section 702 differs from an individual FISA order.
+    - Track the sunset and reauthorization history of Section 702.
+  core: [fisa-1978, patriot-2001, fisa-amendments-2008, usa-freedom-2015, risaa-2024]
+  further: [cisa-2015, hsa-2002, nsa-1947]
+  terms:
+    - term: Section 702
+      definition: The FISA authority, added in 2008, to target non-U.S. persons reasonably believed to be abroad with compelled help from U.S. providers, under annual court-approved certifications instead of individual orders.
+    - term: U.S. person query
+      definition: A search of lawfully collected data using a term associated with an American. RISAA's changes concentrated on how the FBI may run them.
+    - term: Sunset
+      definition: A date on which an authority expires unless Congress extends it.
+  questions:
+    - q: What must the government show the FISA court for a traditional surveillance order?
+      a: That the target is a foreign power or an agent of a foreign power. See [[fisa-1978]].
+    - q: What did the USA FREEDOM Act end?
+      a: Bulk collection of domestic telephone records; requests had to be tied to a specific selection term. See [[usa-freedom-2015]].
+    - q: How long did RISAA extend Section 702, and what did it focus on?
+      a: Two years, the shortest extension to date, with changes concentrated on how the FBI searches collected data for information about Americans. See [[risaa-2024]].
+    - q: What is Section 702's status in this wiki, and what should you check?
+      a: The wiki records it as lapsed after June 2026 with no reauthorization found. Check current status before relying on it. See [[fisa-amendments-2008]].
+
+- id: defense-organization
+  number: 7
+  title: Organizing and commanding the military
+  question: Who commands U.S. forces, and how does Congress shape the military each year?
+  overview: >-
+    Goldwater-Nichols set today's command structure and made jointness the rule.
+    Nunn-Cohen gave special operations its own command and budget line. The annual
+    defense authorization carries most new defense law, including targeted Title
+    10 authorities for special operations surrogates, cyber operations, and
+    emergency construction. Read this unit with the Title 10 and Title 50 page.
+  objectives:
+    - Describe the chain of command under Goldwater-Nichols.
+    - Explain why the annual NDAA is the main vehicle for national security legislation.
+    - Distinguish Section 127e support from partner capacity building under Chapter 16.
+  core: [goldwater-nichols-1986, nunn-cohen-1986, ndaa-annual, sec127e-2004, sec394-cyber-2018, sec2808-milcon-1982]
+  further: [dod-reorg-1958, seccoop-2016, sec284-counterdrug-1990, title10-usc]
+  pages: [{label: "Title 10 and Title 50", href: "../../title10-title50.qmd"}]
+  terms:
+    - term: Combatant commander
+      definition: The commander of a unified combatant command, who receives operational orders from the President through the Secretary of Defense.
+    - term: Surrogate force
+      definition: A foreign force supporting U.S. special operations toward U.S. objectives, funded under 10 U.S.C. 127e, as distinct from a partner force built up for its own missions.
+    - term: Traditional military activity
+      definition: A military operation outside the covert action definition. Section 394 classifies clandestine military cyber activity this way.
+  questions:
+    - q: Under Goldwater-Nichols, who is the principal military adviser to the President?
+      a: The Chairman of the Joint Chiefs of Staff. The act also ran the chain of command from the President through the Secretary of Defense to the combatant commanders. See [[goldwater-nichols-1986]].
+    - q: What did the Nunn-Cohen Amendment create?
+      a: U.S. Special Operations Command, with its own budget line and a civilian assistant secretary for oversight. See [[nunn-cohen-1986]].
+    - q: What does Section 2808 allow during a declared national emergency?
+      a: If the emergency requires use of the armed forces, the Secretary of Defense may undertake military construction Congress never authorized, using unspent military construction funds. See [[sec2808-milcon-1982]].
+    - q: Why does so much national security law ride on the NDAA?
+      a: It has been enacted every year for more than six decades, so it is the most reliable vehicle for legislation of all kinds. See [[ndaa-annual]].
+
+- id: military-at-home
+  number: 8
+  title: The military at home
+  question: When may the armed forces act inside the United States?
+  overview: >-
+    The default rule is that federal troops do not enforce civilian law. The
+    Posse Comitatus Act states the rule; the Insurrection Act is the main
+    exception. Whether the rule applies often turns on the National Guard's
+    status: under governor control in Title 32 or federalized under Title 10.
+    Counterdrug support and mobilization authorities fill in the rest.
+  objectives:
+    - State the Posse Comitatus rule and its main statutory exception.
+    - Explain how Guard duty status determines which rules apply.
+    - Describe the tiers of reserve and Guard mobilization authority.
+  core: [posse-comitatus-1878, insurrection-1807, reserve-mobilization, dick-act-1903, national-defense-act-1916, sec284-counterdrug-1990]
+  further: [militia-acts-1792, title32-usc, hsa-2002, alien-enemies-1798]
+  terms:
+    - term: Title 32 status
+      definition: National Guard duty under the command of a state governor, often with federal funding. Posse Comitatus does not apply.
+    - term: Federalization
+      definition: Ordering Guard members into federal service under Title 10, which places them under the President and within Posse Comitatus limits unless an exception applies.
+  questions:
+    - q: What does the Posse Comitatus Act prohibit?
+      a: Using federal military forces to execute the laws unless the Constitution or an act of Congress expressly authorizes it. See [[posse-comitatus-1878]].
+    - q: What is the principal statutory exception to Posse Comitatus?
+      a: The [[insurrection-1807]], which lets the President use the armed forces and federalized militia to suppress insurrection, enforce federal law, or protect civil rights when ordinary enforcement fails.
+    - q: What did the Dick Act do to the old militia system?
+      a: It divided the militia into an organized part, the National Guard, and an unorganized reserve, and gave the Guard federal funds and equipment in exchange for meeting Army standards. See [[dick-act-1903]].
+    - q: Why does a Guard member's duty status matter?
+      a: Under Title 32 the Guard serves the governor and Posse Comitatus does not apply; federalized under Title 10, it does unless an exception applies. See [[reserve-mobilization]] and [[title32-usc]].
+
+- id: assistance
+  number: 9
+  title: Foreign assistance, fragility, and partners
+  question: How does the United States fund and condition help to other countries' development and security?
+  overview: >-
+    The Foreign Assistance Act of 1961 is the base law of foreign aid, run largely
+    by the State Department. The Defense Department has its own parallel set of
+    authorities for training and equipping foreign forces, consolidated in Title
+    10 Chapter 16. Conditions such as the Leahy Laws attach to both. The Global
+    Fragility Act, the Women, Peace, and Security Act, and the Elie Wiesel Act
+    direct strategy toward conflict prevention.
+  objectives:
+    - Compare State Department (Title 22) and Defense Department (Title 10) security assistance.
+    - Explain how Leahy vetting works and where it applies.
+    - Describe the strategies the 2017 to 2019 prevention statutes require.
+  core: [faa-1961, seccoop-2016, leahy-laws, gfa-2019, wps-2017, wiesel-2018]
+  further: [millennium-challenge-2003, farra-1998, state-basic-1956, fsa-1980, nunn-lugar-1991, mutual-security-1951, smith-mundt-1948]
+  pages: [{label: "Title 10 and Title 50: neighboring titles", href: "../../title10-title50.qmd#neighboring-titles"}]
+  terms:
+    - term: Security cooperation
+      definition: Defense Department activities with foreign security forces, such as training, equipping, and advising, mostly under Title 10 Chapter 16.
+    - term: Security assistance
+      definition: Programs under Title 22, run by the State Department, that provide defense articles, training, and services to foreign governments.
+    - term: Leahy vetting
+      definition: Screening foreign security force units for credible information of gross violations of human rights before they receive U.S. assistance.
+  questions:
+    - q: What do the Leahy Laws bar?
+      a: U.S. assistance to any unit of a foreign security force when there is credible information that the unit committed a gross violation of human rights. There are two parallel provisions, one for State and one for Defense. See [[leahy-laws]].
+    - q: What did the FY2017 NDAA do to Defense Department partner authorities?
+      a: It gathered dozens of scattered authorities for training, equipping, and advising foreign forces into a single chapter of Title 10, with common definitions, oversight, and evaluation rules. See [[seccoop-2016]].
+    - q: What does the Global Fragility Act direct?
+      a: A ten-year, whole-of-government strategy to prevent violent conflict and stabilize fragile states, applied first in a small set of priority countries. See [[gfa-2019]].
+    - q: What did the Foreign Assistance Act lead President Kennedy to create?
+      a: The U.S. Agency for International Development, by executive order two months after the act. See [[faa-1961]] and, for USAID's later statutory basis, [[farra-1998]].
+
+- id: arms-transfers
+  number: 10
+  title: Arms transfers, export controls, and investment screening
+  question: How does the United States control what weapons and technology leave the country, and who buys in?
+  overview: >-
+    The Arms Export Control Act governs weapons sales and gives Congress notice of
+    major sales and a way to block them. Export controls on dual-use technology
+    now rest on the Export Control Reform Act, and foreign investment review runs
+    through CFIUS as expanded by FIRRMA. Nonproliferation conditions and the Taiwan
+    Relations Act show how Congress attaches policy to transfers.
+  objectives:
+    - Explain the congressional review process for major arms sales.
+    - Distinguish arms export controls from dual-use export controls.
+    - Describe what FIRRMA added to foreign investment review.
+  core: [aeca-1976, symington-glenn, ecra-2018, firrma-2018, aea-1954, tra-1979]
+  further: [leahy-laws, dpa-1950, nunn-lugar-1991, sec232-1962]
+  terms:
+    - term: Congressional notification
+      definition: Advance notice to Congress of a proposed major arms sale, which opens a period in which Congress may pass a joint resolution of disapproval.
+    - term: Dual-use item
+      definition: Goods, software, or technology with both civilian and military uses, controlled by the Commerce Department under ECRA.
+    - term: CFIUS
+      definition: The Committee on Foreign Investment in the United States, which reviews foreign acquisitions and investments for national security risk.
+  questions:
+    - q: What role does the AECA give Congress in major arms sales?
+      a: Advance notice and a procedure to block a sale by joint resolution. The act also sets the purposes for which U.S. weapons may be sold and requires licenses for commercial sales. See [[aeca-1976]].
+    - q: What statute did ECRA replace, and why?
+      a: The Export Administration Act of 1979, which had lapsed and was kept alive for years by emergency declarations. See [[ecra-2018]] and [[ieepa-1977]].
+    - q: What triggers the Symington and Glenn Amendments?
+      a: Trading in nuclear enrichment or reprocessing technology outside international safeguards, or testing a nuclear device, which cuts off U.S. economic and military aid. See [[symington-glenn]].
+    - q: Beyond takeovers, what did FIRRMA bring under review?
+      a: Minority stakes in sensitive businesses and some real estate transactions. See [[firrma-2018]].
+
+- id: civilian-harm
+  number: 11
+  title: Civilian harm and the conduct of operations
+  question: What does the law require when U.S. operations harm civilians?
+  overview: >-
+    For most of its history the United States addressed civilian harm through
+    policy and discretionary payments, not statute. The Foreign Claims Act covers
+    only noncombat harm. Starting in 2017, Congress wrote a framework into the
+    annual defense authorizations: a public annual casualty report, a required
+    civilian casualty policy with a senior official, a standing ex gratia authority
+    for combat harm, and a Civilian Protection Center of Excellence in Title 10.
+    The Leahy Laws apply the same logic to foreign partners. Since 2025 the main
+    question has been how far the Defense Department may scale these programs back
+    while the statutes remain in force.
+  objectives:
+    - Explain why the Foreign Claims Act does not cover combat harm and what fills the gap.
+    - List the four civilian harm statutes enacted from FY2018 to FY2023 and what each requires.
+    - Describe the 2025 and 2026 dispute over statutory compliance.
+  core: [foreign-claims-1942, civcas-report-2017, civcas-policy-2018, ex-gratia-2019, cp-coe-2022, leahy-laws, dta-2005]
+  further: [mil-commissions-2006, ucmj-1950, aumf-2001, wps-2017, wiesel-2018, aeca-1976]
+  pages: [{label: "Rep. Jason Crow's civilian harm record", href: "../../members/crow.qmd"}, {label: "Rep. Sara Jacobs's civilian harm record", href: "../../members/jacobs.qmd"}]
+  terms:
+    - term: Civilian harm mitigation and response
+      definition: The Defense Department's term, abbreviated CHMR, for preventing, mitigating, and responding to civilian casualties and other harm from military operations.
+    - term: Ex gratia payment
+      definition: A voluntary payment to a harmed civilian or family that does not admit legal liability. Since 2019, Sec. 1213 of the FY2020 NDAA is the sole authority for such payments for harm from the use of force.
+    - term: Combat exclusion
+      definition: The Foreign Claims Act's bar on claims arising from combat, which is why combat harm needs a separate ex gratia authority.
+    - term: Center of Excellence
+      definition: The Civilian Protection Center of Excellence at 10 U.S.C. 184, the Department's statutory focal point for civilian harm data, guidance, and lessons learned.
+  questions:
+    - q: Why can't someone harmed in a U.S. airstrike claim under the Foreign Claims Act?
+      a: The act excludes claims arising from enemy action or resulting directly or indirectly from U.S. combat, apart from some aircraft accidents. Combat harm is addressed through [[ex-gratia-2019|ex gratia payments]] instead. See [[foreign-claims-1942]].
+    - q: What must the annual civilian casualty report include, and when is it public?
+      a: Each operation with confirmed or reasonably suspected civilian casualties, with date, location, authority used, and casualty estimates, plus reasons for discrepancies with outside reporting. The unclassified report is published when submitted unless the Secretary certifies a national security threat. See [[civcas-report-2017]].
+    - q: What must the senior civilian official designated under Sec. 936 do?
+      a: Develop, coordinate, and oversee compliance with civilian casualty policy, including uniform standards for recording strikes, investigating allegations, acknowledging harm, and offering ex gratia payments. See [[civcas-policy-2018]].
+    - q: Why could the Defense Department not simply abolish the Civilian Protection Center of Excellence in 2025 and 2026?
+      a: Because Congress put it in Title 10 at 10 U.S.C. 184 with specific functions, so ending it requires a change in law. The dispute became whether a sharply reduced staff still satisfies the statute. See [[cp-coe-2022]].
+    - q: How do the Leahy Laws relate to the civilian harm statutes?
+      a: The civilian harm statutes govern U.S. operations; the [[leahy-laws]] condition assistance to foreign units on the absence of credible information of gross human rights violations. Both members' records include bills to extend vetting or reporting to partner operations.

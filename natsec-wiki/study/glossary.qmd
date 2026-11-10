@@ -1,0 +1,25 @@
+---
+title: "Glossary"
+subtitle: "Every key term from the study units, in alphabetical order."
+toc: false
+---
+
+```{r}
+source("R/helpers.R")
+units <- load_units()
+```
+
+```{r}
+#| results: asis
+terms <- purrr::map(units, \(u) purrr::map(u$terms, \(t) tibble::tibble(
+  term = t$term, definition = t$definition, unit = u$number, unit_id = u$id, unit_title = u$title
+)) |> purrr::list_rbind()) |>
+  purrr::list_rbind() |>
+  dplyr::arrange(tolower(term))
+
+for (k in seq_len(nrow(terms))) {
+  t <- terms[k, ]
+  cat("**", t$term, "**\n", sep = "")
+  cat(":   ", t$definition, " *From [Unit ", t$unit, ": ", t$unit_title, "](units/", t$unit_id, ".qmd).*\n\n", sep = "")
+}
+```

@@ -3,3 +3,11 @@
 .RData
 .Rproj.user/
 .DS_Store
+
+**/*.quarto_ipynb
+
+# leftovers from an interrupted render; the real site_libs lives in docs/
+/site_libs/
+
+# shareable zip built by Rscript R/deploy.R zip
+natsec-wiki-site.zip

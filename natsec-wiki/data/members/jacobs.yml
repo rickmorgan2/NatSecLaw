@@ -1,0 +1,273 @@
+# Member lens: Rep. Sara Jacobs (CA-51).
+# members/jacobs.qmd is generated from this file. Every item carries its own source.
+slug: jacobs
+name: Rep. Sara Jacobs
+short: Jacobs (CA-51)
+district: CA-51
+seat: California's 51st Congressional District
+party: Democrat
+as_of: "2026-11-10"
+background: >-
+  Before Congress she worked on conflict prevention at the UN Department of
+  Peacekeeping Operations, the UNICEF Innovation Unit, and the State Department's
+  Bureau of Conflict and Stabilization Operations, and advised Hillary Clinton's
+  2016 campaign on foreign policy. She represents much of the city of San Diego
+  together with El Cajon, La Mesa, and Lemon Grove. Serving her third term in the
+  119th Congress, she was reelected on November 3, 2026, on the AP's call. She sits
+  on the House Armed Services and Foreign Affairs Committees, is Ranking Member of
+  the Foreign Affairs Subcommittee on Africa, and co-founded and co-chairs the
+  Protection of Civilians in Conflict Caucus. Committee assignments for the 120th
+  Congress had not been announced when this page was last reviewed.
+profile_sources:
+  - label: "Rep. Sara Jacobs's office, About"
+    url: "https://sarajacobs.house.gov/about"
+  - label: "Rep. Sara Jacobs's office, Committees and Caucuses"
+    url: "https://sarajacobs.house.gov/about/committees-and-caucuses"
+  - label: "Office of the Clerk, U.S. House, member profile (J000305)"
+    url: "https://clerk.house.gov/members/J000305"
+  - label: "Associated Press via WTOP, 'Democrat Sara Jacobs wins reelection' (Nov. 4, 2026)"
+    url: "https://wtop.com/national/2026/11/democrat-sara-jacobs-wins-reelection-to-u-s-house-in-californias-51st-congressional-district/"
+
+committees:
+  - id: hfac
+    name: House Foreign Affairs Committee
+    short: Foreign Affairs
+    role: Member. Ranking Member of the Subcommittee on Africa; member of the Subcommittee on Western Hemisphere.
+    jurisdiction: >-
+      The State Department, foreign assistance, arms sales, sanctions, and the
+      war powers and use-of-force resolutions referred to the House, which in code
+      terms means most of Title 22 and the foreign affairs statutes in Title 50.
+      The Africa subcommittee covers U.S. policy, aid, and security cooperation
+      across sub-Saharan Africa.
+    code_titles: [22, 50]
+    statutes: [title22-usc, faa-1961, aeca-1976, state-basic-1956, fsa-1980,
+               leahy-laws, gfa-2019, wps-2017, wiesel-2018, glomag-2016,
+               millennium-challenge-2003, farra-1998, wpr-1973, aumf-2001,
+               ieepa-1977, case-zablocki-1972]
+    source:
+      label: "Rep. Sara Jacobs's office, Committees and Caucuses"
+      url: "https://sarajacobs.house.gov/about/committees-and-caucuses"
+  - id: hasc
+    name: House Armed Services Committee
+    short: Armed Services
+    role: Member. Subcommittees on Military Personnel and on Intelligence and Special Operations.
+    jurisdiction: >-
+      The Defense Department and the armed forces, which in code terms means
+      Title 10 and the annual defense authorization. The personnel subcommittee
+      covers pay, benefits, family support, and military justice; the intelligence
+      and special operations subcommittee covers special operations forces and
+      defense intelligence.
+    code_titles: [10]
+    statutes: [ndaa-annual, title10-usc, ucmj-1950, selective-service-1948,
+               sec127e-2004, seccoop-2016, leahy-laws, sec394-cyber-2018,
+               civcas-policy-2018, civcas-report-2017, cp-coe-2022, ex-gratia-2019]
+    source:
+      label: "Rep. Sara Jacobs's office, Committees and Caucuses"
+      url: "https://sarajacobs.house.gov/about/committees-and-caucuses"
+
+initiatives:
+  - id: iran-wpr-2026
+    title: War Powers Resolution on Iran (H.Con.Res. 101)
+    short: Iran WPR
+    date: "2026-05-14"
+    kind: Resolution introduced
+    summary: >-
+      Introduced a concurrent resolution under Section 5(c) of the War Powers
+      Resolution directing the President to remove U.S. forces from hostilities
+      with Iran. Her office described it as a resolution to end the war and bring
+      her constituents home. The outcome is not recorded here.
+    statutes: [wpr-1973, constitution-war-powers, declarations-of-war]
+    bill: {congress: 119, type: hconres, number: 101}
+    source:
+      label: "Rep. Sara Jacobs's office, press release (May 14, 2026)"
+      url: "https://sarajacobs.house.gov/news/press-releases/rep-sara-jacobs-introduces-war-powers-resolution-to-end-war-in-iran-bring-her-constituents-home"
+  - id: security-sector-compacts-2026
+    title: Security Sector Governance Compacts Act
+    short: Security Sector Compacts Act
+    date: "2026-07-20"
+    kind: Bill introduced
+    summary: >-
+      Reported as introduced on July 20, 2026. It would have the Secretary of
+      State build a Security Sector Governance Index and sort partner countries
+      into four tiers that set the kind of security assistance each may receive.
+      She has described the Leahy Laws as an on-or-off toggle applied unit by unit.
+      The bill number was not verified.
+    statutes: [faa-1961, seccoop-2016, leahy-laws, aeca-1976, gfa-2019]
+    source:
+      label: "Foreign Policy, 'Rep. Sara Jacobs's Bill Aims to Reform U.S. Security Assistance' (July 20, 2026)"
+      url: "https://foreignpolicy.com/2026/07/20/us-security-assistance-bill-jacobs-congress-legislation/"
+  - id: civharm-dod-response-2026
+    title: Civilian harm in Operation Epic Fury
+    short: Iran school strike inquiry
+    date: "2026-04-07"
+    kind: Oversight letter
+    summary: >-
+      With Reps. Jason Crow and Yassamin Ansari, led a group of House members
+      seeking information on a reported U.S. strike on the Shajareh Tayyebeh girls'
+      school in Iran, the targeting behind it, and the steps taken to mitigate and
+      respond to civilian harm. They called the Department's reply "completely
+      unacceptable."
+    statutes: [civcas-policy-2018, civcas-report-2017, wpr-1973]
+    source:
+      label: "Rep. Jason Crow's office, press release (Apr. 7, 2026)"
+      url: "https://crow.house.gov/media/press-releases/crow-jacobs-ansari-blast-unacceptable-response-from-dod-on-civilian-harm"
+  - id: nigeria-strikes-2026
+    title: Briefing demand on the Christmas Day strikes in Nigeria
+    short: Nigeria strikes briefing
+    date: "2026-03-09"
+    kind: Oversight letter
+    summary: >-
+      With Rep. Jason Crow, asked the Defense Secretary for a briefing and answers
+      to 11 questions on U.S. strikes in Sokoto State, Nigeria on December 25, 2025,
+      including what legal authority was used and what the U.S. strategy in Nigeria
+      is.
+    statutes: [aumf-2001, wpr-1973, civcas-report-2017]
+    source:
+      label: "Rep. Sara Jacobs's office, press release (Mar. 9, 2026)"
+      url: "https://sarajacobs.house.gov/news/press-releases/reps-sara-jacobs-jason-crow-demand-pentagon-briefing-on-christmas-day-airstrikes-on-nigeria"
+  - id: civharm-ig-letter-2026
+    title: Letter on the dismantling of civilian harm programs
+    short: CHMR compliance letter
+    date: "2026-07-09"
+    kind: Oversight letter
+    summary: >-
+      Signed, with Rep. Jason Crow and Sen. Elizabeth Warren among others, a letter
+      asking Secretary Hegseth to explain staffing cuts to civilian protection
+      programs and how the Department was complying with the statutes that require
+      them.
+    statutes: [civcas-policy-2018, cp-coe-2022, ex-gratia-2019]
+    source:
+      label: "Rep. Jason Crow's office, press release (July 9, 2026)"
+      url: "https://crow.house.gov/media/press-releases/crow-warren-demand-answers-on-dismantling-of-civilian-protections-by-defense-department"
+  - id: stand-up-sudan-2025
+    title: Stand Up for Sudan Act
+    short: Stand Up for Sudan Act
+    date: "2025-03-11"
+    kind: Bill introduced
+    summary: >-
+      Reintroduced with Sen. Chris Van Hollen. It would bar sales of, and export
+      licenses for, certain major defense articles to the United Arab Emirates
+      until the President certifies to the foreign affairs committees that the UAE
+      is no longer providing materiel support to the Rapid Support Forces in Sudan.
+    statutes: [aeca-1976, wiesel-2018]
+    bill: {congress: 119, type: hr, number: 2059}
+    source:
+      label: "Rep. Sara Jacobs's office, press release (Mar. 11, 2025)"
+      url: "https://sarajacobs.house.gov/news/press-releases/rep-sara-jacobs-sen-chris-van-hollen-reintroduce-bill-to-prohibit-us-arms-sales-to-uae-until-they-cease-support-of-rsf-in-sudan"
+  - id: sudan-peace-2025
+    title: U.S. Engagement in Sudanese Peace Act
+    short: Sudanese Peace Act
+    date: "2025-03-06"
+    kind: Bill cosponsored
+    summary: >-
+      Original cosponsor of the Foreign Affairs ranking member's comprehensive
+      Sudan bill, which provides for sanctions on those who commit or enable
+      genocide, war crimes, or crimes against humanity in Sudan.
+    statutes: [glomag-2016, ieepa-1977, wiesel-2018]
+    bill: {congress: 119, type: hr, number: 1939}
+    source:
+      label: "House Foreign Affairs Committee Democrats, 'Meeks Reintroduces Comprehensive Sudan Bill with Jacobs' (Mar. 2025)"
+      url: "https://democrats-foreignaffairs.house.gov/press-releases?ID=A98EFA72-6C60-40E5-A960-1B88B47C994D"
+  - id: civharm-partnerships-2023
+    title: Civilian Harm Transparency in Partnerships Act of 2023
+    short: Civilian Harm in Partnerships Act
+    date: "2023-11-30"
+    kind: Bill cosponsored
+    summary: >-
+      Joined Rep. Jason Crow, the sponsor, on a bill directing the Director of
+      National Intelligence to report annually on civilian casualties caused by
+      certain operations of foreign governments. It was not enacted in the 118th
+      Congress.
+    statutes: [leahy-laws, aeca-1976, seccoop-2016, civcas-report-2017]
+    bill: {congress: 118, type: hr, number: 6517}
+    source:
+      label: "Rep. Sara Jacobs's office, press release (Nov. 30, 2023)"
+      url: "https://sarajacobs.house.gov/news/press-releases/reps-jacobs-crow-introduce-bill-to-increase-oversight-of-civilian-casualties-in-conflict-zones"
+  - id: civharm-review-2023
+    title: Civilian Harm Review and Reassessment Act
+    short: Civilian Harm Review Act
+    date: "2023-08-01"
+    kind: Bill introduced
+    summary: >-
+      Sponsored a bill directing the Defense Department to set procedures to
+      review and reinvestigate past allegations of civilian harm, reaching back to
+      2011, and to make amends where warranted. Cosponsors included Reps. Ro Khanna
+      and Jason Crow. It was not enacted in the 118th Congress.
+    statutes: [civcas-policy-2018, ex-gratia-2019, civcas-report-2017]
+    bill: {congress: 118, type: hr, number: 5112}
+    source:
+      label: "Rep. Sara Jacobs's office, press release (July 28, 2023)"
+      url: "https://sarajacobs.house.gov/news/press-releases/rep-sara-jacobs-introduces-bill-to-push-dod-to-review-and-make-amends-for-past-cases-of-civilian-harm"
+  - id: upholding-human-rights-2022
+    title: Upholding Human Rights Abroad Act
+    short: Upholding Human Rights Abroad Act
+    date: "2022-07-12"
+    kind: Bill introduced
+    summary: >-
+      Introduced with Sen. Chris Van Hollen to require Leahy human rights vetting
+      for recipients of support under Section 127e and Section 1202, two Defense
+      Department programs that were not subject to it. The House adopted it in its
+      FY2023 defense authorization a week later, and it was reintroduced in March
+      2024. Whether it was enacted was not verified.
+    statutes: [leahy-laws, sec127e-2004, seccoop-2016, ndaa-annual]
+    source:
+      label: "Rep. Sara Jacobs's office, press release (July 12, 2022)"
+      url: "https://sarajacobs.house.gov/news/press-releases/jacobs-van-hollen-introduce-legislation-to-expand-human-rights-vetting-for-security-cooperation-programs"
+  - id: poc-caucus-2022
+    title: Protection of Civilians in Conflict Caucus
+    short: Civilians in Conflict Caucus
+    date: "2022-08-26"
+    kind: Caucus founded
+    summary: >-
+      Launched the caucus with Reps. Jason Crow, Ro Khanna, Andy Kim, and Tom
+      Malinowski to push for oversight and policy that prevent and reduce civilian
+      harm. She co-chairs it.
+    statutes: [civcas-policy-2018, civcas-report-2017, ex-gratia-2019, leahy-laws]
+    source:
+      label: "Rep. Sara Jacobs's office, press release (Aug. 26, 2022)"
+      url: "https://sarajacobs.house.gov/news/press-releases/reps-sara-jacobs-jason-crow-ro-khanna-andy-kim-and-tom-malinowski-launch-new-caucus-to-prevent-and-reduce-civilian-harm"
+
+equities:
+  - id: military-families
+    title: Military families and child care
+    short: Military families
+    summary: >-
+      San Diego has one of the largest military populations in the country. In
+      2023 she brought the Armed Services ranking member to San Diego to hear from
+      military child care providers. Personnel, pay, and family support run through
+      her Military Personnel subcommittee and the annual defense authorization.
+    statutes: [ndaa-annual, title10-usc, ucmj-1950]
+    source:
+      label: "Rep. Sara Jacobs's office, press release (Mar. 23, 2023)"
+      url: "https://sarajacobs.house.gov/news/press-releases/rep-sara-jacobs-hosted-ranking-member-adam-smith-in-san-diego-to-hear-directly-from-military-child-care-providers-leadership-and-industry-partners"
+  - id: defense-research
+    title: San Diego defense industry and research
+    short: Defense industry and research
+    summary: >-
+      On the same 2023 visit she toured regional shipbuilding and met defense
+      industry and research partners, including General Atomics and the Scripps
+      Institution of Oceanography. The statutes that govern that sector's exports
+      and production are the arms export, export control, and defense production
+      laws.
+    statutes: [ndaa-annual, aeca-1976, ecra-2018, dpa-1950]
+    source:
+      label: "Rep. Sara Jacobs's office, press release (Mar. 23, 2023)"
+      url: "https://sarajacobs.house.gov/news/press-releases/rep-sara-jacobs-hosted-ranking-member-adam-smith-in-san-diego-to-hear-directly-from-military-child-care-providers-leadership-and-industry-partners"
+  - id: deployed-constituents
+    title: Constituents serving in the Iran war
+    short: Deployed constituents
+    summary: >-
+      Her office framed her May 2026 war powers resolution as a way to bring
+      constituents serving in the war with Iran home. War powers, mobilization, and
+      the defense authorization are the statutes that govern their deployment.
+    statutes: [wpr-1973, constitution-war-powers, ndaa-annual]
+    source:
+      label: "Rep. Sara Jacobs's office, press release (May 14, 2026)"
+      url: "https://sarajacobs.house.gov/news/press-releases/rep-sara-jacobs-introduces-war-powers-resolution-to-end-war-in-iran-bring-her-constituents-home"
+
+gaps:
+  - "Section 1202 of the FY2018 defense authorization (irregular warfare support), which her Upholding Human Rights Abroad Act would bring under Leahy vetting."
+  - "Section 620I of the Foreign Assistance Act and other conditions on security assistance and arms transfers to governments that restrict humanitarian aid."
+  - "Africa-specific statutes, including the African Growth and Opportunity Act, and the authorities behind U.S. Africa Command's partnerships."
+  - "DoD Instruction 3000.17 and the 2022 Civilian Harm Mitigation and Response Action Plan, which implement the civilian harm statutes but are not statutes themselves."
+  - "Military child care and family support provisions in Title 10 and the annual defense authorization."
