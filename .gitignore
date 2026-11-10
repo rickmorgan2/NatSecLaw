@@ -44,3 +44,8 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Kept on this computer only, not in the repo
+CO-06/
+archive/
+natsec-wiki/R/local_deploy.R
