@@ -86,7 +86,13 @@ Core and further readings with the relationships recorded between them. Click to
 
 ```{r}
 source("R/helpers.R")
-mini_graph(c("hughes-ryan-1974", "intel-oversight-1980", "nsa-1947", "cia-act-1949", "irtpa-2004", "espionage-1917", "cipa-1980", "sec394-cyber-2018", "sec127e-2004", "fara-1938"), load_statutes(), load_edges(), prefix = "../../statutes/")
+unit_ids <- c("hughes-ryan-1974", "intel-oversight-1980", "nsa-1947", "cia-act-1949", "irtpa-2004", "espionage-1917", "cipa-1980", "sec394-cyber-2018", "sec127e-2004", "fara-1938")
+mini_graph(unit_ids, load_statutes(), load_edges(), prefix = "../../statutes/")
+```
+
+```{r}
+#| results: asis
+cat(mini_graph_legend(unit_ids, load_statutes(), load_edges()))
 ```
 
 ## Further reading

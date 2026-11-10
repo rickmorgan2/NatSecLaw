@@ -76,7 +76,13 @@ Core and further readings with the relationships recorded between them. Click to
 
 ```{r}
 source("R/helpers.R")
-mini_graph(c("constitution-war-powers", "declarations-of-war", "militia-acts-1792", "neutrality-1794", "alien-enemies-1798", "logan-1799", "title10-usc", "title50-usc", "title22-usc", "title32-usc"), load_statutes(), load_edges(), prefix = "../../statutes/")
+unit_ids <- c("constitution-war-powers", "declarations-of-war", "militia-acts-1792", "neutrality-1794", "alien-enemies-1798", "logan-1799", "title10-usc", "title50-usc", "title22-usc", "title32-usc")
+mini_graph(unit_ids, load_statutes(), load_edges(), prefix = "../../statutes/")
+```
+
+```{r}
+#| results: asis
+cat(mini_graph_legend(unit_ids, load_statutes(), load_edges()))
 ```
 
 ## Further reading

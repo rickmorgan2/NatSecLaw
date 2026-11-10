@@ -392,6 +392,21 @@ body.hide-historic .historic-row { display: none !important; }
   }
 }
 
+.mini-legend {
+  margin-top: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+
+  strong { width: 9.5rem; }
+
+  .legend-note {
+    margin: 0.2rem 0 0;
+    color: $ink-soft;
+    font-size: 0.82rem;
+  }
+}
+
 .legend-item {
   display: inline-flex;
   align-items: center;

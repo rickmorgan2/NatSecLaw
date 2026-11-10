@@ -78,7 +78,13 @@ Core and further readings with the relationships recorded between them. Click to
 
 ```{r}
 source("R/helpers.R")
-mini_graph(c("faa-1961", "seccoop-2016", "leahy-laws", "gfa-2019", "wps-2017", "wiesel-2018", "millennium-challenge-2003", "farra-1998", "state-basic-1956", "fsa-1980", "nunn-lugar-1991", "mutual-security-1951", "smith-mundt-1948"), load_statutes(), load_edges(), prefix = "../../statutes/")
+unit_ids <- c("faa-1961", "seccoop-2016", "leahy-laws", "gfa-2019", "wps-2017", "wiesel-2018", "millennium-challenge-2003", "farra-1998", "state-basic-1956", "fsa-1980", "nunn-lugar-1991", "mutual-security-1951", "smith-mundt-1948")
+mini_graph(unit_ids, load_statutes(), load_edges(), prefix = "../../statutes/")
+```
+
+```{r}
+#| results: asis
+cat(mini_graph_legend(unit_ids, load_statutes(), load_edges()))
 ```
 
 ## Further reading

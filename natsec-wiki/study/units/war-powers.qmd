@@ -76,7 +76,13 @@ Core and further readings with the relationships recorded between them. Click to
 
 ```{r}
 source("R/helpers.R")
-mini_graph(c("wpr-1973", "tonkin-1964", "aumf-gulf-1991", "aumf-2001", "aumf-iraq-2002", "unpa-1945", "case-zablocki-1972", "declarations-of-war", "constitution-war-powers"), load_statutes(), load_edges(), prefix = "../../statutes/")
+unit_ids <- c("wpr-1973", "tonkin-1964", "aumf-gulf-1991", "aumf-2001", "aumf-iraq-2002", "unpa-1945", "case-zablocki-1972", "declarations-of-war", "constitution-war-powers")
+mini_graph(unit_ids, load_statutes(), load_edges(), prefix = "../../statutes/")
+```
+
+```{r}
+#| results: asis
+cat(mini_graph_legend(unit_ids, load_statutes(), load_edges()))
 ```
 
 ## Further reading

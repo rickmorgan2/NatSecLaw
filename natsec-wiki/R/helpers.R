@@ -396,6 +396,38 @@ statute_md <- function(id, short_of, prefix = "statutes/", subject = TRUE) {
 # graphs -----------------------------------------------------------------------
 
 # a small network of a set of statutes and the edges among them, for unit and lens pages
+# HTML legend for a mini_graph: only the domains, statuses and relationships
+# that actually appear among these ids. Print it from a results: asis chunk.
+mini_graph_legend <- function(ids, statutes, edges) {
+  s <- statutes[statutes$id %in% ids, ]
+  rel <- unique(edges$relation[edges$from %in% ids & edges$to %in% ids])
+  rel <- names(relation_labels)[names(relation_labels) %in% rel]
+  doms <- names(domain_labels)[names(domain_labels) %in% s$domain]
+  item <- function(inner, label) {
+    paste0("<span class=\"legend-item\">", inner, label, "</span>")
+  }
+  rows <- c(
+    paste0("<div><strong>Domain (color)</strong>",
+           paste0(item(paste0("<span class=\"swatch\" style=\"background:", domain_colors[doms], "\"></span>"),
+                       domain_short[doms]), collapse = " "),
+           "</div>"),
+    paste0("<div><strong>Status (shape)</strong>",
+           if (any(!s$historic)) item("<span class=\"shape shape-dot\"></span>", "In force or partly lapsed"),
+           if (any(s$historic)) item("<span class=\"shape shape-triangle\"></span>", "Repealed or superseded"),
+           "</div>"),
+    if (length(rel)) paste0(
+      "<div><strong>Relationship (line)</strong>",
+      paste0(item(paste0("<span class=\"line\" style=\"border-color:", relation_colors[rel],
+                         ";border-top-style:", ifelse(rel == "related", "dashed", "solid"), "\"></span>"),
+                  ifelse(rel == "related", relation_labels[rel], paste0(relation_labels[rel], " &rarr;"))),
+             collapse = " "),
+      "</div>")
+  )
+  paste0("<div class=\"graph-legend mini-legend\">\n", paste(rows, collapse = "\n"),
+         "\n<p class=\"legend-note\">Read an arrow as a sentence: the law at the tail amends, relies on ",
+         "(and so on) the law at the head. Hover a line for the details.</p>\n</div>\n")
+}
+
 mini_graph <- function(ids, statutes, edges, prefix = "../statutes/", height = "460px") {
   short_of <- stats::setNames(statutes$short, statutes$id)
   nodes <- statutes |>

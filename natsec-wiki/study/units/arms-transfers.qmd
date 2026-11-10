@@ -76,7 +76,13 @@ Core and further readings with the relationships recorded between them. Click to
 
 ```{r}
 source("R/helpers.R")
-mini_graph(c("aeca-1976", "symington-glenn", "ecra-2018", "firrma-2018", "aea-1954", "tra-1979", "leahy-laws", "dpa-1950", "nunn-lugar-1991", "sec232-1962"), load_statutes(), load_edges(), prefix = "../../statutes/")
+unit_ids <- c("aeca-1976", "symington-glenn", "ecra-2018", "firrma-2018", "aea-1954", "tra-1979", "leahy-laws", "dpa-1950", "nunn-lugar-1991", "sec232-1962")
+mini_graph(unit_ids, load_statutes(), load_edges(), prefix = "../../statutes/")
+```
+
+```{r}
+#| results: asis
+cat(mini_graph_legend(unit_ids, load_statutes(), load_edges()))
 ```
 
 ## Further reading
