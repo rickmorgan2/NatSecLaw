@@ -26,7 +26,6 @@ listing:
 source("R/helpers.R")
 statutes <- load_statutes()
 edges    <- load_edges()
-members  <- load_members()
 units    <- load_units()
 cases    <- load_cases()
 insts    <- load_institutions()
@@ -50,8 +49,7 @@ cat("<div class=\"domain-chips\">", chips,
     "</div>", sep = "\n")
 cat(
   "\n", nrow(statutes), " statutes, ", nrow(cases), " [Supreme Court cases](cases/index.qmd), ", nrow(edges), " recorded connections, ",
-  length(units), " [study units](study/index.qmd), ", length(insts), " entries in [Who's who](whos-who.qmd), and ",
-  length(members), " [member lenses](members/index.qmd). ",
+  length(units), " [study units](study/index.qmd), and ", length(insts), " entries in [Who's who](whos-who.qmd). ",
   "Every statute and case links to its official text; the [Sources](sources.qmd) page lists everything the wiki draws on.\n",
   sep = ""
 )

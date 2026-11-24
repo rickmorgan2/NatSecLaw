@@ -50,7 +50,6 @@ In force as strengthened by the Intelligence Authorization Act for Fiscal Year 1
 - **Era.** Vietnam, Watergate, and reassertion ([timeline](../study/timeline.qmd)).
 - **Study.** [Unit 6: Intelligence and its oversight](../study/units/intelligence-oversight.qmd) (core reading).
 - **Who's involved.** [HPSCI](../whos-who.qmd#hpsci), [SSCI](../whos-who.qmd#ssci), [CIA](../whos-who.qmd#cia).
-- **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Intelligence.
 
 ## Connections
 

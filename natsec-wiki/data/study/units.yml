@@ -558,7 +558,6 @@
     - Describe the 2025 and 2026 dispute over statutory compliance.
   core: [foreign-claims-1942, civcas-report-2017, civcas-policy-2018, ex-gratia-2019, cp-coe-2022, leahy-laws, dta-2005]
   further: [mil-commissions-2006, ucmj-1950, aumf-2001, wps-2017, wiesel-2018, aeca-1976]
-  pages: [{label: "Rep. Jason Crow's civilian harm record", href: "../../members/crow.qmd"}, {label: "Rep. Sara Jacobs's civilian harm record", href: "../../members/jacobs.qmd"}]
   terms:
     - term: Civilian harm mitigation and response
       definition: The Defense Department's term, abbreviated CHMR, for preventing, mitigating, and responding to civilian casualties and other harm from military operations.
@@ -578,7 +577,7 @@
     - q: Why could the Defense Department not simply abolish the Civilian Protection Center of Excellence in 2025 and 2026?
       a: Because Congress put it in Title 10 at 10 U.S.C. 184 with specific functions, so ending it requires a change in law. The dispute became whether a sharply reduced staff still satisfies the statute. See [[cp-coe-2022]].
     - q: How do the Leahy Laws relate to the civilian harm statutes?
-      a: The civilian harm statutes govern U.S. operations; the [[leahy-laws]] condition assistance to foreign units on the absence of credible information of gross human rights violations. Both members' records include bills to extend vetting or reporting to partner operations.
+      a: The civilian harm statutes govern U.S. operations; the [[leahy-laws]] condition assistance to foreign units on the absence of credible information of gross human rights violations. Bills in recent Congresses have proposed extending vetting or reporting to partners' operations.
   issues:
     - q: "Is the Defense Department meeting the civilian harm statutes?"
       context: "Staffing for civilian harm functions was sharply reduced in 2025 and 2026 while [[cp-coe-2022|10 U.S.C. 184]] and the [[civcas-policy-2018]] remained in force."

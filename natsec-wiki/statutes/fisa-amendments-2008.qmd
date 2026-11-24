@@ -56,7 +56,6 @@ Title VII, including Section 702, lapsed in mid-June 2026 for the first time sin
 - **Era.** After September 11 ([timeline](../study/timeline.qmd)).
 - **Study.** [Unit 7: Surveillance law](../study/units/surveillance.qmd) (core reading).
 - **Who's involved.** [NSA](../whos-who.qmd#nsa-agency), [FISC](../whos-who.qmd#fisc).
-- **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Intelligence.
 
 ## Connections
 

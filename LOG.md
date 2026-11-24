@@ -6,7 +6,112 @@ Work log, newest first. One `### <task>` entry per unit of work under each date.
 
 ## 2026-11-24
 
-### Session log, decision record and close-up-shop skill (uncommitted; D-009)
+### Hill audience, power of the purse, programs, court cases, Who's who, study tools (committed in 8f9d9dd; D-010 to D-016)
+
+**Task:** Retarget the wiki to congressional staff, members, and interns, and add appropriations, security assistance programs, Supreme Court cases, a Who's who page, and study and quality tools. Case studies were declined for now (D-016).
+
+**What changed**
+- Data:
+  - `data/statutes/09_purse.yml`, new domain `purse`, 8 entries: `defense-approps-annual`, `sfops-approps-annual`, `sec8005-transfer`, `sec7008-coup`, `case-church-1973`, `boland-1982`, `impoundment-1974`, `antideficiency`.
+  - `data/statutes/10_programs.yml`, 7 entries with a new `funding` field: `fms`, `fmf`, `imet`, `pko-551`, `pda-506`, `eda-516`, `usai-2016`.
+  - 35 new edges, using the new relations `part_of` and `funded_by`.
+  - `data/cases.yml`: 12 Supreme Court cases, each with a Wikipedia link (owner's request).
+  - `data/institutions.yml`: 28 Who's who entries. An FFRDC entry was added, then dropped at the owner's request.
+  - `units.yml`:
+    - new Unit 4, "The power of the purse"; old units 4 to 11 are now 5 to 12;
+    - programs added to the assistance and arms transfer units;
+    - case readings in 5 units;
+    - 13 new key terms;
+    - 31 Issues for Congress across all 12 units.
+  - Member lenses: Jacobs's House Foreign Affairs seat gains `fmf`, `imet`, `pko-551` and `sec7008-coup`. Crow's Armed Services seat gains `usai-2016`, and his No Funds for Iran War Act item gains `defense-approps-annual` and `case-church-1973`.
+- Code:
+  - `R/helpers.R`: case and Who's who loaders, `usreports_url()`, wiki links that resolve to cases, a `checked` date defaulting to `wiki_reviewed` (2026-11-10).
+  - `R/build_pages.R`: funding, "In the courts", "Who's involved", and "Last checked" sections on statute pages; generated `cases/*.qmd` and `cases/index.qmd`; Issues for Congress on unit pages; new validation checks.
+  - Graph (`graph.qmd`, `assets/graph.js`): cases drawn as diamonds, with a Court cases switch and their own band in the layers view.
+  - Flashcards: case cards and 5-box spaced review (localStorage `wiki-box-<id>`; old `wiki-card-<id>` marks start in box 2).
+  - Timeline: includes cases.
+  - New files: `whos-who.qmd`, and `R/check_site.R` behind `Rscript R/deploy.R check`.
+  - Styles: print layout.
+  - Navbar: Court cases, plus a Reference menu.
+- Tone rewrite (D-010): the home page, the study guide overview ("Studying as a group" became "Using this guide in an office", with units mapped to committees), and the About page.
+- Build: "Built 102 statute pages, 12 case pages, 28 who's who entries, 2 member lenses, 12 study units, 202 edges, 370 source links (327 official)."
+- Check: 141 pages, 0 broken internal links; 11 pages at 390px, 0 problems. A separate scan of 16 pages at 390 and 1280px found no JavaScript errors.
+
+| New fact | Verified against |
+|---|---|
+| Program sections, Antideficiency Act, Impoundment Control Act | GovInfo U.S. Code text and source credits |
+| Sec. 8005 ($6B cap), Sec. 7008 text, FY2026 act titles, IMET/FMF/PKO accounts | Pub. L. 119-75 on GovInfo |
+| FY2027 continuing resolution through December 11, 2026 | Pub. L. 119-103 on GovInfo |
+| Ukraine initiative extended to 2029 | Pub. L. 119-60, Sec. 1243, on GovInfo |
+| Case-Church (87 Stat. 129), Boland II (98 Stat. 1935), series anchors (63 Stat. 987; 75 Stat. 717) | Statutes at Large PDFs on GovInfo |
+| 12 case citations and holdings; quoted passages | U.S. Reports PDFs on GovInfo; Learning Resources slip opinion on supremecourt.gov |
+| Niger coup determination (2023), 2025 rescissions, Learning Resources aftermath | Web search: VOA editorial, Supreme Court docket 25A269, GAO WatchBlog, news |
+| 16 U.S. Code sections cited in Who's who; 12 Wikipedia URLs | Fetched; headings and titles match |
+
+**Why / decisions**
+- D-010 to D-016 record the owner's choices. D-014 was amended when FFRDCs were dropped.
+- Programs enter through their authorizing sections (D-011), so the funding field ties them to an appropriations series without tracking dollars.
+- The appropriations series are anchored to their first acts: 1949 for Defense, 1961 for foreign assistance. Sec. 7008 and Sec. 8005 are dated 2026, the act verified, because their first enactment wasn't found.
+- Trump v. Hawaii was left out: it turns on the immigration act, which isn't in the wiki.
+- "Issues for Congress" was Claude's framing of the approved "discussion prompts" for a Hill audience.
+
+**What failed**
+- The Library of Congress U.S. Reports pages and supremecourt.gov (with a plain user agent) block scripts. GovInfo's USREPORTS PDFs work, and supremecourt.gov answers a full browser user agent.
+- whitehouse.gov/nsc/ and a State Department bureau path returned 404, so those Who's who entries cite the creating U.S. Code section instead.
+- Three first-draft errors were caught by reading the opinions:
+  - Youngstown's Defense Production Act point is in the majority opinion, not Jackson's concurrence.
+  - The "first time" claims in Boumediene and Zivotofsky come from the dissents.
+- The publish run for 8f9d9dd failed at `deploy-pages` ("No artifacts named github-pages"). A manual re-run succeeded.
+
+**Open threads**
+- Review the 31 Issues for Congress for balance (owner).
+- Unverified in the wiki:
+  - Boland I is cited by public law only (97-377); its section is not verified.
+  - First enactment of Sec. 7008 and Sec. 8005.
+  - The account that funds the Ukraine initiative; the FY2026 Defense act doesn't name it.
+  - Who's who role text, written from reference knowledge.
+- Review the layer assignments (D-005), which are editorial.
+- Jacobs lens: the Security Sector Governance Compacts Act bill number, and whether the Upholding Human Rights Abroad Act's Leahy provision was enacted.
+- Committee assignments for the 120th Congress, for both members.
+- Watch list in `natsec-wiki/CLAUDE_README.md` (November 10 list plus the November 24 additions). The FY2027 continuing resolution expires December 11, 2026.
+- Congress.gov and CRS links were never fetched (403 to scripts); spot-check by hand.
+- Pages workflow: the actions target the deprecated Node 20, and one deploy failed transiently. Bump action versions if it recurs.
+- The local server is not running.
+
+**Notes for picking this up**
+- For ad hoc phone testing, use chromote device emulation (`Emulation.setDeviceMetricsOverride`, `mobile = TRUE`). Desktop Chrome's window can't go below about 500px.
+- `pdftotext` is available for reading Statutes at Large PDFs from the GovInfo statute link service.
+
+### Dead graph links, phone layout, plain-language note (committed in 58a71ce)
+
+**Task:** Fix a dead link on every statute page, make the site work on phones including the graph, and rewrite the Title 10/50 page's "Limits of this page" in plain language.
+
+**What changed**
+- All 87 statute pages linked `../graph.qmd?focus=<id>`, which 404s. `R/build_pages.R` now writes `graph.html`.
+- Phone layout:
+  - a short title in the top bar;
+  - wide tables scroll inside their own box (`wrapTables()` in `_includes/site.html`);
+  - columns hidden on phones in the statute list and the units table;
+  - flashcards: a 2×2 button grid and swipe;
+  - "hover" and "click" wording changed to work on touch screens.
+- Graph:
+  - the canvas sizes itself to the phone;
+  - details open in a panel that slides up from the bottom;
+  - selecting a line explains the link;
+  - a full-screen button on the canvas;
+  - the layers view uses 3 columns and fits to width on phones;
+  - the connections table shows one sentence-style Connection column on phones, with the note in a tappable row (DT Responsive);
+  - `net.fit` is patched so the graph refits only when the width changes, not when a phone's address bar shows or hides.
+- Desktop fix: the Authority layers view resizes its container instead of spilling over the legend.
+- Unit and member graphs show an "Open its page" caption under the graph.
+- Title 10/50 page: "Limits of this page" became "Before you rely on this".
+- Result: 14 pages at 390px with no overflow, and no JavaScript errors at 390 or 1280px.
+
+**What failed**
+- Desktop headless Chrome at `--window-size=390` gave misleading screenshots; phone emulation is required.
+- DT Responsive at first dropped the Relationship column on phones; replaced with a single Connection column.
+
+### Session log, decision record and close-up-shop skill (committed in 5b76350; D-009)
 
 **Task:** Set the repo up with a log and decision files and adapt the owner's `close-up-shop` skill from another project.
 

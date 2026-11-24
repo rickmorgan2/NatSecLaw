@@ -52,7 +52,6 @@ In force as amended, with notable adjustments in the FY2017 defense authorizatio
 - **Era.** End of the Cold War ([timeline](../study/timeline.qmd)).
 - **Study.** [Unit 8: Organizing and commanding the military](../study/units/defense-organization.qmd) (core reading).
 - **Who's involved.** [HASC](../whos-who.qmd#hasc), [SASC](../whos-who.qmd#sasc), [DoD](../whos-who.qmd#dod), [JCS](../whos-who.qmd#jcs), [Combatant commands](../whos-who.qmd#cocoms).
-- **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Armed Services.
 
 ## Connections
 

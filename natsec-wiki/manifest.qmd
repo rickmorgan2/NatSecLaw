@@ -46,7 +46,6 @@ statutes |>
 |---|---|
 | `data/statutes/*.yml` | The wiki content, one entry per statute, in files grouped by domain. `08_civilian_harm.yml` holds the civilian harm statutes. |
 | `data/edges.csv` | The knowledge graph: one row per relationship between two statutes. |
-| `data/members/*.yml` | One file per member lens: committees, record, and district interests, each with its own source. |
 | `data/study/units.yml` | The study guide's units: objectives, reading paths, key terms, and review questions. |
 | `data/reference_sources.csv` | General reference sources. |
 | `data/research_sources.csv` | Sources consulted for this edition. |
@@ -57,5 +56,5 @@ statutes |>
 | `R/deploy.R` | Local runner: preview, render, serve, or zip the site. |
 | `assets/graph.js` | The knowledge graph's controls. |
 | `_includes/site.html` | Site-wide script: the current-law switch, historic link marks, and study progress. |
-| `statutes/*.qmd`, `members/*.qmd` (except `index.qmd` and `_lens.qmd`), `study/units/*.qmd` | Generated pages. |
+| `statutes/*.qmd`, `cases/*.qmd`, `study/units/*.qmd` | Generated pages. |
 | `CLAUDE_README.md` | Context file for working on this project in another Claude session. |

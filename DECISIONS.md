@@ -23,7 +23,7 @@ One entry per decision, newest at the bottom. Status is one of Accepted, Propose
 ## D-003: Members are named; Crow and Jacobs lenses share one site
 
 - **Date:** 2026-11-10
-- **Status:** Accepted.
+- **Status:** Paused by D-017; the lenses are off the site.
 - **Context:** Version 1 identified its one member by district only. The owner asked to restore Rep. Jason Crow's name and to add a version for Rep. Sara Jacobs.
 - **Decision:** Name members. Each lens is a data file (`data/members/<slug>.yml`) rendered by one shared page (`members/_lens.qmd`), plus a comparison page, inside the same site, rather than a separate site per member.
 - **Consequences:** One set of statute data serves both lenses. Shared record items use the same `id` in both files. Every claim about a member needs a public source; lenses stay descriptive and say they are not affiliated with the member's office.
@@ -71,7 +71,7 @@ One entry per decision, newest at the bottom. Status is one of Accepted, Propose
 ## D-009: Keep a session log and decision record
 
 - **Date:** 2026-11-24
-- **Status:** Accepted. Not yet committed.
+- **Status:** Accepted. Committed in 5b76350.
 - **Context:** The owner brought over a `close-up-shop` skill from another project and asked for log and decision files here.
 - **Decision:** `LOG.md` (newest first) and `DECISIONS.md` at the repo root, a short root `CLAUDE.md` for what's true now, and `.claude/skills/close-up-shop/` to write them at the end of a session. Wiki-specific current state stays in `natsec-wiki/CLAUDE_README.md`.
 - **Consequences:** Sessions end with `/close-up-shop`. Commit messages can stay short, because the reasons go in the log.
@@ -79,7 +79,7 @@ One entry per decision, newest at the bottom. Status is one of Accepted, Propose
 ## D-010: Audience is congressional staff, members, and interns
 
 - **Date:** 2026-11-24
-- **Status:** Accepted. Tone rules are in `natsec-wiki/CLAUDE_README.md` ("Audience and tone").
+- **Status:** Accepted. Implemented in 8f9d9dd and published November 24, 2026. Tone rules are in `natsec-wiki/CLAUDE_README.md` ("Audience and tone").
 - **Context:** The wiki was written as a study guide for the owner and friends. The owner set a new audience: congressional staff in personal and committee offices, members, and interns.
 - **Decision:** One register for both: neutral and nonpartisan in the manner of a Congressional Research Service product, bottom line first, precise citations for drafting, terms of art defined on first use in the study guide. Statute and case pages are written for staff; the study guide is written so an intern can follow it.
 - **Consequences:** Framing pages (home, study guide, about) are rewritten for an office setting. Replaces the earlier "expert entries, non-specialist study guide" guidance.
@@ -87,7 +87,7 @@ One entry per decision, newest at the bottom. Status is one of Accepted, Propose
 ## D-011: Programs are provision entries with a funding field; no dollar figures
 
 - **Date:** 2026-11-24
-- **Status:** Accepted. In progress.
+- **Status:** Accepted. Implemented in 8f9d9dd and published November 24, 2026.
 - **Context:** IMET and FMF were missing, and the Title 10 versus Title 22 contrast had no concrete programs. Options were a separate program page type or entries for the sections that authorize each program.
 - **Decision:** Add programs as `provision` entries for their authorizing sections (FMF, IMET, Foreign Military Sales, presidential drawdown, Excess Defense Articles, Peacekeeping Operations, the Ukraine Security Assistance Initiative), each with a `funding` field naming the account, the appropriations act, the administering agency, and the committees. No dollar amounts. New relations `part_of` and `funded_by`.
 - **Consequences:** The authority stack runs from the Constitution down to the section that funds and runs a program, without becoming a budget tracker.
@@ -95,7 +95,7 @@ One entry per decision, newest at the bottom. Status is one of Accepted, Propose
 ## D-012: Appropriations are covered as law, in a new purse domain and unit
 
 - **Date:** 2026-11-24
-- **Status:** Accepted. In progress.
+- **Status:** Accepted. Implemented in 8f9d9dd and published November 24, 2026.
 - **Context:** Appropriations appeared only as the vehicle for other laws; the power of the purse had no home.
 - **Decision:** A new domain and study unit for appropriations and the power of the purse, placed after war powers: annual Defense and State-Foreign Operations appropriations series entries, recurring provisions (the coup restriction, general transfer authority), historic funding limits (Case-Church, Boland), and fiscal law (Impoundment Control Act, Antideficiency Act).
 - **Consequences:** Units after war powers are renumbered. Member items that rely on funding limits link here.
@@ -103,7 +103,7 @@ One entry per decision, newest at the bottom. Status is one of Accepted, Propose
 ## D-013: Court cases are a new page type
 
 - **Date:** 2026-11-24
-- **Status:** Accepted. In progress.
+- **Status:** Accepted. Implemented in 8f9d9dd and published November 24, 2026. Each case also links to its Wikipedia article as secondary background, at the owner's request.
 - **Context:** Entries cite cases in prose (Chadha, Hamdan, Trump v. Illinois) with nothing to link to, and Youngstown frames the whole subject.
 - **Decision:** A `data/cases.yml` file and generated case pages, each linked to the statutes it interpreted and to the official opinion. Start with about ten Supreme Court cases.
 - **Consequences:** Statute pages list related cases; `[[id]]` links work for cases; the graph can show cases.
@@ -111,7 +111,7 @@ One entry per decision, newest at the bottom. Status is one of Accepted, Propose
 ## D-014: A Who's who page
 
 - **Date:** 2026-11-24
-- **Status:** Accepted. Built with 28 entries; the FFRDC entry was added and then dropped at the owner's request on 2026-11-24.
+- **Status:** Accepted. Implemented in 8f9d9dd. Built with 28 entries; the FFRDC entry was added and then dropped at the owner's request on 2026-11-24.
 - **Context:** Readers new to the field meet many agencies and committees by acronym.
 - **Decision:** A data-driven page of committees, agencies, and courts, each linked to the laws that create, empower, or oversee it.
 - **Consequences:** FFRDCs are not covered anywhere in the wiki.
@@ -119,7 +119,7 @@ One entry per decision, newest at the bottom. Status is one of Accepted, Propose
 ## D-015: Study and quality tools
 
 - **Date:** 2026-11-24
-- **Status:** Accepted. In progress.
+- **Status:** Accepted. Implemented in 8f9d9dd and published November 24, 2026.
 - **Decision:** Spaced-repetition flashcards; two or three "Issues for Congress" prompts per unit, giving the main arguments on each side; a print layout; a `check` mode in `R/deploy.R` (internal links, data validation, phone widths); and a last-checked date on each statute page.
 
 ## D-016: No case studies for now
@@ -128,3 +128,11 @@ One entry per decision, newest at the bottom. Status is one of Accepted, Propose
 - **Status:** Accepted. Revisit later.
 - **Context:** Walkthroughs of real events (the 2019 border wall, emergency arms sales, a sanctions program) were proposed.
 - **Decision:** The owner declined them for now.
+
+## D-017: Member lenses off the site for now
+
+- **Date:** 2026-11-24
+- **Status:** Accepted. Not yet committed.
+- **Context:** After retargeting the wiki to congressional staff and interns (D-010), the owner asked to drop the member lenses for now.
+- **Decision:** Take the Crow and Jacobs lenses, their comparison page, and every link to them off the site. Keep their data and page templates in `natsec-wiki/parked/members/` with restore instructions, rather than deleting them. Statute entries that cite a member's office as a source for a fact keep that citation.
+- **Consequences:** No Members menu, member pages, or "Member lenses" lines on statute pages. The build skips member pages while `data/members/` is empty. The lens watch list items are parked with the files.

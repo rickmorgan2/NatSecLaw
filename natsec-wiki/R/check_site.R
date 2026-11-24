@@ -63,7 +63,7 @@ check_site <- function(root) {
   if (!file.exists(file.path(docs, "index.html"))) stop("docs/ is empty. Render first.", call. = FALSE)
   phone_pages <- c("index.html", "graph.html", "statutes/wpr-1973.html", "statutes/fmf.html",
                    "cases/youngstown-1952.html", "study/index.html", "study/units/purse.html",
-                   "study/flashcards.html", "whos-who.html", "members/crow.html", "sources.html")
+                   "study/flashcards.html", "whos-who.html", "sources.html")
   phone_pages <- phone_pages[file.exists(file.path(docs, phone_pages))]
   problems <- c(check_links(docs), check_phone(docs, phone_pages))
   if (length(problems)) {

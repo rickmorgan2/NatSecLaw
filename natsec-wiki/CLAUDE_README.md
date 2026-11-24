@@ -11,7 +11,7 @@ A Quarto website, rendered with R, hosted locally or on GitHub Pages, that works
 - A Who's who page of committees, agencies, and courts, each linked to the laws behind it.
 - A study guide: an authority stack (every statute placed in a layer), twelve ordered units with reading paths, case readings, key terms, Issues for Congress, and review questions, plus flashcards with spaced review, a timeline, and a glossary.
 - A knowledge graph: typed, directed relationships between statutes, drawn with visNetwork, with domain focus, a layered view, and a table that follows the selection.
-- Member lenses: Rep. Jason Crow (CO-06) and Rep. Sara Jacobs (CA-51), each mapping committees, record, and district interests onto the statutes, plus a comparison page.
+- Member lenses for Rep. Jason Crow (CO-06) and Rep. Sara Jacobs (CA-51) are parked in `parked/members/` and off the site for now (D-017).
 - A Sources page listing every source, with official government sources marked.
 - A site-wide "Current law only" switch that hides repealed and superseded laws.
 
@@ -38,14 +38,14 @@ All content is data. Pages are generated.
 ```
 data/statutes/*.yml         content, one entry per statute (source of truth)
 data/edges.csv              graph edges (source of truth)
-data/members/*.yml          one member lens per file (source of truth)
+parked/members/             member lenses, off the site for now (D-017); its README says how to restore them
 data/study/units.yml        study units (source of truth)
 data/cases.yml              Supreme Court cases (source of truth)
 data/institutions.yml       Who's who entries (source of truth)
 data/reference_sources.csv  general sources
 data/research_sources.csv   sources consulted for the current edition
 R/helpers.R                 loaders, vocabularies, layers, eras, colors, official link builders, mini_graph()
-R/build_pages.R             validates data; writes statutes/*.qmd, members/<slug>.qmd, study/units/*.qmd,
+R/build_pages.R             validates data; writes statutes/*.qmd, cases/*.qmd, study/units/*.qmd,
                             _includes/wiki-data.html, and the manifest and source CSVs
 R/post_render.R             copies ../archive/natsec-wiki-v1/docs into docs/v1 after a full render
 R/deploy.R                  local runner: Rscript R/deploy.R [preview|render|serve|zip|check]
@@ -53,13 +53,11 @@ R/check_site.R              `check` mode: internal links, and phone width and JS
 assets/graph.js             controller for the main graph (inlined by graph.qmd)
 _includes/site.html         site-wide JS: current-law switch, historic link marks, reading progress
 statutes/*.qmd              GENERATED, never edit
-members/<slug>.qmd          GENERATED stubs that include members/_lens.qmd with params$slug
 study/units/*.qmd           GENERATED from units.yml
 cases/*.qmd                 GENERATED from cases.yml, including cases/index.qmd
 data/manifest_*.csv, data/all_sources.csv   GENERATED (manifest_cases.csv lists the cases)
 index.qmd graph.qmd title10-title50.qmd whos-who.qmd sources.qmd manifest.qmd about.qmd   top-level pages
 study/index.qmd flashcards.qmd timeline.qmd glossary.qmd                     study pages
-members/index.qmd members/_lens.qmd                                          member pages
 docs/                       GENERATED site; committed, because GitHub Pages serves it
 styles.scss                 theme; domain colors must match R/helpers.R
 _quarto.yml                 project config; execute-dir is the project root, so every page can source R/helpers.R
@@ -134,7 +132,9 @@ Every statute needs at least one of `public_law`, `stat`, `usc`, or `usc_path` s
 
 Any URL on a .gov or .mil host counts as official on the Sources page. Congress.gov, uscode.house.gov, gao.gov, loc.gov, and several agency sites (defense.gov, dni.gov, nsa.gov, dsca.mil) refuse scripted requests, so automated link checks report 403 or 404 for them; check those by hand. supremecourt.gov answers only to a full browser user agent.
 
-## Member lenses
+## Member lenses (parked)
+
+The lenses are off the site (D-017); their files are in `parked/members/`, and the build skips member pages while `data/members/` is empty. The schema and rules below apply if they return.
 
 Each file in `data/members/` has `slug`, `name`, `short`, `district`, `seat`, `party`, `as_of`, `background`, `profile_sources`, then `committees`, `initiatives`, and `equities` (district interests), and a `gaps` list. Every item has an `id`, a `short` label for the graph, a `statutes` list of wiki IDs, and a `source` with `label` and `url`. Committees also carry `name`, `role`, `jurisdiction`, and `code_titles`; initiatives carry `title`, `date`, `kind`, `summary`, and optionally `bill`. The build fails if a listed statute ID does not exist. Record items shared by both members use the same `id` in both files, which is how the comparison page finds them.
 
@@ -226,7 +226,7 @@ The owner's R skill is high. Use the native pipe, namespace-qualified calls (`dp
 - "Add statute X": return a YAML entry (with `layer`) for the right domain file, new rows for `edges.csv`, and the unit it belongs in. Check that every ID you reference exists in the inventory below.
 - "Update the status of X": search first, then return the revised `status`, `status_note`, and `sources`.
 - "Add a relationship": return the CSV row with a one-sentence note.
-- "Add a member": create `data/members/<slug>.yml`, add the member to the navbar menu in `_quarto.yml`, and render.
+- "Add a member": member lenses are parked (D-017). To restore them, follow `parked/members/README.md`.
 - "Add a program": add a `provision` entry for the authorizing section with a `funding` field, a `part_of` edge to its act, a `funded_by` edge to its appropriations series, and a place in a unit.
 - "Add a case": add an entry to `data/cases.yml`, verified against the opinion; add it to a unit's `cases`; check that its `short` label fits the layered view.
 - "Add a new page type or view": edit or add a `.qmd`; load data with `source("R/helpers.R")`, `load_statutes()`, `load_edges()`, `load_members()`, `load_units()`.
@@ -246,8 +246,8 @@ These entries were in flux at last review and should be rechecked first:
 - `selective-service-1948`: registration changes proposed in recent defense bills; not verified.
 - `wpr-1973`: outcomes of the 2026 Venezuela and Iran war powers resolutions were not verified.
 - `civcas-policy-2018`, `cp-coe-2022`: civilian harm staffing cuts and the compliance dispute with the Inspector General; a Defense review of DoDI 3000.17 was due by December 2026.
-- `data/members/crow.yml`: committee assignments for the 120th Congress; outcome of the July 22, 2026 House vote on the Iran resolution; sponsor role on the Space National Guard bill; bill numbers for the 2026 war powers resolutions.
-- `data/members/jacobs.yml`: committee assignments for the 120th Congress; bill number for the Security Sector Governance Compacts Act; whether the Upholding Human Rights Abroad Act's Leahy vetting provision was enacted.
+- `parked/members/crow.yml` (parked): committee assignments for the 120th Congress; outcome of the July 22, 2026 House vote on the Iran resolution; sponsor role on the Space National Guard bill; bill numbers for the 2026 war powers resolutions.
+- `parked/members/jacobs.yml` (parked): committee assignments for the 120th Congress; bill number for the Security Sector Governance Compacts Act; whether the Upholding Human Rights Abroad Act's Leahy vetting provision was enacted.
 - `reserve-mobilization`: Trump v. Illinois (December 2025) was an emergency-docket ruling on Sec. 12406; litigation may continue.
 
 ## Watch list additions, November 24, 2026

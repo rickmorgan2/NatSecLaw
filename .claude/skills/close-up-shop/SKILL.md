@@ -44,7 +44,7 @@ The session record never goes in `natsec-wiki/docs/` (the generated site),
      the full diff where it matters. Untracked files show only in
      `git status`; read the new ones.
    - The real changes are in the sources of truth: `natsec-wiki/data/`
-     (statutes YAML, `edges.csv`, `members/*.yml`, `study/units.yml`, source
+     (statutes YAML, `edges.csv`, `cases.yml`, `institutions.yml`, `study/units.yml`, source
      CSVs), `natsec-wiki/R/`, `assets/`, `_includes/`, the top-level `.qmd`
      pages, `styles.scss`, `_quarto.yml`, and `.github/workflows/`. Files under
      `natsec-wiki/statutes/`, `natsec-wiki/study/units/`,
@@ -110,7 +110,7 @@ already there. If today has no heading yet, add one at the top, just below the
 - Leave out any section with nothing to say, except **Open threads**.
 
 Match the existing entries: short bullets, tables for numbers, plain words.
-Members are named (D-003); describe their record neutrally, as the wiki does.
+Member lenses are parked (D-017); if they return, members are named (D-003) and their record is described neutrally.
 Never include the owner's email address or other personal details.
 
 ## What not to capture

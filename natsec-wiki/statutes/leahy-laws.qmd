@@ -51,7 +51,6 @@ In force. The State Department version is Section 620M of the Foreign Assistance
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd), [Title 22 U.S.C.](title22-usc.qmd).
 - **Era.** End of the Cold War ([timeline](../study/timeline.qmd)).
 - **Study.** [Unit 10: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (core reading); [Unit 11: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (further reading); [Unit 12: Civilian harm and the conduct of operations](../study/units/civilian-harm.qmd) (core reading).
-- **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Armed Services; Civilian Harm in Partnerships Act; Civilians in Conflict Caucus. [Rep. Sara Jacobs](../members/jacobs.qmd): Foreign Affairs; Armed Services; Security Sector Compacts Act; Civilian Harm in Partnerships Act; Upholding Human Rights Abroad Act; Civilians in Conflict Caucus.
 
 ## Connections
 

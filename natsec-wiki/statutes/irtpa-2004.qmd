@@ -52,7 +52,6 @@ In force. Its lone wolf amendment to FISA carried a sunset and lapsed in March 2
 - **Era.** After September 11 ([timeline](../study/timeline.qmd)).
 - **Study.** [Unit 6: Intelligence and its oversight](../study/units/intelligence-oversight.qmd) (core reading).
 - **Who's involved.** [HPSCI](../whos-who.qmd#hpsci), [SSCI](../whos-who.qmd#ssci), [ODNI](../whos-who.qmd#odni).
-- **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Intelligence.
 
 ## Connections
 

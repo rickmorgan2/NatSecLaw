@@ -8,7 +8,6 @@ page-layout: full
 ```{r}
 source("R/helpers.R")
 statutes <- load_statutes()
-members  <- load_members()
 links    <- official_links(statutes)
 src_links <- build_sources(statutes)
 refs     <- readr::read_csv("data/reference_sources.csv", col_types = "cccc")
@@ -80,21 +79,6 @@ all_src |>
   src_table()
 ```
 
-## Member lenses
-
-Every claim on the member pages carries a source. Bills link to Congress.gov; statements and letters link to the member's official House site where one exists.
-
-```{r}
-purrr::map(members, member_sources) |>
-  purrr::list_rbind() |>
-  dplyr::distinct(member, item, url, .keep_all = TRUE) |>
-  dplyr::transmute(
-    Member = factor(member), Kind = factor(kind), Item = item,
-    Source = ext_link(url, label), Type = factor(flag(official))
-  ) |>
-  src_table()
-```
-
 ## Status and secondary sources on statute pages
 
 Reports, articles, and official pages used for current-status notes and for facts beyond the statute's own text.
@@ -119,7 +103,7 @@ refs |>
 
 ## Research for this edition
 
-Sources consulted for version 2 (November 2026): the civilian harm statutes, the second member lens, bill numbers, and the switch to GovInfo links.
+Sources consulted for version 2 (November 2026): the civilian harm statutes, bill numbers, and the switch to GovInfo links.
 
 ```{r}
 research |>

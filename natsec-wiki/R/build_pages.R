@@ -1,4 +1,5 @@
-# Generate the statute pages, member pages, study units, site data, and manifests.
+# Generate the statute and case pages, member pages (when data/members has any), study units,
+# site data, and manifests.
 # Run from the project root: Rscript R/build_pages.R
 # Quarto also runs this before every render (see _quarto.yml).
 
@@ -295,8 +296,8 @@ for (i in seq_len(nrow(statutes))) {
 
 # member pages: a stub per member that includes the shared lens body -----------
 
-dir.create("members", showWarnings = FALSE)
-prune("members", c(paste0(names(members), ".qmd"), "index.qmd"))
+# member lenses are parked in parked/members (D-017); with none in data/members this is skipped
+if (length(members)) dir.create("members", showWarnings = FALSE)
 for (m in members) {
   write_if_changed(c(
     "---",
@@ -587,7 +588,7 @@ research <- readr::read_csv("data/research_sources.csv", col_types = "cccc")
 all_sources <- dplyr::bind_rows(
   sources |>
     dplyr::transmute(group = "Statute", context = short_of[statute_id], type = source_type, label, url),
-  purrr::map(members, member_sources) |>
+  if (length(members)) purrr::map(members, member_sources) |>
     purrr::list_rbind() |>
     dplyr::transmute(group = "Member lens", context = paste0(member, ": ", item), type = kind, label, url),
   refs |> dplyr::transmute(group = "Reference", context = used_for, type = type, label = name, url),
@@ -607,7 +608,7 @@ readr::write_csv(all_sources, "data/all_sources.csv", na = "")
 
 message(
   "Built ", nrow(statutes), " statute pages, ", nrow(cases), " case pages, ", length(insts), " who's who entries, ",
-  length(members), " member lenses, ",
+  if (length(members)) paste0(length(members), " member lenses, "),
   length(units), " study units, ", nrow(edges), " edges, ",
   nrow(all_sources), " source links (", sum(all_sources$official), " official)."
 )

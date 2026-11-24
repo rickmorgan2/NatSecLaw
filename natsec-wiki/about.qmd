@@ -32,6 +32,7 @@ Some entries are single provisions rather than whole acts, where the provision m
 - **Security assistance programs.** Foreign Military Financing, Foreign Military Sales, IMET, Peacekeeping Operations, presidential drawdown, excess defense articles, and the Ukraine Security Assistance Initiative, each with its funding and administration.
 - **Court cases.** Twelve Supreme Court decisions, from *Curtiss-Wright* and *Youngstown* to *Learning Resources v. Trump*, each linked to the official opinion and to the statutes it decided. Statute pages list the cases that interpreted them.
 - **Who's who** and **Issues for Congress**, two or three per unit, setting out the main arguments on recurring questions.
+- **Member lenses withdrawn.** The Crow and Jacobs lenses were taken off the site for now.
 - **Last checked dates** on every statute page, spaced review in the [flashcards](study/flashcards.qmd), a print layout, and a phone layout for every page, including the knowledge graph.
 
 **November 10, 2026 (version 2)**
@@ -40,13 +41,9 @@ Some entries are single provisions rather than whole acts, where the provision m
 
 [Version 1](v1/index.html), the October to November 2026 edition with one anonymized member lens, is archived unchanged. On the published site it lives under `v1/`; locally it appears after a full render.
 
-## Member lenses
-
-The [member lenses](members/index.qmd) map each member's committee seats, legislative record, and district interests onto the statutes. They are independent references built from public sources, not affiliated with or endorsed by either member's office, and they describe the record without taking a position on it.
-
 ## Reading a statute page
 
-Each page has the same parts: a citation bar whose citations link to the official text; the law's status and layer; a summary that leads with what the law does; buttons to the enacted text and the current code; key provisions; why the law matters; its current status and the date it was last checked; for programs, funding and administration; the court cases that interpreted it; where it sits (layer, what it builds on, code title, era, study units, who is involved, member lenses); its connections to other entries; and sources.
+Each page has the same parts: a citation bar whose citations link to the official text; the law's status and layer; a summary that leads with what the law does; buttons to the enacted text and the current code; key provisions; why the law matters; its current status and the date it was last checked; for programs, funding and administration; the court cases that interpreted it; where it sits (layer, what it builds on, code title, era, study units, who is involved); its connections to other entries; and sources.
 
 Links to repealed and superseded statutes are marked with a dagger (†).
 
@@ -93,7 +90,7 @@ Layer assignments are editorial judgments, not legal categories.
 
 ## Accuracy and limits
 
-The summaries were drafted with Claude, an AI model. Each statute page shows when it was last checked. The entries added on November 24, 2026 were checked against the GovInfo text of the U.S. Code, the Statutes at Large, the enacted fiscal year 2026 appropriations act (Pub. L. 119-75), and the official opinions in the *United States Reports* on GovInfo or on the Supreme Court's site. The civilian harm entries and member-page bill numbers were checked against GovInfo in the November 10 review. Other citations and section numbers were written from reference knowledge and have not each been checked against the primary text.
+The summaries were drafted with Claude, an AI model. Each statute page shows when it was last checked. The entries added on November 24, 2026 were checked against the GovInfo text of the U.S. Code, the Statutes at Large, the enacted fiscal year 2026 appropriations act (Pub. L. 119-75), and the official opinions in the *United States Reports* on GovInfo or on the Supreme Court's site. The civilian harm entries were checked against GovInfo in the November 10 review. Other citations and section numbers were written from reference knowledge and have not each been checked against the primary text.
 
 Treat the wiki as a map for finding and relating the law. Before citing a provision in a memo, letter, or bill, confirm it in the official text linked on each page. Statutes with sunset clauses or disputed implementation change fastest; their status notes end with "Check current status."
 
@@ -101,7 +98,7 @@ This is a reference tool and not legal advice.
 
 ## Adding or changing content
 
-All content lives in `data/`. The pages in `statutes/`, `cases/`, `members/` (apart from `index.qmd` and `_lens.qmd`), and `study/units/` are generated and should not be edited by hand.
+All content lives in `data/`. The pages in `statutes/`, `cases/`, and `study/units/` are generated and should not be edited by hand.
 
 1. Add or edit a statute in one of the files in `data/statutes/`, a case in `data/cases.yml`, or a Who's who entry in `data/institutions.yml`. Copy an existing entry to get the fields right.
 2. Add rows to `data/edges.csv` for a statute's connections, using the relationship types above. A program with a `funding` field needs a matching "funded through" row.

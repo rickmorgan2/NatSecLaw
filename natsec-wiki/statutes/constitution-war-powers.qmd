@@ -50,7 +50,6 @@ In force. Its allocation of war and foreign affairs powers is settled more by pr
 - **Built upon by.** [War Powers Resolution](wpr-1973.qmd), [Militia Acts of 1792](militia-acts-1792.qmd), [UCMJ](ucmj-1950.qmd), [Declarations of War](declarations-of-war.qmd), [Title 10 U.S.C.](title10-usc.qmd), [Defense appropriations (annual)](defense-approps-annual.qmd), [State-foreign ops appropriations](sfops-approps-annual.qmd), [Antideficiency Act](antideficiency.qmd).
 - **Era.** Founding and the early republic ([timeline](../study/timeline.qmd)).
 - **Study.** [Unit 1: Where the power comes from](../study/units/foundations.qmd) (core reading); [Unit 3: Deciding to use force](../study/units/war-powers.qmd) (further reading); [Unit 4: The power of the purse](../study/units/purse.qmd) (further reading).
-- **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Venezuela WPR; Iran WPR; No Funds for Iran War Act; Lawful orders statement. [Rep. Sara Jacobs](../members/jacobs.qmd): Iran WPR; Deployed constituents.
 
 ## Connections
 

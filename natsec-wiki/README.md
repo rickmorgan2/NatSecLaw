@@ -1,6 +1,6 @@
 # U.S. National Security Legislation Wiki (version 2)
 
-A Quarto website and study guide: one wiki page per statute, an eleven-unit curriculum, an interactive knowledge graph, member lenses for Rep. Jason Crow (CO-06) and Rep. Sara Jacobs (CA-51), and a Sources page listing everything the wiki draws on. Every statute links to its official text on GovInfo.
+A Quarto website and study guide for congressional staff and interns: one wiki page per statute and per Supreme Court case, a twelve-unit curriculum, an interactive knowledge graph, a Who's who page, and a Sources page listing everything the wiki draws on. Every statute and case links to its official text.
 
 Version 1 is archived unchanged in `../archive/natsec-wiki-v1/` and published under `v1/`.
 
@@ -39,7 +39,6 @@ A GitHub Pages site is public even when it is built from a private repository, u
 |---|---|
 | `data/statutes/*.yml` | All statute content, one entry per statute, in files grouped by domain. Each entry has a `layer`. |
 | `data/edges.csv` | The knowledge graph. One row per relationship. |
-| `data/members/*.yml` | One file per member lens. Add a file to add a member. |
 | `data/study/units.yml` | The study guide's units. |
 | `data/reference_sources.csv`, `data/research_sources.csv` | General references, and sources consulted for this edition. |
 | `R/helpers.R` | Data loading, vocabularies, layers, eras, colors, official link builders. |
@@ -48,8 +47,8 @@ A GitHub Pages site is public even when it is built from a private repository, u
 | `R/deploy.R` | Local runner: finds Quarto, installs packages, then previews, renders, serves, or zips the site. |
 | `assets/graph.js` | The knowledge graph's controls (domain focus, layered view, linked table). |
 | `_includes/site.html` | Site-wide script: the "Current law only" switch, historic link marks, study progress. |
-| `statutes/*.qmd`, `members/<slug>.qmd`, `study/units/*.qmd` | Generated pages. Do not edit by hand. |
-| `members/_lens.qmd`, `members/index.qmd` | The shared member lens body and the comparison page. |
+| `statutes/*.qmd`, `cases/*.qmd`, `study/units/*.qmd` | Generated pages. Do not edit by hand. |
+| `parked/members/` | The Crow and Jacobs member lenses, off the site for now (D-017); see its README to restore them. |
 | `study/index.qmd`, `study/flashcards.qmd`, `study/timeline.qmd`, `study/glossary.qmd` | Study guide pages. |
 | `index.qmd`, `graph.qmd`, `title10-title50.qmd`, `sources.qmd`, `manifest.qmd`, `about.qmd` | Top-level pages. |
 | `docs/` | Generated site. Commit it; GitHub Pages serves it. |

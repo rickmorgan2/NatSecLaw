@@ -4,7 +4,7 @@ project:
   output-dir: docs
   # R code in every page runs from the project root, so pages in subfolders can source R/helpers.R
   execute-dir: project
-  # regenerate statute, member, and study pages and the manifests from data/ before each render
+  # regenerate statute, case, and study pages and the manifests from data/ before each render
   pre-render: R/build_pages.R
   # copy the archived first version into docs/v1
   post-render: R/post_render.R
@@ -12,9 +12,10 @@ project:
     - "*.qmd"
     - "statutes/*.qmd"
     - "cases/*.qmd"
-    - "members/*.qmd"
     - "study/*.qmd"
     - "study/units/*.qmd"
+    # member lenses are off the site for now (D-017)
+    - "!parked/"
   resources:
     - "data/*.csv"
     - ".nojekyll"
@@ -51,14 +52,6 @@ website:
             href: title10-title50.qmd
           - text: "Sources"
             href: sources.qmd
-      - text: "Members"
-        menu:
-          - text: "Compare the two lenses"
-            href: members/index.qmd
-          - text: "Rep. Jason Crow (CO-06)"
-            href: members/crow.qmd
-          - text: "Rep. Sara Jacobs (CA-51)"
-            href: members/jacobs.qmd
       - text: "About"
         menu:
           - text: "About this wiki"

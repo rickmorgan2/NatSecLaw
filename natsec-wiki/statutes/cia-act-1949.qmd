@@ -50,7 +50,6 @@ In force as amended.
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
 - **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (core reading); [Unit 4: The power of the purse](../study/units/purse.qmd) (further reading); [Unit 6: Intelligence and its oversight](../study/units/intelligence-oversight.qmd) (core reading).
 - **Who's involved.** [CIA](../whos-who.qmd#cia).
-- **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Intelligence.
 
 ## Connections
 

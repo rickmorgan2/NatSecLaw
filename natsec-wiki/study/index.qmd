@@ -101,7 +101,6 @@ cat(
 - **[Glossary](glossary.qmd).** Every key term from the units in one alphabetical list.
 - **[Knowledge graph](../graph.qmd).** Switch to *Authority layers* to see the stack with its connections; click a domain to isolate it.
 - **[Title 10 and Title 50](../title10-title50.qmd).** The best single page for the military and intelligence divide.
-- **[Member lenses](../members/index.qmd).** How two members of Congress work through these statutes, including on civilian harm.
 - **Print.** Any unit or statute page prints as a clean packet, with answers expanded and official links written out.
 
 ## Using this guide in an office

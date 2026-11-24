@@ -78,8 +78,6 @@ Known as the McCain Amendment, it prohibits cruel, inhuman, or degrading treatme
 [Read it: [enacted text](https://www.govinfo.gov/link/plaw/109/public/148), [current code](https://www.govinfo.gov/link/uscode/42/2000dd?link-type=html)]{.reading-links} <label class="read-check"><input type="checkbox" data-read="dta-2005"> I have read this</label>
 :::
 
-Also read: [Rep. Jason Crow's civilian harm record](../../members/crow.qmd); [Rep. Sara Jacobs's civilian harm record](../../members/jacobs.qmd).
-
 ## How they connect
 
 Core and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.
@@ -167,7 +165,7 @@ Because Congress put it in Title 10 at 10 U.S.C. 184 with specific functions, so
 ::: {.callout-tip collapse="true" icon="false"}
 ## 5. How do the Leahy Laws relate to the civilian harm statutes?
 
-The civilian harm statutes govern U.S. operations; the [Leahy Laws](../../statutes/leahy-laws.qmd) condition assistance to foreign units on the absence of credible information of gross human rights violations. Both members' records include bills to extend vetting or reporting to partner operations.
+The civilian harm statutes govern U.S. operations; the [Leahy Laws](../../statutes/leahy-laws.qmd) condition assistance to foreign units on the absence of credible information of gross human rights violations. Bills in recent Congresses have proposed extending vetting or reporting to partners' operations.
 :::
 
 ::: {.unit-nav}
