@@ -203,7 +203,8 @@ page_md <- function(s, l) {
     "",
     connections_md(s$id),
     "",
-    paste0("[See this statute in the knowledge graph](../graph.qmd?focus=", s$id, ")"),
+    # link to graph.html, not graph.qmd: Quarto leaves .qmd links that carry a query string unconverted
+    paste0("[See this statute in the knowledge graph](../graph.html?focus=", s$id, ")"),
     "",
     "## Sources",
     "",
@@ -333,7 +334,7 @@ for (k in seq_along(units)) {
     ),
     "## How they connect",
     "",
-    "Core and further readings with the relationships recorded between them. Click to highlight, double-click to open.",
+    "Core and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.",
     "",
     "```{r}",
     "source(\"R/helpers.R\")",

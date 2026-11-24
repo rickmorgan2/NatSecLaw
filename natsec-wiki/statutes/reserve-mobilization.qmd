@@ -64,7 +64,7 @@ In force. On December 23, 2025 the Supreme Court, in Trump v. Illinois, left in 
 | constrained by | [Posse Comitatus Act](posse-comitatus-1878.qmd){.subj} | Guard members federalized under Title 10 are subject to the act; those in state or Title 32 status are not. |
 | related to | [Selective Service Act](selective-service-1948.qmd){.subj} | Conscription and reserve call-up are the two statutory sources of wartime manpower. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=reserve-mobilization)
+[See this statute in the knowledge graph](../graph.html?focus=reserve-mobilization)
 
 ## Sources
 

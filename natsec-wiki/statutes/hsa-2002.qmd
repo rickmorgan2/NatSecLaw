@@ -56,7 +56,7 @@ In force as amended.
 | related to | [USA PATRIOT Act](patriot-2001.qmd){.subj} | Organizational counterpart to the PATRIOT Act's new authorities. |
 | relied on by | [Cyber Info Sharing Act](cisa-2015.qmd){.subj} | Uses the Department of Homeland Security as the civilian hub for threat sharing. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=hsa-2002)
+[See this statute in the knowledge graph](../graph.html?focus=hsa-2002)
 
 ## Sources
 

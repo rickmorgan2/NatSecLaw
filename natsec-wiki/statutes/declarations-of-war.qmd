@@ -52,7 +52,7 @@ No declaration has been enacted since June 1942. Statutes triggered by a declare
 | relied on by | [Trading with the Enemy Act](twea-1917.qmd){.subj} | Its core powers are available only in time of war. |
 | relied on by | [Alien Enemies Act](alien-enemies-1798.qmd){.subj} | Triggered by a declared war, or by an invasion or predatory incursion. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=declarations-of-war)
+[See this statute in the knowledge graph](../graph.html?focus=declarations-of-war)
 
 ## Sources
 

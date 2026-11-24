@@ -58,7 +58,7 @@ In force as amended.
 | enacted in | [NDAA (annual)](ndaa-annual.qmd){.subj} | Sec. 1311 of the FY1987 NDAA. |
 | related to | [Section 127e](sec127e-2004.qmd){.subj} | Programs are run by the special operations command that Nunn-Cohen created. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=nunn-cohen-1986)
+[See this statute in the knowledge graph](../graph.html?focus=nunn-cohen-1986)
 
 ## Sources
 

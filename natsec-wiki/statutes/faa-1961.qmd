@@ -68,7 +68,7 @@ In force. It has not had a comprehensive reauthorization since 1985, so foreign 
 | relied on by | [Helms-Burton Act](helms-burton-1996.qmd){.subj} | The embargo also rests on Sec. 620(a) of the Foreign Assistance Act. |
 | related to | [Security Cooperation (Ch. 16)](seccoop-2016.qmd){.subj} | Title 10 security cooperation runs alongside Title 22 security assistance. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=faa-1961)
+[See this statute in the knowledge graph](../graph.html?focus=faa-1961)
 
 ## Sources
 

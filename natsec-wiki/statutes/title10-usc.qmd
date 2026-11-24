@@ -91,7 +91,7 @@ In force as positive law, amended every year through the defense authorization.
 | related to | [Title 50 U.S.C.](title50-usc.qmd){.subj} | The divide between intelligence and military authorities; see the Title 10 and Title 50 page. |
 | related to | [Title 22 U.S.C.](title22-usc.qmd){.subj} | State-led security assistance and Defense-led security cooperation. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=title10-usc)
+[See this statute in the knowledge graph](../graph.html?focus=title10-usc)
 
 ## Sources
 

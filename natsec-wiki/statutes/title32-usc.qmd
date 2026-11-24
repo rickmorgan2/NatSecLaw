@@ -64,7 +64,7 @@ In force as positive law, enacted together with Title 10 in 1956.
 | related to | [Title 10 U.S.C.](title10-usc.qmd){.subj} | Enacted together as positive law in 1956; the two titles define state and federal Guard status. |
 | related to | [Reserve & Guard Mobilization](reserve-mobilization.qmd){.subj} | Guard members not federalized under Title 10 may serve under Title 32, with different legal limits. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=title32-usc)
+[See this statute in the knowledge graph](../graph.html?focus=title32-usc)
 
 ## Sources
 

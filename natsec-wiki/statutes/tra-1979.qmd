@@ -56,7 +56,7 @@ In force, supplemented by the Taiwan Enhanced Resilience Act in the FY2023 defen
 | relies on | [Arms Export Control Act](aeca-1976.qmd){.subj} | Arms sales to Taiwan follow AECA procedures. |
 | related to | [NDAA (annual)](ndaa-annual.qmd){.subj} | The Taiwan Enhanced Resilience Act was part of the FY2023 NDAA. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=tra-1979)
+[See this statute in the knowledge graph](../graph.html?focus=tra-1979)
 
 ## Sources
 

@@ -13,7 +13,9 @@ links    <- official_links(statutes)
 short_of <- stats::setNames(statutes$short, statutes$id)
 ```
 
-**How to use it.** Click a domain to fade the others, or narrow by code title or layer. Click a statute to see what it is and to filter the table below to its connections; double-click to open its page. Switch to **Authority layers** to see the hierarchy from the Constitution down to single code sections. Hover over a line to read why two statutes are linked.
+**How to use it.** Pick a domain to fade the others, or narrow by code title or layer. Select a statute to see what it is and to filter the table below to its connections; select a line to see why two statutes are linked. Switch to **Authority layers** to see the hierarchy from the Constitution down to single code sections. On a phone, pinch to zoom, drag to move around, and use **Full screen** for more room.
+
+::: {#graph-stage .graph-stage}
 
 ```{r}
 #| results: asis
@@ -24,17 +26,21 @@ domain_n <- stats::setNames(counts$n, counts$domain)[names(domain_labels)]
 opts <- function(values, labels) paste0("<option value=\"", values, "\">", labels, "</option>", collapse = "")
 finder <- statutes |> dplyr::arrange(short)
 
+# a raw HTML block, so pandoc does not wrap the buttons in paragraphs
 cat(
+  "```{=html}",
   "<div id=\"graph-controls\" class=\"graph-controls\">",
   "<div class=\"graph-row\"><span class=\"graph-row-label\">Domain</span>",
   paste0("<button type=\"button\" class=\"graph-chip\" data-domain=\"", names(domain_labels), "\" aria-pressed=\"false\">",
          "<span class=\"swatch\" style=\"background:", domain_colors[names(domain_labels)], "\"></span>",
          domain_short[names(domain_labels)], " <span class=\"chip-n\">", domain_n, "</span></button>", collapse = ""),
   "</div>",
-  "<div class=\"graph-row\">",
+  "<div class=\"graph-row graph-selects\">",
   "<label>Code title <select id=\"graph-title\"><option value=\"\">Any</option>", opts(titles, paste("Title", titles)), "</select></label>",
   "<label>Layer <select id=\"graph-layer\"><option value=\"\">Any</option>", opts(names(layer_labels), layer_labels), "</select></label>",
-  "<label>Find <select id=\"graph-find\"><option value=\"\">A statute...</option>", opts(finder$id, finder$short), "</select></label>",
+  "<label>Find <select id=\"graph-find\"><option value=\"\">A statute&hellip;</option>", opts(finder$id, finder$short), "</select></label>",
+  "</div>",
+  "<div class=\"graph-row\">",
   "<span class=\"view-switch\" role=\"group\" aria-label=\"View\">",
   "<button type=\"button\" data-view=\"network\" class=\"active\">Network</button>",
   "<button type=\"button\" data-view=\"layers\">Authority layers</button></span>",
@@ -42,12 +48,17 @@ cat(
   "<label class=\"inline-toggle\"><input type=\"checkbox\" data-wiki-toggle> Current law only</label>",
   "</div>",
   "</div>",
+  "```",
   sep = "\n"
 )
 ```
 
 ::: {.graph-wrap}
 ::: {.graph-canvas}
+```{=html}
+<button type="button" id="graph-full" class="graph-full-btn" aria-pressed="false">Full screen</button>
+```
+
 ```{r}
 # node size reflects how many connections a statute has
 degree <- tibble::tibble(id = c(edges$from, edges$to)) |>
@@ -87,6 +98,8 @@ vis_edges <- edges |>
     dashes = relation == "related",
     color = unname(relation_colors[relation]),
     basecolor = color,
+    relation_label = unname(relation_labels[relation]),
+    note,
     title = paste0(short_of[from], " <b>", relation_labels[relation], "</b> ", short_of[to], "<br>", note)
   )
 
@@ -110,6 +123,7 @@ visNetwork::visNetwork(nodes, vis_edges, width = "100%", height = "760px") |>
 ```
 :::
 ::: {#graph-info .graph-info}
+:::
 :::
 :::
 
@@ -157,15 +171,30 @@ edges |>
     To = page_link(to),
     Note = note,
     from_id = from,
-    to_id = to
+    to_id = to,
+    # phones get one column that reads as a sentence
+    Connection = paste0(page_link(from), " <em>", relation_labels[relation], "</em> ", page_link(to))
   ) |>
   DT::datatable(
     elementId = "conn-table",
     escape = FALSE, rownames = FALSE,
+    # Responsive picks columns by screen width; on a phone the note opens under a tapped row
+    extensions = "Responsive",
     options = list(
       pageLength = 15, autoWidth = FALSE,
-      # the two id columns drive the graph filter and stay hidden
-      columnDefs = list(list(visible = FALSE, targets = c(4, 5)))
+      responsive = list(details = list(renderer = DT::JS(
+        "function (api, rowIdx, columns) {",
+        "  var note = columns[3];",
+        "  return note && note.hidden ? '<div class=\"conn-note\">' + note.data + '</div>' : false;",
+        "}"
+      ))),
+      columnDefs = list(
+        # the two id columns drive the graph filter and stay hidden
+        list(visible = FALSE, className = "never", targets = c(4, 5)),
+        list(className = "min-tablet-p", targets = c(0, 1, 2)),
+        list(className = "not-mobile", targets = 3),
+        list(className = "max-mobile-l", targets = 6)
+      )
     )
   )
 ```

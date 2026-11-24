@@ -62,7 +62,7 @@ Amended heavily in 1920 and 1933 and absorbed into Titles 10 and 32 by the 1956 
 | related to | [Defense Production Act](dpa-1950.qmd){.subj} | Its industrial mobilization section is an early precedent for defense production powers. |
 | related to | [Reserve & Guard Mobilization](reserve-mobilization.qmd){.subj} | Operates on the dual state and federal status begun in 1916 and completed in 1933. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=national-defense-act-1916)
+[See this statute in the knowledge graph](../graph.html?focus=national-defense-act-1916)
 
 ## Sources
 

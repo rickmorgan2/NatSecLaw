@@ -54,7 +54,7 @@ In force. The Millennium Challenge Corporation was targeted for deep cuts in 202
 |---|---|---|
 | related to | [Foreign Assistance Act](faa-1961.qmd){.subj} | Designed as a selective alternative to traditional Foreign Assistance Act programs. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=millennium-challenge-2003)
+[See this statute in the knowledge graph](../graph.html?focus=millennium-challenge-2003)
 
 ## Sources
 

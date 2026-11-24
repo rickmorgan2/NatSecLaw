@@ -55,7 +55,7 @@ In force. A March 2025 proclamation invoked it against alleged members of a Vene
 | relies on | [Declarations of War](declarations-of-war.qmd){.subj} | Triggered by a declared war, or by an invasion or predatory incursion. |
 | related to | [Trading with the Enemy Act](twea-1917.qmd){.subj} | Wartime control of enemy persons and of enemy property. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=alien-enemies-1798)
+[See this statute in the knowledge graph](../graph.html?focus=alien-enemies-1798)
 
 ## Sources
 

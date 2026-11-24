@@ -60,7 +60,7 @@ In force through December 31, 2033 under the current text, with up to $3 million
 | related to | [Foreign Claims Act](foreign-claims-1942.qmd){.subj} | Ex gratia payments are available only where harm is not compensable under the Foreign Claims Act, which excludes combat. |
 | relies on | [Civilian Casualty Policy](civcas-policy-2018.qmd){.subj} | Sec. 1213(d)(3) requires the allegation-response procedures to be formalized in the Sec. 936 civilian casualty policy. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=ex-gratia-2019)
+[See this statute in the knowledge graph](../graph.html?focus=ex-gratia-2019)
 
 ## Sources
 

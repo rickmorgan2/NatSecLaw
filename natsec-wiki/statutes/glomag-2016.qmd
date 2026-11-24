@@ -57,7 +57,7 @@ In force. Its original six-year sunset was removed in 2022 by Pub. L. 117-110.
 | relies on | [IEEPA](ieepa-1977.qmd){.subj} | Implemented through Executive Order 13818 using IEEPA blocking authority. |
 | enacted in | [NDAA (annual)](ndaa-annual.qmd){.subj} | Subtitle F of Title XII of the FY2017 NDAA. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=glomag-2016)
+[See this statute in the knowledge graph](../graph.html?focus=glomag-2016)
 
 ## Sources
 

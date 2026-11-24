@@ -55,7 +55,7 @@ In force. The 1918 Sedition Act amendments were repealed in 1921; section 798 on
 | related to | [CIPA](cipa-1980.qmd){.subj} | CIPA procedures make Espionage Act prosecutions workable. |
 | related to | [FARA](fara-1938.qmd){.subj} | Disclosure and prohibition approaches to foreign influence; often charged in the same counterintelligence cases. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=espionage-1917)
+[See this statute in the knowledge graph](../graph.html?focus=espionage-1917)
 
 ## Sources
 

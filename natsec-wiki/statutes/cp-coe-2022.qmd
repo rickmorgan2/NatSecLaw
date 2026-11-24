@@ -58,7 +58,7 @@ In force. The center was established under the statute. A June 2026 analysis of 
 | enacted in | [NDAA (annual)](ndaa-annual.qmd){.subj} | Enacted as Sec. 1082 of the FY2023 NDAA (Pub. L. 117-263). |
 | related to | [Civilian Casualty Policy](civcas-policy-2018.qmd){.subj} | The center carries out and refines the civilian harm policy that Sec. 936 requires the Department to maintain. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=cp-coe-2022)
+[See this statute in the knowledge graph](../graph.html?focus=cp-coe-2022)
 
 ## Sources
 

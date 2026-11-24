@@ -56,7 +56,7 @@ Its structural reforms are in force. The authorities it extended (business recor
 | amends | [FISA](fisa-1978.qmd){.subj} | Ended bulk collection and added amicus and transparency provisions. |
 | amends | [USA PATRIOT Act](patriot-2001.qmd){.subj} | Rewrote Section 215 and extended expiring provisions to 2019. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=usa-freedom-2015)
+[See this statute in the knowledge graph](../graph.html?focus=usa-freedom-2015)
 
 ## Sources
 

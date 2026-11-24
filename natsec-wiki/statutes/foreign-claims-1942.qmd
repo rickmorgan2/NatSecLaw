@@ -54,7 +54,7 @@ In force. Restated in 1943 and codified in Title 10 in 1956. It does not cover h
 |---|---|---|
 | related to | [Ex Gratia Payments](ex-gratia-2019.qmd){.subj} | Ex gratia payments are available only where harm is not compensable under the Foreign Claims Act, which excludes combat. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=foreign-claims-1942)
+[See this statute in the knowledge graph](../graph.html?focus=foreign-claims-1942)
 
 ## Sources
 

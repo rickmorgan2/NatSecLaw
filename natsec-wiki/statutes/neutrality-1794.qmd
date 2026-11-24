@@ -53,7 +53,7 @@ In force as recodified. Prosecutions are rare.
 | related to | [Logan Act](logan-1799.qmd){.subj} | Companion statutes barring private diplomacy and private warfare. |
 | related to | [Espionage Act](espionage-1917.qmd){.subj} | The 1917 act added to the enforcement of neutrality. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=neutrality-1794)
+[See this statute in the knowledge graph](../graph.html?focus=neutrality-1794)
 
 ## Sources
 

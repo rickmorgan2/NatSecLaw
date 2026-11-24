@@ -66,7 +66,7 @@ In force. It began as the Foreign Military Sales Act of 1968 (Pub. L. 90-629) an
 | related to | [Security Cooperation (Ch. 16)](seccoop-2016.qmd){.subj} | Defense-funded equipment transfers use the foreign military sales system. |
 | related to | [Atomic Energy Act](aea-1954.qmd){.subj} | Nuclear cooperation and conventional arms transfers are reviewed by Congress under parallel procedures. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=aeca-1976)
+[See this statute in the knowledge graph](../graph.html?focus=aeca-1976)
 
 ## Sources
 

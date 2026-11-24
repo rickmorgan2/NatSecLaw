@@ -57,7 +57,7 @@ Its two-year reauthorization of Section 702 ran to April 20, 2026. Congress pass
 | amends | [FISA](fisa-1978.qmd){.subj} | Revised FBI query rules and other FISA procedures. |
 | amends | [FISA Amendments Act (702)](fisa-amendments-2008.qmd){.subj} | Reauthorized Title VII for two years, to April 2026. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=risaa-2024)
+[See this statute in the knowledge graph](../graph.html?focus=risaa-2024)
 
 ## Sources
 

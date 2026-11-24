@@ -59,7 +59,7 @@ In force as amended. Its limits on habeas review were narrowed by the Supreme Co
 | enacted in | [NDAA (annual)](ndaa-annual.qmd){.subj} | Enacted in the FY2006 defense appropriations act and again in the FY2006 NDAA (Pub. L. 109-163). |
 | amended by | [Military Commissions Act](mil-commissions-2006.qmd){.subj} | Revised the DTA's limits on habeas review for detainees. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=dta-2005)
+[See this statute in the knowledge graph](../graph.html?focus=dta-2005)
 
 ## Sources
 

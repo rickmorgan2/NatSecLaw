@@ -58,7 +58,7 @@ In force as amended by the Smith-Mundt Modernization Act of 2012 (FY2013 Nationa
 | amended by | [NDAA (annual)](ndaa-annual.qmd){.subj} | The Smith-Mundt Modernization Act was Sec. 1078 of the FY2013 NDAA. |
 | related to | [FARA](fara-1938.qmd){.subj} | One governs foreign influence inside the United States, the other U.S. influence abroad. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=smith-mundt-1948)
+[See this statute in the knowledge graph](../graph.html?focus=smith-mundt-1948)
 
 ## Sources
 

@@ -80,7 +80,7 @@ The standing law of conscription. It requires men to register at 18 and maintain
 
 ## How they connect
 
-Core and further readings with the relationships recorded between them. Click to highlight, double-click to open.
+Core and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.
 
 ```{r}
 source("R/helpers.R")

@@ -54,7 +54,7 @@ In force. The annual reporting requirement had an initial six-year term.
 |---|---|---|
 | related to | [Global Fragility Act](gfa-2019.qmd){.subj} | Companion prevention statutes: atrocity prevention and fragility. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=wiesel-2018)
+[See this statute in the knowledge graph](../graph.html?focus=wiesel-2018)
 
 ## Sources
 

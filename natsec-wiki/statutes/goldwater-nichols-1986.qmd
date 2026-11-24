@@ -60,7 +60,7 @@ In force as amended, with notable adjustments in the FY2017 defense authorizatio
 | amends | [Title 10 U.S.C.](title10-usc.qmd){.subj} | Rewrote the command and joint provisions of Subtitle A. |
 | related to | [Nunn-Cohen Amendment](nunn-cohen-1986.qmd){.subj} | Completed the 1986 reforms by creating Special Operations Command. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=goldwater-nichols-1986)
+[See this statute in the knowledge graph](../graph.html?focus=goldwater-nichols-1986)
 
 ## Sources
 

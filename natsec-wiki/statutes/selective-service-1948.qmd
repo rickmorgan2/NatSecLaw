@@ -56,7 +56,7 @@ The registration requirement is in force. Authority to induct expired on July 1,
 | related to | [Reserve & Guard Mobilization](reserve-mobilization.qmd){.subj} | Conscription and reserve call-up are the two statutory sources of wartime manpower. |
 | related to | [NDAA (annual)](ndaa-annual.qmd){.subj} | Changes to registration are usually proposed in the defense authorization. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=selective-service-1948)
+[See this statute in the knowledge graph](../graph.html?focus=selective-service-1948)
 
 ## Sources
 

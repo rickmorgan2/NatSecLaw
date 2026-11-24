@@ -57,7 +57,7 @@ In force.
 | related to | [Arms Export Control Act](aeca-1976.qmd){.subj} | Sec. 231 penalizes buyers of Russian arms, which shapes U.S. arms transfer relationships. |
 | related to | [Iran Sanctions Act](iran-sanctions-1996.qmd){.subj} | Title I added Iran sanctions alongside the existing act. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=caatsa-2017)
+[See this statute in the knowledge graph](../graph.html?focus=caatsa-2017)
 
 ## Sources
 

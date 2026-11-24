@@ -60,7 +60,7 @@ In force. Heavily revised by the Military Justice Act of 2016 (FY2017 defense au
 | related to | [Military Commissions Act](mil-commissions-2006.qmd){.subj} | Hamdan v. Rumsfeld held the first commissions violated the UCMJ; the 2006 act was the response. |
 | amended by | [NDAA (annual)](ndaa-annual.qmd){.subj} | Military Justice Act of 2016 (FY2017 NDAA) and special trial counsel reforms (FY2022 NDAA). |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=ucmj-1950)
+[See this statute in the knowledge graph](../graph.html?focus=ucmj-1950)
 
 ## Sources
 

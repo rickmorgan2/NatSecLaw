@@ -54,7 +54,7 @@ In force.
 |---|---|---|
 | related to | [Global Fragility Act](gfa-2019.qmd){.subj} | Companion prevention statutes; the fragility strategy incorporates the WPS agenda. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=wps-2017)
+[See this statute in the knowledge graph](../graph.html?focus=wps-2017)
 
 ## Sources
 

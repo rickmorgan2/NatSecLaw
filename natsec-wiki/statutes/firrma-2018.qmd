@@ -58,7 +58,7 @@ In force.
 | related to | [Export Control Reform Act](ecra-2018.qmd){.subj} | Enacted together as a two-part response to technology transfer. |
 | enacted in | [NDAA (annual)](ndaa-annual.qmd){.subj} | Subtitle A of Title XVII of the FY2019 NDAA. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=firrma-2018)
+[See this statute in the knowledge graph](../graph.html?focus=firrma-2018)
 
 ## Sources
 

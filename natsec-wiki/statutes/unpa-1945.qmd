@@ -55,7 +55,7 @@ In force.
 | related to | [IEEPA](ieepa-1977.qmd){.subj} | UNPA Sec. 5 is a parallel authority for implementing U.N. sanctions. |
 | related to | [1991 Gulf War AUMF](aumf-gulf-1991.qmd){.subj} | Authorized force to carry out U.N. Security Council Resolution 678. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=unpa-1945)
+[See this statute in the knowledge graph](../graph.html?focus=unpa-1945)
 
 ## Sources
 

@@ -56,7 +56,7 @@ In force as amended.
 | related to | [State Basic Authorities Act](state-basic-1956.qmd){.subj} | Personnel system for the department organized by the Basic Authorities Act. |
 | related to | [Foreign Affairs Reform Act](farra-1998.qmd){.subj} | The Foreign Service covers both State and USAID officers. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=fsa-1980)
+[See this statute in the knowledge graph](../graph.html?focus=fsa-1980)
 
 ## Sources
 

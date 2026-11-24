@@ -58,7 +58,7 @@ In force. It began as Section 1004 of the FY1991 defense authorization and was m
 | related to | [Security Cooperation (Ch. 16)](seccoop-2016.qmd){.subj} | Overlapping authority to support foreign partners. |
 | constrained by | [Posse Comitatus Act](posse-comitatus-1878.qmd){.subj} | Support must stop short of direct participation in searches, seizures, and arrests. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=sec284-counterdrug-1990)
+[See this statute in the knowledge graph](../graph.html?focus=sec284-counterdrug-1990)
 
 ## Sources
 

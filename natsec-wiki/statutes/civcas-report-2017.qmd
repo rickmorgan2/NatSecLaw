@@ -59,7 +59,7 @@ In force. Amended by the defense authorizations for FY2019, FY2020, FY2023, and 
 | related to | [Civilian Casualty Policy](civcas-policy-2018.qmd){.subj} | The annual report describes how the Department investigates allegations and any new civilian harm policies. |
 | related to | [2001 AUMF](aumf-2001.qmd){.subj} | Each reported operation must state its legal authority; counterterrorism strikes have rested largely on the 2001 AUMF. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=civcas-report-2017)
+[See this statute in the knowledge graph](../graph.html?focus=civcas-report-2017)
 
 ## Sources
 

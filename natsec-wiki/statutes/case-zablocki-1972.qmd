@@ -56,7 +56,7 @@ In force, substantially rewritten by section 5947 of the FY2023 National Defense
 | related to | [Constitution (war powers)](constitution-war-powers.qmd){.subj} | Addresses executive agreements made outside the treaty clause. |
 | amended by | [NDAA (annual)](ndaa-annual.qmd){.subj} | FY2023 NDAA Sec. 5947 rewrote the reporting and publication rules. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=case-zablocki-1972)
+[See this statute in the knowledge graph](../graph.html?focus=case-zablocki-1972)
 
 ## Sources
 

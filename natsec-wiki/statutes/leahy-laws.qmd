@@ -60,7 +60,7 @@ In force. The State Department version is Section 620M of the Foreign Assistance
 | constrains | [Security Cooperation (Ch. 16)](seccoop-2016.qmd){.subj} | 10 U.S.C. 362 applies the same bar to Defense Department assistance. |
 | related to | [Civilian Casualty Policy](civcas-policy-2018.qmd){.subj} | Both tie military practice to accountability for harm to civilians: one for U.S. operations, one for foreign partner units. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=leahy-laws)
+[See this statute in the knowledge graph](../graph.html?focus=leahy-laws)
 
 ## Sources
 

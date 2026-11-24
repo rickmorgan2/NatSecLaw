@@ -67,7 +67,7 @@ In force. On February 20, 2026 the Supreme Court held 6 to 3 in Learning Resourc
 | succeeded by | [Export Control Reform Act](ecra-2018.qmd){.subj} | Ended reliance on IEEPA emergencies to keep export controls in force. |
 | related to | [Section 232 (trade)](sec232-1962.qmd){.subj} | Alternative tariff authority after the 2026 ruling that IEEPA does not authorize tariffs. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=ieepa-1977)
+[See this statute in the knowledge graph](../graph.html?focus=ieepa-1977)
 
 ## Sources
 

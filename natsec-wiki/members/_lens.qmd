@@ -51,7 +51,7 @@ for (cm in m$committees) {
 
 ## Lens graph
 
-Committees, record, and district interests, connected to the statutes they touch. Statute-to-statute links from the main graph are included where both ends appear here. Click to highlight, double-click a statute to open its page.
+Committees, record, and district interests, connected to the statutes they touch. Statute-to-statute links from the main graph are included where both ends appear here. Select a statute to highlight its links and get a link to its page below the graph.
 
 ```{r}
 # one row per lens item (committee, initiative, or district interest)

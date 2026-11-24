@@ -56,7 +56,7 @@ In force. Enforcement priorities have shifted with each recent administration.
 | related to | [Smith-Mundt Act](smith-mundt-1948.qmd){.subj} | One governs foreign influence inside the United States, the other U.S. influence abroad. |
 | related to | [Logan Act](logan-1799.qmd){.subj} | Disclosure, not prosecution, became the working tool against private dealings with foreign governments. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=fara-1938)
+[See this statute in the knowledge graph](../graph.html?focus=fara-1938)
 
 ## Sources
 

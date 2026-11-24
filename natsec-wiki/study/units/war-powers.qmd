@@ -72,7 +72,7 @@ Governs U.S. participation in the United Nations: how representatives are appoin
 
 ## How they connect
 
-Core and further readings with the relationships recorded between them. Click to highlight, double-click to open.
+Core and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.
 
 ```{r}
 source("R/helpers.R")

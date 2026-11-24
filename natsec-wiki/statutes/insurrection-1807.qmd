@@ -59,7 +59,7 @@ In force. The sections were renumbered from 10 U.S.C. 331-335 in 2016.
 | amended by | [NDAA (annual)](ndaa-annual.qmd){.subj} | FY2007 NDAA broadened the act; FY2008 NDAA repealed that change. |
 | related to | [Reserve & Guard Mobilization](reserve-mobilization.qmd){.subj} | Sec. 12406 and the Insurrection Act are alternative routes to using the Guard domestically under federal command. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=insurrection-1807)
+[See this statute in the knowledge graph](../graph.html?focus=insurrection-1807)
 
 ## Sources
 

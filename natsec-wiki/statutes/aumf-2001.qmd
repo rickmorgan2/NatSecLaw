@@ -64,7 +64,7 @@ In force with no sunset. It survived the December 2025 repeal of the two Iraq au
 | related to | [Section 127e](sec127e-2004.qmd){.subj} | Supports counterterrorism operations generally conducted under the 2001 authorization. |
 | related to | [Civilian Casualty Report](civcas-report-2017.qmd){.subj} | Each reported operation must state its legal authority; counterterrorism strikes have rested largely on the 2001 AUMF. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=aumf-2001)
+[See this statute in the knowledge graph](../graph.html?focus=aumf-2001)
 
 ## Sources
 

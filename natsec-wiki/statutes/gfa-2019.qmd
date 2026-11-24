@@ -59,7 +59,7 @@ The policy framework remains in law, but the funding authorizations ran through 
 | related to | [Elie Wiesel Act](wiesel-2018.qmd){.subj} | Companion prevention statutes: atrocity prevention and fragility. |
 | related to | [Women, Peace & Security Act](wps-2017.qmd){.subj} | Companion prevention statutes; the fragility strategy incorporates the WPS agenda. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=gfa-2019)
+[See this statute in the knowledge graph](../graph.html?focus=gfa-2019)
 
 ## Sources
 

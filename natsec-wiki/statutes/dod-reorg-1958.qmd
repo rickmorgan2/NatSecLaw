@@ -58,7 +58,7 @@ In force as carried forward and strengthened by the 1986 reorganization. The cor
 | amends | [NSA Amendments (1949)](nsa-amendments-1949.qmd){.subj} | Second correction: removed the military departments from the chain of command. |
 | amended by | [Goldwater-Nichols Act](goldwater-nichols-1986.qmd){.subj} | Completed the 1958 design by giving combatant commanders full authority over assigned forces. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=dod-reorg-1958)
+[See this statute in the knowledge graph](../graph.html?focus=dod-reorg-1958)
 
 ## Sources
 

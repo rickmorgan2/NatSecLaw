@@ -1,16 +1,31 @@
 function (el, x) {
   // Controller for the main knowledge graph (graph.qmd): domain, code title, and layer
-  // focus; node selection; the layered view; and the linked connections table.
+  // focus; node and edge selection; the layered view; full screen; phone sizing; and the
+  // linked connections table.
   // visNetwork keeps the vis.Network on an inner element named "graph" + the widget id
-  var net = document.getElementById("graph" + el.id).chart;
+  var canvasBox = document.getElementById("graph" + el.id);
+  var net = canvasBox.chart;
   var nodesDS = net.body.data.nodes;
   var edgesDS = net.body.data.edges;
   var base = {}, ebase = {};
   nodesDS.get().forEach(function (n) { base[n.id] = n; });
   edgesDS.get().forEach(function (e) { ebase[e.id] = e; });
 
-  var state = { domains: [], title: "", layer: "", selected: null, view: "network" };
+  var state = { domains: [], title: "", layer: "", selected: null, edge: null, view: "network", full: false };
   var FADE = "#e4e7ec", FADE_BORDER = "#cdd2d9", FADE_TEXT = "#b4bac3", INK = "#1b2a41";
+
+  var phoneMQ = window.matchMedia("(max-width: 767.98px)");
+  function isPhone() { return phoneMQ.matches; }
+
+  // htmlwidgets refits the graph on every window resize. On phones the address bar showing
+  // or hiding fires one, which would throw away the reader's zoom, so only a width change refits.
+  var realFit = net.fit.bind(net);
+  var fitWidth = el.clientWidth;
+  net.fit = function (opts) {
+    if (el.clientWidth === fitWidth) return;
+    fitWidth = el.clientWidth;
+    realFit(opts);
+  };
 
   function hideHistoric() { return window.wikiHideHistoric ? window.wikiHideHistoric() : false; }
 
@@ -50,9 +65,10 @@ function (el, x) {
                     : (!focusActive() || matches(a) || matches(b));
       // in the layered view, thematic links recede so the dependency chains stand out
       if (on && !near && state.view === "layers" && e.relation === "related") on = false;
+      if (id === state.edge) on = true;
       return { id: id, hidden: !!(hide && (a.historic || b.historic)),
                color: { color: on ? e.basecolor : "rgba(205,210,217,0.35)", highlight: e.basecolor, hover: e.basecolor },
-               width: on && near ? 2.6 : 1.6 };
+               width: id === state.edge ? 3.4 : (on && near ? 2.6 : 1.6) };
     }));
     syncControls();
     showInfo();
@@ -61,6 +77,7 @@ function (el, x) {
 
   // controls ------------------------------------------------------------------
   var root = document.getElementById("graph-controls");
+  var stage = document.getElementById("graph-stage");
 
   function syncControls() {
     if (!root) return;
@@ -75,6 +92,11 @@ function (el, x) {
     root.querySelectorAll("[data-view]").forEach(function (b) {
       b.classList.toggle("active", b.getAttribute("data-view") === state.view);
     });
+    var full = document.getElementById("graph-full");
+    if (full) {
+      full.textContent = state.full ? "Close full screen" : "Full screen";
+      full.setAttribute("aria-pressed", state.full ? "true" : "false");
+    }
   }
 
   if (root) {
@@ -89,16 +111,19 @@ function (el, x) {
     root.querySelector("#graph-layer").addEventListener("change", function (e) { state.layer = e.target.value; apply(); });
     root.querySelector("#graph-find").addEventListener("change", function (e) { select(e.target.value || null, true); });
     root.querySelector("#graph-reset").addEventListener("click", function () {
-      state.domains = []; state.title = ""; state.layer = ""; state.selected = null;
-      net.unselectAll(); apply(); net.fit({ animation: true });
+      state.domains = []; state.title = ""; state.layer = ""; state.selected = null; state.edge = null;
+      net.unselectAll(); apply(); fitView(true);
     });
     root.querySelectorAll("[data-view]").forEach(function (b) {
       b.addEventListener("click", function () { setView(b.getAttribute("data-view")); });
     });
   }
+  var fullBtn = document.getElementById("graph-full");
+  if (fullBtn) fullBtn.addEventListener("click", function () { setFull(!state.full); });
 
   function select(id, zoom) {
     state.selected = id && base[id] ? id : null;
+    state.edge = null;
     if (state.selected) {
       net.selectNodes([state.selected]);
       if (zoom) net.focus(state.selected, { scale: 0.9, animation: true });
@@ -108,43 +133,129 @@ function (el, x) {
     apply();
   }
 
-  net.on("click", function (p) { select(p.nodes.length ? p.nodes[0] : null, false); });
+  // a tap or click picks a statute, or a line to explain it, or clears both on empty canvas
+  net.on("click", function (p) {
+    if (p.nodes.length) select(p.nodes[0], false);
+    else if (p.edges.length) { state.edge = p.edges[0]; apply(); }
+    else if (state.selected || state.edge) select(null, false);
+  });
   net.on("doubleClick", function (p) {
     if (p.nodes.length) window.location.href = base[p.nodes[0]].url;
   });
 
-  // the selected statute, described beside the graph
+  // the selected statute or line, described beside the graph (a bottom sheet on phones)
   function showInfo() {
     var box = document.getElementById("graph-info");
     if (!box) return;
-    if (!state.selected) {
-      box.innerHTML = "<p class=\"graph-info-empty\">Click a statute to see what it is and filter the table below to its connections. " +
-        "Click a domain to fade the others. Double-click a statute to open its page.</p>";
-      return;
+    var e = state.edge && ebase[state.edge];
+    var close = "<button type=\"button\" class=\"graph-info-close\" aria-label=\"Close\">&times;</button>";
+    box.classList.toggle("has-selection", !!(state.selected || e));
+    if (e) {
+      var a = base[e.from], b = base[e.to];
+      box.innerHTML = close +
+        "<div class=\"graph-info-head\"><span class=\"line-swatch\" style=\"border-color:" + e.basecolor + "\"></span>" +
+        "<strong>" + a.label + " " + e.relation_label + " " + b.label + "</strong></div>" +
+        "<p>" + e.note + "</p>" +
+        "<p class=\"graph-info-links\">Open <a href=\"" + a.url + "\">" + a.label + "</a> or <a href=\"" + b.url + "\">" + b.label + "</a></p>";
+    } else if (state.selected) {
+      var n = base[state.selected];
+      var count = net.getConnectedEdges(state.selected).length;
+      box.innerHTML = close +
+        "<div class=\"graph-info-head\"><span class=\"swatch\" style=\"background:" + n.basecolor + "\"></span>" +
+        "<strong>" + n.fulltitle + "</strong></div>" +
+        "<div class=\"graph-info-meta\">" + n.year + " · " + n.status_label + " · " + n.layer_label + " · " + n.domain_label + "</div>" +
+        "<p>" + n.blurb + "</p>" +
+        "<p class=\"graph-info-links\"><a href=\"" + n.url + "\">Open the wiki page</a>" +
+        (n.official ? " · <a href=\"" + n.official + "\" target=\"_blank\" rel=\"noopener\">Read the official text</a>" : "") +
+        " · " + count + " connection" + (count === 1 ? "" : "s") + "</p>";
+    } else {
+      box.innerHTML = "<p class=\"graph-info-empty\">Select a statute to see what it is and to filter the table below to its connections. " +
+        "Select a line to see why two statutes are linked. Double-click or double-tap a statute to open its page.</p>";
     }
-    var n = base[state.selected];
-    var count = net.getConnectedEdges(state.selected).length;
-    box.innerHTML =
-      "<div class=\"graph-info-head\"><span class=\"swatch\" style=\"background:" + n.basecolor + "\"></span>" +
-      "<strong>" + n.fulltitle + "</strong></div>" +
-      "<div class=\"graph-info-meta\">" + n.year + " · " + n.status_label + " · " + n.layer_label + " · " + n.domain_label + "</div>" +
-      "<p>" + n.blurb + "</p>" +
-      "<p class=\"graph-info-links\"><a href=\"" + n.url + "\">Open the wiki page</a>" +
-      (n.official ? " · <a href=\"" + n.official + "\" target=\"_blank\" rel=\"noopener\">Read the official text</a>" : "") +
-      " · " + count + " connection" + (count === 1 ? "" : "s") + "</p>";
+    var btn = box.querySelector(".graph-info-close");
+    if (btn) btn.addEventListener("click", function () { select(null, false); });
   }
+
+  // sizing: desktop, phone, and full screen ----------------------------------------
+  var DESKTOP_H = el.style.height || "760px";
+
+  function targetHeight() {
+    if (state.full) {
+      // fill the screen below the controls
+      return Math.max(280, Math.floor(window.innerHeight - el.getBoundingClientRect().top - 8)) + "px";
+    }
+    if (isPhone()) {
+      // the network is wider than tall, so a squarish canvas wastes less space; the layered
+      // view is a tall stack and gets most of the screen
+      if (state.view === "layers") return Math.max(360, Math.round(window.innerHeight * 0.75)) + "px";
+      return Math.max(340, Math.min(Math.round(el.clientWidth * 1.2), Math.round(window.innerHeight * 0.62))) + "px";
+    }
+    return state.view === "layers" ? "1150px" : DESKTOP_H;
+  }
+
+  // size the widget container itself, so nothing below the graph is overlapped
+  function resize() {
+    var h = targetHeight();
+    if (el.style.height === h) return false;
+    el.style.height = h;
+    net.setSize("100%", "100%");
+    net.redraw();
+    return true;
+  }
+
+  function fitView(animate) {
+    var anim = animate ? { duration: 300 } : false;
+    if (state.view === "layers" && isPhone() && bands.length) {
+      // on a phone, fit the bands' width and start at the top of the stack
+      var half = (cols() * COL_W) / 2 + 60;
+      var scale = canvasBox.clientWidth / (2 * half);
+      net.moveTo({ position: { x: 0, y: bands[0].top - 20 + (canvasBox.clientHeight / 2) / scale }, scale: scale, animation: anim });
+    } else {
+      realFit(animate ? { animation: anim } : undefined);
+    }
+    fitWidth = el.clientWidth;
+  }
+
+  function setFull(on) {
+    state.full = on;
+    if (stage) stage.classList.toggle("is-full", on);
+    document.body.classList.toggle("graph-full-open", on);
+    syncControls();
+    // let the new layout settle before measuring
+    setTimeout(function () { resize(); fitView(false); }, 30);
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && state.full) setFull(false);
+  });
+
+  // Recompute the canvas only when the width changes (rotation, desktop resize) or in full
+  // screen. A height-only change is the phone address bar, and following it would make the
+  // page jump while the reader scrolls.
+  var layoutWidth = el.clientWidth, resizeTimer = null;
+  window.addEventListener("resize", function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      var widthChanged = el.clientWidth !== layoutWidth;
+      layoutWidth = el.clientWidth;
+      if (widthChanged && state.view === "layers") layerLayout();
+      if (widthChanged || state.full) resize();
+      if (widthChanged) fitView(false);
+    }, 150);
+  });
 
   // layered view ----------------------------------------------------------------
   // Each layer is a band; its statutes wrap into rows sorted by domain, then year.
   var LAYER_NAMES = { 0: "Constitution", 1: "Framework statutes", 2: "Specific authorizations", 3: "Targeted provisions", 4: "U.S. Code titles" };
   var DOMAIN_ORDER = ["foundations", "war-powers", "intelligence", "defense-arms", "aid-sanctions", "civilian-protection", "foreign-policy"];
-  var COLS = 7, COL_W = 250, ROW_H = 100, BAND_GAP = 170;
-  var canvasBox = document.getElementById("graph" + el.id);
-  var networkHeight = canvasBox.style.height || "760px";
+  var COL_W = 250, ROW_H = 100, BAND_GAP = 170;
+  // fewer, taller columns on a phone so the labels stay readable at full width
+  function cols() { return isPhone() ? 3 : 7; }
   var savedPositions = null, bands = [];
 
   function layerLayout() {
     var hide = hideHistoric();
+    var COLS = cols();
     var byLevel = {};
     Object.keys(base).forEach(function (id) {
       var n = base[id];
@@ -174,12 +285,8 @@ function (el, x) {
     if (v === "layers") {
       savedPositions = net.getPositions();
       net.setOptions({ physics: { enabled: false }, edges: { smooth: { type: "cubicBezier", forceDirection: "vertical", roundness: 0.35 } } });
-      canvasBox.style.height = "1150px";
-      net.setSize("100%", "1150px");
       layerLayout();
     } else {
-      canvasBox.style.height = networkHeight;
-      net.setSize("100%", networkHeight);
       net.setOptions({ edges: { smooth: { type: "continuous" } } });
       if (savedPositions) {
         nodesDS.update(Object.keys(savedPositions).map(function (id) {
@@ -188,16 +295,17 @@ function (el, x) {
       }
       net.setOptions({ physics: { enabled: true } });
     }
+    resize();
     apply();
     net.redraw();
     // fit once the resized canvas has been drawn
-    setTimeout(function () { net.fit(); }, 60);
+    setTimeout(function () { fitView(false); }, 60);
   }
 
   // shade and label each band in the layered view
   net.on("beforeDrawing", function (ctx) {
     if (state.view !== "layers") return;
-    var half = (COLS * COL_W) / 2 + 60;
+    var half = (cols() * COL_W) / 2 + 60;
     ctx.save();
     bands.forEach(function (b, i) {
       ctx.fillStyle = i % 2 ? "#f4f6f9" : "#eaeef3";
@@ -246,7 +354,7 @@ function (el, x) {
 
   document.addEventListener("wiki:historic", function () {
     apply();
-    if (state.view === "layers") { layerLayout(); net.fit({ animation: { duration: 300 } }); }
+    if (state.view === "layers") { layerLayout(); fitView(true); }
   });
 
   // links can preset the view: ?focus=<id>, ?domain=<key>[,<key>], ?title=<n>, ?layer=<key>, ?view=layers
@@ -256,9 +364,12 @@ function (el, x) {
   });
   if (params.get("title")) state.title = params.get("title");
   if (params.get("layer")) state.layer = params.get("layer");
+  // phones get a shorter canvas than the 760px desktop default
+  resize();
   net.once("stabilizationIterationsDone", function () {
     var focus = params.get("focus");
     if (params.get("view") === "layers") setView("layers");
+    else fitView(false);
     if (focus && base[focus]) select(focus, true); else apply();
   });
   apply();

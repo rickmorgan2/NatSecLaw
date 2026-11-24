@@ -58,7 +58,7 @@ In force. Extended by name to the Navy, Marine Corps, and Space Force by the FY2
 | related to | [Insurrection Act](insurrection-1807.qmd){.subj} | The Insurrection Act is the principal statutory exception to the Posse Comitatus Act. |
 | amended by | [NDAA (annual)](ndaa-annual.qmd){.subj} | FY2022 NDAA extended the prohibition by name to the Navy, Marine Corps, and Space Force. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=posse-comitatus-1878)
+[See this statute in the knowledge graph](../graph.html?focus=posse-comitatus-1878)
 
 ## Sources
 

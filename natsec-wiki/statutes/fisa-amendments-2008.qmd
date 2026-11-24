@@ -59,7 +59,7 @@ Title VII, including Section 702, lapsed in mid-June 2026 for the first time sin
 | related to | [2001 AUMF](aumf-2001.qmd){.subj} | Gave statutory footing to collection first justified in part by the 2001 AUMF. |
 | amended by | [RISAA](risaa-2024.qmd){.subj} | Reauthorized Title VII for two years, to April 2026. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=fisa-amendments-2008)
+[See this statute in the knowledge graph](../graph.html?focus=fisa-amendments-2008)
 
 ## Sources
 

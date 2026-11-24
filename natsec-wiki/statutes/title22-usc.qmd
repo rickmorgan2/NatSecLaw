@@ -82,7 +82,7 @@ In force. Like Title 50 it is not positive law, so the underlying acts control.
 | related to | [Title 10 U.S.C.](title10-usc.qmd){.subj} | State-led security assistance and Defense-led security cooperation. |
 | related to | [Foreign Assistance Act](faa-1961.qmd){.subj} | The Foreign Assistance Act and Arms Export Control Act are the core of Title 22's assistance chapters. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=title22-usc)
+[See this statute in the knowledge graph](../graph.html?focus=title22-usc)
 
 ## Sources
 

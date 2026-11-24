@@ -60,7 +60,7 @@ In force, limited since 1977 to time of war, with pre-1977 programs grandfathere
 | relied on by | [Helms-Burton Act](helms-burton-1996.qmd){.subj} | Codified embargo regulations issued under TWEA. |
 | related to | [Alien Enemies Act](alien-enemies-1798.qmd){.subj} | Wartime control of enemy persons and of enemy property. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=twea-1917)
+[See this statute in the knowledge graph](../graph.html?focus=twea-1917)
 
 ## Sources
 

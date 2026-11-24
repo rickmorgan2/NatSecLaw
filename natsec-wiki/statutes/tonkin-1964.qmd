@@ -56,7 +56,7 @@ Repealed in January 1971 by section 12 of Pub. L. 91-672, an amendment to the Fo
 | related to | [War Powers Resolution](wpr-1973.qmd){.subj} | The War Powers Resolution was Congress's response to the open-ended Vietnam authorization. |
 | related to | [Arms Export Control Act](aeca-1976.qmd){.subj} | The Tonkin resolution was repealed by Sec. 12 of Pub. L. 91-672 (1971), a law amending the Foreign Military Sales Act, the AECA's original name. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=tonkin-1964)
+[See this statute in the knowledge graph](../graph.html?focus=tonkin-1964)
 
 ## Sources
 

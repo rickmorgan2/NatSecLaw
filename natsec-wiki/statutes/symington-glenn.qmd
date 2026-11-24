@@ -57,7 +57,7 @@ In force as Sections 101 and 102 of the Arms Export Control Act, where they were
 | related to | [Atomic Energy Act](aea-1954.qmd){.subj} | Aid conditionality that reinforces Atomic Energy Act nonproliferation controls. |
 | related to | [Nunn-Lugar Act](nunn-lugar-1991.qmd){.subj} | Cooperative and coercive approaches to the same nonproliferation goal. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=symington-glenn)
+[See this statute in the knowledge graph](../graph.html?focus=symington-glenn)
 
 ## Sources
 

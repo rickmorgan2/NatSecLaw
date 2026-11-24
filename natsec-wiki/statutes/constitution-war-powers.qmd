@@ -55,7 +55,7 @@ In force. Its allocation of war and foreign affairs powers is settled more by pr
 | relied on by | [Declarations of War](declarations-of-war.qmd){.subj} | Exercise of the power to declare war, Art. I, Sec. 8, cl. 11. |
 | relied on by | [Title 10 U.S.C.](title10-usc.qmd){.subj} | Exercises the powers to raise armies, maintain a navy, and regulate the forces. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=constitution-war-powers)
+[See this statute in the knowledge graph](../graph.html?focus=constitution-war-powers)
 
 ## Sources
 

@@ -60,7 +60,7 @@ In force. Dozens of declared emergencies remain active, most of them sanctions p
 | relied on by | [Reserve & Guard Mobilization](reserve-mobilization.qmd){.subj} | Partial mobilization under Sec. 12302 requires a presidentially declared national emergency. |
 | relied on by | [Section 2808 (construction)](sec2808-milcon-1982.qmd){.subj} | Available only under a declared war or a national emergency declared under the NEA. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=nea-1976)
+[See this statute in the knowledge graph](../graph.html?focus=nea-1976)
 
 ## Sources
 

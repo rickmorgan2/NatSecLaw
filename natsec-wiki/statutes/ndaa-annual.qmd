@@ -82,7 +82,7 @@ The most recent enacted act is for fiscal year 2026 (Pub. L. 119-60, signed Dece
 | vehicle for | [Ex Gratia Payments](ex-gratia-2019.qmd){.subj} | Enacted as Sec. 1213 of the FY2020 NDAA (Pub. L. 116-92). |
 | vehicle for | [Civilian Protection Center](cp-coe-2022.qmd){.subj} | Enacted as Sec. 1082 of the FY2023 NDAA (Pub. L. 117-263). |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=ndaa-annual)
+[See this statute in the knowledge graph](../graph.html?focus=ndaa-annual)
 
 ## Sources
 

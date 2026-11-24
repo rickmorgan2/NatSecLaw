@@ -63,7 +63,7 @@ In force and amended many times. Its Title 50 sections were renumbered in 2013 (
 | amended by | [DoD Reorganization Act (1958)](dod-reorg-1958.qmd){.subj} | Amended the National Security Act to remove the military departments from the operational chain of command. |
 | amended by | [NSA Amendments (1949)](nsa-amendments-1949.qmd){.subj} | Created the Department of Defense and the Chairman of the Joint Chiefs. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=nsa-1947)
+[See this statute in the knowledge graph](../graph.html?focus=nsa-1947)
 
 ## Sources
 

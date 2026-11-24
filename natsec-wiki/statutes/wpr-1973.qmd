@@ -68,7 +68,7 @@ In force. Every administration since Nixon has questioned the constitutionality 
 | related to | [UN Participation Act](unpa-1945.qmd){.subj} | Both bear on whether a Security Council mandate can substitute for congressional authorization. |
 | related to | [Section 394 (cyber)](sec394-cyber-2018.qmd){.subj} | Affirms cyber operations short of hostilities as that term is used in the War Powers Resolution. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=wpr-1973)
+[See this statute in the knowledge graph](../graph.html?focus=wpr-1973)
 
 ## Sources
 

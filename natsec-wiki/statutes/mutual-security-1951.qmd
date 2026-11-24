@@ -58,7 +58,7 @@ Replaced by the Mutual Security Act of 1954 and then by the Foreign Assistance A
 | succeeds | [Lend-Lease Act](lend-lease-1941.qmd){.subj} | Postwar successor as the framework for military aid to allies. |
 | succeeded by | [Foreign Assistance Act](faa-1961.qmd){.subj} | Replaced the mutual security acts and separated economic from military aid. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=mutual-security-1951)
+[See this statute in the knowledge graph](../graph.html?focus=mutual-security-1951)
 
 ## Sources
 

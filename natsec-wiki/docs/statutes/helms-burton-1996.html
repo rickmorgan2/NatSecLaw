@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-73a9c0c2c7feab078127cf0dd85b2163.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-88a33b7a565cfce3e74186bb5ac0d446.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -277,7 +277,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p><a href="../graph.qmd?focus=helms-burton-1996">See this statute in the knowledge graph</a></p>
+<p><a href="../graph.html?focus=helms-burton-1996">See this statute in the knowledge graph</a></p>
 </section>
 <section id="sources" class="level2">
 <h2 class="anchored" data-anchor-id="sources">Sources</h2>
@@ -370,19 +370,71 @@ window.WIKI = {"constitution-war-powers":{"s":"in-force","h":false,"n":"Constitu
     tools.insertBefore(label, tools.firstChild);
   }
 
-  // repealed and superseded nodes in any graph built with mini_graph or the lens graph
+  // graphs built with mini_graph or the lens graph: hide repealed and superseded nodes,
+  // and caption what was picked, since a phone cannot hover or double-click easily
   window.wikiWatchGraph = function (el) {
+    var inner = document.getElementById("graph" + el.id);
+    var net = inner && inner.chart;
+    if (!net) return;
     function update() {
-      var inner = document.getElementById("graph" + el.id);
-      var net = inner && inner.chart;
-      if (!net) return;
       var nodes = net.body.data.nodes;
       nodes.update(nodes.get().filter(function (n) { return WIKI[n.id] && WIKI[n.id].h; })
         .map(function (n) { return { id: n.id, hidden: hide }; }));
     }
     document.addEventListener("wiki:historic", update);
     update();
+
+    // htmlwidgets refits on every window resize; a phone's address bar fires those,
+    // so only a width change refits and the reader keeps their zoom
+    var realFit = net.fit.bind(net), width = el.clientWidth;
+    net.fit = function (opts) {
+      if (el.clientWidth === width) return;
+      width = el.clientWidth;
+      realFit(opts);
+    };
+
+    var pick = document.createElement("p");
+    pick.className = "graph-pick";
+    pick.setAttribute("aria-live", "polite");
+    var hint = "Select a statute for a link to its page, or a line to see why two laws connect.";
+    pick.textContent = hint;
+    el.parentNode.insertBefore(pick, el.nextSibling);
+    net.on("click", function (p) {
+      if (p.nodes.length) {
+        var n = net.body.data.nodes.get(p.nodes[0]);
+        var name = String(n.label || n.id).replace(/\n/g, " ");
+        pick.innerHTML = "<strong>" + name + "</strong>" +
+          (n.url && n.url !== "NA" ? " · <a href=\"" + n.url + "\">Open its page</a>" : "");
+      } else if (p.edges.length) {
+        var e = net.body.data.edges.get(p.edges[0]);
+        var t = String(e.title || "");
+        if (/<br/i.test(t)) {
+          // statute links carry "A <b>relation</b> B<br>note"
+          pick.innerHTML = t.replace(/<br\s*\/?>/i, ": ");
+        } else {
+          // lens links carry only a kind, so name both ends
+          var a = net.body.data.nodes.get(e.from), b = net.body.data.nodes.get(e.to);
+          var la = String((a && a.label) || e.from).replace(/\n/g, " ");
+          var lb = String((b && b.label) || e.to).replace(/\n/g, " ");
+          pick.innerHTML = "<strong>" + la + "</strong> &rarr; <strong>" + lb + "</strong>" +
+            (t ? " (" + t.toLowerCase() + ")" : "");
+        }
+      } else {
+        pick.textContent = hint;
+      }
+    });
   };
+
+  // wide tables scroll inside their own box instead of widening the page on phones
+  function wrapTables() {
+    document.querySelectorAll("main table").forEach(function (t) {
+      if (t.closest(".table-scroll, .html-widget, .dataTables_wrapper, .quarto-listing")) return;
+      var box = document.createElement("div");
+      box.className = "table-scroll";
+      t.parentNode.insertBefore(box, t);
+      box.appendChild(t);
+    });
+  }
 
   // study progress: reading checkboxes saved in this browser
   function progress() {
@@ -398,6 +450,7 @@ window.WIKI = {"constitution-war-powers":{"s":"in-force","h":false,"n":"Constitu
 
   document.addEventListener("DOMContentLoaded", function () {
     addSwitch();
+    wrapTables();
     mark();
     progress();
     document.addEventListener("change", function (e) {

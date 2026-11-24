@@ -56,7 +56,7 @@ In force as amended.
 | related to | [IEEPA](ieepa-1977.qmd){.subj} | Terrorist organization designations run in parallel with IEEPA terrorism sanctions. |
 | amended by | [USA PATRIOT Act](patriot-2001.qmd){.subj} | Expanded the definition of material support. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=aedpa-1996)
+[See this statute in the knowledge graph](../graph.html?focus=aedpa-1996)
 
 ## Sources
 

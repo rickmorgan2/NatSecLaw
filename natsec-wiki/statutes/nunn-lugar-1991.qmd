@@ -57,7 +57,7 @@ The program continues as the Defense Department's Cooperative Threat Reduction p
 | related to | [Symington-Glenn Amendments](symington-glenn.qmd){.subj} | Cooperative and coercive approaches to the same nonproliferation goal. |
 | amended by | [NDAA (annual)](ndaa-annual.qmd){.subj} | Annual funding and conditions; restated in permanent law by the FY2015 NDAA. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=nunn-lugar-1991)
+[See this statute in the knowledge graph](../graph.html?focus=nunn-lugar-1991)
 
 ## Sources
 

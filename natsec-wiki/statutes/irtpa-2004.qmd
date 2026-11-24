@@ -59,7 +59,7 @@ In force. Its lone wolf amendment to FISA carried a sunset and lapsed in March 2
 | amends | [FISA](fisa-1978.qmd){.subj} | Added the lone wolf provision. |
 | related to | [Homeland Security Act](hsa-2002.qmd){.subj} | The two structural reforms that followed September 11: a new department, then a new intelligence chief. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=irtpa-2004)
+[See this statute in the knowledge graph](../graph.html?focus=irtpa-2004)
 
 ## Sources
 

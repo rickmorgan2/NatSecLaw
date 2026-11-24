@@ -56,7 +56,7 @@ In force through December 31, 2026 under the Iran Sanctions Extension Act (Pub. 
 | related to | [CAATSA](caatsa-2017.qmd){.subj} | Title I added Iran sanctions alongside the existing act. |
 | related to | [Iran Nuclear Review Act](inara-2015.qmd){.subj} | Governs when statutory Iran sanctions may be waived under an agreement. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=iran-sanctions-1996)
+[See this statute in the knowledge graph](../graph.html?focus=iran-sanctions-1996)
 
 ## Sources
 

@@ -62,7 +62,7 @@ In force and adjusted in most later defense authorizations.
 | related to | [Section 127e](sec127e-2004.qmd){.subj} | Surrogate forces supporting U.S. operations, as distinct from building partner capacity. |
 | related to | [Section 284 (counterdrug)](sec284-counterdrug-1990.qmd){.subj} | Overlapping authority to support foreign partners. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=seccoop-2016)
+[See this statute in the knowledge graph](../graph.html?focus=seccoop-2016)
 
 ## Sources
 

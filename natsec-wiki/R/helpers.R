@@ -425,7 +425,7 @@ mini_graph_legend <- function(ids, statutes, edges) {
   )
   paste0("<div class=\"graph-legend mini-legend\">\n", paste(rows, collapse = "\n"),
          "\n<p class=\"legend-note\">Read an arrow as a sentence: the law at the tail amends, relies on ",
-         "(and so on) the law at the head. Hover a line for the details.</p>\n</div>\n")
+         "(and so on) the law at the head. Select a line for the details.</p>\n</div>\n")
 }
 
 mini_graph <- function(ids, statutes, edges, prefix = "../statutes/", height = "460px") {

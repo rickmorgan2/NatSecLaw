@@ -61,7 +61,7 @@ Carried forward by the National Defense Act of 1916 and now reflected in Titles 
 | amended by | [National Defense Act (1916)](national-defense-act-1916.qmd){.subj} | Removed limits on federal use of the Guard and added the dual oath. |
 | related to | [Title 32 U.S.C.](title32-usc.qmd){.subj} | Title 32 codifies the federally supported, state-commanded Guard that the 1903 act created. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=dick-act-1903)
+[See this statute in the knowledge graph](../graph.html?focus=dick-act-1903)
 
 ## Sources
 

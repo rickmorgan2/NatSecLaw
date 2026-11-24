@@ -60,7 +60,7 @@ The core titles on electronic surveillance, physical search, and pen registers a
 | amended by | [USA FREEDOM Act](usa-freedom-2015.qmd){.subj} | Ended bulk collection and added amicus and transparency provisions. |
 | amended by | [RISAA](risaa-2024.qmd){.subj} | Revised FBI query rules and other FISA procedures. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=fisa-1978)
+[See this statute in the knowledge graph](../graph.html?focus=fisa-1978)
 
 ## Sources
 

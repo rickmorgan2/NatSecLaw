@@ -57,7 +57,7 @@ In force as strengthened by the Intelligence Authorization Act for Fiscal Year 1
 | amends | [National Security Act](nsa-1947.qmd){.subj} | Added Title V, the oversight title, to the National Security Act. |
 | related to | [Section 394 (cyber)](sec394-cyber-2018.qmd){.subj} | Classifies clandestine military cyber activity as traditional military activity, outside the covert action definition. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=intel-oversight-1980)
+[See this statute in the knowledge graph](../graph.html?focus=intel-oversight-1980)
 
 ## Sources
 

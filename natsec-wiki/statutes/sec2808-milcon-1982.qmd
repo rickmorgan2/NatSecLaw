@@ -58,7 +58,7 @@ In force. The FY2021 defense authorization capped its use at 500 million dollars
 | related to | [Section 284 (counterdrug)](sec284-counterdrug-1990.qmd){.subj} | Both were used in 2019 to redirect defense funds to border barriers. |
 | amended by | [NDAA (annual)](ndaa-annual.qmd){.subj} | FY2021 NDAA capped the amounts that may be spent under the authority. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=sec2808-milcon-1982)
+[See this statute in the knowledge graph](../graph.html?focus=sec2808-milcon-1982)
 
 ## Sources
 

@@ -24,7 +24,7 @@ Yes, in three senses, and each part of the site shows one of them.
 
 ## The authority stack
 
-Read from the top down. Chips are colored by domain; hover for the year and status, click to open. Repealed and superseded laws are marked with a dagger and disappear when the **Current law only** switch is on.
+Read from the top down. Chips are colored by domain; select one to open it (on a computer, hover for the year and status). Repealed and superseded laws are marked with a dagger and disappear when the **Current law only** switch is on.
 
 ```{r}
 #| results: asis

@@ -60,7 +60,7 @@ Repealed together with the 2002 Iraq authorization by the National Defense Autho
 | related to | [UN Participation Act](unpa-1945.qmd){.subj} | Authorized force to carry out U.N. Security Council Resolution 678. |
 | repealed by | [NDAA (annual)](ndaa-annual.qmd){.subj} | Repealed by the FY2026 NDAA (Pub. L. 119-60), December 18, 2025. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=aumf-gulf-1991)
+[See this statute in the knowledge graph](../graph.html?focus=aumf-gulf-1991)
 
 ## Sources
 

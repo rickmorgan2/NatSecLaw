@@ -58,7 +58,7 @@ In force. In 2025 the administration moved USAID's remaining functions into the 
 | related to | [Smith-Mundt Act](smith-mundt-1948.qmd){.subj} | Abolished the U.S. Information Agency and moved public diplomacy into State. |
 | related to | [Foreign Service Act](fsa-1980.qmd){.subj} | The Foreign Service covers both State and USAID officers. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=farra-1998)
+[See this statute in the knowledge graph](../graph.html?focus=farra-1998)
 
 ## Sources
 

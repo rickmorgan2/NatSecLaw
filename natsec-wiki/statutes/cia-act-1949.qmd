@@ -55,7 +55,7 @@ In force as amended.
 |---|---|---|
 | relies on | [National Security Act](nsa-1947.qmd){.subj} | Supplies administrative and fiscal authorities for the agency created in 1947. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=cia-act-1949)
+[See this statute in the knowledge graph](../graph.html?focus=cia-act-1949)
 
 ## Sources
 

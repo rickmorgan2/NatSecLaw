@@ -57,7 +57,7 @@ Expired after the Second World War. A Ukraine-specific lend-lease law enacted in
 | succeeded by | [Mutual Security Act](mutual-security-1951.qmd){.subj} | Postwar successor as the framework for military aid to allies. |
 | related to | [Arms Export Control Act](aeca-1976.qmd){.subj} | Modern arms transfer law descends from the lend-lease model. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=lend-lease-1941)
+[See this statute in the knowledge graph](../graph.html?focus=lend-lease-1941)
 
 ## Sources
 

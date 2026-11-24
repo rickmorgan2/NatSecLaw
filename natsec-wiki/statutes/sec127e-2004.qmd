@@ -59,7 +59,7 @@ In force. It began as the temporary Section 1208 of the FY2005 defense authoriza
 | related to | [Nunn-Cohen Amendment](nunn-cohen-1986.qmd){.subj} | Programs are run by the special operations command that Nunn-Cohen created. |
 | related to | [Security Cooperation (Ch. 16)](seccoop-2016.qmd){.subj} | Surrogate forces supporting U.S. operations, as distinct from building partner capacity. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=sec127e-2004)
+[See this statute in the knowledge graph](../graph.html?focus=sec127e-2004)
 
 ## Sources
 

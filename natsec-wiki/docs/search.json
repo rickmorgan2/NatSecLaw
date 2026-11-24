@@ -56,11 +56,11 @@
     "text": "Statutes in this wiki codified in Title 50\n\n\n\n\n\nStatute\nYear\nCitation\nStatus\n\n\n\n\nAlien Enemies Act\n1798\n50 U.S.C. 21-24\nIn force\n\n\nTrading with the Enemy Act\n1917\n50 U.S.C. 4301-4341\nIn force\n\n\nTitle 50 U.S.C.\n1926\n50 U.S.C. 1 et seq.\nIn force\n\n\nNational Security Act\n1947\n50 U.S.C. 3001 et seq.\nIn force\n\n\nSelective Service Act\n1948\n50 U.S.C. 3801 et seq.\nPartly expired\n\n\nCIA Act\n1949\n50 U.S.C. 3501-3523\nIn force\n\n\nDefense Production Act\n1950\n50 U.S.C. 4501 et seq.\nPartly expired\n\n\nNDAA (annual)\n1961\nTitle 10 U.S.C. (various)\nIn force\n\n\nWar Powers Resolution\n1973\n50 U.S.C. 1541-1550\nIn force\n\n\nNational Emergencies Act\n1976\n50 U.S.C. 1601-1651\nIn force\n\n\nIEEPA\n1977\n50 U.S.C. 1701 et seq.\nIn force\n\n\nFISA\n1978\n50 U.S.C. 1801 et seq.\nPartly expired\n\n\nIntel Oversight Act\n1980\n50 U.S.C. 3091-3093\nIn force\n\n\n1991 Gulf War AUMF\n1991\n50 U.S.C. 1541 note\nRepealed\n\n\nNunn-Lugar Act\n1991\n22 U.S.C. 2551 note; 50 U.S.C. 3701 et seq.\nIn force\n\n\nIran Sanctions Act\n1996\n50 U.S.C. 1701 note\nIn force\n\n\n2001 AUMF\n2001\n50 U.S.C. 1541 note\nIn force\n\n\nUSA PATRIOT Act\n2001\nNA\nPartly expired\n\n\n2002 Iraq AUMF\n2002\n50 U.S.C. 1541 note\nRepealed\n\n\nIRTPA\n2004\n50 U.S.C. 3023 et seq.\nIn force\n\n\nFISA Amendments Act (702)\n2008\n50 U.S.C. 1881-1881g\nLapsed\n\n\nUSA FREEDOM Act\n2015\nNA\nPartly expired\n\n\nExport Control Reform Act\n2018\n50 U.S.C. 4801-4852\nIn force\n\n\nFIRRMA (CFIUS)\n2018\n50 U.S.C. 4565\nIn force\n\n\nRISAA\n2024\nNA\nLapsed\n\n\n\n\n\nThe statute list and the knowledge graph can both be filtered by any U.S. Code title."
   },
   {
-    "objectID": "title10-title50.html#limits-of-this-page",
-    "href": "title10-title50.html#limits-of-this-page",
+    "objectID": "title10-title50.html#before-you-rely-on-this",
+    "href": "title10-title50.html#before-you-rely-on-this",
     "title": "Title 10 and Title 50",
-    "section": "Limits of this page",
-    "text": "Limits of this page\nThis is an orientation to a debate, written as a neutral summary. The meaning of traditional military activities rests on legislative history and executive branch practice, much of it classified, so published accounts differ. Check the linked statute pages and primary sources before relying on a specific claim."
+    "section": "Before you rely on this",
+    "text": "Before you rely on this\nThe law never defines “traditional military activities,” and much of how the government draws the line in practice is classified. So even experts disagree on the details. This page lays out the debate without taking a side; check the linked statute pages and official sources before relying on a specific point."
   },
   {
     "objectID": "study/units/surveillance.html",
@@ -88,7 +88,7 @@
     "href": "study/units/surveillance.html#how-they-connect",
     "title": "Unit 6: Surveillance law",
     "section": "How they connect",
-    "text": "How they connect\nCore and further readings with the relationships recorded between them. Click to highlight, double-click to open.\n\n\n\n\n\n\n\n\nDomain (color)Intelligence\n\n\nStatus (shape)In force or partly lapsed\n\n\nRelationship (line)amends → relies on → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Hover a line for the details."
+    "text": "How they connect\nCore and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.\n\n\n\n\n\n\n\n\nDomain (color)Intelligence\n\n\nStatus (shape)In force or partly lapsed\n\n\nRelationship (line)amends → relies on → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Select a line for the details."
   },
   {
     "objectID": "study/units/surveillance.html#further-reading",
@@ -137,7 +137,7 @@
     "href": "study/units/military-at-home.html#how-they-connect",
     "title": "Unit 8: The military at home",
     "section": "How they connect",
-    "text": "How they connect\nCore and further readings with the relationships recorded between them. Click to highlight, double-click to open.\n\n\n\n\n\n\n\n\nDomain (color)War powers Intelligence Foundations\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)amends → succeeds → constrains → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Hover a line for the details."
+    "text": "How they connect\nCore and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.\n\n\n\n\n\n\n\n\nDomain (color)War powers Intelligence Foundations\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)amends → succeeds → constrains → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Select a line for the details."
   },
   {
     "objectID": "study/units/military-at-home.html#further-reading",
@@ -186,7 +186,7 @@
     "href": "study/units/foundations.html#how-they-connect",
     "title": "Unit 1: Where the power comes from",
     "section": "How they connect",
-    "text": "How they connect\nCore and further readings with the relationships recorded between them. Click to highlight, double-click to open.\n\n\n\n\n\n\n\n\nDomain (color)Foundations\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)relies on → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Hover a line for the details."
+    "text": "How they connect\nCore and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.\n\n\n\n\n\n\n\n\nDomain (color)Foundations\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)relies on → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Select a line for the details."
   },
   {
     "objectID": "study/units/foundations.html#further-reading",
@@ -235,7 +235,7 @@
     "href": "study/units/defense-organization.html#how-they-connect",
     "title": "Unit 7: Organizing and commanding the military",
     "section": "How they connect",
-    "text": "How they connect\nCore and further readings with the relationships recorded between them. Click to highlight, double-click to open.\n\n\n\n\n\n\n\n\nDomain (color)War powers Defense and arms Foundations\n\n\nStatus (shape)In force or partly lapsed\n\n\nRelationship (line)amends → enacted in → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Hover a line for the details."
+    "text": "How they connect\nCore and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.\n\n\n\n\n\n\n\n\nDomain (color)War powers Defense and arms Foundations\n\n\nStatus (shape)In force or partly lapsed\n\n\nRelationship (line)amends → enacted in → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Select a line for the details."
   },
   {
     "objectID": "study/units/defense-organization.html#further-reading",
@@ -284,7 +284,7 @@
     "href": "study/units/assistance.html#how-they-connect",
     "title": "Unit 9: Foreign assistance, fragility, and partners",
     "section": "How they connect",
-    "text": "How they connect\nCore and further readings with the relationships recorded between them. Click to highlight, double-click to open.\n\n\n\n\n\n\n\n\nDomain (color)Aid and sanctions Defense and arms Foreign policy\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)amends → succeeds → relies on → constrains → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Hover a line for the details."
+    "text": "How they connect\nCore and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.\n\n\n\n\n\n\n\n\nDomain (color)Aid and sanctions Defense and arms Foreign policy\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)amends → succeeds → relies on → constrains → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Select a line for the details."
   },
   {
     "objectID": "study/units/assistance.html#further-reading",
@@ -2566,7 +2566,7 @@
     "href": "members/jacobs.html#lens-graph",
     "title": "Rep. Sara Jacobs (CA-51)",
     "section": "Lens graph",
-    "text": "Lens graph\nCommittees, record, and district interests, connected to the statutes they touch. Statute-to-statute links from the main graph are included where both ends appear here. Click to highlight, double-click a statute to open its page.\n\n\n\n\n\n\nBoxes are committees, diamonds are items in the record, stars are district interests, and circles are statutes colored by domain. Solid lines connect a lens item to a statute; dashed lines are statute-to-statute relationships."
+    "text": "Lens graph\nCommittees, record, and district interests, connected to the statutes they touch. Statute-to-statute links from the main graph are included where both ends appear here. Select a statute to highlight its links and get a link to its page below the graph.\n\n\n\n\n\n\nBoxes are committees, diamonds are items in the record, stars are district interests, and circles are statutes colored by domain. Solid lines connect a lens item to a statute; dashed lines are statute-to-statute relationships."
   },
   {
     "objectID": "members/jacobs.html#record-mapped-to-statutes",
@@ -2622,7 +2622,7 @@
     "href": "members/crow.html#lens-graph",
     "title": "Rep. Jason Crow (CO-06)",
     "section": "Lens graph",
-    "text": "Lens graph\nCommittees, record, and district interests, connected to the statutes they touch. Statute-to-statute links from the main graph are included where both ends appear here. Click to highlight, double-click a statute to open its page.\n\n\n\n\n\n\nBoxes are committees, diamonds are items in the record, stars are district interests, and circles are statutes colored by domain. Solid lines connect a lens item to a statute; dashed lines are statute-to-statute relationships."
+    "text": "Lens graph\nCommittees, record, and district interests, connected to the statutes they touch. Statute-to-statute links from the main graph are included where both ends appear here. Select a statute to highlight its links and get a link to its page below the graph.\n\n\n\n\n\n\nBoxes are committees, diamonds are items in the record, stars are district interests, and circles are statutes colored by domain. Solid lines connect a lens item to a statute; dashed lines are statute-to-statute relationships."
   },
   {
     "objectID": "members/crow.html#record-mapped-to-statutes",
@@ -2748,7 +2748,7 @@
     "href": "graph.html",
     "title": "Knowledge graph",
     "section": "",
-    "text": "How to use it. Click a domain to fade the others, or narrow by code title or layer. Click a statute to see what it is and to filter the table below to its connections; double-click to open its page. Switch to Authority layers to see the hierarchy from the Constitution down to single code sections. Hover over a line to read why two statutes are linked."
+    "text": "How to use it. Pick a domain to fade the others, or narrow by code title or layer. Select a statute to see what it is and to filter the table below to its connections; select a line to see why two statutes are linked. Switch to Authority layers to see the hierarchy from the Constitution down to single code sections. On a phone, pinch to zoom, drag to move around, and use Full screen for more room."
   },
   {
     "objectID": "graph.html#every-connection",
@@ -4988,7 +4988,7 @@
     "href": "study/flashcards.html",
     "title": "Flashcards",
     "section": "",
-    "text": "Deck Statutes and terms StatutesKey terms Unit All units Unit 1: Where the power comes fromUnit 2: Building the national security state, 1947 to 1958Unit 3: Deciding to use forceUnit 4: Emergency and economic powersUnit 5: Intelligence and its oversightUnit 6: Surveillance lawUnit 7: Organizing and commanding the militaryUnit 8: The military at homeUnit 9: Foreign assistance, fragility, and partnersUnit 10: Arms transfers, export controls, and investment screeningUnit 11: Civilian harm and the conduct of operations  Domain All domains War powersIntelligenceAid and sanctionsDefense and armsForeign policyCivilian harmFoundations   Only cards I don’t know yet Shuffle\n\n\n\n\n\n\n\nPrevious\n\n\nStill learning\n\n\nI know this\n\n\nNext\n\n\n\n\n\n\n\nYour tally is saved in this browser only. Keyboard: space flips, left and right arrows move."
+    "text": "Deck Statutes and terms StatutesKey terms Unit All units Unit 1: Where the power comes fromUnit 2: Building the national security state, 1947 to 1958Unit 3: Deciding to use forceUnit 4: Emergency and economic powersUnit 5: Intelligence and its oversightUnit 6: Surveillance lawUnit 7: Organizing and commanding the militaryUnit 8: The military at homeUnit 9: Foreign assistance, fragility, and partnersUnit 10: Arms transfers, export controls, and investment screeningUnit 11: Civilian harm and the conduct of operations  Domain All domains War powersIntelligenceAid and sanctionsDefense and armsForeign policyCivilian harmFoundations   Only cards I don’t know yet Shuffle\n\n\n\n\n\n\n\nPrevious\n\n\nStill learning\n\n\nI know this\n\n\nNext\n\n\n\n\n\n\n\nYour tally is saved in this browser only. On a phone, swipe the card left or right to move. On a keyboard, space flips and the arrow keys move."
   },
   {
     "objectID": "study/index.html",
@@ -5009,7 +5009,7 @@
     "href": "study/index.html#the-authority-stack",
     "title": "Study guide",
     "section": "The authority stack",
-    "text": "The authority stack\nRead from the top down. Chips are colored by domain; hover for the year and status, click to open. Repealed and superseded laws are marked with a dagger and disappear when the Current law only switch is on.\n\n\n\nConstitution1\n\n\nThe grants and limits every statute below draws on: Congress’s war, money, and military powers in Article I and the President’s command and foreign affairs powers in Article II.\n\n\nConstitution (war powers)\n\n\n\n\nFramework statute39\n\n\nStanding laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA.\n\n\nMilitia Acts of 1792Neutrality ActAlien Enemies ActInsurrection ActPosse Comitatus ActMilitia Act of 1903National Defense Act (1916)Espionage ActTrading with the Enemy ActFARAUN Participation ActNational Security ActSelective Service ActSmith-Mundt ActCIA ActNSA Amendments (1949)Defense Production ActUCMJReserve & Guard MobilizationAtomic Energy ActState Basic Authorities ActDoD Reorganization Act (1958)Foreign Assistance ActWar Powers ResolutionArms Export Control ActNational Emergencies ActIEEPAFISACIPAForeign Service ActIntel Oversight ActGoldwater-Nichols ActNunn-Cohen AmendmentForeign Affairs Reform ActHomeland Security ActIRTPASecurity Cooperation (Ch. 16)Export Control Reform ActFIRRMA (CFIUS)\n\n\n\n\nSpecific authorization27\n\n\nLaws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA.\n\n\nDeclarations of WarLend-Lease ActMutual Security ActNDAA (annual)Gulf of Tonkin ResolutionTaiwan Relations Act1991 Gulf War AUMFNunn-Lugar ActAEDPA (terrorism)Helms-Burton ActIran Sanctions Act2001 AUMFUSA PATRIOT Act2002 Iraq AUMFMillennium Challenge ActMilitary Commissions ActFISA Amendments Act (702)Cyber Info Sharing ActIran Nuclear Review ActUSA FREEDOM ActGlobal Magnitsky ActCAATSAWomen, Peace & Security ActCaesar ActElie Wiesel ActGlobal Fragility ActRISAA\n\n\n\n\nTargeted provision16\n\n\nSingle sections that grant a narrow authority, impose a condition, or require a report, often enacted in a defense authorization. Small in text, often decisive in practice.\n\n\nLogan ActForeign Claims ActSection 232 (trade)Case-Zablocki ActHughes-Ryan AmendmentSymington-Glenn AmendmentsSection 2808 (construction)Section 284 (counterdrug)Leahy LawsSection 127eDetainee Treatment ActCivilian Casualty ReportCivilian Casualty PolicySection 394 (cyber)Ex Gratia PaymentsCivilian Protection Center\n\n\n\n\nCode title overview4\n\n\nNot a layer of authority but the shelf where enacted law is filed by subject. Titles 10 and 32 are themselves enacted law; Titles 22 and 50 are compilations.\n\n\nTitle 22 U.S.C.Title 50 U.S.C.Title 10 U.S.C.Title 32 U.S.C.\n\n\n\n\n\nDomain War powers Intelligence Aid and sanctions Defense and arms Foreign policy Civilian harm Foundations\n\n\nLayer assignments are editorial judgments recorded in each statute’s layer field, not legal categories. Some laws straddle two layers: the annual defense authorization is listed as a specific authorization, though it often carries framework changes."
+    "text": "The authority stack\nRead from the top down. Chips are colored by domain; select one to open it (on a computer, hover for the year and status). Repealed and superseded laws are marked with a dagger and disappear when the Current law only switch is on.\n\n\n\nConstitution1\n\n\nThe grants and limits every statute below draws on: Congress’s war, money, and military powers in Article I and the President’s command and foreign affairs powers in Article II.\n\n\nConstitution (war powers)\n\n\n\n\nFramework statute39\n\n\nStanding laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA.\n\n\nMilitia Acts of 1792Neutrality ActAlien Enemies ActInsurrection ActPosse Comitatus ActMilitia Act of 1903National Defense Act (1916)Espionage ActTrading with the Enemy ActFARAUN Participation ActNational Security ActSelective Service ActSmith-Mundt ActCIA ActNSA Amendments (1949)Defense Production ActUCMJReserve & Guard MobilizationAtomic Energy ActState Basic Authorities ActDoD Reorganization Act (1958)Foreign Assistance ActWar Powers ResolutionArms Export Control ActNational Emergencies ActIEEPAFISACIPAForeign Service ActIntel Oversight ActGoldwater-Nichols ActNunn-Cohen AmendmentForeign Affairs Reform ActHomeland Security ActIRTPASecurity Cooperation (Ch. 16)Export Control Reform ActFIRRMA (CFIUS)\n\n\n\n\nSpecific authorization27\n\n\nLaws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA.\n\n\nDeclarations of WarLend-Lease ActMutual Security ActNDAA (annual)Gulf of Tonkin ResolutionTaiwan Relations Act1991 Gulf War AUMFNunn-Lugar ActAEDPA (terrorism)Helms-Burton ActIran Sanctions Act2001 AUMFUSA PATRIOT Act2002 Iraq AUMFMillennium Challenge ActMilitary Commissions ActFISA Amendments Act (702)Cyber Info Sharing ActIran Nuclear Review ActUSA FREEDOM ActGlobal Magnitsky ActCAATSAWomen, Peace & Security ActCaesar ActElie Wiesel ActGlobal Fragility ActRISAA\n\n\n\n\nTargeted provision16\n\n\nSingle sections that grant a narrow authority, impose a condition, or require a report, often enacted in a defense authorization. Small in text, often decisive in practice.\n\n\nLogan ActForeign Claims ActSection 232 (trade)Case-Zablocki ActHughes-Ryan AmendmentSymington-Glenn AmendmentsSection 2808 (construction)Section 284 (counterdrug)Leahy LawsSection 127eDetainee Treatment ActCivilian Casualty ReportCivilian Casualty PolicySection 394 (cyber)Ex Gratia PaymentsCivilian Protection Center\n\n\n\n\nCode title overview4\n\n\nNot a layer of authority but the shelf where enacted law is filed by subject. Titles 10 and 32 are themselves enacted law; Titles 22 and 50 are compilations.\n\n\nTitle 22 U.S.C.Title 50 U.S.C.Title 10 U.S.C.Title 32 U.S.C.\n\n\n\n\n\nDomain War powers Intelligence Aid and sanctions Defense and arms Foreign policy Civilian harm Foundations\n\n\nLayer assignments are editorial judgments recorded in each statute’s layer field, not legal categories. Some laws straddle two layers: the annual defense authorization is listed as a specific authorization, though it often carries framework changes."
   },
   {
     "objectID": "study/index.html#the-units",
@@ -5058,7 +5058,7 @@
     "href": "study/units/arms-transfers.html#how-they-connect",
     "title": "Unit 10: Arms transfers, export controls, and investment screening",
     "section": "How they connect",
-    "text": "How they connect\nCore and further readings with the relationships recorded between them. Click to highlight, double-click to open.\n\n\n\n\n\n\n\n\nDomain (color)Aid and sanctions Defense and arms Foreign policy\n\n\nStatus (shape)In force or partly lapsed\n\n\nRelationship (line)amends → relies on → constrains → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Hover a line for the details."
+    "text": "How they connect\nCore and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.\n\n\n\n\n\n\n\n\nDomain (color)Aid and sanctions Defense and arms Foreign policy\n\n\nStatus (shape)In force or partly lapsed\n\n\nRelationship (line)amends → relies on → constrains → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Select a line for the details."
   },
   {
     "objectID": "study/units/arms-transfers.html#further-reading",
@@ -5107,7 +5107,7 @@
     "href": "study/units/civilian-harm.html#how-they-connect",
     "title": "Unit 11: Civilian harm and the conduct of operations",
     "section": "How they connect",
-    "text": "How they connect\nCore and further readings with the relationships recorded between them. Click to highlight, double-click to open.\n\n\n\n\n\n\n\n\nDomain (color)War powers Aid and sanctions Defense and arms Civilian harm\n\n\nStatus (shape)In force or partly lapsed\n\n\nRelationship (line)amends → relies on → constrains → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Hover a line for the details."
+    "text": "How they connect\nCore and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.\n\n\n\n\n\n\n\n\nDomain (color)War powers Aid and sanctions Defense and arms Civilian harm\n\n\nStatus (shape)In force or partly lapsed\n\n\nRelationship (line)amends → relies on → constrains → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Select a line for the details."
   },
   {
     "objectID": "study/units/civilian-harm.html#further-reading",
@@ -5156,7 +5156,7 @@
     "href": "study/units/emergencies-sanctions.html#how-they-connect",
     "title": "Unit 4: Emergency and economic powers",
     "section": "How they connect",
-    "text": "How they connect\nCore and further readings with the relationships recorded between them. Click to highlight, double-click to open.\n\n\n\n\n\n\n\n\nDomain (color)War powers Aid and sanctions Foreign policy\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)succeeds → relies on → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Hover a line for the details."
+    "text": "How they connect\nCore and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.\n\n\n\n\n\n\n\n\nDomain (color)War powers Aid and sanctions Foreign policy\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)succeeds → relies on → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Select a line for the details."
   },
   {
     "objectID": "study/units/emergencies-sanctions.html#further-reading",
@@ -5205,7 +5205,7 @@
     "href": "study/units/intelligence-oversight.html#how-they-connect",
     "title": "Unit 5: Intelligence and its oversight",
     "section": "How they connect",
-    "text": "How they connect\nCore and further readings with the relationships recorded between them. Click to highlight, double-click to open.\n\n\n\n\n\n\n\n\nDomain (color)War powers Intelligence Foreign policy\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)amends → relies on → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Hover a line for the details."
+    "text": "How they connect\nCore and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.\n\n\n\n\n\n\n\n\nDomain (color)War powers Intelligence Foreign policy\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)amends → relies on → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Select a line for the details."
   },
   {
     "objectID": "study/units/intelligence-oversight.html#further-reading",
@@ -5254,7 +5254,7 @@
     "href": "study/units/national-security-state.html#how-they-connect",
     "title": "Unit 2: Building the national security state, 1947 to 1958",
     "section": "How they connect",
-    "text": "How they connect\nCore and further readings with the relationships recorded between them. Click to highlight, double-click to open.\n\n\n\n\n\n\n\n\nDomain (color)Intelligence Aid and sanctions Defense and arms Foreign policy\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)amends → succeeds → relies on →\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Hover a line for the details."
+    "text": "How they connect\nCore and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.\n\n\n\n\n\n\n\n\nDomain (color)Intelligence Aid and sanctions Defense and arms Foreign policy\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)amends → succeeds → relies on →\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Select a line for the details."
   },
   {
     "objectID": "study/units/national-security-state.html#further-reading",
@@ -5303,7 +5303,7 @@
     "href": "study/units/war-powers.html#how-they-connect",
     "title": "Unit 3: Deciding to use force",
     "section": "How they connect",
-    "text": "How they connect\nCore and further readings with the relationships recorded between them. Click to highlight, double-click to open.\n\n\n\n\n\n\n\n\nDomain (color)War powers Foundations\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)succeeds → relies on → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Hover a line for the details."
+    "text": "How they connect\nCore and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.\n\n\n\n\n\n\n\n\nDomain (color)War powers Foundations\n\n\nStatus (shape)In force or partly lapsedRepealed or superseded\n\n\nRelationship (line)succeeds → relies on → related to\n\n\nRead an arrow as a sentence: the law at the tail amends, relies on (and so on) the law at the head. Select a line for the details."
   },
   {
     "objectID": "study/units/war-powers.html#further-reading",

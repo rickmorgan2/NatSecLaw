@@ -59,7 +59,7 @@ Repealed by the National Defense Authorization Act for Fiscal Year 2026 (Pub. L.
 | relies on | [War Powers Resolution](wpr-1973.qmd){.subj} | Declared itself specific statutory authorization under the WPR. |
 | repealed by | [NDAA (annual)](ndaa-annual.qmd){.subj} | Repealed by the FY2026 NDAA (Pub. L. 119-60), December 18, 2025. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=aumf-iraq-2002)
+[See this statute in the knowledge graph](../graph.html?focus=aumf-iraq-2002)
 
 ## Sources
 

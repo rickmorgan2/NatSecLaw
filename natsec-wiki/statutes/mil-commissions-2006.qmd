@@ -59,7 +59,7 @@ In force as replaced by the Military Commissions Act of 2009 (Title XVIII of the
 | related to | [UCMJ](ucmj-1950.qmd){.subj} | Hamdan v. Rumsfeld held the first commissions violated the UCMJ; the 2006 act was the response. |
 | amended by | [NDAA (annual)](ndaa-annual.qmd){.subj} | The Military Commissions Act of 2009 was Title XVIII of the FY2010 NDAA. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=mil-commissions-2006)
+[See this statute in the knowledge graph](../graph.html?focus=mil-commissions-2006)
 
 ## Sources
 

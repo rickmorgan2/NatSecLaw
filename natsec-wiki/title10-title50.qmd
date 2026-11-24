@@ -91,6 +91,6 @@ title_table(50)
 
 The [statute list](index.qmd) and the [knowledge graph](graph.qmd) can both be filtered by any U.S. Code title.
 
-## Limits of this page
+## Before you rely on this
 
-This is an orientation to a debate, written as a neutral summary. The meaning of traditional military activities rests on legislative history and executive branch practice, much of it classified, so published accounts differ. Check the linked statute pages and primary sources before relying on a specific claim.
+The law never defines "traditional military activities," and much of how the government draws the line in practice is classified. So even experts disagree on the details. This page lays out the debate without taking a side; check the linked statute pages and official sources before relying on a specific point.

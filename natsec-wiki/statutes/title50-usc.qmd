@@ -86,7 +86,7 @@ In force. It is not positive law: it is an editorial compilation of separate sta
 | related to | [Title 10 U.S.C.](title10-usc.qmd){.subj} | The divide between intelligence and military authorities; see the Title 10 and Title 50 page. |
 | related to | [National Security Act](nsa-1947.qmd){.subj} | The National Security Act is the core of Title 50's intelligence chapters. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=title50-usc)
+[See this statute in the knowledge graph](../graph.html?focus=title50-usc)
 
 ## Sources
 

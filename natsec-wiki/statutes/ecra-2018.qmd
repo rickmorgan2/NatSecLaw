@@ -59,7 +59,7 @@ In force with no sunset.
 | related to | [Arms Export Control Act](aeca-1976.qmd){.subj} | Dual-use controls under ECRA and munitions controls under the AECA form one system. |
 | related to | [FIRRMA (CFIUS)](firrma-2018.qmd){.subj} | Enacted together as a two-part response to technology transfer. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=ecra-2018)
+[See this statute in the knowledge graph](../graph.html?focus=ecra-2018)
 
 ## Sources
 

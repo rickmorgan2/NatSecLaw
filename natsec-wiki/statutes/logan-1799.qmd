@@ -53,7 +53,7 @@ In force. There have been two indictments, in 1803 and 1852, and no convictions.
 | related to | [Neutrality Act](neutrality-1794.qmd){.subj} | Companion statutes barring private diplomacy and private warfare. |
 | related to | [FARA](fara-1938.qmd){.subj} | Disclosure, not prosecution, became the working tool against private dealings with foreign governments. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=logan-1799)
+[See this statute in the knowledge graph](../graph.html?focus=logan-1799)
 
 ## Sources
 

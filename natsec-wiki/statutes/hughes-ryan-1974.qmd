@@ -60,7 +60,7 @@ Repealed in 1991 and replaced by the covert action provisions now at 50 U.S.C. 3
 | related to | [National Security Act](nsa-1947.qmd){.subj} | Regulated covert action carried out under the CIA's National Security Act mandate. |
 | amended by | [Intel Oversight Act](intel-oversight-1980.qmd){.subj} | Cut notification from eight committees to the two intelligence committees. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=hughes-ryan-1974)
+[See this statute in the knowledge graph](../graph.html?focus=hughes-ryan-1974)
 
 ## Sources
 

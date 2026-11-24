@@ -53,7 +53,7 @@ In force and heavily used. It was not affected by the Supreme Court's February 2
 | related to | [IEEPA](ieepa-1977.qmd){.subj} | Alternative tariff authority after the 2026 ruling that IEEPA does not authorize tariffs. |
 | related to | [Defense Production Act](dpa-1950.qmd){.subj} | Both treat industrial capacity as a national security concern. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=sec232-1962)
+[See this statute in the knowledge graph](../graph.html?focus=sec232-1962)
 
 ## Sources
 

@@ -57,7 +57,7 @@ In force as amended, notably by the Nuclear Non-Proliferation Act of 1978 (Pub. 
 | related to | [Symington-Glenn Amendments](symington-glenn.qmd){.subj} | Aid conditionality that reinforces Atomic Energy Act nonproliferation controls. |
 | amended by | [Iran Nuclear Review Act](inara-2015.qmd){.subj} | Added Sec. 135 to the Atomic Energy Act. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=aea-1954)
+[See this statute in the knowledge graph](../graph.html?focus=aea-1954)
 
 ## Sources
 

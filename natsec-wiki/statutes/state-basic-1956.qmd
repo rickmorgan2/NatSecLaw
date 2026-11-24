@@ -58,7 +58,7 @@ In force and amended by most State Department authorization acts.
 | related to | [Foreign Service Act](fsa-1980.qmd){.subj} | Personnel system for the department organized by the Basic Authorities Act. |
 | related to | [Smith-Mundt Act](smith-mundt-1948.qmd){.subj} | Public diplomacy is carried out within the State Department structure. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=state-basic-1956)
+[See this statute in the knowledge graph](../graph.html?focus=state-basic-1956)
 
 ## Sources
 

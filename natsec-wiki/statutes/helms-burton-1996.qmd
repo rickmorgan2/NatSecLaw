@@ -56,7 +56,7 @@ In force. Title III lawsuits, suspended by every President for 23 years, have be
 | relies on | [Trading with the Enemy Act](twea-1917.qmd){.subj} | Codified embargo regulations issued under TWEA. |
 | relies on | [Foreign Assistance Act](faa-1961.qmd){.subj} | The embargo also rests on Sec. 620(a) of the Foreign Assistance Act. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=helms-burton-1996)
+[See this statute in the knowledge graph](../graph.html?focus=helms-burton-1996)
 
 ## Sources
 

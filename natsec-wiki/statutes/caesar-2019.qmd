@@ -59,7 +59,7 @@ Repealed by the National Defense Authorization Act for Fiscal Year 2026 (Pub. L.
 | enacted in | [NDAA (annual)](ndaa-annual.qmd){.subj} | Title LXXIV of the FY2020 NDAA. |
 | repealed by | [NDAA (annual)](ndaa-annual.qmd){.subj} | Repealed by the FY2026 NDAA. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=caesar-2019)
+[See this statute in the knowledge graph](../graph.html?focus=caesar-2019)
 
 ## Sources
 

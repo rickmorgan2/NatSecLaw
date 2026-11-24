@@ -58,7 +58,7 @@ In force as enacted by Section 1632 of the FY2019 defense authorization and amen
 | related to | [Intel Oversight Act](intel-oversight-1980.qmd){.subj} | Classifies clandestine military cyber activity as traditional military activity, outside the covert action definition. |
 | related to | [War Powers Resolution](wpr-1973.qmd){.subj} | Affirms cyber operations short of hostilities as that term is used in the War Powers Resolution. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=sec394-cyber-2018)
+[See this statute in the knowledge graph](../graph.html?focus=sec394-cyber-2018)
 
 ## Sources
 

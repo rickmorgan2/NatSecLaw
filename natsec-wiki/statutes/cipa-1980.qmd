@@ -53,7 +53,7 @@ In force.
 |---|---|---|
 | related to | [Espionage Act](espionage-1917.qmd){.subj} | CIPA procedures make Espionage Act prosecutions workable. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=cipa-1980)
+[See this statute in the knowledge graph](../graph.html?focus=cipa-1980)
 
 ## Sources
 

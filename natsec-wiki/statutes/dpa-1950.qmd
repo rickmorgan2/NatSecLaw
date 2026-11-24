@@ -59,7 +59,7 @@ Most authorities carry a sunset. They were extended from September 30, 2025 to J
 | related to | [Section 232 (trade)](sec232-1962.qmd){.subj} | Both treat industrial capacity as a national security concern. |
 | related to | [National Defense Act (1916)](national-defense-act-1916.qmd){.subj} | Its industrial mobilization section is an early precedent for defense production powers. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=dpa-1950)
+[See this statute in the knowledge graph](../graph.html?focus=dpa-1950)
 
 ## Sources
 

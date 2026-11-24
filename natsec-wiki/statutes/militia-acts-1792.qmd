@@ -62,7 +62,7 @@ Replaced in stages by the Militia Act of 1795, the Insurrection Act of 1807, and
 | succeeded by | [Militia Act of 1903](dick-act-1903.qmd){.subj} | Replaced the 1792 system with an organized, federally supported National Guard. |
 | related to | [Reserve & Guard Mobilization](reserve-mobilization.qmd){.subj} | Sec. 12406 descends from the calling-forth power. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=militia-acts-1792)
+[See this statute in the knowledge graph](../graph.html?focus=militia-acts-1792)
 
 ## Sources
 

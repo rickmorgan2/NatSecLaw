@@ -62,7 +62,7 @@ In force. A June 2026 analysis of a Defense Department Inspector General evaluat
 | related to | [Civilian Protection Center](cp-coe-2022.qmd){.subj} | The center carries out and refines the civilian harm policy that Sec. 936 requires the Department to maintain. |
 | related to | [Civilian Casualty Report](civcas-report-2017.qmd){.subj} | The annual report describes how the Department investigates allegations and any new civilian harm policies. |
 
-[See this statute in the knowledge graph](../graph.qmd?focus=civcas-policy-2018)
+[See this statute in the knowledge graph](../graph.html?focus=civcas-policy-2018)
 
 ## Sources
 
