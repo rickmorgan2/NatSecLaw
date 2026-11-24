@@ -10,6 +10,7 @@ domain_labels <- c(
   "defense-arms"        = "Defense organization and arms transfers",
   "foreign-policy"      = "Related foreign policy",
   "civilian-protection" = "Civilian harm and protection",
+  "purse"               = "Appropriations and the power of the purse",
   "foundations"         = "Constitutional and code foundations"
 )
 
@@ -22,6 +23,7 @@ domain_short <- c(
   "defense-arms"        = "Defense and arms",
   "foreign-policy"      = "Foreign policy",
   "civilian-protection" = "Civilian harm",
+  "purse"               = "Power of the purse",
   "foundations"         = "Foundations"
 )
 
@@ -32,6 +34,7 @@ domain_colors <- c(
   "defense-arms"        = "#b07a1e",
   "foreign-policy"      = "#6b4c8a",
   "civilian-protection" = "#a23b72",
+  "purse"               = "#5f7d2b",
   "foundations"         = "#44505f"
 )
 
@@ -88,23 +91,41 @@ era_of <- function(year) {
 relation_labels <- c(
   amends = "amends", repeals = "repeals", succeeds = "succeeds",
   relies_on = "relies on", constrains = "constrains",
-  enacted_in = "enacted in", related = "related to"
+  enacted_in = "enacted in", part_of = "part of", funded_by = "funded through",
+  related = "related to",
+  # court cases to the statutes they decided; built from data/cases.yml, not edges.csv
+  ruled_on = "ruled on"
 )
 
 relation_inverse <- c(
   amends = "amended by", repeals = "repealed by", succeeds = "succeeded by",
   relies_on = "relied on by", constrains = "constrained by",
-  enacted_in = "vehicle for", related = "related to"
+  enacted_in = "vehicle for", part_of = "includes", funded_by = "funds",
+  related = "related to", ruled_on = "decided in"
 )
 
 relation_colors <- c(
   amends = "#3b5b92", repeals = "#b5403a", succeeds = "#b07a1e",
   relies_on = "#2e7d6b", constrains = "#6b4c8a",
-  enacted_in = "#5c6670", related = "#b4bac1"
+  enacted_in = "#5c6670", part_of = "#8a6d3b", funded_by = "#5f7d2b",
+  related = "#b4bac1", ruled_on = "#1b2a41"
 )
 
 # relations that express dependence of one law on another, used for "builds on"
-dependency_relations <- c("relies_on", "amends", "enacted_in", "succeeds")
+dependency_relations <- c("relies_on", "amends", "enacted_in", "succeeds", "part_of", "funded_by")
+
+# relations allowed in data/edges.csv (court case links come from data/cases.yml)
+edge_relations <- setdiff(names(relation_labels), "ruled_on")
+
+# date of the last full review; a statute without its own `checked` date was checked then
+wiki_reviewed <- "2026-11-10"
+
+# "2026-11-10" as "November 10, 2026"
+long_date <- function(x) {
+  d <- as.Date(x)
+  dplyr::if_else(is.na(d), NA_character_,
+                 paste0(month.name[as.integer(format(d, "%m"))], " ", as.integer(format(d, "%d")), ", ", format(d, "%Y")))
+}
 
 # field helpers ----------------------------------------------------------------
 
@@ -144,9 +165,15 @@ first_sentence <- function(x, min_chars = 90) {
   })
 }
 
+# display names for every id a [[wiki link]] can point to: statutes, then court cases
+wiki_labels <- function(statutes) {
+  cases <- load_cases()
+  c(stats::setNames(statutes$short, statutes$id), stats::setNames(cases$short, cases$id))
+}
+
 # strip [[wiki links]] down to their display text
 plain_wiki <- function(text, statutes) {
-  lookup <- stats::setNames(statutes$short, statutes$id)
+  lookup <- wiki_labels(statutes)
   stringr::str_replace_all(text, wiki_pattern, \(m) {
     parts <- stringr::str_match(m, wiki_pattern)
     dplyr::coalesce(parts[, 3], unname(lookup[parts[, 2]]))
@@ -182,6 +209,9 @@ load_statutes <- function(dir = "data/statutes") {
     provisions   = purrr::map(list_field(recs, "provisions"), as.character),
     tags         = purrr::map(list_field(recs, "tags"), as.character),
     sources      = list_field(recs, "sources"),
+    # programs: account, appropriations act, administering agency, committees
+    funding      = list_field(recs, "funding"),
+    checked      = dplyr::coalesce(chr_field(recs, "checked"), wiki_reviewed),
     # U.S. Code titles: parsed from the usc cite, plus any listed under usc_titles
     usc_titles   = purrr::map2(usc, list_field(recs, "usc_titles"), code_titles)
   ) |>
@@ -211,6 +241,45 @@ load_members <- function(dir = "data/members") {
 load_units <- function(path = "data/study/units.yml") {
   units <- yaml::read_yaml(path)
   units[order(purrr::map_int(units, "number"))]
+}
+
+# court cases, one row each; `statutes` holds the statutes each case decided
+load_cases <- function(path = "data/cases.yml") {
+  recs <- if (file.exists(path)) yaml::read_yaml(path) else list()
+  tibble::tibble(
+    id           = chr_field(recs, "id"),
+    name         = chr_field(recs, "name"),
+    short        = chr_field(recs, "short"),
+    citation     = chr_field(recs, "citation"),
+    year         = as.integer(chr_field(recs, "year")),
+    decided      = chr_field(recs, "decided"),
+    vote         = chr_field(recs, "vote"),
+    domain       = chr_field(recs, "domain"),
+    question     = chr_field(recs, "question"),
+    holding      = chr_field(recs, "holding"),
+    significance = chr_field(recs, "significance"),
+    response     = chr_field(recs, "response"),
+    standing     = chr_field(recs, "standing"),
+    opinion      = chr_field(recs, "opinion"),
+    wikipedia    = chr_field(recs, "wikipedia"),
+    statutes     = list_field(recs, "statutes"),
+    sources      = list_field(recs, "sources"),
+    tags         = purrr::map(list_field(recs, "tags"), as.character)
+  ) |>
+    dplyr::mutate(
+      domain_label = unname(domain_labels[domain]),
+      domain_name  = unname(domain_short[domain]),
+      era          = era_of(year),
+      # official text: the bound U.S. Reports on GovInfo, else the listed slip opinion
+      opinion_url  = dplyr::coalesce(usreports_url(citation), opinion)
+    ) |>
+    dplyr::arrange(year, name)
+}
+
+# agencies, offices, committees, and courts for the Who's who page
+load_institutions <- function(path = "data/institutions.yml") {
+  if (!file.exists(path)) return(list())
+  yaml::read_yaml(path)
 }
 
 # links to official sources ------------------------------------------------------
@@ -277,6 +346,13 @@ bill_label <- function(type, number) {
   prefix <- c(hr = "H.R.", s = "S.", hres = "H.Res.", sres = "S.Res.", hjres = "H.J.Res.",
               sjres = "S.J.Res.", hconres = "H.Con.Res.", sconres = "S.Con.Res.")
   paste(prefix[[tolower(type)]], number)
+}
+
+# GovInfo PDF of a decision in the bound United States Reports, from a cite like "343 U.S. 579"
+usreports_url <- function(citation) {
+  m <- stringr::str_match(dplyr::coalesce(citation, ""), "^(\\d+) U\\.S\\. (\\d+)$")
+  dplyr::if_else(is.na(m[, 1]), NA_character_,
+                 paste0("https://www.govinfo.gov/content/pkg/USREPORTS-", m[, 2], "/pdf/USREPORTS-", m[, 2], "-", m[, 3], ".pdf"))
 }
 
 # a URL is official when it is served by a federal government domain
@@ -369,18 +445,22 @@ member_sources <- function(m) {
 # turn [[id]] or [[id|display text]] into markdown links to statute pages
 wiki_pattern <- "\\[\\[([a-z0-9-]+)(?:\\|([^\\]]+))?\\]\\]"
 
+# `prefix` is the path from the current page to the statutes folder; court cases
+# sit beside it in cases/
 link_wiki <- function(text, statutes, prefix = "") {
-  lookup <- stats::setNames(statutes$short, statutes$id)
+  lookup <- wiki_labels(statutes)
+  case_prefix <- if (prefix == "") "../cases/" else sub("statutes/$", "cases/", prefix)
   stringr::str_replace_all(text, wiki_pattern, \(m) {
     parts <- stringr::str_match(m, wiki_pattern)
     label <- dplyr::coalesce(parts[, 3], unname(lookup[parts[, 2]]))
-    paste0("[", label, "](", prefix, parts[, 2], ".qmd)")
+    dir <- dplyr::if_else(parts[, 2] %in% statutes$id, prefix, case_prefix)
+    paste0("[", label, "](", dir, parts[, 2], ".qmd)")
   })
 }
 
 # ids referenced by wiki links anywhere in a character vector
 wiki_ids <- function(text) {
-  stringr::str_match_all(text, wiki_pattern) |>
+  stringr::str_match_all(stats::na.omit(text), wiki_pattern) |>
     purrr::map(\(m) m[, 2]) |>
     unlist() |>
     unique()

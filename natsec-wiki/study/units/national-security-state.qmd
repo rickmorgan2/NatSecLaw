@@ -111,6 +111,24 @@ cat(mini_graph_legend(unit_ids, load_statutes(), load_edges()))
 **Unified combatant command**
 :   A command with forces from more than one service under a single commander, organized by region or function.
 
+## Issues for Congress
+
+Questions that recur in oversight and legislation, with the main arguments on each side. There is no answer key; they are for discussion and briefing preparation.
+
+### 1. Does the 1947 structure still fit current threats, or is another reorganization due?
+
+The structure created by the [National Security Act](../../statutes/nsa-1947.qmd) has been revised by statute in 1949, 1958, 1986, and 2004.
+
+- Advocates of reorganization point to cyber, economic security, and technology competition, which cut across departments built for the Cold War.
+- Skeptics argue reorganizations are disruptive and slow to pay off, and that the framework adapts well through targeted amendments such as the [Goldwater-Nichols Act](../../statutes/goldwater-nichols-1986.qmd) and the [IRTPA](../../statutes/irtpa-2004.qmd).
+
+### 2. Should the Defense Production Act's industrial authorities be made permanent?
+
+Much of the [Defense Production Act](../../statutes/dpa-1950.qmd) depends on periodic reauthorization.
+
+- Supporters of permanence argue that industrial base and supply chain needs are continuous and that lapses create uncertainty for industry.
+- Supporters of sunsets argue that reauthorization is Congress's main opportunity to review how broad economic powers have been used.
+
 ## Check yourself
 
 Try to answer each question before opening it.

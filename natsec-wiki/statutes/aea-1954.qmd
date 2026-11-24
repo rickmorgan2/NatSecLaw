@@ -42,12 +42,14 @@ Every civil nuclear deal, from India in 2008 to current proposals in the Gulf, i
 
 In force as amended, notably by the Nuclear Non-Proliferation Act of 1978 (Pub. L. 95-242).
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Built upon by.** [Iran Nuclear Review Act](inara-2015.qmd).
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (further reading); [Unit 10: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (core reading).
+- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (further reading); [Unit 11: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (core reading).
 
 ## Connections
 

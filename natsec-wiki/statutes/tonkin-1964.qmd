@@ -43,6 +43,8 @@ Its open-ended wording, and later doubts about the incident that prompted it, sh
 
 Repealed in January 1971 by section 12 of Pub. L. 91-672, an amendment to the Foreign Military Sales Act.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))
@@ -55,6 +57,7 @@ Repealed in January 1971 by section 12 of Pub. L. 91-672, an amendment to the Fo
 |---|---|---|
 | related to | [War Powers Resolution](wpr-1973.qmd){.subj} | The War Powers Resolution was Congress's response to the open-ended Vietnam authorization. |
 | related to | [Arms Export Control Act](aeca-1976.qmd){.subj} | The Tonkin resolution was repealed by Sec. 12 of Pub. L. 91-672 (1971), a law amending the Foreign Military Sales Act, the AECA's original name. |
+| related to | [Case-Church Amendment](case-church-1973.qmd){.subj} | Cut off funds for the war the Tonkin Resolution had authorized, two years after Congress repealed the resolution. |
 
 [See this statute in the knowledge graph](../graph.html?focus=tonkin-1964)
 

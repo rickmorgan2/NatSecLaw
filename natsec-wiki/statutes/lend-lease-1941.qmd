@@ -43,6 +43,8 @@ It is the origin of large-scale U.S. arms transfers as an instrument of policy s
 
 Expired after the Second World War. A Ukraine-specific lend-lease law enacted in 2022 lapsed in 2023 without being used.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))

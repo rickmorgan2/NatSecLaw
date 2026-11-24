@@ -41,13 +41,16 @@ It is the leading example of Congress taking a sanctions program out of presiden
 
 In force. Title III lawsuits, suspended by every President for 23 years, have been allowed since May 2019.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [Trading with the Enemy Act](twea-1917.qmd), [Foreign Assistance Act](faa-1961.qmd).
 - **Codified in.** [Title 22 U.S.C.](title22-usc.qmd).
 - **Era.** End of the Cold War ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 4: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (further reading).
+- **Study.** [Unit 5: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (further reading).
+- **Who's involved.** [OFAC](../whos-who.qmd#ofac).
 
 ## Connections
 

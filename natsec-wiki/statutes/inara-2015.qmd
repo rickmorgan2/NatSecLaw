@@ -41,12 +41,14 @@ It is a template for congressional review of executive agreements that are not s
 
 In force. It would apply to any new nuclear agreement with Iran.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [Atomic Energy Act](aea-1954.qmd).
 - **Era.** Sanctions, cyber, and great powers ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 4: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (core reading).
+- **Study.** [Unit 5: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (core reading).
 
 ## Connections
 

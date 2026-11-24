@@ -41,6 +41,8 @@ The title of the U.S. Code for the National Guard when it is not in federal serv
 
 In force as positive law, enacted together with Title 10 in 1956.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Statutes in this wiki codified here
 
 | Statute | Year | Citation | Status |
@@ -53,7 +55,7 @@ In force as positive law, enacted together with Title 10 in 1956.
 - **Layer.** Code title overview. Not a layer of authority but the shelf where enacted law is filed by subject. Titles 10 and 32 are themselves enacted law; Titles 22 and 50 are compilations. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Codified in.** [Title 32 U.S.C.](title32-usc.qmd).
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 1: Where the power comes from](../study/units/foundations.qmd) (further reading); [Unit 8: The military at home](../study/units/military-at-home.qmd) (further reading).
+- **Study.** [Unit 1: Where the power comes from](../study/units/foundations.qmd) (further reading); [Unit 9: The military at home](../study/units/military-at-home.qmd) (further reading).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Space National Guard Act; Buckley SFB.
 
 ## Connections

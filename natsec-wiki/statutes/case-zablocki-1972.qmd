@@ -40,12 +40,15 @@ It is the main transparency check on executive agreements, which far outnumber t
 
 In force, substantially rewritten by section 5947 of the FY2023 National Defense Authorization Act (Pub. L. 117-263).
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Targeted provision. Single sections that grant a narrow authority, impose a condition, or require a report, often enacted in a defense authorization. Small in text, often decisive in practice. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Built upon by.** [NDAA (annual)](ndaa-annual.qmd).
 - **Era.** Vietnam, Watergate, and reassertion ([timeline](../study/timeline.qmd)).
 - **Study.** [Unit 3: Deciding to use force](../study/units/war-powers.qmd) (further reading).
+- **Who's involved.** [SFRC](../whos-who.qmd#sfrc).
 - **Member lenses.** [Rep. Sara Jacobs](../members/jacobs.qmd): Foreign Affairs.
 
 ## Connections

@@ -41,6 +41,8 @@ The title of the U.S. Code for diplomacy and foreign assistance. It holds the St
 
 In force. Like Title 50 it is not positive law, so the underlying acts control.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Statutes in this wiki codified here
 
 | Statute | Year | Citation | Status |
@@ -50,11 +52,18 @@ In force. Like Title 50 it is not positive law, so the underlying acts control.
 | [Smith-Mundt Act](smith-mundt-1948.qmd){.subj} | 1948 | 22 U.S.C. 1431 et seq. | In force |
 | [State Basic Authorities Act](state-basic-1956.qmd){.subj} | 1956 | 22 U.S.C. 2651a et seq. | In force |
 | [Foreign Assistance Act](faa-1961.qmd){.subj} | 1961 | 22 U.S.C. 2151 et seq. | In force |
+| [Presidential drawdown (Sec. 506)](pda-506.qmd){.subj} | 1961 | 22 U.S.C. 2318 | In force |
+| [State-foreign ops appropriations](sfops-approps-annual.qmd){.subj} | 1961 | NA | In force |
+| [Foreign Military Financing](fmf.qmd){.subj} | 1968 | 22 U.S.C. 2763 | In force |
+| [Foreign Military Sales](fms.qmd){.subj} | 1968 | 22 U.S.C. 2761-2762 | In force |
 | [Hughes-Ryan Amendment](hughes-ryan-1974.qmd){.subj} | 1974 | formerly 22 U.S.C. 2422 | Superseded |
 | [Arms Export Control Act](aeca-1976.qmd){.subj} | 1976 | 22 U.S.C. 2751 et seq. | In force |
+| [IMET](imet.qmd){.subj} | 1976 | 22 U.S.C. 2347 and following | In force |
 | [Symington-Glenn Amendments](symington-glenn.qmd){.subj} | 1976 | 22 U.S.C. 2799aa, 2799aa-1 | In force |
+| [Peacekeeping Operations](pko-551.qmd){.subj} | 1978 | 22 U.S.C. 2348 | In force |
 | [Taiwan Relations Act](tra-1979.qmd){.subj} | 1979 | 22 U.S.C. 3301 et seq. | In force |
 | [Foreign Service Act](fsa-1980.qmd){.subj} | 1980 | 22 U.S.C. 3901 et seq. | In force |
+| [Excess Defense Articles](eda-516.qmd){.subj} | 1986 | 22 U.S.C. 2321j | In force |
 | [Nunn-Lugar Act](nunn-lugar-1991.qmd){.subj} | 1991 | 22 U.S.C. 2551 note; 50 U.S.C. 3701 et seq. | In force |
 | [Helms-Burton Act](helms-burton-1996.qmd){.subj} | 1996 | 22 U.S.C. 6021 et seq. | In force |
 | [Leahy Laws](leahy-laws.qmd){.subj} | 1997 | 22 U.S.C. 2378d; 10 U.S.C. 362 | In force |
@@ -66,6 +75,7 @@ In force. Like Title 50 it is not positive law, so the underlying acts control.
 | [Caesar Act](caesar-2019.qmd){.subj} | 2019 | 22 U.S.C. 8791 note | Repealed |
 | [Elie Wiesel Act](wiesel-2018.qmd){.subj} | 2019 | 22 U.S.C. 2656 note | In force |
 | [Global Fragility Act](gfa-2019.qmd){.subj} | 2019 | 22 U.S.C. 9801 et seq. | Partly expired |
+| [Coup restriction (Sec. 7008)](sec7008-coup.qmd){.subj} | 2026 | NA | In force |
 
 ## Where it sits
 

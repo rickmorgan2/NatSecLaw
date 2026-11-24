@@ -1,0 +1,404 @@
+# Supreme Court cases (D-013). Each case links to the statutes it decided; the
+# official opinion link is built from the U.S. Reports citation (GovInfo), or taken
+# from `opinion` for decisions not yet in the bound volumes. `wikipedia` is background
+# reading, shown as a secondary source. Added November 24, 2026.
+
+- id: curtiss-wright-1936
+  name: United States v. Curtiss-Wright Export Corp.
+  short: Curtiss-Wright
+  citation: "299 U.S. 304"
+  year: 1936
+  decided: "1936-12-21"
+  vote: "7 to 1"
+  domain: foundations
+  wikipedia: "https://en.wikipedia.org/wiki/United_States_v._Curtiss-Wright_Export_Corp."
+  question: >-
+    Whether a 1934 joint resolution letting the President ban arms sales to the
+    countries fighting the Chaco War, Bolivia and Paraguay, was an unconstitutional
+    delegation of legislative power.
+  holding: >-
+    Upheld the delegation. Because foreign affairs powers rest on national
+    sovereignty rather than on the Constitution's specific grants alone, Congress may
+    give the President broader discretion abroad than at home.
+  significance: >-
+    The most cited case for executive power in foreign affairs, chiefly for Justice
+    Sutherland's description of the President as the "sole organ of the federal
+    government in the field of international relations." That language was not
+    needed to decide the case, and executive branch lawyers have long relied on it.
+    Its delegation holding underpins the broad discretion Congress grants in
+    statutes such as the [[ieepa-1977]] and the [[aeca-1976]].
+  standing: >-
+    The delegation holding remains good law. In [[zivotofsky-2015]] the Court
+    declined to read the "sole organ" language as establishing exclusive presidential
+    power in foreign affairs.
+  statutes:
+    - id: constitution-war-powers
+      effect: "Treated the foreign affairs power as an attribute of national sovereignty, supporting broad delegations to the President."
+  tags: [foreign affairs, delegation, executive power, arms embargo]
+
+- id: youngstown-1952
+  name: Youngstown Sheet & Tube Co. v. Sawyer
+  short: Youngstown
+  citation: "343 U.S. 579"
+  year: 1952
+  decided: "1952-06-02"
+  vote: "6 to 3"
+  domain: foundations
+  wikipedia: "https://en.wikipedia.org/wiki/Youngstown_Sheet_%26_Tube_Co._v._Sawyer"
+  question: >-
+    Whether President Truman, to avert a strike during the Korean War, could seize
+    the nation's steel mills without statutory authority.
+  holding: >-
+    Held the seizure unlawful. No statute authorized it, and the President's powers
+    as Commander in Chief and chief executive did not extend to taking private
+    property at home to settle a labor dispute; that was lawmaking reserved to
+    Congress.
+  significance: >-
+    Justice Jackson's concurrence supplies the framework courts and executive branch
+    lawyers still use. Presidential power is at its maximum when the President acts
+    with Congress's express or implied authorization, in a "zone of twilight" when
+    Congress has said nothing, and at its "lowest ebb" when the President acts
+    against Congress's will. Much of this wiki can be read through it: an
+    [[aumf-2001|AUMF]] puts the President in the first category, and the
+    [[wpr-1973]] and funding limits like the [[case-church-1973]] are attempts to
+    push contrary action into the third. The majority noted that the
+    [[selective-service-1948]] and the [[dpa-1950]] let the President take property
+    under conditions the government conceded were not met, and Justice
+    Frankfurter's concurrence traced how Congress had withheld seizure power in 1947.
+  standing: >-
+    Good law. Jackson's concurrence, rather than the majority opinion, is the
+    controlling framework in later cases such as [[dames-moore-1981]] and
+    [[zivotofsky-2015]].
+  statutes:
+    - id: constitution-war-powers
+      effect: "Held that the Commander in Chief and executive powers did not authorize a domestic seizure of private property without Congress."
+    - id: dpa-1950
+      effect: "Its property-taking provisions in Title II did not support the seizure; the government conceded their conditions were not met, and the concurrences found no implied seizure power in the act."
+    - id: selective-service-1948
+      effect: "Its authority to seize plants under certain conditions did not support the seizure; the government conceded the conditions were not met."
+  tags: [separation of powers, executive power, Korean War, emergency powers, Jackson framework]
+
+- id: train-v-ny-1975
+  name: Train v. City of New York
+  short: Train v. New York
+  citation: "420 U.S. 35"
+  year: 1975
+  decided: "1975-02-18"
+  vote: "9 to 0"
+  domain: purse
+  wikipedia: "https://en.wikipedia.org/wiki/Train_v._City_of_New_York"
+  question: >-
+    Whether the Administrator of the Environmental Protection Agency, at President
+    Nixon's direction, could allot to the states less than the full amounts
+    authorized for sewage treatment grants under the Federal Water Pollution Control
+    Act Amendments of 1972.
+  holding: >-
+    No. The statute required the Administrator to allot the full sums authorized;
+    he had no discretion to withhold them. The Court decided the case on the statute
+    alone and did not reach the constitutional question.
+  significance: >-
+    The Supreme Court's only decision on the Nixon impoundments. It shows how courts
+    approach a refusal to spend: as a question of what the spending statute
+    requires, not of inherent presidential power. That framing carries into
+    disputes under the [[impoundment-1974]], which gives the Comptroller General a
+    statutory right to sue.
+  response: >-
+    Congress had already acted: the [[impoundment-1974]] was enacted in July 1974,
+    while the case was pending.
+  standing: Good law.
+  statutes:
+    - id: impoundment-1974
+      effect: "Decided under the earlier water pollution statute, the case is the judicial counterpart to the act Congress passed while it was pending."
+  tags: [impoundment, appropriations, separation of powers, power of the purse]
+
+- id: dames-moore-1981
+  name: Dames & Moore v. Regan
+  short: Dames & Moore
+  citation: "453 U.S. 654"
+  year: 1981
+  decided: "1981-07-02"
+  vote: "Opinion by Justice Rehnquist"
+  domain: aid-sanctions
+  wikipedia: "https://en.wikipedia.org/wiki/Dames_%26_Moore_v._Regan"
+  question: >-
+    Whether the President, to carry out the Algiers Accords that ended the Iran
+    hostage crisis, could nullify court attachments on Iranian assets, transfer the
+    assets, and suspend Americans' claims against Iran in U.S. courts in favor of an
+    international claims tribunal.
+  holding: >-
+    Yes. IEEPA authorized nullifying the attachments and transferring the assets.
+    No statute expressly authorized suspending the claims, but Congress's long
+    acquiescence in executive settlement of international claims, and related
+    statutes, supported the President's action.
+  significance: >-
+    The first major test of the [[ieepa-1977]], and an application of
+    [[youngstown-1952|Jackson's Youngstown framework]] in which congressional
+    acquiescence counted as implied authorization. Executive branch lawyers cite it
+    for the proposition that a consistent practice Congress has known of and not
+    opposed can support presidential action.
+  standing: Good law; the Court stressed that its holding was narrow.
+  statutes:
+    - id: ieepa-1977
+      effect: "Held that IEEPA authorized the President to nullify attachments and order the transfer of Iranian assets."
+  tags: [IEEPA, sanctions, Iran, claims settlement, executive agreements]
+
+- id: chadha-1983
+  name: Immigration and Naturalization Service v. Chadha
+  short: INS v. Chadha
+  citation: "462 U.S. 919"
+  year: 1983
+  decided: "1983-06-23"
+  vote: "7 to 2"
+  domain: foundations
+  wikipedia: "https://en.wikipedia.org/wiki/Immigration_and_Naturalization_Service_v._Chadha"
+  question: >-
+    Whether one house of Congress could, by resolution, override an executive
+    decision to suspend an individual's deportation, as the immigration statute then
+    allowed.
+  holding: >-
+    No. Action with the effect of law must pass both houses and be presented to the
+    President. One-house and two-house legislative vetoes are unconstitutional.
+  significance: >-
+    Chadha invalidated the legislative veto device built into many national security
+    statutes of the 1970s. It cast doubt on the [[wpr-1973]] provision letting
+    Congress order a withdrawal by concurrent resolution and on the original
+    concurrent-resolution procedures of the [[nea-1976]] and the [[aeca-1976]], and
+    it is why most congressional checks in this wiki now take the form of joint
+    resolutions, which the President can veto.
+  response: >-
+    Congress replaced the vetoes with joint resolutions: expedited joint resolution
+    procedures for the War Powers Resolution (1983), joint resolutions to terminate
+    national emergencies (1985), and joint resolutions of disapproval for arms sales
+    (1986).
+  standing: Good law.
+  statutes:
+    - id: wpr-1973
+      effect: "Undercut Sec. 5(c), which provides for withdrawal of forces by concurrent resolution."
+    - id: nea-1976
+      effect: "Undercut termination of emergencies by concurrent resolution; Congress substituted a joint resolution in 1985."
+    - id: aeca-1976
+      effect: "Undercut the concurrent resolution of disapproval for arms sales; Congress substituted a joint resolution in 1986."
+  tags: [legislative veto, separation of powers, bicameralism, presentment]
+
+- id: hamdi-2004
+  name: Hamdi v. Rumsfeld
+  short: Hamdi
+  citation: "542 U.S. 507"
+  year: 2004
+  decided: "2004-06-28"
+  vote: "Plurality opinion; judgment 6 to 3"
+  domain: war-powers
+  wikipedia: "https://en.wikipedia.org/wiki/Hamdi_v._Rumsfeld"
+  question: >-
+    Whether the government could hold a U.S. citizen captured in Afghanistan as an
+    enemy combatant, and what process he was due to contest that designation.
+  holding: >-
+    The 2001 AUMF authorizes detaining individuals who fought against the United
+    States in Afghanistan as part of or supporting Taliban forces, including
+    citizens, for the duration of the relevant hostilities. A citizen detainee must
+    nonetheless receive notice of the factual basis for his classification and a fair
+    opportunity to rebut it before a neutral decisionmaker.
+  significance: >-
+    The plurality read the [[aumf-2001]]'s "necessary and appropriate force" to
+    include detention as a fundamental incident of war, a reading later codified in
+    the FY2012 NDAA. Its statement that "a state of war is not a blank check for the
+    President" is a standard reference in debates over wartime authority.
+  standing: Good law.
+  statutes:
+    - id: aumf-2001
+      effect: "Held that the AUMF's authorization of necessary and appropriate force includes detention of enemy combatants captured in Afghanistan for the duration of hostilities."
+  tags: [detention, AUMF, due process, enemy combatants, war on terror]
+
+- id: hamdan-2006
+  name: Hamdan v. Rumsfeld
+  short: Hamdan
+  citation: "548 U.S. 557"
+  year: 2006
+  decided: "2006-06-29"
+  vote: "5 to 3"
+  domain: war-powers
+  wikipedia: "https://en.wikipedia.org/wiki/Hamdan_v._Rumsfeld"
+  question: >-
+    Whether the military commissions the President established by order to try
+    Guantanamo detainees were lawful.
+  holding: >-
+    No. The commissions' procedures violated the Uniform Code of Military Justice,
+    which requires that commission rules match those of courts-martial as far as
+    practicable, and Common Article 3 of the Geneva Conventions. The Detainee
+    Treatment Act's jurisdiction-stripping provision did not apply to pending cases.
+  significance: >-
+    Hamdan made the scope of statutory authority, not inherent power, the decisive
+    question, and so gave Congress the next move. It also confirmed that Common
+    Article 3 applies to the conflict with al-Qaeda, which shaped detention and
+    interrogation policy.
+  response: >-
+    Within four months Congress enacted the [[mil-commissions-2006]], authorizing
+    commissions by statute and barring habeas petitions from Guantanamo detainees,
+    a provision later struck down in [[boumediene-2008]].
+  standing: Good law as to its statutory holdings; the commissions now rest on the 2006 act as amended in 2009.
+  statutes:
+    - id: ucmj-1950
+      effect: "Held the commissions failed the UCMJ's requirement that their procedures be uniform with courts-martial as far as practicable."
+    - id: dta-2005
+      effect: "Held its bar on habeas jurisdiction did not reach cases already pending."
+  tags: [military commissions, Guantanamo, Geneva Conventions, detention, war on terror]
+
+- id: boumediene-2008
+  name: Boumediene v. Bush
+  short: Boumediene
+  citation: "553 U.S. 723"
+  year: 2008
+  decided: "2008-06-12"
+  vote: "5 to 4"
+  domain: war-powers
+  wikipedia: "https://en.wikipedia.org/wiki/Boumediene_v._Bush"
+  question: >-
+    Whether foreign nationals detained at Guantanamo Bay have the constitutional
+    privilege of habeas corpus, and whether the Military Commissions Act could
+    remove it.
+  holding: >-
+    Yes, they have the privilege. Sec. 7 of the Military Commissions Act, which
+    stripped federal courts of jurisdiction over their habeas petitions, operates as
+    an unconstitutional suspension of the writ, and the review procedures of the
+    Detainee Treatment Act are not an adequate substitute.
+  significance: >-
+    The Court struck down a provision Congress had enacted in response to its own
+    earlier ruling in [[hamdan-2006]], and, as Justice Scalia's dissent put it, for
+    the first time extended constitutional habeas to noncitizens held by the
+    military abroad. It opened years of habeas litigation in federal court in
+    Washington, which, rather than new legislation, defined the detention standard in
+    practice.
+  standing: Good law.
+  statutes:
+    - id: mil-commissions-2006
+      effect: "Struck down Sec. 7, which barred habeas petitions from Guantanamo detainees."
+    - id: dta-2005
+      effect: "Held its review procedures were not an adequate substitute for habeas corpus."
+  tags: [habeas corpus, Guantanamo, detention, Suspension Clause, war on terror]
+
+- id: hlp-2010
+  name: Holder v. Humanitarian Law Project
+  short: Humanitarian Law Project
+  citation: "561 U.S. 1"
+  year: 2010
+  decided: "2010-06-21"
+  vote: "6 to 3"
+  domain: foreign-policy
+  wikipedia: "https://en.wikipedia.org/wiki/Holder_v._Humanitarian_Law_Project"
+  question: >-
+    Whether the federal ban on providing material support to designated foreign
+    terrorist organizations could be applied to training, expert advice, and other
+    support intended only to promote the groups' lawful, nonviolent activities.
+  holding: >-
+    Yes, as applied to the plaintiffs' proposed activities. The ban in 18 U.S.C.
+    2339B is not unconstitutionally vague and does not violate the First Amendment,
+    given Congress's and the executive's judgment that any support frees resources
+    for terrorism.
+  significance: >-
+    The Court deferred heavily to the political branches' national security
+    judgments while applying demanding First Amendment scrutiny, a combination often
+    cited in later cases. It confirmed the reach of the material-support offense the
+    [[aedpa-1996]] created, which is the main criminal tool tied to foreign terrorist
+    organization designations.
+  standing: Good law.
+  statutes:
+    - id: aedpa-1996
+      effect: "Upheld the material-support ban in 18 U.S.C. 2339B, enacted by the act, against vagueness and First Amendment challenges as applied."
+  tags: [material support, terrorism, First Amendment, foreign terrorist organizations]
+
+- id: clapper-2013
+  name: Clapper v. Amnesty International USA
+  short: Clapper v. Amnesty
+  citation: "568 U.S. 398"
+  year: 2013
+  decided: "2013-02-26"
+  vote: "5 to 4"
+  domain: intelligence
+  wikipedia: "https://en.wikipedia.org/wiki/Clapper_v._Amnesty_International_USA"
+  question: >-
+    Whether lawyers, journalists, and human rights groups who communicate with
+    people abroad had standing to challenge Section 702 of FISA, which authorizes
+    surveillance targeting non-U.S. persons outside the United States.
+  holding: >-
+    No. Their fear that their communications would be collected was too speculative
+    to establish the concrete, imminent injury Article III requires, and their costs
+    to avoid surveillance could not substitute for it.
+  significance: >-
+    Clapper made Section 702 very hard to challenge in ordinary court, which leaves
+    oversight largely to the intelligence committees, the Foreign Intelligence
+    Surveillance Court, and the periodic reauthorization fights over the
+    [[fisa-amendments-2008]] and the [[risaa-2024]]. The Court did not reach the
+    program's legality.
+  standing: Good law.
+  statutes:
+    - id: fisa-amendments-2008
+      effect: "Dismissed a facial challenge to Section 702 for lack of standing, without reaching the merits."
+  tags: [surveillance, Section 702, standing, FISA]
+
+- id: zivotofsky-2015
+  name: Zivotofsky v. Kerry
+  short: Zivotofsky v. Kerry
+  citation: "576 U.S. 1"
+  year: 2015
+  decided: "2015-06-08"
+  vote: "6 to 3"
+  domain: foundations
+  wikipedia: "https://en.wikipedia.org/wiki/Zivotofsky_v._Kerry"
+  question: >-
+    Whether Congress could require the State Department, on request, to list
+    "Israel" as the place of birth in the passports of U.S. citizens born in
+    Jerusalem, contrary to the executive's policy of not recognizing any state's
+    sovereignty over the city.
+  holding: >-
+    No. The power to recognize foreign states and governments belongs to the
+    President alone, and Sec. 214(d) of the Foreign Relations Authorization Act,
+    Fiscal Year 2003, which required the listing, unconstitutionally infringed it.
+  significance: >-
+    The Court upheld the President's refusal to follow a foreign affairs statute,
+    finding the power exclusive even in the third, "lowest ebb" category of
+    [[youngstown-1952|Jackson's framework]]; the Chief Justice's dissent called it the
+    first time the Court had accepted "a President's direct defiance of an Act of
+    Congress in the field of foreign affairs." At the same time
+    it declined to treat [[curtiss-wright-1936|Curtiss-Wright]]'s "sole organ"
+    language as making the President's foreign affairs power exclusive in general,
+    and it stressed Congress's many powers in the field.
+  standing: Good law.
+  statutes:
+    - id: constitution-war-powers
+      effect: "Held the recognition power is exclusively the President's, and rejected a general reading of Curtiss-Wright's 'sole organ' language."
+  tags: [recognition, foreign affairs, executive power, Jerusalem, passports]
+
+- id: learning-resources-2026
+  name: Learning Resources, Inc. v. Trump
+  short: Learning Resources v. Trump
+  citation: "607 U.S. ___"
+  year: 2026
+  decided: "2026-02-20"
+  vote: "6 to 3"
+  domain: aid-sanctions
+  wikipedia: "https://en.wikipedia.org/wiki/Learning_Resources,_Inc._v._Trump"
+  opinion: "https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf"
+  question: >-
+    Whether the International Emergency Economic Powers Act authorizes the
+    President to impose tariffs, as he did in 2025 after declaring national
+    emergencies over drug trafficking and trade deficits.
+  holding: >-
+    No. IEEPA does not authorize the President to impose tariffs. The Court
+    affirmed the Federal Circuit's judgment against the tariffs in the companion
+    case and ordered the challenge brought in district court dismissed for lack of
+    jurisdiction.
+  significance: >-
+    The decision limits the [[ieepa-1977]] to its traditional tools, blocking and
+    regulating transactions, and reaffirms that the taxing power, including tariffs,
+    belongs to Congress unless it clearly delegates it. The sanctions programs built
+    on IEEPA were not at issue. Tariffs now depend on statutes that expressly
+    authorize them, such as [[sec232-1962|Section 232]].
+  response: >-
+    As of November 2026 Congress had not legislated on the question. The
+    administration turned the same day to other tariff authorities, including
+    Section 122 of the Trade Act of 1974.
+  standing: Good law; decided February 20, 2026.
+  statutes:
+    - id: ieepa-1977
+      effect: "Held that the act's authority to regulate importation does not include the power to impose tariffs."
+  tags: [IEEPA, tariffs, emergency powers, taxing power, major questions]

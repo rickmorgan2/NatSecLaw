@@ -40,11 +40,13 @@ The act predates the classification system and never mentions it, speaking inste
 
 In force. The 1918 Sedition Act amendments were repealed in 1921; section 798 on communications intelligence was added in 1950.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Era.** Civil War to the First World War ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 5: Intelligence and its oversight](../study/units/intelligence-oversight.qmd) (core reading).
+- **Study.** [Unit 6: Intelligence and its oversight](../study/units/intelligence-oversight.qmd) (core reading).
 
 ## Connections
 

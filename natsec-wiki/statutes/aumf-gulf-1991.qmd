@@ -44,6 +44,8 @@ It is the clearest modern case of Congress authorizing force to carry out a Secu
 
 Repealed together with the 2002 Iraq authorization by the National Defense Authorization Act for Fiscal Year 2026 (Pub. L. 119-60), signed December 18, 2025.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))

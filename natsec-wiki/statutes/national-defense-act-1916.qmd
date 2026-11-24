@@ -46,13 +46,15 @@ It set the three-component structure the Army still has. The 1933 amendments com
 
 Amended heavily in 1920 and 1933 and absorbed into Titles 10 and 32 by the 1956 codification.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [Militia Act of 1903](dick-act-1903.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd), [Title 32 U.S.C.](title32-usc.qmd).
 - **Era.** Civil War to the First World War ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 8: The military at home](../study/units/military-at-home.qmd) (core reading).
+- **Study.** [Unit 9: The military at home](../study/units/military-at-home.qmd) (core reading).
 
 ## Connections
 

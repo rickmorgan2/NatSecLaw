@@ -40,13 +40,15 @@ It is the statute at the center of the argument over whether a President can dis
 
 In force. In 2025 the administration moved USAID's remaining functions into the State Department and wound down most of the agency without new legislation; the statutory provisions on the agency have not been repealed and the action has been litigated. Check current status.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [State Basic Authorities Act](state-basic-1956.qmd).
 - **Codified in.** [Title 22 U.S.C.](title22-usc.qmd).
 - **Era.** End of the Cold War ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 9: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (further reading).
+- **Study.** [Unit 10: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (further reading).
 - **Member lenses.** [Rep. Sara Jacobs](../members/jacobs.qmd): Foreign Affairs.
 
 ## Connections

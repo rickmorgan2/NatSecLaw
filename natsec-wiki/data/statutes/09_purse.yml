@@ -1,0 +1,352 @@
+# Appropriations and the power of the purse (D-012). Added November 24, 2026.
+
+- id: defense-approps-annual
+  title: Department of Defense Appropriations Act (annual series)
+  short: Defense appropriations (annual)
+  year: 1949
+  domain: purse
+  layer: authorizing
+  public_law: "119-75"
+  stat: "140 Stat. 174"
+  usc_titles: [10]
+  checked: "2026-11-24"
+  status: in-force
+  status_note: >-
+    The most recent full-year act is for fiscal year 2026, enacted as Division A of
+    the Consolidated Appropriations Act, 2026 (Pub. L. 119-75, signed February 3,
+    2026). Fiscal year 2027 began under a continuing resolution (Pub. L. 119-103)
+    that runs through December 11, 2026. Check current status.
+  summary: >-
+    The annual law that provides the Defense Department's money. The
+    [[ndaa-annual|NDAA]] sets policy and authorizes amounts; this act makes funds
+    available to obligate, account by account, and attaches general provisions that
+    limit how they may be used. The series began with the National Military
+    Establishment Appropriation Act, 1950 (Pub. L. 81-434), the first single
+    appropriation for the newly unified military.
+  provisions:
+    - "Titles I-VII: military personnel; operation and maintenance; procurement; research, development, test and evaluation; revolving funds; other programs; related agencies."
+    - "Title VIII general provisions recur each year, on transfers, reprogramming, multiyear contracts, and limits on the use of funds."
+    - "Sec. 8005 (FY2026): general transfer authority of up to $6 billion between accounts, only for higher-priority, unforeseen military requirements and never for an item Congress has denied."
+    - "Military construction and family housing are funded in a separate act, the Military Construction, Veterans Affairs, and Related Agencies appropriations."
+  significance: >-
+    Authorization without appropriation spends nothing, so this act is where
+    Congress's control of the military is most concrete. Funding prohibitions in it
+    have ended or limited operations, as the [[case-church-1973]] and the
+    [[boland-1982]] did, and its transfer authority ([[sec8005-transfer]]) sets how far
+    the Department can move money Congress assigned elsewhere. When the act is late,
+    the Department runs on continuing resolutions that generally bar new programs
+    and production increases. Members and staff who want to change defense policy
+    without a new authorization usually look here first.
+  tags: [appropriations, Department of Defense, legislative vehicle, annual, power of the purse]
+  sources:
+    - label: "GovInfo, Pub. L. 119-75 (Consolidated Appropriations Act, 2026; Division A is the Defense act)"
+      url: "https://www.govinfo.gov/link/plaw/119/public/75"
+    - label: "GovInfo, Pub. L. 119-103 (continuing appropriations for fiscal year 2027)"
+      url: "https://www.govinfo.gov/link/plaw/119/public/103"
+    - label: "GovInfo, Pub. L. 81-434 (National Military Establishment Appropriation Act, 1950), 63 Stat. 987"
+      url: "https://www.govinfo.gov/link/statute/63/987"
+    - label: "CRS R48891, FY2026 Department of Defense Appropriations: In Brief"
+      url: "https://www.congress.gov/crs-product/R48891"
+
+- id: sfops-approps-annual
+  title: State, Foreign Operations, and Related Programs Appropriations Act (annual series)
+  short: State-foreign ops appropriations
+  year: 1961
+  domain: purse
+  layer: authorizing
+  public_law: "119-75"
+  stat: "140 Stat. 513"
+  usc_titles: [22]
+  checked: "2026-11-24"
+  status: in-force
+  status_note: >-
+    The most recent full-year act is for fiscal year 2026, enacted as Division F of
+    Pub. L. 119-75 under the House's name for the bill, the National Security,
+    Department of State, and Related Programs Appropriations Act, 2026. Fiscal year
+    2027 began under the continuing resolution in Pub. L. 119-103. Check current
+    status.
+  summary: >-
+    The annual law that funds the State Department and foreign assistance,
+    including the security assistance accounts that pay for [[fmf]], [[imet]], and
+    [[pko-551]]. Its general provisions, numbered from Sec. 7001, carry many of the
+    standing conditions on foreign aid, such as the [[sec7008-coup|coup
+    restriction]]. Foreign assistance has had its own annual appropriation since the
+    first one under the [[faa-1961]], the Foreign Assistance and Related Agencies
+    Appropriation Act, 1962 (Pub. L. 87-329).
+  provisions:
+    - "Title I: Department of State and related programs. Title II: administration of assistance. Title III: bilateral economic assistance."
+    - "Title IV: international security assistance, including International Military Education and Training, the Foreign Military Financing Program, and Peacekeeping Operations."
+    - "Titles V and VI: multilateral assistance, and export and investment assistance."
+    - "Title VII general provisions: notification of the Appropriations Committees 15 days before obligating funds beyond justified amounts, the coup restriction in Sec. 7008, and country-specific conditions."
+  significance: >-
+    Much foreign policy is made here rather than in authorizing law. Congress has
+    not enacted a comprehensive foreign assistance authorization in decades, so the
+    annual act, through its accounts, earmarks, notification rules, and conditions,
+    is the main way it shapes aid. The [[leahy-laws]] began as a rider to this act.
+    For staff, the act's general provisions and the joint explanatory statement are
+    usually the controlling text for how a program may be run in a given year.
+  tags: [appropriations, foreign assistance, security assistance, legislative vehicle, annual, power of the purse]
+  sources:
+    - label: "GovInfo, Pub. L. 119-75 (Division F is the FY2026 act)"
+      url: "https://www.govinfo.gov/link/plaw/119/public/75"
+    - label: "GovInfo, Pub. L. 87-329 (Foreign Assistance and Related Agencies Appropriation Act, 1962), 75 Stat. 717"
+      url: "https://www.govinfo.gov/link/statute/75/717"
+    - label: "CRS R48624, Department of State, Foreign Operations, and Related Programs: FY2026 Budget and Appropriations"
+      url: "https://www.congress.gov/crs-product/R48624"
+
+- id: sec8005-transfer
+  title: General Transfer Authority (Defense Appropriations Act, Sec. 8005)
+  short: Sec. 8005 transfers
+  year: 2026
+  enacted: "2026-02-03"
+  domain: purse
+  layer: provision
+  public_law: "119-75"
+  stat: "140 Stat. 196"
+  usc_titles: [10]
+  checked: "2026-11-24"
+  status: in-force
+  status_note: >-
+    Re-enacted each year in the Defense appropriations act; cited here as enacted for
+    fiscal year 2026. A continuing resolution carries it forward on the prior year's
+    terms. Check current status.
+  summary: >-
+    The recurring section of the annual Defense appropriations act that lets the
+    Secretary of Defense, with the approval of the Director of the Office of
+    Management and Budget, move funds between accounts up to a cap set each year
+    ($6 billion for fiscal 2026). Transfers must be for higher-priority items based
+    on unforeseen military requirements and may never fund an item Congress has
+    denied.
+  provisions:
+    - "A determination by the Secretary that the transfer is necessary in the national interest, and OMB approval."
+    - "An annual dollar cap; transfers among military personnel accounts do not count against it."
+    - "Only for higher-priority items based on unforeseen military requirements, and never where Congress denied the item."
+    - "Prompt notice to Congress of every transfer; requests for multiple reprogrammings due by June 30 of the fiscal year."
+  significance: >-
+    Transfer and reprogramming rules are how the Appropriations Committees keep the
+    money where they put it. The limits matter most in disputes: in 2019 the
+    Defense Department used general transfer authority to move funds into
+    counterdrug accounts for border barrier construction under [[sec284-counterdrug-1990]],
+    alongside emergency construction under [[sec2808-milcon-1982]], and litigation over
+    whether the barrier was an item Congress had denied followed. The [[antideficiency]]
+    and the purpose statute (31 U.S.C. 1301(a)) are the background rules a transfer
+    must still satisfy.
+  tags: [appropriations, transfer authority, reprogramming, Department of Defense, power of the purse]
+  sources:
+    - label: "GovInfo, Pub. L. 119-75, Division A, Sec. 8005 (140 Stat. 196)"
+      url: "https://www.govinfo.gov/link/statute/140/196"
+
+- id: sec7008-coup
+  title: Coup Restriction (State-Foreign Operations Appropriations, Sec. 7008)
+  short: Coup restriction (Sec. 7008)
+  year: 2026
+  enacted: "2026-02-03"
+  domain: purse
+  layer: provision
+  public_law: "119-75"
+  stat: "140 Stat. 539"
+  usc_titles: [22]
+  checked: "2026-11-24"
+  status: in-force
+  status_note: >-
+    Re-enacted each year in the State-foreign operations appropriations act; cited
+    here as enacted for fiscal year 2026, which includes a program-by-program waiver.
+    Check current status.
+  summary: >-
+    Bars the use of foreign assistance funds to finance assistance directly to the
+    government of a country whose duly elected head of government is deposed by a
+    military coup or decree, or by a coup or decree in which the military plays a
+    decisive role. Aid may resume when the Secretary of State certifies that a
+    democratically elected government has taken office.
+  provisions:
+    - "Sec. 7008(a): the prohibition, covering funds in Titles III through VI of the act, including security assistance."
+    - "Exceptions for assistance to promote democratic elections, public participation in democratic processes, or a democratic transition, with prior consultation with the Appropriations Committees."
+    - "Resumption on certification by the Secretary of State that a democratically elected government has taken office."
+    - "Sec. 7008(b) (FY2026): the Secretary may waive the restriction program by program on certifying that a waiver is in the national security interest."
+  significance: >-
+    The restriction is triggered by the facts, but in practice by a formal
+    determination that a coup occurred, which makes the determination itself a
+    recurring oversight question. Administrations have at times avoided one, as with
+    Egypt in 2013; in October 2023 the State Department determined that the July
+    takeover in Niger was a coup and suspended most assistance under this section. It
+    reaches programs funded through the State-foreign operations act, such as [[fmf]]
+    and [[imet]], but not Defense Department authorities such as [[seccoop-2016|Title 10
+    security cooperation]] unless a separate law applies.
+  tags: [appropriations, foreign assistance, democracy, coup, security assistance, power of the purse]
+  sources:
+    - label: "GovInfo, Pub. L. 119-75, Division F, Sec. 7008 (140 Stat. 539)"
+      url: "https://www.govinfo.gov/link/statute/140/539"
+    - label: "Voice of America editorial, 'U.S. Officially Recognizes a Coup in Niger' (October 2023)"
+      url: "https://editorials.voa.gov/a/u-s-officially-recognizes-a-coup-in-niger/7307902.html"
+
+- id: case-church-1973
+  title: Case-Church Amendment
+  short: Case-Church Amendment
+  year: 1973
+  enacted: "1973-07-01"
+  domain: purse
+  layer: provision
+  public_law: "93-50"
+  stat: "87 Stat. 129"
+  checked: "2026-11-24"
+  status: lapsed
+  status_note: >-
+    Its funding prohibition applied to the appropriations it covered and is no
+    longer operative. Of historical and precedential interest.
+  summary: >-
+    The funding cutoff that ended U.S. combat in Indochina. Section 307 of the
+    Second Supplemental Appropriations Act, 1973 barred the use of its funds to
+    support, directly or indirectly, combat by U.S. forces in or over Cambodia, Laos,
+    North Vietnam, and South Vietnam or off their shores, and barred any previously
+    appropriated funds for that purpose after August 15, 1973.
+  provisions:
+    - "Sec. 307: no funds under the act for direct or indirect support of U.S. combat activities in or over Cambodia, Laos, North Vietnam, and South Vietnam, or off their shores."
+    - "After August 15, 1973, the same bar applied to funds appropriated under any other act."
+    - "Named for Senators Clifford Case and Frank Church."
+  significance: >-
+    The clearest example of Congress ending a military operation with the purse
+    rather than a vote on the war itself. U.S. bombing in Cambodia stopped on the
+    August 15 deadline. It passed four months before the [[wpr-1973]] and two years
+    after Congress repealed the [[tonkin-1964]], and it remains the model for later
+    proposals to cut off funds for a specific operation.
+  tags: [appropriations, funding limitation, Vietnam, war powers, power of the purse]
+  sources:
+    - label: "GovInfo, 87 Stat. 129 (Pub. L. 93-50, Sec. 307)"
+      url: "https://www.govinfo.gov/link/statute/87/129"
+
+- id: boland-1982
+  title: Boland Amendments
+  short: Boland Amendments
+  year: 1982
+  enacted: "1984-10-12"
+  domain: purse
+  layer: provision
+  public_law: "98-473"
+  stat: "98 Stat. 1935"
+  usc_titles: [50]
+  checked: "2026-11-24"
+  status: lapsed
+  status_note: >-
+    The amendments were annual appropriations limits for fiscal years 1983 through
+    1985 and are no longer operative. Of historical and precedential interest.
+  summary: >-
+    A series of appropriations limits on U.S. support for the Contras fighting
+    Nicaragua's government. The first, in December 1982 (in Pub. L. 97-377), barred
+    funds for the purpose of overthrowing that government. The strictest, Sec. 8066
+    of Pub. L. 98-473 (October 1984), barred the CIA, the Defense Department, and any
+    other agency involved in intelligence activities from spending funds during
+    fiscal year 1985 to support military or paramilitary operations in Nicaragua,
+    directly or indirectly.
+  provisions:
+    - "Sec. 8066(a) (FY1985): no funds available to the CIA, the Defense Department, or any intelligence entity for direct or indirect support of military or paramilitary operations in Nicaragua."
+    - "Sec. 8066(b): the bar could lift after February 28, 1985 only on a presidential report and a joint resolution approving further support."
+    - "Named for Representative Edward Boland, then chairman of the House intelligence committee."
+  significance: >-
+    The Boland Amendments show the purse used against intelligence activity rather
+    than open war. Efforts to keep supporting the Contras outside appropriated
+    channels led to the Iran-Contra affair, which in turn led Congress to write the
+    statutory definition of covert action and tighten finding and notice rules in
+    1991 (see the [[nsa-1947]] and the [[intel-oversight-1980]]). They are a standing
+    reference point whenever a funding limit is proposed for an intelligence or
+    special operations activity.
+  tags: [appropriations, funding limitation, covert action, Nicaragua, intelligence, power of the purse]
+  sources:
+    - label: "GovInfo, 98 Stat. 1935 (Pub. L. 98-473, Sec. 8066)"
+      url: "https://www.govinfo.gov/link/statute/98/1935"
+
+- id: impoundment-1974
+  title: Impoundment Control Act of 1974
+  short: Impoundment Control Act
+  year: 1974
+  enacted: "1974-07-12"
+  domain: purse
+  layer: framework
+  public_law: "93-344"
+  stat: "88 Stat. 332"
+  usc: "2 U.S.C. 681-688"
+  usc_path: "2/683"
+  checked: "2026-11-24"
+  status: in-force
+  status_note: >-
+    In force and contested. In July 2025 Congress enacted a rescission bill the
+    President proposed under the act (Rescissions Act of 2025, Pub. L. 119-28), which
+    cancelled foreign assistance and other funds. In August 2025 the President
+    proposed rescinding further foreign assistance funds so late in the fiscal year
+    that they would expire before the 45-day period ran out, a so-called pocket
+    rescission. GAO has said the act does not permit this; in September 2025 the
+    Supreme Court, on an emergency application (No. 25A269), allowed the funds to be
+    withheld while litigation continued. Check current status.
+  summary: >-
+    Title X of the Congressional Budget and Impoundment Control Act of 1974. It
+    requires the President to spend appropriated funds unless Congress agrees
+    otherwise. A proposal to cancel funds (a rescission) must go to Congress, and the
+    funds must be released if Congress does not pass a rescission bill within 45
+    days of continuous session; delays (deferrals) are allowed only for limited
+    reasons and not past the end of the fiscal year.
+  provisions:
+    - "Sec. 1001: the act does not concede or assert the constitutional powers of either branch."
+    - "Sec. 1012: special message proposing a rescission; funds must be made available unless Congress completes a rescission bill within 45 days."
+    - "Sec. 1013: deferrals only for contingencies, savings from efficiency, or as specifically provided by law, and not beyond the fiscal year."
+    - "Secs. 1014-1015: reports to Congress and the Comptroller General, who reports impoundments the President has not."
+    - "Sec. 1016: the Comptroller General may sue to release withheld funds after notice to Congress."
+  significance: >-
+    Passed after the Nixon administration withheld billions in appropriated funds,
+    the act is the main statutory check on the executive declining to spend. It
+    works alongside the apportionment rules in the [[antideficiency]]: reserves set
+    aside in apportionment must be reported under this act. The Supreme Court's
+    [[train-v-ny-1975]] decided a Nixon-era impoundment as a matter of the
+    underlying statute. Its procedures have become central again since 2025,
+    especially for foreign assistance funded in the [[sfops-approps-annual|State-foreign
+    operations act]].
+  tags: [appropriations, impoundment, rescission, GAO, separation of powers, power of the purse]
+  sources:
+    - label: "GovInfo, Pub. L. 119-28 (Rescissions Act of 2025)"
+      url: "https://www.govinfo.gov/link/plaw/119/public/28"
+    - label: "Supreme Court docket No. 25A269, Department of State v. AIDS Vaccine Advocacy Coalition"
+      url: "https://www.supremecourt.gov/docket/docketfiles/html/public/25A269.html"
+    - label: "GAO WatchBlog, 'What Is a Pocket Rescission and Is It Legal?'"
+      url: "https://www.gao.gov/blog/what-pocket-rescission-and-it-legal"
+
+- id: antideficiency
+  title: Antideficiency Act
+  short: Antideficiency Act
+  year: 1905
+  enacted: "1905-03-03"
+  domain: purse
+  layer: framework
+  stat: "33 Stat. 1257"
+  usc: "31 U.S.C. 1341-1342, 1349-1351, 1511-1519"
+  usc_path: "31/1341"
+  checked: "2026-11-24"
+  status: in-force
+  status_note: >-
+    In force. The current text is in Title 31, restated without substantive change
+    in 1982 (Pub. L. 97-258) and amended since, most recently to guarantee back pay
+    after a lapse in appropriations.
+  summary: >-
+    The fiscal law that makes the purse enforceable. Federal officials may not spend
+    or obligate more than Congress has appropriated, may not commit the government to
+    pay before an appropriation is made, and may not accept voluntary services.
+    Violations must be reported to the President, Congress, and the Comptroller
+    General and can bring discipline or criminal penalties.
+  provisions:
+    - "31 U.S.C. 1341(a): no obligation or expenditure exceeding, or in advance of, an appropriation, unless authorized by law."
+    - "31 U.S.C. 1342: no voluntary services, except in emergencies involving the safety of human life or the protection of property; the legal basis for which work continues during a lapse in appropriations."
+    - "31 U.S.C. 1512-1513: the President apportions appropriations, and reserves may be set only for contingencies, savings, or as provided by law."
+    - "31 U.S.C. 1349-1350 and 1517(b): administrative discipline, criminal penalties for knowing and willful violations, and mandatory reports of every violation."
+    - "31 U.S.C. 1341(c): back pay for employees furloughed or required to work during a lapse in appropriations beginning on or after December 22, 2018."
+  significance: >-
+    Shutdowns run on this act: without an appropriation, agencies stop all work
+    except what the emergency exception and other law allow. It is also the
+    enforcement backstop for transfer limits such as [[sec8005-transfer]] and for the
+    purpose statute (31 U.S.C. 1301(a)), which allows appropriations to be used only
+    for the purposes for which they were made. Apportionment, the step where the
+    Office of Management and Budget releases funds to agencies, connects it to the
+    [[impoundment-1974]]. The core rules date to an 1870 statute, strengthened in
+    1905 and 1906.
+  tags: [appropriations, fiscal law, shutdown, apportionment, GAO, power of the purse]
+  sources:
+    - label: "GovInfo, 31 U.S.C. 1341 (with historical and revision notes)"
+      url: "https://www.govinfo.gov/link/uscode/31/1341?link-type=html"
+    - label: "GovInfo, 31 U.S.C. 1301 (purpose statute)"
+      url: "https://www.govinfo.gov/link/uscode/31/1301?link-type=html"

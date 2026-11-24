@@ -44,6 +44,8 @@ It created the National Guard as an institution. The limits on overseas service 
 
 Carried forward by the National Defense Act of 1916 and now reflected in Titles 10 and 32.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
@@ -51,7 +53,7 @@ Carried forward by the National Defense Act of 1916 and now reflected in Titles 
 - **Built upon by.** [National Defense Act (1916)](national-defense-act-1916.qmd).
 - **Codified in.** [Title 32 U.S.C.](title32-usc.qmd).
 - **Era.** Civil War to the First World War ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 8: The military at home](../study/units/military-at-home.qmd) (core reading).
+- **Study.** [Unit 9: The military at home](../study/units/military-at-home.qmd) (core reading).
 
 ## Connections
 

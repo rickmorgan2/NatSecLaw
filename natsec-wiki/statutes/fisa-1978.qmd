@@ -41,13 +41,16 @@ Enacted after the Church Committee documented decades of warrantless surveillanc
 
 The core titles on electronic surveillance, physical search, and pen registers are in force. Title VII, including Section 702, lapsed in June 2026 (see the FISA Amendments Act page). The business records, roving wiretap, and lone wolf provisions lapsed in March 2020.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Built upon by.** [IRTPA](irtpa-2004.qmd), [USA PATRIOT Act](patriot-2001.qmd), [FISA Amendments Act (702)](fisa-amendments-2008.qmd), [USA FREEDOM Act](usa-freedom-2015.qmd), [RISAA](risaa-2024.qmd).
 - **Codified in.** [Title 50 U.S.C.](title50-usc.qmd).
 - **Era.** Vietnam, Watergate, and reassertion ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 6: Surveillance law](../study/units/surveillance.qmd) (core reading).
+- **Study.** [Unit 7: Surveillance law](../study/units/surveillance.qmd) (core reading).
+- **Who's involved.** [HPSCI](../whos-who.qmd#hpsci), [SSCI](../whos-who.qmd#ssci), [NSA](../whos-who.qmd#nsa-agency), [FISC](../whos-who.qmd#fisc).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Intelligence.
 
 ## Connections

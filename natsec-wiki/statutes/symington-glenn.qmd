@@ -40,13 +40,15 @@ The Glenn sanctions were triggered against both India and Pakistan after their 1
 
 In force as Sections 101 and 102 of the Arms Export Control Act, where they were moved from the Foreign Assistance Act in 1994.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Targeted provision. Single sections that grant a narrow authority, impose a condition, or require a report, often enacted in a defense authorization. Small in text, often decisive in practice. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [Foreign Assistance Act](faa-1961.qmd), [Arms Export Control Act](aeca-1976.qmd).
 - **Codified in.** [Title 22 U.S.C.](title22-usc.qmd).
 - **Era.** Vietnam, Watergate, and reassertion ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 10: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (core reading).
+- **Study.** [Unit 11: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (core reading).
 
 ## Connections
 

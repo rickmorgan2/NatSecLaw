@@ -2,32 +2,41 @@
 title: "About this wiki"
 ---
 
+## Who it is for
+
+Congressional staff in personal and committee offices, members, and interns. Statute and case pages are written for practitioners: the bottom line first, citations precise enough to draft from, and contested questions described without taking a side. The study guide assumes no background and defines terms of art as they come up. The wiki is nonpartisan and independent; it is not affiliated with any office or committee.
+
 ## Scope
 
-The wiki covers the federal statutes that most shape U.S. national security policy, in five core areas, plus a group of foreign policy laws they connect to:
+The wiki covers the federal statutes that most shape U.S. national security policy, the appropriations that fund them, and the Supreme Court decisions that define them, in these areas:
 
 - War powers and use of force
+- Appropriations and the power of the purse
 - Intelligence and surveillance
 - Foreign aid, fragility, and sanctions
 - Defense organization and arms transfers
 - Civilian harm and protection
 - Related foreign policy legislation
 
-A further group, constitutional and code foundations, holds what the rest is built on: the Constitution's war and foreign affairs clauses, the founding-era statutes, the laws that created the National Guard, and overview pages for Titles 10, 22, 32, and 50 of the U.S. Code. Each title page lists every statute in the wiki codified in that title.
+A further group, constitutional and code foundations, holds what the rest is built on: the Constitution's war and foreign affairs clauses, the founding-era statutes, the laws that created the National Guard, and overview pages for Titles 10, 22, 32, and 50 of the U.S. Code.
 
-A few entries are single U.S. Code provisions, such as 10 U.S.C. 127e or the civilian harm sections of recent defense authorizations, where the provision matters more than the act that carried it. The [Title 10 and Title 50](title10-title50.qmd) page explains the divide between military and intelligence authorities.
+Some entries are single provisions rather than whole acts, where the provision matters more than the act that carried it: 10 U.S.C. 127e, the civilian harm sections of recent defense authorizations, recurring appropriations provisions such as the coup restriction, and the sections that authorize programs such as Foreign Military Financing and IMET. Program entries add a section on funding and administration: the account, the appropriations act, the agency that runs it, and the committees of jurisdiction. They do not track dollar amounts.
 
-Apart from the Constitution page, it covers statutes only. Treaties, executive orders, Defense Department instructions, court decisions, and regulations appear where they explain a statute, but they do not have their own pages.
+[Court cases](cases/index.qmd) have their own pages. Treaties, executive orders, Defense Department instructions, and regulations appear where they explain a statute but do not have pages. The [Who's who](whos-who.qmd) page covers the committees, agencies, and courts that recur across the wiki.
 
-## What changed in version 2
+## What changed
 
-- **Study guide.** An [eleven-unit curriculum](study/index.qmd) with reading paths, key terms, and review questions, plus [flashcards](study/flashcards.qmd), a [timeline](study/timeline.qmd), and a [glossary](study/glossary.qmd).
-- **Authority layers.** Every statute is placed in a layer: Constitution, framework statute, specific authorization, or targeted provision, with the U.S. Code titles as the filing system. Statute pages say what each law builds on, and the graph has a layered view.
-- **Civilian harm.** A new domain and study unit covering the Foreign Claims Act, the annual civilian casualty report, the civilian casualty policy requirement, the ex gratia payment authority, and the Civilian Protection Center of Excellence.
-- **Two member lenses.** [Rep. Jason Crow (CO-06)](members/crow.qmd) and [Rep. Sara Jacobs (CA-51)](members/jacobs.qmd), with a [comparison page](members/index.qmd). Members are now named.
-- **Official links.** Every statute links to its enacted text and its current U.S. Code section on GovInfo, the Government Publishing Office's official repository, in place of the unofficial Cornell copy. Bills link to Congress.gov. The [Sources](sources.qmd) page lists everything the wiki draws on.
-- **Current law only.** A switch in the top bar hides repealed and superseded laws from lists, tables, and graphs across the site.
-- **Graph.** Click a domain to fade the others; click a statute to filter the connections table to it.
+**November 24, 2026**
+
+- **Appropriations and the power of the purse.** A new domain and [study unit](study/units/purse.qmd): the annual Defense and State-foreign operations appropriations acts, the coup restriction and general transfer authority, the Case-Church and Boland funding limits, the Impoundment Control Act, and the Antideficiency Act.
+- **Security assistance programs.** Foreign Military Financing, Foreign Military Sales, IMET, Peacekeeping Operations, presidential drawdown, excess defense articles, and the Ukraine Security Assistance Initiative, each with its funding and administration.
+- **Court cases.** Twelve Supreme Court decisions, from *Curtiss-Wright* and *Youngstown* to *Learning Resources v. Trump*, each linked to the official opinion and to the statutes it decided. Statute pages list the cases that interpreted them.
+- **Who's who** and **Issues for Congress**, two or three per unit, setting out the main arguments on recurring questions.
+- **Last checked dates** on every statute page, spaced review in the [flashcards](study/flashcards.qmd), a print layout, and a phone layout for every page, including the knowledge graph.
+
+**November 10, 2026 (version 2)**
+
+- The study guide, authority layers, the civilian harm domain, two named member lenses, official GovInfo links in place of the Cornell copy, the site-wide current law switch, and a graph linked to its connections table.
 
 [Version 1](v1/index.html), the October to November 2026 edition with one anonymized member lens, is archived unchanged. On the published site it lives under `v1/`; locally it appears after a full render.
 
@@ -37,7 +46,7 @@ The [member lenses](members/index.qmd) map each member's committee seats, legisl
 
 ## Reading a statute page
 
-Each page has the same parts: a citation bar whose citations link to the official text, the law's status and layer, a short summary, buttons to read the enacted text and current code, key provisions, why the law matters, its current status, where it sits (layer, what it builds on, code title, era, study units, member lenses), its connections to other statutes, and sources.
+Each page has the same parts: a citation bar whose citations link to the official text; the law's status and layer; a summary that leads with what the law does; buttons to the enacted text and the current code; key provisions; why the law matters; its current status and the date it was last checked; for programs, funding and administration; the court cases that interpreted it; where it sits (layer, what it builds on, code title, era, study units, who is involved, member lenses); its connections to other entries; and sources.
 
 Links to repealed and superseded statutes are marked with a dagger (†).
 
@@ -53,9 +62,12 @@ Connections are directional and use a fixed vocabulary.
 | relies on | The first statute operates through authority or machinery in the second. |
 | constrains | The first statute limits how the second may be used. |
 | enacted in | The first statute was passed as part of the second, usually a defense authorization. |
+| part of | The first entry is a section within the second act. |
+| funded through | The first entry's program is paid for by the second, an appropriations act. |
 | related to | A thematic or historical link without a direct legal dependency. |
+| ruled on | A court case decided a question about the statute. |
 
-The first four count as dependencies: they make up a statute's "builds on" and "built upon by" lists.
+Amends, relies on, enacted in, succeeds, part of, and funded through count as dependencies: they make up a statute's "builds on" and "built upon by" lists.
 
 ## Layers
 
@@ -63,8 +75,8 @@ The first four count as dependencies: they make up a statute's "builds on" and "
 |---|---|
 | Constitution | The grants and limits every statute draws on. |
 | Framework statute | A standing law that creates an institution or a general procedure other laws plug into. |
-| Specific authorization | A law aimed at a particular conflict, country, program, or problem, usually working through a framework statute. |
-| Targeted provision | A single section that grants a narrow authority, imposes a condition, or requires a report. |
+| Specific authorization | A law aimed at a particular conflict, country, program, or problem, usually working through a framework statute. The annual appropriations series are listed here. |
+| Targeted provision | A single section that grants a narrow authority, imposes a condition, or requires a report. Program authorities are listed here. |
 | U.S. Code title | The subject shelf where enacted law is filed. |
 
 Layer assignments are editorial judgments, not legal categories.
@@ -75,23 +87,23 @@ Layer assignments are editorial judgments, not legal categories.
 |---|---|
 | In force | The statute is current law. It may have been amended. |
 | Partly expired | Core provisions are current, but significant authorities have lapsed or depend on short extensions. |
-| Lapsed | The central authority expired and had not been renewed at last review. |
+| Lapsed | The central authority expired, or a funding limit applied only to past appropriations. |
 | Repealed | Congress repealed the statute. |
 | Superseded | A later statute replaced it. |
 
 ## Accuracy and limits
 
-The summaries were drafted with Claude, an AI model, and reviewed on November 10, 2026. Items that changed in 2025 and 2026 were checked against current reporting, and those sources are listed on the relevant pages. The civilian harm entries were checked against the GovInfo text of the U.S. Code, and bill numbers on the member pages were checked against GovInfo bill status records. Other citations and section numbers were written from reference knowledge and have not each been checked against the primary text.
+The summaries were drafted with Claude, an AI model. Each statute page shows when it was last checked. The entries added on November 24, 2026 were checked against the GovInfo text of the U.S. Code, the Statutes at Large, the enacted fiscal year 2026 appropriations act (Pub. L. 119-75), and the official opinions in the *United States Reports* on GovInfo or on the Supreme Court's site. The civilian harm entries and member-page bill numbers were checked against GovInfo in the November 10 review. Other citations and section numbers were written from reference knowledge and have not each been checked against the primary text.
 
-Treat the wiki as a map for finding and relating statutes. Before citing a provision in your own work, confirm it in the official text linked on each page. Statutes with sunset clauses or disputed implementation change fastest; their pages end their status note with "Check current status."
+Treat the wiki as a map for finding and relating the law. Before citing a provision in a memo, letter, or bill, confirm it in the official text linked on each page. Statutes with sunset clauses or disputed implementation change fastest; their status notes end with "Check current status."
 
 This is a reference tool and not legal advice.
 
 ## Adding or changing content
 
-All content lives in `data/`. The pages in `statutes/`, `members/` (apart from `index.qmd` and `_lens.qmd`), and `study/units/` are generated and should not be edited by hand.
+All content lives in `data/`. The pages in `statutes/`, `cases/`, `members/` (apart from `index.qmd` and `_lens.qmd`), and `study/units/` are generated and should not be edited by hand.
 
-1. Add or edit an entry in one of the files in `data/statutes/`. Copy an existing entry to get the fields right, including `layer`.
-2. Add rows to `data/edges.csv` for its connections, using the relationship types above.
-3. Add the statute to a unit in `data/study/units.yml`.
-4. Run `Rscript R/deploy.R`. The build script checks the data and stops with a message if an ID, domain, layer, status, or relationship is not recognized.
+1. Add or edit a statute in one of the files in `data/statutes/`, a case in `data/cases.yml`, or a Who's who entry in `data/institutions.yml`. Copy an existing entry to get the fields right.
+2. Add rows to `data/edges.csv` for a statute's connections, using the relationship types above. A program with a `funding` field needs a matching "funded through" row.
+3. Add the entry to a unit in `data/study/units.yml`.
+4. Run `Rscript R/deploy.R check`. The build stops with a message if an ID, domain, layer, status, or relationship is not recognized, and the check then tests every internal link.

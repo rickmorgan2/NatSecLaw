@@ -41,13 +41,16 @@ Most later reorganizations are amendments to this act, including the [Goldwater-
 
 In force and amended many times. Its Title 50 sections were renumbered in 2013 (for example, old section 413b on covert action is now section 3093).
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Built upon by.** [CIA Act](cia-act-1949.qmd), [Intel Oversight Act](intel-oversight-1980.qmd), [IRTPA](irtpa-2004.qmd), [Goldwater-Nichols Act](goldwater-nichols-1986.qmd), [DoD Reorganization Act (1958)](dod-reorg-1958.qmd), [NSA Amendments (1949)](nsa-amendments-1949.qmd).
 - **Codified in.** [Title 50 U.S.C.](title50-usc.qmd).
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (core reading); [Unit 5: Intelligence and its oversight](../study/units/intelligence-oversight.qmd) (core reading); [Unit 6: Surveillance law](../study/units/surveillance.qmd) (further reading).
+- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (core reading); [Unit 6: Intelligence and its oversight](../study/units/intelligence-oversight.qmd) (core reading); [Unit 7: Surveillance law](../study/units/surveillance.qmd) (further reading).
+- **Who's involved.** [HPSCI](../whos-who.qmd#hpsci), [SSCI](../whos-who.qmd#ssci), [NSC](../whos-who.qmd#nsc), [DoD](../whos-who.qmd#dod), [JCS](../whos-who.qmd#jcs), [ODNI](../whos-who.qmd#odni), [CIA](../whos-who.qmd#cia).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Intelligence.
 
 ## Connections

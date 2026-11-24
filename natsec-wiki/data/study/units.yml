@@ -1,7 +1,9 @@
 # Study guide units, in curriculum order.
 # R/build_pages.R writes study/units/<id>.qmd from each entry.
 # core: the reading path, in order. further: optional reading.
-# Answers may use [[id]] wiki links. Every id must exist in data/statutes.
+# cases: court cases to read, from data/cases.yml. issues: Issues for Congress, each with
+# q, context, and sides (the main arguments, stated neutrally); no answer key.
+# Answers, contexts, and sides may use [[id]] wiki links to statutes or cases.
 
 - id: foundations
   number: 1
@@ -20,6 +22,7 @@
     - Distinguish an enacted statute from its place in the U.S. Code.
   core: [constitution-war-powers, declarations-of-war, militia-acts-1792, neutrality-1794, alien-enemies-1798, logan-1799]
   further: [title10-usc, title50-usc, title22-usc, title32-usc]
+  cases: [curtiss-wright-1936, youngstown-1952, chadha-1983, zivotofsky-2015]
   terms:
     - term: Positive law title
       definition: A U.S. Code title Congress has itself enacted, so the Code text is the law. Titles 10 and 32 are positive law; Titles 22 and 50 are not, so for them the Statutes at Large control.
@@ -36,6 +39,17 @@
       a: The [[alien-enemies-1798]]. It applies during a declared war or an invasion or predatory incursion by a foreign nation or government, and lets the President detain, restrict, and remove nationals of the hostile country.
     - q: Why does it matter whether a U.S. Code title is positive law?
       a: In a positive law title, such as [[title10-usc|Title 10]], the Code text is the law itself. In a non-positive title such as [[title50-usc|Title 50]], the Code is only evidence of the law, and the enacted text in the Statutes at Large controls if they differ.
+  issues:
+    - q: "Should Congress return to formal declarations of war, or keep relying on authorizations for use of force?"
+      context: "Congress has not declared war since 1942 ([[declarations-of-war]]); statutory authorizations now do that work."
+      sides:
+        - "Proponents of declarations argue they force a clear, accountable decision and carry legal consequences, such as triggering the [[alien-enemies-1798]], that authorizations do not."
+        - "Others argue declarations fit wars between states, not operations against non-state groups, and that tailored authorizations can set purpose, scope, and duration more precisely."
+    - q: "How much deference should Congress give the executive in foreign affairs?"
+      context: "[[curtiss-wright-1936]] and [[zivotofsky-2015]] point in different directions on the reach of the President's foreign affairs power."
+      sides:
+        - "Those favoring deference cite the need for speed, secrecy, and a single voice abroad, and the President's recognition and diplomatic powers."
+        - "Those favoring a stronger congressional role cite Congress's Article I powers over war, commerce, and money, and [[youngstown-1952|Justice Jackson's point]] that presidential power is weakest when it runs against Congress."
 
 - id: national-security-state
   number: 2
@@ -69,6 +83,17 @@
       a: It took the military departments out of it, so that orders run from the President and Secretary of Defense to the unified commands. See [[dod-reorg-1958]], and later [[goldwater-nichols-1986]].
     - q: Which Korean War statute lets the government put defense orders first in line at private companies?
       a: The [[dpa-1950]], which also finances new production capacity and organizes industry cooperation. Parts of it depend on periodic reauthorization.
+  issues:
+    - q: "Does the 1947 structure still fit current threats, or is another reorganization due?"
+      context: "The structure created by the [[nsa-1947]] has been revised by statute in 1949, 1958, 1986, and 2004."
+      sides:
+        - "Advocates of reorganization point to cyber, economic security, and technology competition, which cut across departments built for the Cold War."
+        - "Skeptics argue reorganizations are disruptive and slow to pay off, and that the framework adapts well through targeted amendments such as the [[goldwater-nichols-1986]] and the [[irtpa-2004]]."
+    - q: "Should the Defense Production Act's industrial authorities be made permanent?"
+      context: "Much of the [[dpa-1950]] depends on periodic reauthorization."
+      sides:
+        - "Supporters of permanence argue that industrial base and supply chain needs are continuous and that lapses create uncertainty for industry."
+        - "Supporters of sunsets argue that reauthorization is Congress's main opportunity to review how broad economic powers have been used."
 
 - id: war-powers
   number: 3
@@ -86,6 +111,7 @@
     - Describe how U.N. Security Council mandates relate to congressional authorization.
   core: [wpr-1973, tonkin-1964, aumf-gulf-1991, aumf-2001, aumf-iraq-2002, unpa-1945]
   further: [case-zablocki-1972, declarations-of-war, constitution-war-powers]
+  cases: [hamdi-2004, hamdan-2006, boumediene-2008]
   terms:
     - term: AUMF
       definition: An authorization for use of military force, a joint resolution that gives the President statutory authority to use force for a stated purpose. Modern AUMFs declare themselves the specific authorization the War Powers Resolution requires.
@@ -102,9 +128,90 @@
       a: Both were repealed by the FY2026 defense authorization in December 2025. See [[aumf-gulf-1991]] and [[aumf-iraq-2002]].
     - q: Why was the Tonkin Gulf Resolution's history central to the War Powers Resolution?
       a: Its open-ended approval of 'all necessary measures' became the legal basis for escalating the Vietnam War, and Congress designed the [[wpr-1973]] to prevent another open-ended grant. See [[tonkin-1964]].
+  issues:
+    - q: "Should the 2001 AUMF be repealed, replaced, or left in place?"
+      context: "The [[aumf-2001]] has no sunset and has been applied to groups that did not exist in 2001."
+      sides:
+        - "Advocates of repeal or replacement argue a 2001 authorization should not support operations decades later against new groups, and that a new law should name adversaries, set geographic limits, and include an end date or reporting requirements."
+        - "Those who favor keeping it argue its flexibility allows counterterrorism operations against evolving threats, and that a narrower law could leave gaps or signal reduced resolve."
+    - q: "Can the War Powers Resolution be made enforceable?"
+      context: "Presidents report 'consistent with' the [[wpr-1973]] rather than under it, and the 60-day clock rarely binds."
+      sides:
+        - "Reform proposals would define 'hostilities,' tie automatic funding cutoffs to the clock, or strengthen expedited procedures that force votes."
+        - "Critics of reform argue the Constitution, not a statute, defines the President's defensive powers, and that Congress already holds the decisive tool, the power of the purse."
+    - q: "Should Congress legislate detention standards rather than leave them to the courts?"
+      context: "[[hamdan-2006]] led to the [[mil-commissions-2006]], and [[boumediene-2008]] struck down part of it; detention standards have since been set largely in habeas litigation."
+      sides:
+        - "Some argue Congress should set detailed standards for who may be detained and for how long, so that policy is made by statute rather than case by case."
+        - "Others argue the current mix of statute, case law, and executive practice is workable, and that new detention legislation risks entrenching indefinite detention."
+
+- id: purse
+  number: 4
+  title: The power of the purse
+  question: How does Congress use money to authorize, shape, and stop national security action?
+  overview: >-
+    An authorization says what the government may do; an appropriation decides
+    whether it can pay for it. Two annual acts, Defense and State-foreign
+    operations, fund nearly everything in this wiki, and their general provisions
+    carry standing policy. Fiscal law, chiefly the Antideficiency Act and the
+    Impoundment Control Act, keeps the executive within the amounts and purposes
+    Congress sets. Funding limits have ended a war and restricted a covert program.
+    This unit covers the vocabulary appropriations staff use every day.
+  objectives:
+    - Distinguish an authorization from an appropriation, and explain what happens when only one is enacted.
+    - Explain apportionment, transfer, reprogramming, rescission, and deferral.
+    - Describe how Congress has used funding limits to end or restrict operations.
+    - Explain what the Impoundment Control Act requires and how it has been tested since 2025.
+  core: [defense-approps-annual, sfops-approps-annual, antideficiency, impoundment-1974, sec8005-transfer, sec7008-coup, case-church-1973, boland-1982]
+  further: [ndaa-annual, constitution-war-powers, sec2808-milcon-1982, sec284-counterdrug-1990, cia-act-1949]
+  cases: [train-v-ny-1975]
+  terms:
+    - term: Authorization
+      definition: "A law that establishes or continues an agency or program and may recommend funding levels, but does not itself provide money."
+    - term: Appropriation
+      definition: "Budget authority provided by law to incur obligations and make payments for specified purposes. No money may be drawn from the Treasury without one."
+    - term: Obligation
+      definition: "A binding commitment, such as a contract or grant, that will require a payment. The Antideficiency Act bars obligations beyond, or in advance of, an appropriation."
+    - term: Apportionment
+      definition: "The Office of Management and Budget's division of an appropriation by time period or project, which agencies need before they may obligate funds."
+    - term: Transfer
+      definition: "Moving budget authority from one appropriation account to another. Allowed only when a statute authorizes it, as Sec. 8005 does for the Defense Department."
+    - term: Reprogramming
+      definition: "Shifting funds within an account from one purpose to another, governed mainly by notification to the Appropriations Committees rather than by statute."
+    - term: Rescission
+      definition: "A law cancelling budget authority before it is obligated. The President may propose one under the Impoundment Control Act."
+    - term: Deferral
+      definition: "A temporary withholding of funds, allowed under the Impoundment Control Act only for limited reasons and not past the end of the fiscal year."
+    - term: Continuing resolution
+      definition: "A joint resolution that funds agencies, usually at the prior year's rate, when regular appropriations are not enacted. It generally bars new programs and production increases."
+  questions:
+    - q: What is the difference between the NDAA and the Defense appropriations act?
+      a: The [[ndaa-annual]] authorizes programs, sets policy, and recommends funding levels. The [[defense-approps-annual]] provides the budget authority the Defense Department can actually obligate. An authorized program with no appropriation spends nothing.
+    - q: What does the Antideficiency Act prohibit, and why does it matter in a shutdown?
+      a: It bars obligating or spending more than, or before, Congress appropriates, and accepting voluntary services. When appropriations lapse, agencies must stop work except where law allows it, such as emergencies involving the safety of human life or the protection of property. See [[antideficiency]].
+    - q: How did Congress end U.S. combat in Indochina?
+      a: With the [[case-church-1973]], a section of a 1973 supplemental appropriations act that barred funds for U.S. combat in or over Cambodia, Laos, North Vietnam, and South Vietnam after August 15, 1973.
+    - q: What happens to funds the President proposes to rescind?
+      a: Under the [[impoundment-1974]], the President sends Congress a special message and may withhold the funds for 45 days of continuous session; they must then be released unless Congress has enacted a rescission bill. A proposal sent late in the fiscal year, a pocket rescission, can let the funds expire, which GAO has said the act does not permit.
+  issues:
+    - q: "Should Congress rely more on funding limits to check the use of force?"
+      context: "The [[case-church-1973]] and the [[boland-1982]] limited operations through appropriations, and recent bills propose barring funds for military action against specific countries."
+      sides:
+        - "Supporters argue the purse is Congress's clearest constitutional check and is harder for the executive to work around than the War Powers Resolution."
+        - "Critics argue funding cutoffs are blunt, can endanger forces already deployed, and, since they must be enacted like any law, rarely survive a veto."
+    - q: "How should Congress respond to impoundments and pocket rescissions?"
+      context: "Since 2025 the [[impoundment-1974]] has been tested by an enacted rescission of foreign assistance and by a pocket rescission that let funds expire."
+      sides:
+        - "Some propose tightening the act, for example by barring rescission proposals late in the fiscal year or adding enforcement tools and reporting requirements."
+        - "Others argue the President needs room to avoid wasteful spending and that the act already provides the right channel, an enacted rescission, for doing so with Congress's consent."
+    - q: "How much transfer and reprogramming flexibility should the Defense Department have?"
+      context: "[[sec8005-transfer]] caps general transfers each year and bars using them for items Congress denied."
+      sides:
+        - "Those favoring more flexibility argue that a budget prepared nearly two years before execution cannot anticipate every need, and that larger transfer authority supports faster response."
+        - "Those favoring tighter limits argue broad transfer authority weakens Congress's control over specific programs, and point to the 2019 border barrier transfers as an example."
 
 - id: emergencies-sanctions
-  number: 4
+  number: 5
   title: Emergency and economic powers
   question: How does a presidential emergency declaration become a sanctions program?
   overview: >-
@@ -120,6 +227,7 @@
     - Identify statutes that limit a President's ability to lift sanctions.
   core: [nea-1976, ieepa-1977, twea-1917, caatsa-2017, glomag-2016, iran-sanctions-1996, inara-2015]
   further: [helms-burton-1996, caesar-2019, sec232-1962, aedpa-1996, sec2808-milcon-1982]
+  cases: [dames-moore-1981, learning-resources-2026, hlp-2010]
   terms:
     - term: National emergency
       definition: A presidential declaration under the National Emergencies Act that unlocks standby statutory powers. The President must specify which powers are being used, and emergencies lapse unless renewed each year.
@@ -136,9 +244,20 @@
       a: Its Russia title wrote existing executive order sanctions into statute and gave Congress a procedure to block the President from easing them. See [[caatsa-2017]].
     - q: What does the Global Magnitsky Act let the executive do, and to whom?
       a: Impose visa bans and asset freezes on foreign individuals and entities responsible for serious human rights abuse or significant corruption anywhere in the world. See [[glomag-2016]].
+  issues:
+    - q: "Should national emergencies end automatically unless Congress approves them?"
+      context: "Under the [[nea-1976]], an emergency continues until the President or a joint resolution ends it, and many have lasted for decades; after [[chadha-1983]], ending one over the President's objection requires a veto-proof majority."
+      sides:
+        - "Reform proposals would make emergencies, or the powers they unlock, lapse after a set period unless Congress votes to continue them."
+        - "Opponents argue automatic lapse could interrupt long-running sanctions programs and give a determined minority leverage over foreign policy."
+    - q: "After Learning Resources, should Congress change how trade measures are delegated?"
+      context: "[[learning-resources-2026]] held that the [[ieepa-1977]] does not authorize tariffs, but other statutes still delegate tariff authority."
+      sides:
+        - "Some argue Congress should require its approval for tariffs imposed under any delegated authority, reclaiming the taxing power more broadly."
+        - "Others argue statutes such as [[sec232-1962|Section 232]] give the executive needed flexibility to respond quickly to trade and security threats."
 
 - id: intelligence-oversight
-  number: 5
+  number: 6
   title: Intelligence and its oversight
   question: How does Congress oversee secret activity it cannot debate in public?
   overview: >-
@@ -171,9 +290,20 @@
       a: The Director of National Intelligence, to separate leadership of the whole intelligence community from leadership of the CIA, as the 9/11 Commission recommended. See [[irtpa-2004]].
     - q: What problem does CIPA solve?
       a: It sets pretrial and trial procedures for classified information in criminal cases, so a defendant cannot force the government to choose between dropping a case and disclosing secrets. See [[cipa-1980]].
+  issues:
+    - q: "Should more members be told about the most sensitive covert actions?"
+      context: "The [[intel-oversight-1980]] lets the President limit notice of especially sensitive covert actions to eight congressional leaders."
+      sides:
+        - "Advocates of broader notice argue limited notification weakens oversight, because the leaders often cannot consult committee members or staff."
+        - "Defenders argue limited notice protects the most sensitive operations and sources, and that the full committees are informed in time."
+    - q: "How should Congress oversee military operations that resemble intelligence activities?"
+      context: "Clandestine military activity under authorities such as [[sec127e-2004]] and [[sec394-cyber-2018]] reports to the armed services committees, not through the covert action process."
+      sides:
+        - "Some argue the two oversight systems should share information or that notice rules should depend on the activity, not the agency conducting it."
+        - "Others argue the distinction reflects real differences in chain of command and acknowledgment, and that Congress has already added targeted notice rules on the Title 10 side."
 
 - id: surveillance
-  number: 6
+  number: 7
   title: Surveillance law
   question: When may the government collect communications, and what limits apply to Americans' data?
   overview: >-
@@ -189,6 +319,7 @@
     - Track the sunset and reauthorization history of Section 702.
   core: [fisa-1978, patriot-2001, fisa-amendments-2008, usa-freedom-2015, risaa-2024]
   further: [cisa-2015, hsa-2002, nsa-1947]
+  cases: [clapper-2013]
   terms:
     - term: Section 702
       definition: The FISA authority, added in 2008, to target non-U.S. persons reasonably believed to be abroad with compelled help from U.S. providers, under annual court-approved certifications instead of individual orders.
@@ -205,9 +336,20 @@
       a: Two years, the shortest extension to date, with changes concentrated on how the FBI searches collected data for information about Americans. See [[risaa-2024]].
     - q: What is Section 702's status in this wiki, and what should you check?
       a: The wiki records it as lapsed after June 2026 with no reauthorization found. Check current status before relying on it. See [[fisa-amendments-2008]].
+  issues:
+    - q: "Should searches of Section 702 data for Americans' communications require a warrant?"
+      context: "A House amendment to require warrants failed on a tie vote during the 2024 reauthorization ([[risaa-2024]]), and the authority lapsed in June 2026."
+      sides:
+        - "Supporters of a warrant requirement argue that searching collected data for Americans' communications is a search that should require a judge's approval."
+        - "Opponents argue a warrant requirement would slow time-sensitive investigations, including of threats to Americans, and that court-approved procedures and oversight already protect privacy."
+    - q: "Given Clapper, how should surveillance programs be tested?"
+      context: "[[clapper-2013]] made challenges to Section 702 in ordinary courts very difficult."
+      sides:
+        - "Some propose a larger role for the court-appointed amici created by the [[usa-freedom-2015]], or statutory standing for people likely to be affected."
+        - "Others argue the Foreign Intelligence Surveillance Court, the intelligence committees, and inspectors general provide adequate review without exposing sources and methods in litigation."
 
 - id: defense-organization
-  number: 7
+  number: 8
   title: Organizing and commanding the military
   question: Who commands U.S. forces, and how does Congress shape the military each year?
   overview: >-
@@ -239,9 +381,20 @@
       a: If the emergency requires use of the armed forces, the Secretary of Defense may undertake military construction Congress never authorized, using unspent military construction funds. See [[sec2808-milcon-1982]].
     - q: Why does so much national security law ride on the NDAA?
       a: It has been enacted every year for more than six decades, so it is the most reliable vehicle for legislation of all kinds. See [[ndaa-annual]].
+  issues:
+    - q: "Has the annual NDAA become too large a vehicle?"
+      context: "The [[ndaa-annual]] routinely carries legislation well beyond defense policy."
+      sides:
+        - "Defenders say its must-pass status is what lets Congress complete national security legislation every year."
+        - "Critics argue the practice reduces scrutiny of attached measures and concentrates power in the final negotiations between the committees."
+    - q: "Is it time to revisit Goldwater-Nichols?"
+      context: "The [[goldwater-nichols-1986]] set the balance between the services, the Joint Staff, and the combatant commands."
+      sides:
+        - "Reformers point to joint requirements, acquisition, and the relationship between the services and the combatant commands as unfinished business."
+        - "Others credit the act with the joint force's effectiveness and warn against large changes without clear evidence of the problem."
 
 - id: military-at-home
-  number: 8
+  number: 9
   title: The military at home
   question: When may the armed forces act inside the United States?
   overview: >-
@@ -270,24 +423,37 @@
       a: It divided the militia into an organized part, the National Guard, and an unorganized reserve, and gave the Guard federal funds and equipment in exchange for meeting Army standards. See [[dick-act-1903]].
     - q: Why does a Guard member's duty status matter?
       a: Under Title 32 the Guard serves the governor and Posse Comitatus does not apply; federalized under Title 10, it does unless an exception applies. See [[reserve-mobilization]] and [[title32-usc]].
+  issues:
+    - q: "Should the Insurrection Act be narrowed?"
+      context: "The [[insurrection-1807]] lets the President use the military domestically on broad and largely undefined conditions."
+      sides:
+        - "Reform proposals would define the triggering conditions, require consultation with or approval by Congress after a set period, and provide for judicial review."
+        - "Opponents argue the President needs flexibility in genuine emergencies and that new limits could delay a response when state authorities cannot or will not act."
+    - q: "Where should the line fall between federal and state control of the National Guard?"
+      context: "A Guard member's status under the [[reserve-mobilization|mobilization authorities]] decides whether the [[posse-comitatus-1878]] applies."
+      sides:
+        - "Some argue for clearer limits on federalizing a state's Guard over the governor's objection."
+        - "Others argue federal authority must remain available to enforce federal law and protect federal functions."
 
 - id: assistance
-  number: 9
+  number: 10
   title: Foreign assistance, fragility, and partners
   question: How does the United States fund and condition help to other countries' development and security?
   overview: >-
     The Foreign Assistance Act of 1961 is the base law of foreign aid, run largely
     by the State Department. The Defense Department has its own parallel set of
     authorities for training and equipping foreign forces, consolidated in Title
-    10 Chapter 16. Conditions such as the Leahy Laws attach to both. The Global
+    10 Chapter 16. IMET and Peacekeeping Operations show the State Department side
+    in practice. Conditions such as the Leahy Laws attach to both, and the annual
+    appropriations act adds more, such as the coup restriction. The Global
     Fragility Act, the Women, Peace, and Security Act, and the Elie Wiesel Act
     direct strategy toward conflict prevention.
   objectives:
     - Compare State Department (Title 22) and Defense Department (Title 10) security assistance.
     - Explain how Leahy vetting works and where it applies.
     - Describe the strategies the 2017 to 2019 prevention statutes require.
-  core: [faa-1961, seccoop-2016, leahy-laws, gfa-2019, wps-2017, wiesel-2018]
-  further: [millennium-challenge-2003, farra-1998, state-basic-1956, fsa-1980, nunn-lugar-1991, mutual-security-1951, smith-mundt-1948]
+  core: [faa-1961, imet, pko-551, seccoop-2016, leahy-laws, gfa-2019, wps-2017, wiesel-2018]
+  further: [sec7008-coup, pda-506, millennium-challenge-2003, farra-1998, state-basic-1956, fsa-1980, nunn-lugar-1991, mutual-security-1951, smith-mundt-1948]
   pages: [{label: "Title 10 and Title 50: neighboring titles", href: "../../title10-title50.qmd#neighboring-titles"}]
   terms:
     - term: Security cooperation
@@ -296,6 +462,10 @@
       definition: Programs under Title 22, run by the State Department, that provide defense articles, training, and services to foreign governments.
     - term: Leahy vetting
       definition: Screening foreign security force units for credible information of gross violations of human rights before they receive U.S. assistance.
+    - term: Security assistance
+      definition: "Programs authorized mainly in Title 22 and funded in the State-foreign operations act, under State Department policy direction, such as FMF, IMET, and Peacekeeping Operations."
+    - term: Security cooperation
+      definition: "Defense Department activities with foreign forces under Title 10, consolidated in Chapter 16 in 2016, and overseen by the armed services committees."
   questions:
     - q: What do the Leahy Laws bar?
       a: U.S. assistance to any unit of a foreign security force when there is credible information that the unit committed a gross violation of human rights. There are two parallel provisions, one for State and one for Defense. See [[leahy-laws]].
@@ -305,14 +475,28 @@
       a: A ten-year, whole-of-government strategy to prevent violent conflict and stabilize fragile states, applied first in a small set of priority countries. See [[gfa-2019]].
     - q: What did the Foreign Assistance Act lead President Kennedy to create?
       a: The U.S. Agency for International Development, by executive order two months after the act. See [[faa-1961]] and, for USAID's later statutory basis, [[farra-1998]].
+  issues:
+    - q: "Should Congress rewrite the Foreign Assistance Act?"
+      context: "The [[faa-1961]] has been amended for more than six decades, and much aid policy is now set in the [[sfops-approps-annual|annual appropriations act]]."
+      sides:
+        - "Supporters of a rewrite argue the act is outdated and layered with amendments, and that appropriations riders have become a substitute for authorization."
+        - "Skeptics argue a rewrite is unlikely to pass and could invite cuts, while the current system lets Congress adjust policy every year."
+    - q: "Should security assistance stop after a coup?"
+      context: "The [[sec7008-coup|coup restriction]] cuts off most assistance to a government installed by coup; recent acts added a national security waiver."
+      sides:
+        - "Those favoring strict application argue cutting aid upholds democratic norms and U.S. credibility."
+        - "Those favoring flexibility argue ending security ties can cede influence to rivals and harm counterterrorism cooperation."
 
 - id: arms-transfers
-  number: 10
+  number: 11
   title: Arms transfers, export controls, and investment screening
   question: How does the United States control what weapons and technology leave the country, and who buys in?
   overview: >-
     The Arms Export Control Act governs weapons sales and gives Congress notice of
-    major sales and a way to block them. Export controls on dual-use technology
+    major sales and a way to block them. Most major sales go through Foreign
+    Military Sales, often paid for with Foreign Military Financing grants, while
+    drawdown and the Ukraine Security Assistance Initiative are the fast and slow
+    paths for arming a partner at war. Export controls on dual-use technology
     now rest on the Export Control Reform Act, and foreign investment review runs
     through CFIUS as expanded by FIRRMA. Nonproliferation conditions and the Taiwan
     Relations Act show how Congress attaches policy to transfers.
@@ -320,8 +504,8 @@
     - Explain the congressional review process for major arms sales.
     - Distinguish arms export controls from dual-use export controls.
     - Describe what FIRRMA added to foreign investment review.
-  core: [aeca-1976, symington-glenn, ecra-2018, firrma-2018, aea-1954, tra-1979]
-  further: [leahy-laws, dpa-1950, nunn-lugar-1991, sec232-1962]
+  core: [aeca-1976, fms, fmf, symington-glenn, ecra-2018, firrma-2018, aea-1954, tra-1979]
+  further: [pda-506, usai-2016, eda-516, leahy-laws, dpa-1950, nunn-lugar-1991, sec232-1962]
   terms:
     - term: Congressional notification
       definition: Advance notice to Congress of a proposed major arms sale, which opens a period in which Congress may pass a joint resolution of disapproval.
@@ -329,6 +513,10 @@
       definition: Goods, software, or technology with both civilian and military uses, controlled by the Commerce Department under ECRA.
     - term: CFIUS
       definition: The Committee on Foreign Investment in the United States, which reviews foreign acquisitions and investments for national security risk.
+    - term: Foreign Military Sales
+      definition: "Government-to-government sales administered by the Defense Department, in contrast to direct commercial sales, which companies make under State Department export licenses."
+    - term: Drawdown
+      definition: "Transfer of defense articles and services from existing U.S. stocks under Sec. 506 of the Foreign Assistance Act, replaced later with new appropriations."
   questions:
     - q: What role does the AECA give Congress in major arms sales?
       a: Advance notice and a procedure to block a sale by joint resolution. The act also sets the purposes for which U.S. weapons may be sold and requires licenses for commercial sales. See [[aeca-1976]].
@@ -338,9 +526,20 @@
       a: Trading in nuclear enrichment or reprocessing technology outside international safeguards, or testing a nuclear device, which cuts off U.S. economic and military aid. See [[symington-glenn]].
     - q: Beyond takeovers, what did FIRRMA bring under review?
       a: Minority stakes in sensitive businesses and some real estate transactions. See [[firrma-2018]].
+  issues:
+    - q: "Should Congress have to approve some major arms sales instead of only being able to block them?"
+      context: "Under the [[aeca-1976]], Congress can stop a notified sale only by a joint resolution, which the President can veto; the 2019 resolutions on sales to Saudi Arabia and the United Arab Emirates were vetoed."
+      sides:
+        - "Reform proposals would require affirmative approval for some sales, for example to governments with serious human rights concerns."
+        - "Opponents argue that would politicize individual sales, slow deliveries to partners, and harm alliances and the defense industrial base."
+    - q: "How should drawdown and new procurement be balanced when arming a partner at war?"
+      context: "[[pda-506|Presidential drawdown]] delivers existing stocks quickly; the [[usai-2016]] buys new equipment."
+      sides:
+        - "Those who emphasize drawdown stress speed when a partner is under attack."
+        - "Those who emphasize procurement stress protecting U.S. readiness and building industrial capacity."
 
 - id: civilian-harm
-  number: 11
+  number: 12
   title: Civilian harm and the conduct of operations
   question: What does the law require when U.S. operations harm civilians?
   overview: >-
@@ -380,3 +579,14 @@
       a: Because Congress put it in Title 10 at 10 U.S.C. 184 with specific functions, so ending it requires a change in law. The dispute became whether a sharply reduced staff still satisfies the statute. See [[cp-coe-2022]].
     - q: How do the Leahy Laws relate to the civilian harm statutes?
       a: The civilian harm statutes govern U.S. operations; the [[leahy-laws]] condition assistance to foreign units on the absence of credible information of gross human rights violations. Both members' records include bills to extend vetting or reporting to partner operations.
+  issues:
+    - q: "Is the Defense Department meeting the civilian harm statutes?"
+      context: "Staffing for civilian harm functions was sharply reduced in 2025 and 2026 while [[cp-coe-2022|10 U.S.C. 184]] and the [[civcas-policy-2018]] remained in force."
+      sides:
+        - "Those who see noncompliance argue a greatly reduced staff cannot carry out functions Congress wrote into law."
+        - "Others argue the functions can be performed by a smaller staff integrated into existing organizations."
+    - q: "Should vetting or reporting extend to how partners use U.S. weapons in combat?"
+      context: "The [[leahy-laws]] address gross violations of human rights by units; proposals in recent Congresses would add reporting on partners' compliance with the law of armed conflict."
+      sides:
+        - "Supporters argue the United States shares responsibility for how its weapons are used and needs information to make transfer decisions."
+        - "Opponents argue added conditions burden partners in active conflicts and duplicate existing end-use monitoring and policy reviews."

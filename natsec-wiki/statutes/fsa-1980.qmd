@@ -41,12 +41,14 @@ Chief of mission authority is the legal basis for an ambassador's control over o
 
 In force as amended.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Codified in.** [Title 22 U.S.C.](title22-usc.qmd).
 - **Era.** Vietnam, Watergate, and reassertion ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 9: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (further reading).
+- **Study.** [Unit 10: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (further reading).
 - **Member lenses.** [Rep. Sara Jacobs](../members/jacobs.qmd): Foreign Affairs.
 
 ## Connections

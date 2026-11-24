@@ -1,31 +1,46 @@
 ---
 title: "Timeline"
-subtitle: "The statutes in the order they were enacted, grouped by era."
+subtitle: "The statutes and Supreme Court decisions in the order they came, grouped by era."
 toc: true
 ---
 
 ```{r}
 source("R/helpers.R")
 statutes <- load_statutes()
+cases    <- load_cases()
 ```
 
-Each generation of national security law answered the problems of the one before. Read an era's laws together to see the pattern: a crisis, a grant of power, and later a constraint. Dates are years of enactment; for code-title and composite entries they are the year the title or authority began.
+Each generation of national security law answered the problems of the one before. Read an era's entries together to see the pattern: a crisis, a grant of power, and later a constraint, often prompted by a court decision. Dates are years of enactment or decision; for code-title and annual-series entries they are the year the title or series began. Court cases are shaded.
 
 ```{r}
 #| results: asis
+items <- dplyr::bind_rows(
+  statutes |> dplyr::transmute(
+    id, year, era, kind = "statute", domain, name = title,
+    badges = paste0("<span class=\"status status-", status, "\">", status_label, "</span> ",
+                    "<span class=\"layer-badge\">", layer_label, "</span>"),
+    href = paste0("../statutes/", id, ".html"),
+    text = plain_wiki(first_sentence(summary), statutes)
+  ),
+  cases |> dplyr::transmute(
+    id, year, era, kind = "case", domain, name = paste0(name, ", ", citation),
+    badges = "<span class=\"status status-case\">Supreme Court</span>",
+    href = paste0("../cases/", id, ".html"),
+    text = plain_wiki(first_sentence(holding), statutes)
+  )
+)
+
 for (e in era_breaks$era) {
-  s <- statutes |> dplyr::filter(era == e) |> dplyr::arrange(year, title)
+  s <- items |> dplyr::filter(era == e) |> dplyr::arrange(year, kind != "statute", name)
   if (!nrow(s)) next
-  span <- era_breaks[era_breaks$era == e, ]
   cat("## ", e, "\n\n", sep = "")
   cat("<div class=\"timeline\">\n")
   cat(paste0(
-    "<div class=\"tl-item domain-", s$domain, "\" data-statute=\"", s$id, "\">",
+    "<div class=\"tl-item domain-", s$domain, dplyr::if_else(s$kind == "case", " tl-case", ""), "\"",
+    dplyr::if_else(s$kind == "statute", paste0(" data-statute=\"", s$id, "\""), ""), ">",
     "<div class=\"tl-year\">", s$year, "</div>",
-    "<div class=\"tl-body\"><a href=\"../statutes/", s$id, ".html\"><strong>", s$title, "</strong></a> ",
-    "<span class=\"status status-", s$status, "\">", s$status_label, "</span> ",
-    "<span class=\"layer-badge\">", s$layer_label, "</span>",
-    "<div class=\"tl-text\">", plain_wiki(first_sentence(s$summary), statutes), "</div></div></div>"
+    "<div class=\"tl-body\"><a href=\"", s$href, "\"><strong>", s$name, "</strong></a> ", s$badges,
+    "<div class=\"tl-text\">", s$text, "</div></div></div>"
   ), sep = "\n")
   cat("\n</div>\n\n")
 }

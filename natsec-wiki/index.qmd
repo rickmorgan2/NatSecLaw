@@ -1,6 +1,6 @@
 ---
 title: "U.S. National Security Legislation"
-subtitle: "A working wiki and study guide to the statutes that organize, authorize, and limit American national security policy, with the foreign policy laws they connect to."
+subtitle: "A nonpartisan reference and study guide to the statutes, appropriations, and court decisions that organize, authorize, and limit U.S. national security policy."
 toc: false
 page-layout: full
 listing:
@@ -28,6 +28,8 @@ statutes <- load_statutes()
 edges    <- load_edges()
 members  <- load_members()
 units    <- load_units()
+cases    <- load_cases()
+insts    <- load_institutions()
 ```
 
 ```{r}
@@ -47,20 +49,23 @@ cat("<div class=\"domain-chips\">", chips,
     "<button type=\"button\" class=\"domain-chip chip-clear\" data-category=\"\">Show all</button>",
     "</div>", sep = "\n")
 cat(
-  "\n", nrow(statutes), " statutes, ", nrow(edges), " recorded connections, ",
-  length(units), " [study units](study/index.qmd), and ", length(members), " [member lenses](members/index.qmd). ",
-  "Every statute page links to its official text on GovInfo; the [Sources](sources.qmd) page lists everything the wiki draws on.\n",
+  "\n", nrow(statutes), " statutes, ", nrow(cases), " [Supreme Court cases](cases/index.qmd), ", nrow(edges), " recorded connections, ",
+  length(units), " [study units](study/index.qmd), ", length(insts), " entries in [Who's who](whos-who.qmd), and ",
+  length(members), " [member lenses](members/index.qmd). ",
+  "Every statute and case links to its official text; the [Sources](sources.qmd) page lists everything the wiki draws on.\n",
   sep = ""
 )
 ```
 
 ::: {.start-here}
-**New here?** The [study guide](study/index.qmd) explains how these laws fit together, from the Constitution down to single code sections, and walks through them in eleven units. The [knowledge graph](graph.qmd) shows the same connections visually.
+**Need a specific law?** Filter the list below or use the search in the top bar. Each statute page gives the bottom line, key provisions with citations, current status and when it was last checked, the cases that interpreted it, who funds and runs it, and links to the official text.
+
+**New to the portfolio?** The [study guide](study/index.qmd) walks through the field in twelve units, from the Constitution to single code sections, with key terms and Issues for Congress. [Who's who](whos-who.qmd) decodes the committees and agencies, and the [knowledge graph](graph.qmd) shows how everything connects.
 :::
 
 ## All statutes
 
-Type in the filter box to search titles and citations, click a column to sort, or pick a category on the right to narrow by domain, status, layer, or U.S. Code title. The search icon in the top bar searches the full text of every page. Links to repealed and superseded laws are marked with a dagger (†).
+Type in the filter box to search titles and citations, click a column to sort, or pick a category to narrow by domain, status, layer, or U.S. Code title. The search icon in the top bar searches the full text of every page. Links to repealed and superseded laws are marked with a dagger (†).
 
 <label class="inline-toggle"><input type="checkbox" data-wiki-toggle> Show current law only (hide repealed and superseded). The same switch is in the top bar and applies across the site.</label>
 

@@ -41,13 +41,15 @@ It is a support authority: it works within the limits of the [Posse Comitatus Ac
 
 In force. It began as Section 1004 of the FY1991 defense authorization and was made permanent in Title 10 by the FY2017 act.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Targeted provision. Single sections that grant a narrow authority, impose a condition, or require a report, often enacted in a defense authorization. Small in text, often decisive in practice. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [NDAA (annual)](ndaa-annual.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd).
 - **Era.** End of the Cold War ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 7: Organizing and commanding the military](../study/units/defense-organization.qmd) (further reading); [Unit 8: The military at home](../study/units/military-at-home.qmd) (core reading).
+- **Study.** [Unit 4: The power of the purse](../study/units/purse.qmd) (further reading); [Unit 8: Organizing and commanding the military](../study/units/defense-organization.qmd) (further reading); [Unit 9: The military at home](../study/units/military-at-home.qmd) (core reading).
 
 ## Connections
 
@@ -57,6 +59,7 @@ In force. It began as Section 1004 of the FY1991 defense authorization and was m
 | related to | [Section 2808 (construction)](sec2808-milcon-1982.qmd){.subj} | Both were used in 2019 to redirect defense funds to border barriers. |
 | related to | [Security Cooperation (Ch. 16)](seccoop-2016.qmd){.subj} | Overlapping authority to support foreign partners. |
 | constrained by | [Posse Comitatus Act](posse-comitatus-1878.qmd){.subj} | Support must stop short of direct participation in searches, seizures, and arrests. |
+| related to | [Sec. 8005 transfers](sec8005-transfer.qmd){.subj} | In 2019 general transfer authority moved funds into counterdrug accounts for border barrier construction under Sec. 284. |
 
 [See this statute in the knowledge graph](../graph.html?focus=sec284-counterdrug-1990)
 

@@ -41,13 +41,16 @@ Section 231 turned sanctions into an arms-transfer policy tool. It was applied t
 
 In force.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [IEEPA](ieepa-1977.qmd).
 - **Codified in.** [Title 22 U.S.C.](title22-usc.qmd).
 - **Era.** Sanctions, cyber, and great powers ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 4: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (core reading).
+- **Study.** [Unit 5: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (core reading).
+- **Who's involved.** [Senate Banking](../whos-who.qmd#senate-banking), [OFAC](../whos-who.qmd#ofac).
 
 ## Connections
 

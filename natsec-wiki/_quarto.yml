@@ -11,6 +11,7 @@ project:
   render:
     - "*.qmd"
     - "statutes/*.qmd"
+    - "cases/*.qmd"
     - "members/*.qmd"
     - "study/*.qmd"
     - "study/units/*.qmd"
@@ -20,7 +21,7 @@ project:
 
 website:
   title: "U.S. National Security Legislation"
-  description: "A wiki, study guide, and knowledge graph of key U.S. national security and foreign policy statutes."
+  description: "A nonpartisan reference and study guide to the statutes, court decisions, and appropriations that shape U.S. national security policy."
   search:
     location: navbar
     type: overlay
@@ -28,6 +29,8 @@ website:
     left:
       - text: "Statutes"
         href: index.qmd
+      - text: "Court cases"
+        href: cases/index.qmd
       - text: "Study guide"
         menu:
           - text: "Overview and the authority stack"
@@ -40,8 +43,14 @@ website:
             href: study/glossary.qmd
       - text: "Knowledge graph"
         href: graph.qmd
-      - text: "Title 10 and Title 50"
-        href: title10-title50.qmd
+      - text: "Reference"
+        menu:
+          - text: "Who's who"
+            href: whos-who.qmd
+          - text: "Title 10 and Title 50"
+            href: title10-title50.qmd
+          - text: "Sources"
+            href: sources.qmd
       - text: "Members"
         menu:
           - text: "Compare the two lenses"
@@ -50,8 +59,6 @@ website:
             href: members/crow.qmd
           - text: "Rep. Sara Jacobs (CA-51)"
             href: members/jacobs.qmd
-      - text: "Sources"
-        href: sources.qmd
       - text: "About"
         menu:
           - text: "About this wiki"
@@ -60,7 +67,7 @@ website:
             href: manifest.qmd
   page-footer:
     left: "Independent reference project. Not affiliated with any congressional office. Not legal advice; check citations against the linked official text."
-    right: "Version 2. Content last reviewed November 10, 2026"
+    right: "Version 2. Last updated November 24, 2026; each page shows when it was last checked."
 
 format:
   html:

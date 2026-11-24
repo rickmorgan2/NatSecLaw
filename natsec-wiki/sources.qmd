@@ -69,6 +69,17 @@ links |>
   src_table(page = 100)
 ```
 
+## Court opinions and Who's who
+
+Every [court case](cases/index.qmd) links to its official opinion: the bound *United States Reports* on GovInfo, or the Supreme Court's slip opinion for decisions not yet in a bound volume. Each also links to its Wikipedia article as secondary background reading. [Who's who](whos-who.qmd) entries link to each body's official site or to the section of the U.S. Code that creates it.
+
+```{r}
+all_src |>
+  dplyr::filter(group %in% c("Court case", "Who's who")) |>
+  dplyr::transmute(Group = factor(group), Entry = context, Source = ext_link(url, label), Type = factor(flag(official))) |>
+  src_table()
+```
+
 ## Member lenses
 
 Every claim on the member pages carries a source. Bills link to Congress.gov; statements and letters link to the member's official House site where one exists.

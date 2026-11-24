@@ -42,13 +42,16 @@ It was a response to the failures of interservice coordination in the Iran hosta
 
 In force as amended, with notable adjustments in the FY2017 defense authorization.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [National Security Act](nsa-1947.qmd), [DoD Reorganization Act (1958)](dod-reorg-1958.qmd), [Title 10 U.S.C.](title10-usc.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd).
 - **Era.** End of the Cold War ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 7: Organizing and commanding the military](../study/units/defense-organization.qmd) (core reading).
+- **Study.** [Unit 8: Organizing and commanding the military](../study/units/defense-organization.qmd) (core reading).
+- **Who's involved.** [HASC](../whos-who.qmd#hasc), [SASC](../whos-who.qmd#sasc), [DoD](../whos-who.qmd#dod), [JCS](../whos-who.qmd#jcs), [Combatant commands](../whos-who.qmd#cocoms).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Armed Services.
 
 ## Connections

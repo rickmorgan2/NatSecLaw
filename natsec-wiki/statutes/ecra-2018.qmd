@@ -41,13 +41,16 @@ It is the legal base for controls on advanced semiconductors and chipmaking tool
 
 In force with no sunset.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [IEEPA](ieepa-1977.qmd), [NDAA (annual)](ndaa-annual.qmd).
 - **Codified in.** [Title 50 U.S.C.](title50-usc.qmd).
 - **Era.** Sanctions, cyber, and great powers ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 10: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (core reading).
+- **Study.** [Unit 11: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (core reading).
+- **Who's involved.** [HFAC](../whos-who.qmd#hfac), [Senate Banking](../whos-who.qmd#senate-banking), [BIS](../whos-who.qmd#bis).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Aerospace industry. [Rep. Sara Jacobs](../members/jacobs.qmd): Defense industry and research.
 
 ## Connections

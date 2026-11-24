@@ -43,13 +43,15 @@ It fills the combat gap left by the [Foreign Claims Act](foreign-claims-1942.qmd
 
 In force through December 31, 2033 under the current text, with up to $3 million a year available. Amended by the defense authorizations for FY2022, FY2023, and FY2024.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Targeted provision. Single sections that grant a narrow authority, impose a condition, or require a report, often enacted in a defense authorization. Small in text, often decisive in practice. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [NDAA (annual)](ndaa-annual.qmd), [Civilian Casualty Policy](civcas-policy-2018.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd).
 - **Era.** Sanctions, cyber, and great powers ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 11: Civilian harm and the conduct of operations](../study/units/civilian-harm.qmd) (core reading).
+- **Study.** [Unit 12: Civilian harm and the conduct of operations](../study/units/civilian-harm.qmd) (core reading).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): CHMR compliance letter; Civilians in Conflict Caucus. [Rep. Sara Jacobs](../members/jacobs.qmd): Armed Services; CHMR compliance letter; Civilian Harm Review Act; Civilians in Conflict Caucus.
 
 ## Connections

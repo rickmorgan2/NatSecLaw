@@ -33,6 +33,8 @@ Since 1942 Congress has authorized force by narrower resolutions such as the [20
 
 No declaration has been enacted since June 1942. Statutes triggered by a declared war remain on the books and would activate on a new declaration.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))

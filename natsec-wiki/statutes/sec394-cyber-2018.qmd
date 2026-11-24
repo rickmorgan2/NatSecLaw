@@ -41,13 +41,16 @@ It settled, in the military's favor, a long interagency argument about whether o
 
 In force as enacted by Section 1632 of the FY2019 defense authorization and amended since.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Targeted provision. Single sections that grant a narrow authority, impose a condition, or require a report, often enacted in a defense authorization. Small in text, often decisive in practice. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [NDAA (annual)](ndaa-annual.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd).
 - **Era.** Sanctions, cyber, and great powers ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 5: Intelligence and its oversight](../study/units/intelligence-oversight.qmd) (further reading); [Unit 7: Organizing and commanding the military](../study/units/defense-organization.qmd) (core reading).
+- **Study.** [Unit 6: Intelligence and its oversight](../study/units/intelligence-oversight.qmd) (further reading); [Unit 8: Organizing and commanding the military](../study/units/defense-organization.qmd) (core reading).
+- **Who's involved.** [Combatant commands](../whos-who.qmd#cocoms).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Armed Services; Intelligence. [Rep. Sara Jacobs](../members/jacobs.qmd): Armed Services.
 
 ## Connections

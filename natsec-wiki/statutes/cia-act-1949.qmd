@@ -40,13 +40,16 @@ Where the [National Security Act](nsa-1947.qmd) created the agency, this act mad
 
 In force as amended.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [National Security Act](nsa-1947.qmd).
 - **Codified in.** [Title 50 U.S.C.](title50-usc.qmd).
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (core reading); [Unit 5: Intelligence and its oversight](../study/units/intelligence-oversight.qmd) (core reading).
+- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (core reading); [Unit 4: The power of the purse](../study/units/purse.qmd) (further reading); [Unit 6: Intelligence and its oversight](../study/units/intelligence-oversight.qmd) (core reading).
+- **Who's involved.** [CIA](../whos-who.qmd#cia).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Intelligence.
 
 ## Connections
@@ -54,6 +57,7 @@ In force as amended.
 | This statute | Other statute | Note |
 |---|---|---|
 | relies on | [National Security Act](nsa-1947.qmd){.subj} | Supplies administrative and fiscal authorities for the agency created in 1947. |
+| constrained by | [Boland Amendments](boland-1982.qmd){.subj} | Barred CIA funds, among others, from supporting military or paramilitary operations in Nicaragua. |
 
 [See this statute in the knowledge graph](../graph.html?focus=cia-act-1949)
 

@@ -42,13 +42,16 @@ It marks the growth of the Defense Department's own assistance programs alongsid
 
 In force and adjusted in most later defense authorizations.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [NDAA (annual)](ndaa-annual.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd).
 - **Era.** Sanctions, cyber, and great powers ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 7: Organizing and commanding the military](../study/units/defense-organization.qmd) (further reading); [Unit 9: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (core reading).
+- **Study.** [Unit 8: Organizing and commanding the military](../study/units/defense-organization.qmd) (further reading); [Unit 10: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (core reading).
+- **Who's involved.** [HASC](../whos-who.qmd#hasc), [SASC](../whos-who.qmd#sasc), [DSCA](../whos-who.qmd#dsca).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Armed Services; Civilian Harm in Partnerships Act. [Rep. Sara Jacobs](../members/jacobs.qmd): Armed Services; Security Sector Compacts Act; Civilian Harm in Partnerships Act; Upholding Human Rights Abroad Act.
 
 ## Connections
@@ -58,9 +61,11 @@ In force and adjusted in most later defense authorizations.
 | enacted in | [NDAA (annual)](ndaa-annual.qmd){.subj} | Created by the FY2017 NDAA. |
 | related to | [Foreign Assistance Act](faa-1961.qmd){.subj} | Title 10 security cooperation runs alongside Title 22 security assistance. |
 | related to | [Arms Export Control Act](aeca-1976.qmd){.subj} | Defense-funded equipment transfers use the foreign military sales system. |
+| related to | [IMET](imet.qmd){.subj} | Title 10 counterpart: Defense Department training of foreign forces, beside the State Department's Title 22 IMET program. |
 | constrained by | [Leahy Laws](leahy-laws.qmd){.subj} | 10 U.S.C. 362 applies the same bar to Defense Department assistance. |
 | related to | [Section 127e](sec127e-2004.qmd){.subj} | Surrogate forces supporting U.S. operations, as distinct from building partner capacity. |
 | related to | [Section 284 (counterdrug)](sec284-counterdrug-1990.qmd){.subj} | Overlapping authority to support foreign partners. |
+| related to | [Ukraine Security Assistance Initiative](usai-2016.qmd){.subj} | A country-specific Title 10 authority alongside the general train-and-equip authorities of Chapter 16. |
 
 [See this statute in the knowledge graph](../graph.html?focus=seccoop-2016)
 

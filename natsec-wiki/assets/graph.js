@@ -11,7 +11,7 @@ function (el, x) {
   nodesDS.get().forEach(function (n) { base[n.id] = n; });
   edgesDS.get().forEach(function (e) { ebase[e.id] = e; });
 
-  var state = { domains: [], title: "", layer: "", selected: null, edge: null, view: "network", full: false };
+  var state = { domains: [], title: "", layer: "", selected: null, edge: null, view: "network", full: false, cases: true };
   var FADE = "#e4e7ec", FADE_BORDER = "#cdd2d9", FADE_TEXT = "#b4bac3", INK = "#1b2a41";
 
   var phoneMQ = window.matchMedia("(max-width: 767.98px)");
@@ -28,6 +28,9 @@ function (el, x) {
   };
 
   function hideHistoric() { return window.wikiHideHistoric ? window.wikiHideHistoric() : false; }
+
+  // a node is off the canvas when the current-law switch hides it or court cases are switched off
+  function isHidden(n) { return !!((hideHistoric() && n.historic) || (!state.cases && n.kind === "case")); }
 
   function matches(n) {
     if (!n) return false;
@@ -56,7 +59,7 @@ function (el, x) {
       var n = base[id];
       var on = matches(n) && (!near || near.indexOf(id) >= 0);
       if (near && id === state.selected) on = true;
-      return { id: id, hidden: !!(hide && n.historic), color: on ? nodeColor(n.basecolor) : faded,
+      return { id: id, hidden: isHidden(n), color: on ? nodeColor(n.basecolor) : faded,
                font: { color: on ? INK : FADE_TEXT } };
     }));
     edgesDS.update(Object.keys(ebase).map(function (id) {
@@ -66,7 +69,7 @@ function (el, x) {
       // in the layered view, thematic links recede so the dependency chains stand out
       if (on && !near && state.view === "layers" && e.relation === "related") on = false;
       if (id === state.edge) on = true;
-      return { id: id, hidden: !!(hide && (a.historic || b.historic)),
+      return { id: id, hidden: isHidden(a) || isHidden(b),
                color: { color: on ? e.basecolor : "rgba(205,210,217,0.35)", highlight: e.basecolor, hover: e.basecolor },
                width: id === state.edge ? 3.4 : (on && near ? 2.6 : 1.6) };
     }));
@@ -110,6 +113,13 @@ function (el, x) {
     root.querySelector("#graph-title").addEventListener("change", function (e) { state.title = e.target.value; apply(); });
     root.querySelector("#graph-layer").addEventListener("change", function (e) { state.layer = e.target.value; apply(); });
     root.querySelector("#graph-find").addEventListener("change", function (e) { select(e.target.value || null, true); });
+    var casesBox = root.querySelector("#graph-cases");
+    if (casesBox) casesBox.addEventListener("change", function () {
+      state.cases = casesBox.checked;
+      if (!state.cases && state.selected && base[state.selected].kind === "case") { state.selected = null; net.unselectAll(); }
+      if (state.view === "layers") layerLayout();
+      apply();
+    });
     root.querySelector("#graph-reset").addEventListener("click", function () {
       state.domains = []; state.title = ""; state.layer = ""; state.selected = null; state.edge = null;
       net.unselectAll(); apply(); fitView(true);
@@ -165,8 +175,9 @@ function (el, x) {
         "<strong>" + n.fulltitle + "</strong></div>" +
         "<div class=\"graph-info-meta\">" + n.year + " · " + n.status_label + " · " + n.layer_label + " · " + n.domain_label + "</div>" +
         "<p>" + n.blurb + "</p>" +
-        "<p class=\"graph-info-links\"><a href=\"" + n.url + "\">Open the wiki page</a>" +
-        (n.official ? " · <a href=\"" + n.official + "\" target=\"_blank\" rel=\"noopener\">Read the official text</a>" : "") +
+        "<p class=\"graph-info-links\"><a href=\"" + n.url + "\">" + (n.kind === "case" ? "Open the case page" : "Open the wiki page") + "</a>" +
+        (n.official ? " · <a href=\"" + n.official + "\" target=\"_blank\" rel=\"noopener\">" +
+          (n.kind === "case" ? "Read the opinion" : "Read the official text") + "</a>" : "") +
         " · " + count + " connection" + (count === 1 ? "" : "s") + "</p>";
     } else {
       box.innerHTML = "<p class=\"graph-info-empty\">Select a statute to see what it is and to filter the table below to its connections. " +
@@ -246,8 +257,8 @@ function (el, x) {
 
   // layered view ----------------------------------------------------------------
   // Each layer is a band; its statutes wrap into rows sorted by domain, then year.
-  var LAYER_NAMES = { 0: "Constitution", 1: "Framework statutes", 2: "Specific authorizations", 3: "Targeted provisions", 4: "U.S. Code titles" };
-  var DOMAIN_ORDER = ["foundations", "war-powers", "intelligence", "defense-arms", "aid-sanctions", "civilian-protection", "foreign-policy"];
+  var LAYER_NAMES = { 0: "Constitution", 1: "Framework statutes", 2: "Specific authorizations", 3: "Targeted provisions", 4: "U.S. Code titles", 5: "Supreme Court cases" };
+  var DOMAIN_ORDER = ["foundations", "war-powers", "purse", "intelligence", "defense-arms", "aid-sanctions", "civilian-protection", "foreign-policy"];
   var COL_W = 250, ROW_H = 100, BAND_GAP = 170;
   // fewer, taller columns on a phone so the labels stay readable at full width
   function cols() { return isPhone() ? 3 : 7; }
@@ -259,7 +270,7 @@ function (el, x) {
     var byLevel = {};
     Object.keys(base).forEach(function (id) {
       var n = base[id];
-      if (hide && n.historic) return;
+      if (isHidden(n)) return;
       (byLevel[n.level] = byLevel[n.level] || []).push(n);
     });
     var y = 0, updates = [];
@@ -326,7 +337,7 @@ function (el, x) {
       if (!settings.nTable.closest || !settings.nTable.closest("#conn-table")) return true;
       var f = base[data[4]], t = base[data[5]];
       if (!f || !t) return true;
-      if (hideHistoric() && (f.historic || t.historic)) return false;
+      if (isHidden(f) || isHidden(t)) return false;
       if (state.selected) return data[4] === state.selected || data[5] === state.selected;
       if (focusActive()) return matches(f) || matches(t);
       return true;

@@ -42,13 +42,19 @@ It is the procedural gateway for [IEEPA](ieepa-1977.qmd), so nearly every U.S. e
 
 In force. Dozens of declared emergencies remain active, most of them sanctions programs that are renewed every year.
 
+[Last checked November 10, 2026.]{.checked}
+
+## In the courts
+
+- [INS v. Chadha](../cases/chadha-1983.qmd) (1983). Undercut termination of emergencies by concurrent resolution; Congress substituted a joint resolution in 1985.
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Built upon by.** [IEEPA](ieepa-1977.qmd), [Reserve & Guard Mobilization](reserve-mobilization.qmd), [Section 2808 (construction)](sec2808-milcon-1982.qmd).
 - **Codified in.** [Title 50 U.S.C.](title50-usc.qmd).
 - **Era.** Vietnam, Watergate, and reassertion ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 4: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (core reading).
+- **Study.** [Unit 5: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (core reading).
 
 ## Connections
 

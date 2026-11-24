@@ -44,13 +44,15 @@ It shows the full life of a sanctions statute: enacted in a defense bill, extend
 
 Repealed by the National Defense Authorization Act for Fiscal Year 2026 (Pub. L. 119-60), signed December 18, 2025, a year after the fall of the Assad government.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [NDAA (annual)](ndaa-annual.qmd).
 - **Codified in.** [Title 22 U.S.C.](title22-usc.qmd).
 - **Era.** Sanctions, cyber, and great powers ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 4: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (further reading).
+- **Study.** [Unit 5: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (further reading).
 
 ## Connections
 

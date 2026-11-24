@@ -1,0 +1,46 @@
+---
+title: "Who's who"
+subtitle: "The committees, agencies, and courts that appear across the wiki, and the laws that create, empower, or oversee them."
+toc: true
+---
+
+```{r}
+source("R/helpers.R")
+statutes <- load_statutes()
+insts    <- load_institutions()
+short_of <- stats::setNames(statutes$short, statutes$id)
+```
+
+Each entry says in a sentence or two what the body does and links to the laws in this wiki that create it, give it authority, or set how it is overseen. Acronyms are the ones used on the Hill. Every entry links to the body's official site or to the section of the U.S. Code that establishes it.
+
+```{r}
+#| results: asis
+groups <- c(
+  committee = "Congress: committees",
+  support   = "Congress: support agencies",
+  executive = "Executive branch",
+  court     = "Courts"
+)
+
+for (k in names(groups)) {
+  hits <- purrr::keep(insts, \(x) x$kind == k)
+  if (!length(hits)) next
+  cat("## ", groups[[k]], " [", length(hits), "]{.inst-kind-count}\n\n", sep = "")
+  for (x in hits) {
+    ids <- unlist(x$statutes)
+    laws <- if (length(ids)) {
+      paste0("**Laws in this wiki:** ",
+             paste0("[", short_of[ids], "](statutes/", ids, ".qmd)", collapse = ", "), ".")
+    } else {
+      "**Laws in this wiki:** none; it rests on other law or on regulation."
+    }
+    cat(
+      "### ", x$name, if (x$short != x$name) paste0(" (", x$short, ")"), " {#", x$id, "}\n\n",
+      trimws(x$role), "\n\n",
+      laws, "\n\n",
+      "[Official source: [", x$source$label, "](", x$source$url, ")]{.inst-meta}\n\n",
+      sep = ""
+    )
+  }
+}
+```

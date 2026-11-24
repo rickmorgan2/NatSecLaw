@@ -44,6 +44,8 @@ Long after the Saddam Hussein government fell, the executive branch cited it as 
 
 Repealed by the National Defense Authorization Act for Fiscal Year 2026 (Pub. L. 119-60), signed December 18, 2025. It was the first repeal of a war authorization since the Gulf of Tonkin Resolution was repealed in 1971.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))

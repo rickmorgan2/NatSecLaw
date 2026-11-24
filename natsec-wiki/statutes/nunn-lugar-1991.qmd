@@ -42,13 +42,15 @@ It helped remove nuclear weapons from Ukraine, Kazakhstan, and Belarus and is th
 
 The program continues as the Defense Department's Cooperative Threat Reduction program, restated in permanent law in the FY2015 defense authorization. Cooperation with Russia itself ended in the 2010s.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Built upon by.** [NDAA (annual)](ndaa-annual.qmd).
 - **Codified in.** [Title 22 U.S.C.](title22-usc.qmd), [Title 50 U.S.C.](title50-usc.qmd).
 - **Era.** End of the Cold War ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 9: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (further reading); [Unit 10: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (further reading).
+- **Study.** [Unit 10: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (further reading); [Unit 11: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (further reading).
 
 ## Connections
 

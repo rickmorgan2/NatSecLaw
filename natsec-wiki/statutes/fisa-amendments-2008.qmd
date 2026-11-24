@@ -41,6 +41,12 @@ It replaced the temporary Protect America Act of 2007 and gave a statutory footi
 
 Title VII, including Section 702, lapsed in mid-June 2026 for the first time since 2008, after two short extensions in April 2026 and a failed Senate vote. Collection can continue under existing court certifications, reported to run to March 2027. No reauthorization had been enacted as of this wiki's last review (November 10, 2026). Check current status before relying on this page.
 
+[Last checked November 10, 2026.]{.checked}
+
+## In the courts
+
+- [Clapper v. Amnesty](../cases/clapper-2013.qmd) (2013). Dismissed a facial challenge to Section 702 for lack of standing, without reaching the merits.
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))
@@ -48,7 +54,8 @@ Title VII, including Section 702, lapsed in mid-June 2026 for the first time sin
 - **Built upon by.** [RISAA](risaa-2024.qmd).
 - **Codified in.** [Title 50 U.S.C.](title50-usc.qmd).
 - **Era.** After September 11 ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 6: Surveillance law](../study/units/surveillance.qmd) (core reading).
+- **Study.** [Unit 7: Surveillance law](../study/units/surveillance.qmd) (core reading).
+- **Who's involved.** [NSA](../whos-who.qmd#nsa-agency), [FISC](../whos-who.qmd#fisc).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Intelligence.
 
 ## Connections

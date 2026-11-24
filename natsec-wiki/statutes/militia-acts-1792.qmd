@@ -44,6 +44,8 @@ This was Congress's first delegation of its militia power, used by Washington in
 
 Replaced in stages by the Militia Act of 1795, the Insurrection Act of 1807, and the Militia Act of 1903. The statutory definition of the militia survives at 10 U.S.C. 246.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
@@ -51,7 +53,7 @@ Replaced in stages by the Militia Act of 1795, the Insurrection Act of 1807, and
 - **Built upon by.** [Insurrection Act](insurrection-1807.qmd), [Militia Act of 1903](dick-act-1903.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd).
 - **Era.** Founding and the early republic ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 1: Where the power comes from](../study/units/foundations.qmd) (core reading); [Unit 8: The military at home](../study/units/military-at-home.qmd) (further reading).
+- **Study.** [Unit 1: Where the power comes from](../study/units/foundations.qmd) (core reading); [Unit 9: The military at home](../study/units/military-at-home.qmd) (further reading).
 
 ## Connections
 

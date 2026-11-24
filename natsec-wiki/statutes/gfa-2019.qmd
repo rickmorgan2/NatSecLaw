@@ -42,13 +42,15 @@ It is the main statutory expression of conflict prevention as a U.S. foreign pol
 
 The policy framework remains in law, but the funding authorizations ran through fiscal year 2024. Reauthorization bills (H.R. 3005 and S. 2678, 119th Congress) were introduced in 2025 and had not been enacted as of this wiki's last review. Implementation largely stalled in 2025 after USAID and the State Department's conflict and stabilization bureau were dismantled.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [Foreign Assistance Act](faa-1961.qmd).
 - **Codified in.** [Title 22 U.S.C.](title22-usc.qmd).
 - **Era.** Sanctions, cyber, and great powers ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 9: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (core reading).
+- **Study.** [Unit 10: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (core reading).
 - **Member lenses.** [Rep. Sara Jacobs](../members/jacobs.qmd): Foreign Affairs; Security Sector Compacts Act.
 
 ## Connections

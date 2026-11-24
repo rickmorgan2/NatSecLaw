@@ -10,10 +10,11 @@ source("R/helpers.R")
 statutes <- load_statutes()
 edges    <- load_edges()
 links    <- official_links(statutes)
-short_of <- stats::setNames(statutes$short, statutes$id)
+cases    <- load_cases()
+short_of <- c(stats::setNames(statutes$short, statutes$id), stats::setNames(cases$short, cases$id))
 ```
 
-**How to use it.** Pick a domain to fade the others, or narrow by code title or layer. Select a statute to see what it is and to filter the table below to its connections; select a line to see why two statutes are linked. Switch to **Authority layers** to see the hierarchy from the Constitution down to single code sections. On a phone, pinch to zoom, drag to move around, and use **Full screen** for more room.
+**How to use it.** Statutes are circles, squares, and triangles; Supreme Court cases are diamonds. Pick a domain to fade the others, or narrow by code title or layer. Select a statute to see what it is and to filter the table below to its connections; select a line to see why two statutes are linked. Switch to **Authority layers** to see the hierarchy from the Constitution down to single code sections. On a phone, pinch to zoom, drag to move around, and use **Full screen** for more room.
 
 ::: {#graph-stage .graph-stage}
 
@@ -24,7 +25,7 @@ titles <- sort(unique(unlist(statutes$usc_titles)))
 counts <- statutes |> dplyr::count(domain)
 domain_n <- stats::setNames(counts$n, counts$domain)[names(domain_labels)]
 opts <- function(values, labels) paste0("<option value=\"", values, "\">", labels, "</option>", collapse = "")
-finder <- statutes |> dplyr::arrange(short)
+finder <- dplyr::bind_rows(dplyr::select(statutes, id, short), dplyr::select(cases, id, short)) |> dplyr::arrange(short)
 
 # a raw HTML block, so pandoc does not wrap the buttons in paragraphs
 cat(
@@ -37,7 +38,7 @@ cat(
   "</div>",
   "<div class=\"graph-row graph-selects\">",
   "<label>Code title <select id=\"graph-title\"><option value=\"\">Any</option>", opts(titles, paste("Title", titles)), "</select></label>",
-  "<label>Layer <select id=\"graph-layer\"><option value=\"\">Any</option>", opts(names(layer_labels), layer_labels), "</select></label>",
+  "<label>Layer <select id=\"graph-layer\"><option value=\"\">Any</option>", opts(c(names(layer_labels), "case"), c(layer_labels, "Court case")), "</select></label>",
   "<label>Find <select id=\"graph-find\"><option value=\"\">A statute&hellip;</option>", opts(finder$id, finder$short), "</select></label>",
   "</div>",
   "<div class=\"graph-row\">",
@@ -45,6 +46,7 @@ cat(
   "<button type=\"button\" data-view=\"network\" class=\"active\">Network</button>",
   "<button type=\"button\" data-view=\"layers\">Authority layers</button></span>",
   "<button type=\"button\" id=\"graph-reset\" class=\"link-button\">Reset</button>",
+  "<label class=\"inline-toggle graph-cases-toggle\"><input type=\"checkbox\" id=\"graph-cases\" checked> Court cases</label>",
   "<label class=\"inline-toggle\"><input type=\"checkbox\" data-wiki-toggle> Current law only</label>",
   "</div>",
   "</div>",
@@ -69,6 +71,7 @@ nodes <- statutes |>
   dplyr::left_join(dplyr::select(links, id, enact_link, code_link), by = "id") |>
   dplyr::transmute(
     id,
+    kind = "statute",
     label = short,
     value = dplyr::coalesce(value, 0L),
     color = unname(domain_colors[domain]),
@@ -89,7 +92,29 @@ nodes <- statutes |>
     url = paste0("statutes/", id, ".html")
   )
 
-vis_edges <- edges |>
+# Supreme Court cases: diamonds in their own band of the layered view
+case_edges <- purrr::map2(cases$id, cases$statutes, \(cid, st) tibble::tibble(
+  from = cid, to = purrr::map_chr(st, "id"), relation = "ruled_on", note = purrr::map_chr(st, "effect")
+)) |>
+  purrr::list_rbind()
+
+case_nodes <- cases |>
+  dplyr::transmute(
+    id, kind = "case", label = short,
+    value = as.integer(purrr::map_int(statutes, length)),
+    color = unname(domain_colors[domain]), basecolor = color,
+    shape = "diamond", level = 5L, domain, layer = "case", historic = FALSE, titles = "",
+    fulltitle = paste0(name, ", ", citation, " (", year, ")"), year,
+    status_label = "Court case", layer_label = "Supreme Court", domain_label,
+    blurb = plain_wiki(first_sentence(holding), statutes),
+    official = opinion_url,
+    title = paste0("<b>", name, "</b><br>", citation, " (", year, ")"),
+    url = paste0("cases/", id, ".html")
+  )
+nodes <- dplyr::bind_rows(nodes, case_nodes)
+all_edges <- dplyr::bind_rows(edges, case_edges)
+
+vis_edges <- all_edges |>
   dplyr::transmute(
     id = paste0("e", dplyr::row_number()),
     from, to, relation,
@@ -140,6 +165,7 @@ cat(
   legend_item("shape shape-dot", "In force"),
   legend_item("shape shape-square", "Partly expired or lapsed"),
   legend_item("shape shape-triangle", "Repealed or superseded"),
+  legend_item("shape shape-diamond", "Supreme Court case"),
   "</div>",
   "<div><strong>Relationship</strong>",
   paste0(
@@ -161,10 +187,11 @@ The same relationships as a searchable table. Each row reads left to right. The 
 
 ```{r}
 page_link <- function(id) {
-  paste0("<a href=\"statutes/", id, ".html\">", short_of[id], "</a>")
+  dir <- dplyr::if_else(id %in% cases$id, "cases/", "statutes/")
+  paste0("<a href=\"", dir, id, ".html\">", short_of[id], "</a>")
 }
 
-edges |>
+all_edges |>
   dplyr::transmute(
     From = page_link(from),
     Relationship = unname(relation_labels[relation]),

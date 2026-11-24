@@ -40,6 +40,8 @@ It sits at the center of the question whether a Security Council resolution can 
 
 In force.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
@@ -54,6 +56,7 @@ In force.
 | related to | [War Powers Resolution](wpr-1973.qmd){.subj} | Both bear on whether a Security Council mandate can substitute for congressional authorization. |
 | related to | [IEEPA](ieepa-1977.qmd){.subj} | UNPA Sec. 5 is a parallel authority for implementing U.N. sanctions. |
 | related to | [1991 Gulf War AUMF](aumf-gulf-1991.qmd){.subj} | Authorized force to carry out U.N. Security Council Resolution 678. |
+| related to | [Peacekeeping Operations](pko-551.qmd){.subj} | May reimburse the Defense Department for support provided under Sec. 7 of the UN Participation Act. |
 
 [See this statute in the knowledge graph](../graph.html?focus=unpa-1945)
 

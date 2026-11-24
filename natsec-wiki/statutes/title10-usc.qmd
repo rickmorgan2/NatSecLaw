@@ -41,6 +41,8 @@ The title of the U.S. Code that governs the armed forces: their organization, co
 
 In force as positive law, amended every year through the defense authorization.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Statutes in this wiki codified here
 
 | Statute | Year | Citation | Status |
@@ -50,6 +52,7 @@ In force as positive law, amended every year through the defense authorization.
 | [Posse Comitatus Act](posse-comitatus-1878.qmd){.subj} | 1878 | 18 U.S.C. 1385 | In force |
 | [National Defense Act (1916)](national-defense-act-1916.qmd){.subj} | 1916 | 10 U.S.C. 10101 et seq. | Superseded |
 | [Foreign Claims Act](foreign-claims-1942.qmd){.subj} | 1942 | 10 U.S.C. 2734 | In force |
+| [Defense appropriations (annual)](defense-approps-annual.qmd){.subj} | 1949 | NA | In force |
 | [NSA Amendments (1949)](nsa-amendments-1949.qmd){.subj} | 1949 | 10 U.S.C. 111, 151 | In force |
 | [UCMJ](ucmj-1950.qmd){.subj} | 1950 | 10 U.S.C. 801-946a | In force |
 | [Reserve & Guard Mobilization](reserve-mobilization.qmd){.subj} | 1952 | 10 U.S.C. 12301-12304b, 12406 | In force |
@@ -63,12 +66,14 @@ In force as positive law, amended every year through the defense authorization.
 | [Section 127e](sec127e-2004.qmd){.subj} | 2004 | 10 U.S.C. 127e | In force |
 | [Detainee Treatment Act](dta-2005.qmd){.subj} | 2005 | 42 U.S.C. 2000dd | In force |
 | [Military Commissions Act](mil-commissions-2006.qmd){.subj} | 2006 | 10 U.S.C. 948a-950t | In force |
+| [Ukraine Security Assistance Initiative](usai-2016.qmd){.subj} | 2015 | NA | In force |
 | [Security Cooperation (Ch. 16)](seccoop-2016.qmd){.subj} | 2016 | 10 U.S.C. 301-386 | In force |
 | [Civilian Casualty Report](civcas-report-2017.qmd){.subj} | 2017 | 10 U.S.C. 113 note | In force |
 | [Civilian Casualty Policy](civcas-policy-2018.qmd){.subj} | 2018 | 10 U.S.C. 134 note | In force |
 | [Section 394 (cyber)](sec394-cyber-2018.qmd){.subj} | 2018 | 10 U.S.C. 394-395 | In force |
 | [Ex Gratia Payments](ex-gratia-2019.qmd){.subj} | 2019 | 10 U.S.C. 2731 note | In force |
 | [Civilian Protection Center](cp-coe-2022.qmd){.subj} | 2022 | 10 U.S.C. 184 | In force |
+| [Sec. 8005 transfers](sec8005-transfer.qmd){.subj} | 2026 | NA | In force |
 
 ## Where it sits
 
@@ -77,7 +82,8 @@ In force as positive law, amended every year through the defense authorization.
 - **Built upon by.** [NDAA (annual)](ndaa-annual.qmd), [Goldwater-Nichols Act](goldwater-nichols-1986.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd).
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 1: Where the power comes from](../study/units/foundations.qmd) (further reading); [Unit 7: Organizing and commanding the military](../study/units/defense-organization.qmd) (further reading).
+- **Study.** [Unit 1: Where the power comes from](../study/units/foundations.qmd) (further reading); [Unit 8: Organizing and commanding the military](../study/units/defense-organization.qmd) (further reading).
+- **Who's involved.** [HASC](../whos-who.qmd#hasc), [SASC](../whos-who.qmd#sasc).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Armed Services; Space National Guard Act; Buckley SFB. [Rep. Sara Jacobs](../members/jacobs.qmd): Armed Services; Military families.
 
 ## Connections

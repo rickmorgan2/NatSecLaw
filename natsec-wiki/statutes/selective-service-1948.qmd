@@ -41,6 +41,12 @@ It is the legal basis of the all-volunteer force's backstop. Any large war would
 
 The registration requirement is in force. Authority to induct expired on July 1, 1973, so a draft would require new legislation. Changes to registration have been proposed in recent defense bills. Check current status.
 
+[Last checked November 10, 2026.]{.checked}
+
+## In the courts
+
+- [Youngstown](../cases/youngstown-1952.qmd) (1952). Its authority to seize plants under certain conditions did not support the seizure; the government conceded the conditions were not met.
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))

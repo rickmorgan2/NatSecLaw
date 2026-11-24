@@ -5,6 +5,8 @@
 #   Rscript R/deploy.R render     render the site into docs/ and stop
 #   Rscript R/deploy.R serve      serve the existing docs/ as static files, no rebuild
 #   Rscript R/deploy.R zip        render, then write natsec-wiki-site.zip for offline sharing
+#   Rscript R/deploy.R check      render, then test every internal link and, with chromote,
+#                                 key pages on a phone-sized screen (see R/check_site.R)
 #
 # From RStudio or Positron: source the file (runs preview), or set the mode first,
 #   options(deploy.mode = "render"); source("R/deploy.R")
@@ -13,7 +15,7 @@
 # or env var WIKI_PORT sets the preview port (default 4321).
 
 mode <- c(commandArgs(trailingOnly = TRUE), getOption("deploy.mode", "preview"))[1]
-modes <- c("preview", "render", "serve", "zip")
+modes <- c("preview", "render", "serve", "zip", "check")
 if (!mode %in% modes) stop("Unknown mode '", mode, "'. Use one of: ", paste(modes, collapse = ", "), call. = FALSE)
 
 port <- getOption("deploy.port", Sys.getenv("WIKI_PORT", "4321"))
@@ -85,6 +87,7 @@ run_quarto <- function(...) {
 pkgs <- switch(mode,
   serve = "servr",
   zip   = c("yaml", "dplyr", "purrr", "readr", "stringr", "tibble", "knitr", "rmarkdown", "DT", "visNetwork", "zip"),
+  check = c("yaml", "dplyr", "purrr", "readr", "stringr", "tibble", "knitr", "rmarkdown", "DT", "visNetwork"),
   c("yaml", "dplyr", "purrr", "readr", "stringr", "tibble", "knitr", "rmarkdown", "DT", "visNetwork")
 )
 missing <- setdiff(pkgs, rownames(utils::installed.packages()))
@@ -109,6 +112,11 @@ switch(mode,
     if (!file.exists(file.path(root, "docs", "index.html"))) stop("docs/ is empty. Run the render mode first.", call. = FALSE)
     message("Serving docs/ at http://localhost:", port, "  (Ctrl+C to stop)")
     servr::httd(file.path(root, "docs"), port = as.integer(port), browser = interactive(), daemon = FALSE)
+  },
+  check = {
+    run_quarto("render")
+    source(file.path(root, "R", "check_site.R"))
+    check_site(root)
   },
   zip = {
     run_quarto("render")

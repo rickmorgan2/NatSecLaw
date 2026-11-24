@@ -43,6 +43,12 @@ It is the reference point for every later use-of-force debate. Each authorizatio
 
 In force. Every administration since Nixon has questioned the constitutionality of parts of it, and the 60-day clock has rarely been treated as binding. In 2026 House members introduced resolutions under it concerning U.S. military action in Venezuela and against Iran; their outcomes are not recorded here. Check current status.
 
+[Last checked November 10, 2026.]{.checked}
+
+## In the courts
+
+- [INS v. Chadha](../cases/chadha-1983.qmd) (1983). Undercut Sec. 5(c), which provides for withdrawal of forces by concurrent resolution.
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
@@ -51,6 +57,7 @@ In force. Every administration since Nixon has questioned the constitutionality 
 - **Codified in.** [Title 50 U.S.C.](title50-usc.qmd).
 - **Era.** Vietnam, Watergate, and reassertion ([timeline](../study/timeline.qmd)).
 - **Study.** [Unit 3: Deciding to use force](../study/units/war-powers.qmd) (core reading).
+- **Who's involved.** [HFAC](../whos-who.qmd#hfac), [SFRC](../whos-who.qmd#sfrc).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Armed Services; Venezuela WPR; Iran WPR; No Funds for Iran War Act; Iran school strike inquiry; Nigeria strikes briefing. [Rep. Sara Jacobs](../members/jacobs.qmd): Foreign Affairs; Iran WPR; Iran school strike inquiry; Nigeria strikes briefing; Deployed constituents.
 
 ## Connections
@@ -67,6 +74,7 @@ In force. Every administration since Nixon has questioned the constitutionality 
 | related to | [Case-Zablocki Act](case-zablocki-1972.qmd){.subj} | Same reassertion era; targets secret executive agreements instead of deployments. |
 | related to | [UN Participation Act](unpa-1945.qmd){.subj} | Both bear on whether a Security Council mandate can substitute for congressional authorization. |
 | related to | [Section 394 (cyber)](sec394-cyber-2018.qmd){.subj} | Affirms cyber operations short of hostilities as that term is used in the War Powers Resolution. |
+| related to | [Case-Church Amendment](case-church-1973.qmd){.subj} | The funding cutoff that ended U.S. combat in Indochina, enacted four months before the War Powers Resolution. |
 
 [See this statute in the knowledge graph](../graph.html?focus=wpr-1973)
 

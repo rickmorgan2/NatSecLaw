@@ -40,13 +40,16 @@ This is the standing legal basis for congressional intelligence oversight. It cu
 
 In force as strengthened by the Intelligence Authorization Act for Fiscal Year 1991 (Pub. L. 102-88) after Iran-Contra.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [Hughes-Ryan Amendment](hughes-ryan-1974.qmd), [National Security Act](nsa-1947.qmd).
 - **Codified in.** [Title 50 U.S.C.](title50-usc.qmd).
 - **Era.** Vietnam, Watergate, and reassertion ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 5: Intelligence and its oversight](../study/units/intelligence-oversight.qmd) (core reading).
+- **Study.** [Unit 6: Intelligence and its oversight](../study/units/intelligence-oversight.qmd) (core reading).
+- **Who's involved.** [HPSCI](../whos-who.qmd#hpsci), [SSCI](../whos-who.qmd#ssci), [CIA](../whos-who.qmd#cia).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Intelligence.
 
 ## Connections
@@ -56,6 +59,7 @@ In force as strengthened by the Intelligence Authorization Act for Fiscal Year 1
 | amends | [Hughes-Ryan Amendment](hughes-ryan-1974.qmd){.subj} | Cut notification from eight committees to the two intelligence committees. |
 | amends | [National Security Act](nsa-1947.qmd){.subj} | Added Title V, the oversight title, to the National Security Act. |
 | related to | [Section 394 (cyber)](sec394-cyber-2018.qmd){.subj} | Classifies clandestine military cyber activity as traditional military activity, outside the covert action definition. |
+| related to | [Boland Amendments](boland-1982.qmd){.subj} | Iran-Contra grew out of efforts to support the Contras despite Boland and led to the 1991 covert action reforms. |
 
 [See this statute in the knowledge graph](../graph.html?focus=intel-oversight-1980)
 

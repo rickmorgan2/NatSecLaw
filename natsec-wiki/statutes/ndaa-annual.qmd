@@ -36,14 +36,17 @@ Much of this wiki passed through it. It carried the [Global Magnitsky Act](gloma
 
 The most recent enacted act is for fiscal year 2026 (Pub. L. 119-60, signed December 18, 2025). For fiscal year 2027 the House passed H.R. 8800 on July 22, 2026; the Senate bill (S. 4784) had not passed, and final action was expected in the post-election session. Check current status.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [Case-Zablocki Act](case-zablocki-1972.qmd), [Insurrection Act](insurrection-1807.qmd), [Posse Comitatus Act](posse-comitatus-1878.qmd), [Military Commissions Act](mil-commissions-2006.qmd), [Nunn-Lugar Act](nunn-lugar-1991.qmd), [Defense Production Act](dpa-1950.qmd), [Smith-Mundt Act](smith-mundt-1948.qmd), [UCMJ](ucmj-1950.qmd), [Section 2808 (construction)](sec2808-milcon-1982.qmd), [Title 10 U.S.C.](title10-usc.qmd).
-- **Built upon by.** [Detainee Treatment Act](dta-2005.qmd), [Nunn-Cohen Amendment](nunn-cohen-1986.qmd), [Global Magnitsky Act](glomag-2016.qmd), [Caesar Act](caesar-2019.qmd), [Export Control Reform Act](ecra-2018.qmd), [FIRRMA (CFIUS)](firrma-2018.qmd), [Security Cooperation (Ch. 16)](seccoop-2016.qmd), [Section 127e](sec127e-2004.qmd), [Section 394 (cyber)](sec394-cyber-2018.qmd), [Section 284 (counterdrug)](sec284-counterdrug-1990.qmd), [Civilian Casualty Report](civcas-report-2017.qmd), [Civilian Casualty Policy](civcas-policy-2018.qmd), [Ex Gratia Payments](ex-gratia-2019.qmd), [Civilian Protection Center](cp-coe-2022.qmd).
+- **Built upon by.** [Detainee Treatment Act](dta-2005.qmd), [Nunn-Cohen Amendment](nunn-cohen-1986.qmd), [Global Magnitsky Act](glomag-2016.qmd), [Caesar Act](caesar-2019.qmd), [Export Control Reform Act](ecra-2018.qmd), [FIRRMA (CFIUS)](firrma-2018.qmd), [Security Cooperation (Ch. 16)](seccoop-2016.qmd), [Section 127e](sec127e-2004.qmd), [Section 394 (cyber)](sec394-cyber-2018.qmd), [Section 284 (counterdrug)](sec284-counterdrug-1990.qmd), [Civilian Casualty Report](civcas-report-2017.qmd), [Civilian Casualty Policy](civcas-policy-2018.qmd), [Ex Gratia Payments](ex-gratia-2019.qmd), [Civilian Protection Center](cp-coe-2022.qmd), [Ukraine Security Assistance Initiative](usai-2016.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd), [Title 50 U.S.C.](title50-usc.qmd).
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 7: Organizing and commanding the military](../study/units/defense-organization.qmd) (core reading).
+- **Study.** [Unit 4: The power of the purse](../study/units/purse.qmd) (further reading); [Unit 8: Organizing and commanding the military](../study/units/defense-organization.qmd) (core reading).
+- **Who's involved.** [HASC](../whos-who.qmd#hasc), [SASC](../whos-who.qmd#sasc), [DoD](../whos-who.qmd#dod).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Armed Services; Civilian Harm Transparency Act; Afghanistan oversight (2020); Buckley SFB; Veterans. [Rep. Sara Jacobs](../members/jacobs.qmd): Armed Services; Upholding Human Rights Abroad Act; Military families; Defense industry and research; Deployed constituents.
 
 ## Connections
@@ -81,6 +84,8 @@ The most recent enacted act is for fiscal year 2026 (Pub. L. 119-60, signed Dece
 | vehicle for | [Civilian Casualty Policy](civcas-policy-2018.qmd){.subj} | Enacted as Sec. 936 of the FY2019 NDAA (Pub. L. 115-232). |
 | vehicle for | [Ex Gratia Payments](ex-gratia-2019.qmd){.subj} | Enacted as Sec. 1213 of the FY2020 NDAA (Pub. L. 116-92). |
 | vehicle for | [Civilian Protection Center](cp-coe-2022.qmd){.subj} | Enacted as Sec. 1082 of the FY2023 NDAA (Pub. L. 117-263). |
+| related to | [Defense appropriations (annual)](defense-approps-annual.qmd){.subj} | Annual companions: the NDAA authorizes and sets policy, the appropriations act provides the money that can be obligated. |
+| vehicle for | [Ukraine Security Assistance Initiative](usai-2016.qmd){.subj} | Enacted in the FY2016 NDAA and extended in later ones, most recently through 2029. |
 
 [See this statute in the knowledge graph](../graph.html?focus=ndaa-annual)
 

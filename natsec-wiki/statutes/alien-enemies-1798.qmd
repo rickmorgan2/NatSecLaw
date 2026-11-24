@@ -40,13 +40,15 @@ Used in the War of 1812 and both world wars, it is the oldest wartime authority 
 
 In force. A March 2025 proclamation invoked it against alleged members of a Venezuelan gang, its first use outside a declared war. The Supreme Court required notice and a chance to seek habeas review and later blocked removals of the plaintiffs. A Fifth Circuit panel found the invocation unlawful in September 2025; that opinion was vacated, and in August 2026 the full court dismissed the case as moot without ruling on the question. Check current status.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [Declarations of War](declarations-of-war.qmd).
 - **Codified in.** [Title 50 U.S.C.](title50-usc.qmd).
 - **Era.** Founding and the early republic ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 1: Where the power comes from](../study/units/foundations.qmd) (core reading); [Unit 8: The military at home](../study/units/military-at-home.qmd) (further reading).
+- **Study.** [Unit 1: Where the power comes from](../study/units/foundations.qmd) (core reading); [Unit 9: The military at home](../study/units/military-at-home.qmd) (further reading).
 
 ## Connections
 

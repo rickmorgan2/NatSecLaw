@@ -40,7 +40,7 @@ committees:
       The Africa subcommittee covers U.S. policy, aid, and security cooperation
       across sub-Saharan Africa.
     code_titles: [22, 50]
-    statutes: [title22-usc, faa-1961, aeca-1976, state-basic-1956, fsa-1980,
+    statutes: [title22-usc, faa-1961, aeca-1976, fmf, imet, pko-551, sec7008-coup, state-basic-1956, fsa-1980,
                leahy-laws, gfa-2019, wps-2017, wiesel-2018, glomag-2016,
                millennium-challenge-2003, farra-1998, wpr-1973, aumf-2001,
                ieepa-1977, case-zablocki-1972]

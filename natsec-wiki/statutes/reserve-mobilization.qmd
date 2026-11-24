@@ -43,13 +43,15 @@ Which authority is used decides who commands the troops and what they may do: Gu
 
 In force. On December 23, 2025 the Supreme Court, in Trump v. Illinois, left in place an order blocking a National Guard federalization under Section 12406(3), reasoning that 'regular forces' in that section likely means the regular military. The administration then ended its deployments under that section. The ruling came on an emergency application and litigation may continue. Check current status.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [National Emergencies Act](nea-1976.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd).
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 8: The military at home](../study/units/military-at-home.qmd) (core reading).
+- **Study.** [Unit 9: The military at home](../study/units/military-at-home.qmd) (core reading).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Armed Services; Space National Guard Act; Buckley SFB.
 
 ## Connections

@@ -1,0 +1,322 @@
+# Who's who (D-014): the committees, agencies, and courts that
+# appear across the wiki, each linked to the laws that create, empower, or oversee it.
+# kind is one of: committee, support, executive, court. Added November 24, 2026.
+
+# Congress: committees ---------------------------------------------------------------
+
+- id: hasc
+  name: House Committee on Armed Services
+  short: HASC
+  kind: committee
+  role: >-
+    Authorizes the Defense Department and the national security programs of the
+    Energy Department and writes the House version of the annual NDAA. Its
+    jurisdiction follows Title 10: forces, personnel, acquisition, and Defense
+    Department security cooperation.
+  statutes: [ndaa-annual, title10-usc, goldwater-nichols-1986, seccoop-2016, usai-2016]
+  source: {label: "House Armed Services Committee", url: "https://armedservices.house.gov"}
+
+- id: sasc
+  name: Senate Committee on Armed Services
+  short: SASC
+  kind: committee
+  role: >-
+    The Senate counterpart to HASC: writes the Senate NDAA and also confirms senior
+    Defense Department civilians and military officers, which gives it a second
+    lever over defense policy.
+  statutes: [ndaa-annual, title10-usc, goldwater-nichols-1986, seccoop-2016, usai-2016]
+  source: {label: "Senate Armed Services Committee", url: "https://www.armed-services.senate.gov"}
+
+- id: hfac
+  name: House Committee on Foreign Affairs
+  short: HFAC
+  kind: committee
+  role: >-
+    Jurisdiction in the House over the State Department, foreign assistance, arms
+    sales, export controls, most sanctions, and war powers and use-of-force
+    resolutions. Receives arms sale notifications under the Arms Export Control Act.
+  statutes: [faa-1961, aeca-1976, wpr-1973, ieepa-1977, ecra-2018, fmf, imet, fms]
+  source: {label: "House Foreign Affairs Committee", url: "https://foreignaffairs.house.gov"}
+
+- id: sfrc
+  name: Senate Committee on Foreign Relations
+  short: SFRC
+  kind: committee
+  role: >-
+    Jurisdiction in the Senate over the State Department, treaties, foreign
+    assistance, arms sales, and authorizations for the use of force. Also handles
+    ambassadorial and State Department nominations and advice and consent to
+    treaties.
+  statutes: [faa-1961, aeca-1976, wpr-1973, case-zablocki-1972, fmf, imet, fms]
+  source: {label: "Senate Foreign Relations Committee", url: "https://www.foreign.senate.gov"}
+
+- id: hpsci
+  name: House Permanent Select Committee on Intelligence
+  short: HPSCI
+  kind: committee
+  role: >-
+    Created by House rule in 1977 to oversee the intelligence community. Writes the
+    annual intelligence authorization and receives covert action findings and
+    notifications of significant intelligence activities.
+  statutes: [nsa-1947, intel-oversight-1980, irtpa-2004, fisa-1978]
+  source: {label: "House Permanent Select Committee on Intelligence", url: "https://intelligence.house.gov"}
+
+- id: ssci
+  name: Senate Select Committee on Intelligence
+  short: SSCI
+  kind: committee
+  role: >-
+    Created by Senate resolution in 1976, after the Church Committee's
+    investigation, to oversee the intelligence community. Writes the Senate
+    intelligence authorization and considers nominations for senior intelligence
+    posts.
+  statutes: [nsa-1947, intel-oversight-1980, irtpa-2004, fisa-1978]
+  source: {label: "Senate Select Committee on Intelligence", url: "https://www.intelligence.senate.gov"}
+
+- id: hac
+  name: House Committee on Appropriations
+  short: House Appropriations
+  kind: committee
+  role: >-
+    Its Defense subcommittee writes the annual Defense appropriations act, and its
+    subcommittee on National Security, Department of State, and Related Programs
+    writes the State-foreign operations act. Approves reprogramming and transfer
+    requests informally through the committee notification process.
+  statutes: [defense-approps-annual, sfops-approps-annual, sec8005-transfer, sec7008-coup]
+  source: {label: "House Appropriations Committee", url: "https://appropriations.house.gov"}
+
+- id: sac
+  name: Senate Committee on Appropriations
+  short: Senate Appropriations
+  kind: committee
+  role: >-
+    The Senate counterpart: its Defense subcommittee and its subcommittee on State,
+    Foreign Operations, and Related Programs write the Senate versions of the two
+    annual acts.
+  statutes: [defense-approps-annual, sfops-approps-annual, sec8005-transfer, sec7008-coup]
+  source: {label: "Senate Appropriations Committee", url: "https://www.appropriations.senate.gov"}
+
+- id: senate-banking
+  name: Senate Committee on Banking, Housing, and Urban Affairs
+  short: Senate Banking
+  kind: committee
+  role: >-
+    In the Senate, sanctions under IEEPA, export controls, the Defense Production
+    Act, and foreign investment review go to Banking rather than Foreign Relations,
+    which makes it a central sanctions committee.
+  statutes: [ieepa-1977, ecra-2018, dpa-1950, firrma-2018, caatsa-2017]
+  source: {label: "Senate Banking Committee", url: "https://www.banking.senate.gov"}
+
+# Congress: support agencies -------------------------------------------------------------
+
+- id: gao
+  name: Government Accountability Office
+  short: GAO
+  kind: support
+  role: >-
+    Congress's audit and investigative agency, headed by the Comptroller General.
+    Issues decisions on appropriations law, reports impoundments the President has
+    not, and may sue to release withheld funds.
+  statutes: [impoundment-1974, antideficiency]
+  source: {label: "GovInfo, 31 U.S.C. 702", url: "https://www.govinfo.gov/link/uscode/31/702?link-type=html"}
+
+- id: crs
+  name: Congressional Research Service
+  short: CRS
+  kind: support
+  role: >-
+    The nonpartisan research agency in the Library of Congress that works only for
+    members, committees, and their staff. Its public reports are a standard starting
+    point on nearly every law in this wiki.
+  statutes: []
+  source: {label: "GovInfo, 2 U.S.C. 166", url: "https://www.govinfo.gov/link/uscode/2/166?link-type=html"}
+
+# Executive branch -------------------------------------------------------------------------
+
+- id: nsc
+  name: National Security Council
+  short: NSC
+  kind: executive
+  role: >-
+    Created by the National Security Act of 1947 to advise the President on
+    integrating domestic, foreign, and military policy. Its staff, led by the
+    national security adviser, runs the interagency policy process.
+  statutes: [nsa-1947]
+  source: {label: "GovInfo, 50 U.S.C. 3021", url: "https://www.govinfo.gov/link/uscode/50/3021?link-type=html"}
+
+- id: omb
+  name: Office of Management and Budget
+  short: OMB
+  kind: executive
+  role: >-
+    Prepares the President's budget and apportions appropriated funds to agencies,
+    which makes it the point where impoundment disputes usually begin. Approves
+    Defense Department general transfers.
+  statutes: [antideficiency, impoundment-1974, sec8005-transfer]
+  source: {label: "GovInfo, 31 U.S.C. 501", url: "https://www.govinfo.gov/link/uscode/31/501?link-type=html"}
+
+- id: dod
+  name: Department of Defense
+  short: DoD
+  kind: executive
+  role: >-
+    The executive department, created in 1949 from the National Military
+    Establishment, under a civilian Secretary of Defense with authority, direction,
+    and control over the military departments and combatant commands.
+  statutes: [nsa-1947, nsa-amendments-1949, dod-reorg-1958, goldwater-nichols-1986, ndaa-annual, defense-approps-annual]
+  source: {label: "GovInfo, 10 U.S.C. 111", url: "https://www.govinfo.gov/link/uscode/10/111?link-type=html"}
+
+- id: jcs
+  name: Joint Chiefs of Staff
+  short: JCS
+  kind: executive
+  role: >-
+    The senior uniformed leaders of the services. The Chairman is the principal
+    military adviser to the President and Secretary of Defense; since
+    Goldwater-Nichols the Joint Chiefs are outside the operational chain of command.
+  statutes: [nsa-1947, goldwater-nichols-1986]
+  source: {label: "GovInfo, 10 U.S.C. 151", url: "https://www.govinfo.gov/link/uscode/10/151?link-type=html"}
+
+- id: cocoms
+  name: Combatant commands
+  short: Combatant commands
+  kind: executive
+  role: >-
+    The geographic and functional commands, such as Central Command and Cyber
+    Command, that conduct military operations. The chain of command runs from the
+    President through the Secretary of Defense to the combatant commanders.
+  statutes: [goldwater-nichols-1986, dod-reorg-1958, sec394-cyber-2018]
+  source: {label: "GovInfo, 10 U.S.C. 161", url: "https://www.govinfo.gov/link/uscode/10/161?link-type=html"}
+
+- id: socom
+  name: U.S. Special Operations Command
+  short: SOCOM
+  kind: executive
+  role: >-
+    The unified command for special operations forces, created by the Nunn-Cohen
+    Amendment with its own budget authority. Conducts programs such as those under
+    Section 127e.
+  statutes: [nunn-cohen-1986, sec127e-2004]
+  source: {label: "GovInfo, 10 U.S.C. 167", url: "https://www.govinfo.gov/link/uscode/10/167?link-type=html"}
+
+- id: dsca
+  name: Defense Security Cooperation Agency
+  short: DSCA
+  kind: executive
+  role: >-
+    The Defense Department agency that administers Foreign Military Sales, Foreign
+    Military Financing, IMET, excess defense articles, and most Title 10 security
+    cooperation programs. Sends major arms sale notifications to Congress.
+  statutes: [fms, fmf, imet, eda-516, aeca-1976, seccoop-2016]
+  source: {label: "Defense Security Cooperation Agency", url: "https://www.dsca.mil"}
+
+- id: cp-coe
+  name: Civilian Protection Center of Excellence
+  short: Civilian Protection Center
+  kind: executive
+  role: >-
+    The Defense Department's statutory focal point for preventing, mitigating, and
+    responding to civilian harm from U.S. military operations.
+  statutes: [cp-coe-2022, civcas-policy-2018, civcas-report-2017]
+  source: {label: "GovInfo, 10 U.S.C. 184", url: "https://www.govinfo.gov/link/uscode/10/184?link-type=html"}
+
+- id: state-pm
+  name: State Department, Bureau of Political-Military Affairs
+  short: State PM bureau
+  kind: executive
+  role: >-
+    The State Department's link to the Defense Department. Leads on security
+    assistance policy, including FMF and peacekeeping funds, and on arms transfer
+    policy; its Directorate of Defense Trade Controls licenses commercial arms
+    exports under the International Traffic in Arms Regulations.
+  statutes: [aeca-1976, fmf, fms, imet, pko-551]
+  source: {label: "Directorate of Defense Trade Controls", url: "https://www.pmddtc.state.gov"}
+
+- id: odni
+  name: Office of the Director of National Intelligence
+  short: ODNI
+  kind: executive
+  role: >-
+    Created in 2004 to head the intelligence community, a role the CIA director had
+    held. The Director of National Intelligence is the President's principal
+    intelligence adviser and builds the national intelligence budget.
+  statutes: [irtpa-2004, nsa-1947]
+  source: {label: "GovInfo, 50 U.S.C. 3023", url: "https://www.govinfo.gov/link/uscode/50/3023?link-type=html"}
+
+- id: cia
+  name: Central Intelligence Agency
+  short: CIA
+  kind: executive
+  role: >-
+    Created by the National Security Act of 1947. Collects human intelligence,
+    produces all-source analysis, and conducts covert action on presidential
+    findings reported to the intelligence committees.
+  statutes: [nsa-1947, cia-act-1949, intel-oversight-1980, boland-1982]
+  source: {label: "GovInfo, 50 U.S.C. 3035", url: "https://www.govinfo.gov/link/uscode/50/3035?link-type=html"}
+
+- id: nsa-agency
+  name: National Security Agency
+  short: NSA
+  kind: executive
+  role: >-
+    The Defense Department's signals intelligence and cybersecurity agency,
+    established by presidential directive in 1952. Its collection inside the
+    United States and against U.S. persons is governed by FISA.
+  statutes: [fisa-1978, fisa-amendments-2008, usa-freedom-2015, risaa-2024]
+  source: {label: "National Security Agency", url: "https://www.nsa.gov"}
+
+- id: ofac
+  name: Office of Foreign Assets Control, Department of the Treasury
+  short: OFAC
+  kind: executive
+  role: >-
+    Administers and enforces most U.S. sanctions programs, including those under
+    IEEPA, and maintains the Specially Designated Nationals list.
+  statutes: [ieepa-1977, twea-1917, glomag-2016, caatsa-2017, helms-burton-1996]
+  source: {label: "Office of Foreign Assets Control", url: "https://ofac.treasury.gov"}
+
+- id: bis
+  name: Bureau of Industry and Security, Department of Commerce
+  short: BIS
+  kind: executive
+  role: >-
+    Administers export controls on dual-use and less sensitive military items under
+    the Export Control Reform Act, including the Entity List, and conducts Section
+    232 investigations.
+  statutes: [ecra-2018, sec232-1962]
+  source: {label: "Bureau of Industry and Security", url: "https://www.bis.gov"}
+
+- id: cfius
+  name: Committee on Foreign Investment in the United States
+  short: CFIUS
+  kind: executive
+  role: >-
+    The interagency committee, chaired by the Treasury Secretary, that reviews
+    foreign investments in U.S. businesses and real estate for national security
+    risks. FIRRMA widened its reach in 2018.
+  statutes: [dpa-1950, firrma-2018]
+  source: {label: "Department of the Treasury, CFIUS", url: "https://home.treasury.gov/policy-issues/international/the-committee-on-foreign-investment-in-the-united-states-cfius"}
+
+- id: dhs
+  name: Department of Homeland Security
+  short: DHS
+  kind: executive
+  role: >-
+    Created in 2002 by combining 22 agencies. Leads on border security, critical
+    infrastructure protection, and civilian cybersecurity through its Cybersecurity
+    and Infrastructure Security Agency.
+  statutes: [hsa-2002, cisa-2015]
+  source: {label: "GovInfo, 6 U.S.C. 111", url: "https://www.govinfo.gov/link/uscode/6/111?link-type=html"}
+
+# Courts --------------------------------------------------------------------------------------
+
+- id: fisc
+  name: Foreign Intelligence Surveillance Court
+  short: FISC
+  kind: court
+  role: >-
+    Eleven federal district judges designated by the Chief Justice who approve
+    surveillance orders under FISA and review the annual Section 702
+    certifications. A separate Court of Review hears appeals.
+  statutes: [fisa-1978, fisa-amendments-2008, usa-freedom-2015, risaa-2024]
+  source: {label: "Foreign Intelligence Surveillance Court", url: "https://www.fisc.uscourts.gov"}

@@ -8,12 +8,22 @@ statutes <- load_statutes()
 edges    <- load_edges()
 members  <- load_members()
 units    <- load_units()
+cases    <- load_cases()
+insts    <- load_institutions()
 
 # validation -------------------------------------------------------------------
 
 member_ids <- purrr::map(members, \(m) unlist(purrr::map(c(m$committees, m$initiatives, m$equities), "statutes")))
 unit_ids   <- unlist(purrr::map(units, \(u) c(u$core, u$further)))
+unit_cases <- unlist(purrr::map(units, "cases"))
 answer_txt <- unlist(purrr::map(units, \(u) purrr::map_chr(u$questions, "a")))
+prov_txt   <- unlist(statutes$provisions)
+issue_txt  <- unlist(purrr::map(units, \(u) purrr::map(u$issues, \(i) c(i$context, unlist(i$sides)))))
+case_stat  <- unlist(purrr::map(cases$statutes, \(x) purrr::map_chr(x, "id")))
+inst_stat  <- unlist(purrr::map(insts, "statutes"))
+fund_acts  <- purrr::map2(statutes$id, statutes$funding, \(id, f) if (length(f$act)) c(id = id, act = f$act))
+fund_acts  <- purrr::compact(fund_acts)
+fund_ok    <- purrr::map_lgl(fund_acts, \(x) any(edges$from == x[["id"]] & edges$to == x[["act"]] & edges$relation == "funded_by"))
 
 stopifnot(
   "duplicate statute ids"         = !anyDuplicated(statutes$id),
@@ -21,8 +31,19 @@ stopifnot(
   "unknown status in statutes"    = all(statutes$status %in% names(status_labels)),
   "missing or unknown layer"      = all(statutes$layer %in% names(layer_labels)),
   "edge points to unknown id"     = all(c(edges$from, edges$to) %in% statutes$id),
-  "unknown relation in edges"     = all(edges$relation %in% names(relation_labels)),
-  "[[wiki link]] to unknown id"   = all(wiki_ids(c(statutes$summary, statutes$significance, answer_txt)) %in% statutes$id),
+  "unknown relation in edges"     = all(edges$relation %in% edge_relations),
+  "[[wiki link]] to unknown id"   = all(wiki_ids(c(statutes$summary, statutes$significance, prov_txt, answer_txt, issue_txt,
+                                                   cases$holding, cases$significance, cases$response, cases$standing)) %in% c(statutes$id, cases$id)),
+  "case id clashes with a statute" = !any(cases$id %in% statutes$id) && !anyDuplicated(cases$id),
+  "unknown domain in cases"       = all(cases$domain %in% names(domain_labels)),
+  "case points to unknown statute" = all(case_stat %in% statutes$id),
+  "case without official opinion" = all(!is.na(cases$opinion_url)),
+  "wikipedia link not on en.wikipedia.org" = all(is.na(cases$wikipedia) | grepl("^https://en\\.wikipedia\\.org/wiki/", cases$wikipedia)),
+  "study unit points to unknown case" = all(unit_cases %in% cases$id),
+  "who's who points to unknown id" = all(inst_stat %in% statutes$id),
+  "duplicate who's who ids"       = !anyDuplicated(purrr::map_chr(insts, "id")),
+  "funding act is not a statute"  = all(purrr::map_chr(fund_acts, "act") %in% statutes$id),
+  "funding act without funded_by edge" = all(fund_ok),
   "member file points to unknown id" = all(unlist(member_ids) %in% statutes$id),
   "study unit points to unknown id"  = all(unit_ids %in% statutes$id),
   "duplicate unit ids"            = !anyDuplicated(purrr::map_chr(units, "id"))
@@ -88,6 +109,9 @@ position_md <- function(s) {
     paste0("[Unit ", u$number, ": ", u$title, "](../study/units/", u$id, ".qmd) (", role, ")")
   })
 
+  inst_hits <- purrr::keep(insts, \(x) s$id %in% x$statutes)
+  inst_md <- purrr::map_chr(inst_hits, \(x) paste0("[", x$short, "](../whos-who.qmd#", x$id, ")"))
+
   lens_md <- purrr::map_chr(members, \(m) {
     hits <- c(
       purrr::map_chr(purrr::keep(m$committees, \(x) s$id %in% x$statutes), "short"),
@@ -108,9 +132,38 @@ position_md <- function(s) {
     if (length(title_pages)) paste0("- **Codified in.** ", sib_links(title_pages), "."),
     paste0("- **Era.** ", s$era, " ([timeline](../study/timeline.qmd))."),
     if (length(unit_md)) paste0("- **Study.** ", paste(unit_md, collapse = "; "), "."),
+    if (length(inst_md)) paste0("- **Who's involved.** ", paste(inst_md, collapse = ", "), "."),
     if (length(lens_md)) paste0("- **Member lenses.** ", paste(lens_md, collapse = ". "), "."),
     ""
   )
+}
+
+# for a program: the account, the act that funds it, who runs it, and the committees
+funding_md <- function(s) {
+  f <- s$funding[[1]]
+  if (!length(f)) return(character(0))
+  cap <- function(x) paste0(toupper(substr(x, 1, 1)), substring(x, 2))
+  act <- if (length(f$act)) paste0(" in the [", short_of[[f$act]], "](", f$act, ".qmd)") else ""
+  c(
+    "## Funding and administration",
+    "",
+    if (length(f$account)) paste0("- **Account.** ", cap(f$account), if (length(f$where)) paste0(", ", f$where), act, "."),
+    if (length(f$agency)) paste0("- **Run by.** ", cap(f$agency), "."),
+    if (length(f$committees)) paste0("- **Committees.** ", cap(f$committees), "."),
+    if (length(f$note)) paste0("- **Note.** ", cap(f$note)),
+    ""
+  )
+}
+
+# court cases that decided questions about this statute
+courts_md <- function(id) {
+  hits <- purrr::keep(seq_len(nrow(cases)), \(i) id %in% purrr::map_chr(cases$statutes[[i]], "id"))
+  if (!length(hits)) return(character(0))
+  lines <- purrr::map_chr(hits, \(i) {
+    eff <- purrr::keep(cases$statutes[[i]], \(x) x$id == id)[[1]]$effect
+    paste0("- [", cases$short[i], "](../cases/", cases$id[i], ".qmd) (", cases$year[i], "). ", eff)
+  })
+  c("## In the courts", "", lines, "")
 }
 
 # source list for one statute, official links first
@@ -187,7 +240,7 @@ page_md <- function(s, l) {
     official_md(l),
     "## Key provisions",
     "",
-    paste0("- ", s$provisions[[1]]),
+    paste0("- ", link_wiki(s$provisions[[1]], statutes)),
     "",
     "## Why it matters",
     "",
@@ -197,6 +250,10 @@ page_md <- function(s, l) {
     "",
     s$status_note,
     "",
+    paste0("[Last checked ", long_date(s$checked), ".]{.checked}"),
+    "",
+    funding_md(s),
+    courts_md(s$id),
     members_md(s),
     position_md(s),
     "## Connections",
@@ -283,6 +340,41 @@ reading_card <- function(id, core = TRUE) {
   )
 }
 
+# a reading card for a court case
+case_card <- function(id) {
+  cs <- cases[cases$id == id, ]
+  c(
+    paste0("::: {.reading-card .case-card .domain-", cs$domain, "}"),
+    paste0("[", cs$short, "](../../cases/", id, ".qmd) [", cs$citation, " (", cs$year, ")]{.reading-year} [Court case]{.layer-badge}"),
+    "",
+    plain_wiki(first_sentence(cs$holding), statutes),
+    "",
+    paste0("[Read it: [opinion](", cs$opinion_url, ")]{.reading-links} ",
+           "<label class=\"read-check\"><input type=\"checkbox\" data-read=\"", id, "\"> I have read this</label>"),
+    ":::",
+    ""
+  )
+}
+
+# open questions for oversight and legislation, with the main arguments on each side
+issues_md <- function(u) {
+  if (!length(u$issues)) return(character(0))
+  c(
+    "## Issues for Congress",
+    "",
+    "Questions that recur in oversight and legislation, with the main arguments on each side. There is no answer key; they are for discussion and briefing preparation.",
+    "",
+    unlist(purrr::imap(u$issues, \(i, n) c(
+      paste0("### ", n, ". ", i$q),
+      "",
+      link_wiki(i$context, statutes, prefix = "../../statutes/"),
+      "",
+      paste0("- ", link_wiki(unlist(i$sides), statutes, prefix = "../../statutes/")),
+      ""
+    )))
+  )
+}
+
 for (k in seq_along(units)) {
   u <- units[[k]]
   prev_u <- if (k > 1) units[[k - 1]]
@@ -328,6 +420,7 @@ for (k in seq_along(units)) {
     "Read these in order. Each card links to the wiki page and to the official text. Ticking a box saves your progress in this browser only.",
     "",
     unlist(purrr::map(u$core, reading_card)),
+    if (length(u$cases)) c("### Court cases", "", unlist(purrr::map(unlist(u$cases), case_card))),
     if (length(u$pages)) c(
       paste0("Also read: ", paste0("[", purrr::map_chr(u$pages, "label"), "](", purrr::map_chr(u$pages, "href"), ")", collapse = "; "), "."),
       ""
@@ -357,6 +450,7 @@ for (k in seq_along(units)) {
     "## Key terms",
     "",
     unlist(purrr::map(u$terms, \(t) c(paste0("**", t$term, "**"), paste0(":   ", t$definition), ""))),
+    issues_md(u),
     "## Check yourself",
     "",
     "Try to answer each question before opening it.",
@@ -365,6 +459,93 @@ for (k in seq_along(units)) {
     nav
   ), file.path("study/units", paste0(u$id, ".qmd")))
 }
+
+# court case pages -----------------------------------------------------------------
+
+case_md <- function(cs) {
+  st <- cs$statutes[[1]]
+  st_lines <- purrr::map_chr(st, \(x) paste0("- [", short_of[[x$id]], "](../statutes/", x$id, ".qmd){.subj}. ", x$effect))
+  in_units <- purrr::keep(units, \(u) cs$id %in% unlist(u$cases))
+  src <- purrr::map_chr(cs$sources[[1]], \(x) paste0("- [", x$label, "](", x$url, ")"))
+  front <- list(
+    title = cs$name,
+    subtitle = paste0(cs$citation, " (", cs$year, ")"),
+    year = cs$year,
+    domain = cs$domain_name,
+    categories = c(cs$domain_name, "Court case")
+  )
+  c(
+    "---",
+    trimws(yaml::as.yaml(front)),
+    "---",
+    "",
+    "<!-- Generated by R/build_pages.R from data/cases.yml. Edit the YAML, not this file. -->",
+    "",
+    paste0("::: {.cite-bar .domain-", cs$domain, "}"),
+    paste0("[Supreme Court]{.status .status-case} [", cs$citation, "](", cs$opinion_url, "){.cite} ",
+           "[Decided ", long_date(cs$decided), "]{.cite} [", cs$vote, "]{.cite}"),
+    ":::",
+    "",
+    paste0("**Holding.** ", link_wiki(cs$holding, statutes, prefix = "../statutes/")),
+    "",
+    paste0("**Question.** ", cs$question),
+    "",
+    "::: {.official-links}",
+    "**Read the opinion** (official text)",
+    "",
+    paste0("[Opinion: ", cs$citation, "](", cs$opinion_url, "){.btn-official}"),
+    ":::",
+    "",
+    if (!is.na(cs$wikipedia)) c(paste0("Background reading: [Wikipedia article on ", cs$short, "](", cs$wikipedia, ") (secondary source)."), ""),
+    "## Why it matters",
+    "",
+    link_wiki(cs$significance, statutes, prefix = "../statutes/"),
+    "",
+    if (!is.na(cs$response)) c("## How Congress responded", "", link_wiki(cs$response, statutes, prefix = "../statutes/"), ""),
+    if (!is.na(cs$standing)) c("## Status", "", link_wiki(cs$standing, statutes, prefix = "../statutes/"), ""),
+    "## Statutes at issue",
+    "",
+    st_lines,
+    "",
+    if (length(in_units)) c(paste0("Studied in ", paste0("[Unit ", purrr::map_int(in_units, "number"), ": ",
+                                     purrr::map_chr(in_units, "title"), "](../study/units/", purrr::map_chr(in_units, "id"), ".qmd)",
+                                     collapse = "; "), "."), ""),
+    paste0("[See this case in the knowledge graph](../graph.html?focus=", cs$id, ")"),
+    "",
+    "## Sources",
+    "",
+    paste0("- Opinion (official): [", cs$citation, "](", cs$opinion_url, ")"),
+    if (!is.na(cs$wikipedia)) paste0("- Background (secondary): [Wikipedia, ", cs$name, "](", cs$wikipedia, ")"),
+    src,
+    ""
+  )
+}
+
+dir.create("cases", showWarnings = FALSE)
+prune("cases", c(paste0(cases$id, ".qmd"), "index.qmd"))
+for (i in seq_len(nrow(cases))) {
+  write_if_changed(case_md(cases[i, ]), file.path("cases", paste0(cases$id[i], ".qmd")))
+}
+
+write_if_changed(c(
+  "---",
+  "title: \"Court cases\"",
+  "subtitle: \"Supreme Court decisions that define how the national security statutes work, linked to the statutes they decided.\"",
+  "toc: false",
+  "---",
+  "",
+  "<!-- Generated by R/build_pages.R from data/cases.yml. -->",
+  "",
+  "Each page gives the holding first, then the question, why the case matters, how Congress responded, and the statutes at issue. Every case links to the official opinion: the bound *United States Reports* on GovInfo, or the Supreme Court's slip opinion for recent decisions.",
+  "",
+  "| Case | Year | Holding | Statutes at issue |",
+  "|---|---|---|---|",
+  paste0("| [", cases$short, "](", cases$id, ".qmd) | ", cases$year, " | ",
+         plain_wiki(first_sentence(cases$holding), statutes), " | ",
+         purrr::map_chr(cases$statutes, \(st) paste0("[", short_of[purrr::map_chr(st, "id")], "](../statutes/",
+                                                     purrr::map_chr(st, "id"), ".qmd)", collapse = ", ")), " |"),
+  ""
+), "cases/index.qmd")
 
 # site-wide data for the status toggle and link marking ---------------------------
 
@@ -394,6 +575,12 @@ statutes |>
 
 readr::write_csv(sources, "data/manifest_sources.csv", na = "")
 
+cases |>
+  dplyr::transmute(id, name, citation, year, decided, vote, domain = domain_label,
+                   statutes = purrr::map_chr(statutes, \(x) paste(purrr::map_chr(x, "id"), collapse = "; ")),
+                   opinion = opinion_url, wiki_page = paste0("cases/", id, ".html")) |>
+  readr::write_csv("data/manifest_cases.csv", na = "")
+
 # every source the wiki draws on, in one file
 refs     <- readr::read_csv("data/reference_sources.csv", col_types = "cccc")
 research <- readr::read_csv("data/research_sources.csv", col_types = "cccc")
@@ -404,14 +591,23 @@ all_sources <- dplyr::bind_rows(
     purrr::list_rbind() |>
     dplyr::transmute(group = "Member lens", context = paste0(member, ": ", item), type = kind, label, url),
   refs |> dplyr::transmute(group = "Reference", context = used_for, type = type, label = name, url),
-  research |> dplyr::transmute(group = "Research for this edition", context = used_for, type = type, label = name, url)
+  research |> dplyr::transmute(group = "Research for this edition", context = used_for, type = type, label = name, url),
+  cases |> dplyr::transmute(group = "Court case", context = short, type = "Opinion (official)", label = citation, url = opinion_url),
+  cases |> dplyr::filter(!is.na(wikipedia)) |>
+    dplyr::transmute(group = "Court case", context = short, type = "Background (secondary)", label = paste("Wikipedia,", name), url = wikipedia),
+  purrr::map(seq_len(nrow(cases)), \(i) purrr::map(cases$sources[[i]], \(x) tibble::tibble(
+    group = "Court case", context = cases$short[i], type = "Listed source", label = x$label, url = x$url)) |>
+      purrr::list_rbind()) |> purrr::list_rbind(),
+  purrr::map(insts, \(x) tibble::tibble(group = "Who's who", context = x$short, type = "Listed source",
+                                       label = x$source$label, url = x$source$url)) |> purrr::list_rbind()
 ) |>
   dplyr::mutate(official = is_official(url)) |>
   dplyr::distinct(group, context, label, url, .keep_all = TRUE)
 readr::write_csv(all_sources, "data/all_sources.csv", na = "")
 
 message(
-  "Built ", nrow(statutes), " statute pages, ", length(members), " member lenses, ",
+  "Built ", nrow(statutes), " statute pages, ", nrow(cases), " case pages, ", length(insts), " who's who entries, ",
+  length(members), " member lenses, ",
   length(units), " study units, ", nrow(edges), " edges, ",
   nrow(all_sources), " source links (", sum(all_sources$official), " official)."
 )

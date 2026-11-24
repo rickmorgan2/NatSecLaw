@@ -15,6 +15,7 @@ $aid-sanctions:       #2e7d6b;
 $defense-arms:        #b07a1e;
 $foreign-policy:      #6b4c8a;
 $civilian-protection: #a23b72;
+$purse:               #5f7d2b;
 $foundations:         #44505f;
 
 $body-bg:    $paper;
@@ -40,6 +41,7 @@ $domains: (
   "defense-arms": $defense-arms,
   "foreign-policy": $foreign-policy,
   "civilian-protection": $civilian-protection,
+  "purse": $purse,
   "foundations": $foundations
 );
 
@@ -130,6 +132,7 @@ h2 {
 .status-lapsed         { background: #a8501c; }
 .status-repealed       { background: #8c2f39; }
 .status-superseded     { background: #5c6670; }
+.status-case           { background: $ink; }
 
 .layer-badge {
   padding: 0.05rem 0.55rem;
@@ -511,6 +514,13 @@ body.graph-full-open { overflow: hidden; }
 
 .legend-item .shape-dot { border-radius: 50%; }
 
+.legend-item .shape-diamond {
+  width: 0.62rem;
+  height: 0.62rem;
+  margin: 0 0.1rem;
+  transform: rotate(45deg);
+}
+
 .legend-item .shape-triangle {
   background: transparent;
   width: 0;
@@ -834,7 +844,7 @@ table.dataTable a {
   .graph-controls .link-button { padding: 0.4rem 0.7rem; }
 
   // the top bar already has this switch; full screen covers the top bar, so it shows there
-  .graph-stage:not(.is-full) .graph-controls .inline-toggle { display: none; }
+  .graph-stage:not(.is-full) .graph-controls .inline-toggle:not(.graph-cases-toggle) { display: none; }
 
   // the details panel slides up from the bottom once something is selected
   .graph-info.has-selection {
@@ -872,4 +882,49 @@ table.dataTable a {
     #fc-prev { order: 3; }
     #fc-next { order: 4; }
   }
+}
+
+
+// "Last checked" line under a statute's current status
+.checked {
+  font-family: $font-family-sans-serif;
+  font-size: 0.82rem;
+  color: $ink-soft;
+}
+
+// Who's who entries
+.inst-meta {
+  font-family: $font-family-sans-serif;
+  font-size: 0.88rem;
+  color: $ink-soft;
+}
+
+.inst-kind-count {
+  font-family: $font-family-sans-serif;
+  color: $ink-soft;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+// timeline entries for court cases
+.tl-item.tl-case { background: #f3f4f7; }
+
+// print: a clean study packet or briefing copy -----------------------------------------
+@media print {
+  #quarto-header, .quarto-search, #quarto-margin-sidebar, #quarto-sidebar, nav.page-navigation,
+  .page-footer, .historic-switch, .inline-toggle, .read-check, .graph-controls, .graph-full-btn,
+  .html-widget, .graph-legend, .graph-pick, .unit-nav, .domain-chips, .btn-official, .fc-buttons { display: none !important; }
+
+  body { background: #ffffff; font-size: 11pt; }
+  main.content { margin: 0 !important; }
+  main.content > p, main.content section > p, main.content li { max-width: none; }
+
+  // print answers to the check-yourself questions
+  .callout.callout-titled .callout-collapse.collapse { display: block !important; height: auto !important; }
+  .callout { break-inside: avoid; }
+  .reading-card, .tl-item, .member-card { break-inside: avoid; }
+
+  // show where official links go
+  .official-links a.btn-official, .reading-links a { text-decoration: underline; }
+  a[href^="http"]:not(.cite)::after { content: " <" attr(href) ">"; font-size: 0.8em; word-break: break-all; color: $ink-soft; }
 }

@@ -1,0 +1,299 @@
+# Security assistance and cooperation programs, entered through the sections that
+# authorize them, each with a funding field (D-011). Added November 24, 2026.
+
+- id: fms
+  title: Foreign Military Sales (Arms Export Control Act, Secs. 21-22)
+  short: Foreign Military Sales
+  year: 1968
+  enacted: "1968-10-22"
+  domain: defense-arms
+  layer: provision
+  public_law: "90-629"
+  stat: "82 Stat. 1323"
+  usc: "22 U.S.C. 2761-2762"
+  usc_path: "22/2761"
+  checked: "2026-11-24"
+  status: in-force
+  status_note: In force. Enacted in the Foreign Military Sales Act of 1968, which was renamed the Arms Export Control Act in 1976.
+  summary: >-
+    The government-to-government channel for selling U.S. defense articles,
+    services, and training. The Defense Department sells from its own stocks (Sec. 21)
+    or buys from industry on the purchaser's behalf (Sec. 22), and the purchaser pays
+    the full cost, normally in advance, so the articles themselves need no
+    appropriation.
+  provisions:
+    - "Sec. 21(a): sales from Defense Department stocks at actual value or replacement cost; services at full cost."
+    - "Sec. 21(c): U.S. personnel performing services under a sale may not perform duties of a combatant nature, with reporting to Congress if hostilities endanger them."
+    - "Sec. 21(e): purchasers pay charges that recover the administrative costs of the program."
+    - "Sec. 22(a): procurement for a purchaser on its dependable undertaking to pay the full contract cost."
+    - "Major sales above dollar thresholds require notice to Congress under Sec. 36(b) of the Arms Export Control Act, and a joint resolution can block them."
+  significance: >-
+    FMS is how most major U.S. weapons reach foreign governments, and grant money
+    from [[fmf]] is usually spent through it. Because the State Department approves
+    each case and the Defense Department executes it, oversight runs through the
+    [[aeca-1976]] notification process rather than through appropriations.
+  tags: [arms sales, security assistance, Defense Security Cooperation Agency, Title 22]
+  funding:
+    account: "Foreign Military Sales Trust Fund, paid by purchasers rather than appropriations"
+    agency: "the Defense Security Cooperation Agency and the military departments, with the State Department approving each sale"
+    committees: "House Foreign Affairs and Senate Foreign Relations, which receive sales notifications under Sec. 36(b)"
+  sources:
+    - label: "GovInfo, 22 U.S.C. 2761 (sales from stocks)"
+      url: "https://www.govinfo.gov/link/uscode/22/2761?link-type=html"
+    - label: "GovInfo, 22 U.S.C. 2762 (procurement for cash sales)"
+      url: "https://www.govinfo.gov/link/uscode/22/2762?link-type=html"
+
+- id: fmf
+  title: Foreign Military Financing (Arms Export Control Act, Sec. 23)
+  short: Foreign Military Financing
+  year: 1968
+  enacted: "1968-10-22"
+  domain: defense-arms
+  layer: provision
+  public_law: "90-629"
+  stat: "82 Stat. 1324"
+  usc: "22 U.S.C. 2763"
+  checked: "2026-11-24"
+  status: in-force
+  status_note: In force. Funded each year in Title IV of the State-foreign operations appropriations act. Check current status.
+  summary: >-
+    The main U.S. program that pays for foreign governments' purchases of American
+    weapons, services, and training. Section 23 of the Arms Export Control Act
+    authorizes the President to finance partners' procurement; the annual
+    appropriations act provides the money, mostly as grants, and partners usually
+    spend it through [[fms]].
+  provisions:
+    - "Sec. 23(a): authority to finance procurement of defense articles, defense services, and design and construction services by friendly countries and international organizations."
+    - "Sec. 23(a): limited authority to finance commercial leases of defense articles for Israel and Egypt."
+    - "Sec. 23(b)-(c): for loans, repayment within 12 years unless a statute allows longer, and interest rules."
+    - "Annual appropriations add conditions, including notice to the Appropriations Committees before committing funds for major defense equipment beyond what was justified."
+    - "Recipients remain subject to [[leahy-laws]] vetting and the [[sec7008-coup|coup restriction]]."
+  significance: >-
+    FMF is the largest U.S. security assistance grant program, and a few partners,
+    above all Israel and Egypt, have historically received most of it. Because it is
+    State Department money spent on Defense Department sales, it sits at the center
+    of the Title 22 security assistance system, in contrast to the Defense
+    Department's own [[seccoop-2016|Title 10 security cooperation]] authorities.
+    Country allocations, earmarks, and conditions in the appropriations act are
+    where Congress shapes it.
+  tags: [security assistance, arms sales, grants, Title 22, Defense Security Cooperation Agency]
+  funding:
+    account: "Foreign Military Financing Program"
+    where: "Title IV (International Security Assistance)"
+    act: sfops-approps-annual
+    agency: "the State Department, which sets policy and country allocations, and the Defense Security Cooperation Agency, which administers the funds and the purchases"
+    committees: "authorizing, House Foreign Affairs and Senate Foreign Relations; appropriations, the House and Senate subcommittees for State and foreign operations"
+  sources:
+    - label: "GovInfo, 22 U.S.C. 2763"
+      url: "https://www.govinfo.gov/link/uscode/22/2763?link-type=html"
+    - label: "GovInfo, Pub. L. 119-75, Division F, Title IV (FY2026 appropriation)"
+      url: "https://www.govinfo.gov/link/statute/140/531"
+
+- id: imet
+  title: International Military Education and Training (Foreign Assistance Act, Sec. 541)
+  short: IMET
+  year: 1976
+  enacted: "1976-06-30"
+  domain: aid-sanctions
+  layer: provision
+  public_law: "94-329"
+  stat: "90 Stat. 732"
+  usc: "22 U.S.C. 2347 and following"
+  usc_path: "22/2347"
+  checked: "2026-11-24"
+  status: in-force
+  status_note: In force. Funded each year in Title IV of the State-foreign operations appropriations act. Check current status.
+  summary: >-
+    Grant-funded professional military education and training, in the United States
+    and abroad, for foreign military personnel and related civilians. Added to the
+    [[faa-1961]] in 1976, it aims at professionalization, civilian control of the
+    military, and respect for human rights as well as technical skill, and it builds
+    long-term ties with future military leaders.
+  provisions:
+    - "Sec. 541(a): the President may furnish military education and training to military and related civilian personnel of foreign countries, on a reimbursable basis whenever feasible."
+    - "Civilians, including officials outside defense ministries, legislators, and nongovernmental participants, qualify when training serves defense resource management, civilian control of the military, counternarcotics cooperation, or military justice and human rights (often called Expanded IMET)."
+    - "Training may be at U.S. military schools other than the service academies, in special courses, or through orientation visits."
+    - "Sec. 541(b): countries that buy training with FMF are charged a rate comparable to grant IMET."
+    - "Recipient units and individuals are subject to [[leahy-laws]] vetting."
+  significance: >-
+    IMET is small in dollars but large in reach: it puts foreign officers through
+    U.S. staff colleges and war colleges, and its graduates often rise to senior
+    command. It is also among the first programs suspended when a partner's
+    military seizes power under the [[sec7008-coup|coup restriction]] and among the
+    first restored, which makes it a frequent subject of country-specific
+    conditions.
+  tags: [security assistance, training, professional military education, human rights, Title 22]
+  funding:
+    account: "International Military Education and Training"
+    where: "Title IV (International Security Assistance)"
+    act: sfops-approps-annual
+    agency: "the State Department, which sets country allocations, and the Defense Department, which runs the training through the Defense Security Cooperation Agency and the military departments"
+    committees: "authorizing, House Foreign Affairs and Senate Foreign Relations; appropriations, the House and Senate subcommittees for State and foreign operations"
+  sources:
+    - label: "GovInfo, 22 U.S.C. 2347"
+      url: "https://www.govinfo.gov/link/uscode/22/2347?link-type=html"
+    - label: "GovInfo, Pub. L. 119-75, Division F, Title IV (FY2026 appropriation)"
+      url: "https://www.govinfo.gov/link/statute/140/531"
+
+- id: pko-551
+  title: Peacekeeping Operations (Foreign Assistance Act, Sec. 551)
+  short: Peacekeeping Operations
+  year: 1978
+  enacted: "1978-09-26"
+  domain: aid-sanctions
+  layer: provision
+  public_law: "95-384"
+  stat: "92 Stat. 736"
+  usc: "22 U.S.C. 2348"
+  checked: "2026-11-24"
+  status: in-force
+  status_note: In force. Funded each year in Title IV of the State-foreign operations appropriations act. Check current status.
+  summary: >-
+    Authority to assist friendly countries and international organizations with
+    peacekeeping operations and other programs that serve U.S. national security
+    interests. The account pays for missions outside UN assessed budgets and for
+    building partners' capacity to deploy peacekeepers; U.S. assessed dues for UN
+    peacekeeping come from a separate State Department account.
+  provisions:
+    - "Sec. 551: assistance, on terms the President determines, for peacekeeping operations and other programs in furtherance of U.S. national security interests."
+    - "May reimburse the Defense Department for support under Sec. 7 of the [[unpa-1945]], up to $5 million a year unless more is authorized."
+    - "The annual appropriation sets amounts and adds conditions, including [[leahy-laws]] vetting and the [[sec7008-coup|coup restriction]]."
+  significance: >-
+    Peacekeeping Operations is the State Department's main tool for supporting
+    regional missions and training foreign peacekeepers, which places it between
+    foreign aid and security cooperation. It shows the Title 22 alternative to
+    deploying U.S. forces: paying and equipping others to keep the peace, under
+    foreign affairs committee oversight.
+  tags: [peacekeeping, security assistance, United Nations, Africa, Title 22]
+  funding:
+    account: "Peacekeeping Operations"
+    where: "Title IV (International Security Assistance)"
+    act: sfops-approps-annual
+    agency: "the State Department (Bureau of Political-Military Affairs)"
+    committees: "authorizing, House Foreign Affairs and Senate Foreign Relations; appropriations, the House and Senate subcommittees for State and foreign operations"
+  sources:
+    - label: "GovInfo, 22 U.S.C. 2348"
+      url: "https://www.govinfo.gov/link/uscode/22/2348?link-type=html"
+    - label: "GovInfo, Pub. L. 119-75, Division F, Title IV (FY2026 appropriation)"
+      url: "https://www.govinfo.gov/link/statute/140/530"
+
+- id: pda-506
+  title: Presidential Drawdown Authority (Foreign Assistance Act, Sec. 506)
+  short: Presidential drawdown (Sec. 506)
+  year: 1961
+  enacted: "1961-09-04"
+  domain: defense-arms
+  layer: provision
+  public_law: "87-195"
+  stat: "75 Stat. 437"
+  usc: "22 U.S.C. 2318"
+  checked: "2026-11-24"
+  status: in-force
+  status_note: In force. The annual caps can be raised by statute, as supplemental appropriations acts for Ukraine did in 2022 through 2024. Check current status.
+  summary: >-
+    Lets the President send weapons, equipment, services, and training from existing
+    Defense Department stocks to a foreign country in an emergency or for listed
+    purposes, without a new appropriation. Replacing what is drawn down takes
+    separate appropriations, which is why large drawdowns are usually paired with
+    supplemental funding.
+  provisions:
+    - "Sec. 506(a)(1): up to $100 million a year in defense articles, services, and training for an unforeseen emergency that cannot be met under the Arms Export Control Act or other law."
+    - "Sec. 506(a)(2): up to $200 million a year, from any agency, for counternarcotics, disaster relief, antiterrorism, nonproliferation, refugee assistance, and cooperation with Vietnam, Cambodia, and Laos on U.S. personnel missing from the Vietnam War."
+    - "Each drawdown rests on a presidential determination reported to Congress."
+  significance: >-
+    Drawdown is the fastest way to arm a partner because the equipment already
+    exists. It carried most early U.S. military aid to Ukraine after February 2022,
+    and its use there raised standing questions about the pace of replenishment,
+    the effect on U.S. readiness, and how Congress tracks value drawn from stocks.
+    Its contrast is [[usai-2016]], which buys new equipment instead.
+  tags: [security assistance, drawdown, emergency, Ukraine, Title 22]
+  funding:
+    account: "none for the articles, which come from existing stocks; replacement is funded later"
+    where: "replacement through Defense appropriations, often in supplementals"
+    act: defense-approps-annual
+    agency: "the Defense Department, which executes drawdowns, with the State Department coordinating policy"
+    committees: "authorizing, House Foreign Affairs and Senate Foreign Relations; replacement funds, the House and Senate Defense appropriations subcommittees"
+  sources:
+    - label: "GovInfo, 22 U.S.C. 2318"
+      url: "https://www.govinfo.gov/link/uscode/22/2318?link-type=html"
+
+- id: eda-516
+  title: Excess Defense Articles (Foreign Assistance Act, Sec. 516)
+  short: Excess Defense Articles
+  year: 1986
+  enacted: "1986-11-14"
+  domain: defense-arms
+  layer: provision
+  public_law: "99-661"
+  stat: "100 Stat. 3960"
+  usc: "22 U.S.C. 2321j"
+  checked: "2026-11-24"
+  status: in-force
+  status_note: In force. Added to the Foreign Assistance Act by the FY1987 defense authorization and amended many times since.
+  summary: >-
+    Allows the President to transfer surplus U.S. military equipment to eligible
+    countries, by grant or sale, from existing Defense Department stocks. Transfers
+    may not use procurement funds and may not harm U.S. readiness or the defense
+    industrial base.
+  provisions:
+    - "Sec. 516(a): transfers to countries justified in the annual congressional presentation for military assistance, or separately justified to Congress."
+    - "Sec. 516(b): conditions, including drawing only from existing stocks, no use of procurement funds, no adverse effect on readiness or the industrial base, and a preference for grant over sale only where justified."
+    - "Sec. 516(b)(2): treatment of Greece and Turkey consistent with earlier allocations."
+    - "Sec. 516(c): grant transfers may be made without cost to the recipient."
+  significance: >-
+    EDA turns retired U.S. equipment into partner capability at little cost, and it
+    is often the first option for smaller partners. Transfers still pass through the
+    same policy screens as other security assistance, which links it to [[fms]],
+    [[fmf]], and the notification rules in the [[aeca-1976]].
+  tags: [security assistance, excess defense articles, Title 22]
+  funding:
+    account: "none; articles come from existing stocks and procurement funds may not be used"
+    agency: "the Defense Security Cooperation Agency, with State Department approval"
+    committees: "House Foreign Affairs and Senate Foreign Relations"
+  sources:
+    - label: "GovInfo, 22 U.S.C. 2321j"
+      url: "https://www.govinfo.gov/link/uscode/22/2321j?link-type=html"
+
+- id: usai-2016
+  title: Ukraine Security Assistance Initiative (FY2016 NDAA, Sec. 1250)
+  short: Ukraine Security Assistance Initiative
+  year: 2015
+  enacted: "2015-11-25"
+  domain: defense-arms
+  layer: provision
+  public_law: "114-92"
+  stat: "129 Stat. 1068"
+  usc_titles: [10]
+  checked: "2026-11-24"
+  status: in-force
+  status_note: >-
+    In force through December 31, 2029, after Sec. 1243 of the FY2026 NDAA
+    (Pub. L. 119-60) extended it and authorized amounts for fiscal years 2026 and
+    2027. Check current status.
+  summary: >-
+    The Defense Department's authority to provide security assistance and
+    intelligence support, including training, equipment, and logistics, to Ukraine's
+    military and other security forces. Unlike [[pda-506|drawdown]] from existing
+    stocks, the initiative buys new equipment from industry, so deliveries take
+    longer but U.S. inventories are not reduced.
+  provisions:
+    - "Sec. 1250(a): security assistance and intelligence support to Ukraine's military and other security forces."
+    - "Sec. 1250(f): amounts authorized year by year, most recently for fiscal years 2026 and 2027."
+    - "Sec. 1250(h): termination date, now December 31, 2029."
+    - "Sec. 1250(k), added in 2025: equipment bought for Ukraine may be taken into U.S. stocks only in listed circumstances, and must then be replaced for Ukraine."
+  significance: >-
+    The initiative is the Title 10, appropriations-funded path for aiding Ukraine,
+    in contrast to [[pda-506|presidential drawdown]] under Title 22. It has been
+    extended and reshaped in nearly every [[ndaa-annual|NDAA]] since 2015, which
+    makes it a standing vehicle for congressional direction on Ukraine policy.
+  tags: [security cooperation, Ukraine, Russia, Title 10, Europe]
+  funding:
+    account: "amounts appropriated to the Defense Department for the initiative"
+    agency: "the Defense Department"
+    committees: "authorizing, House and Senate Armed Services; appropriations, the House and Senate Defense subcommittees"
+    note: "Funds have come through Defense appropriations acts and Ukraine supplemental appropriations; the FY2026 Defense appropriations act does not name the initiative."
+  sources:
+    - label: "GovInfo, Pub. L. 114-92 (FY2016 NDAA), Sec. 1250"
+      url: "https://www.govinfo.gov/link/statute/129/1068"
+    - label: "GovInfo, Pub. L. 119-60 (FY2026 NDAA), Sec. 1243"
+      url: "https://www.govinfo.gov/link/statute/139/1102"

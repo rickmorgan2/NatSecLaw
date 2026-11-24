@@ -41,13 +41,15 @@ It draws the line between informing foreign publics and propagandizing Americans
 
 In force as amended by the Smith-Mundt Modernization Act of 2012 (FY2013 National Defense Authorization Act, section 1078).
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Built upon by.** [NDAA (annual)](ndaa-annual.qmd).
 - **Codified in.** [Title 22 U.S.C.](title22-usc.qmd).
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (further reading); [Unit 9: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (further reading).
+- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (further reading); [Unit 10: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (further reading).
 
 ## Connections
 

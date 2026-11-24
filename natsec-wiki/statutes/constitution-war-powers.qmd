@@ -36,12 +36,20 @@ The standard framework for disputes is Justice Jackson's concurrence in Youngsto
 
 In force. Its allocation of war and foreign affairs powers is settled more by practice than by court rulings.
 
+[Last checked November 10, 2026.]{.checked}
+
+## In the courts
+
+- [Curtiss-Wright](../cases/curtiss-wright-1936.qmd) (1936). Treated the foreign affairs power as an attribute of national sovereignty, supporting broad delegations to the President.
+- [Youngstown](../cases/youngstown-1952.qmd) (1952). Held that the Commander in Chief and executive powers did not authorize a domestic seizure of private property without Congress.
+- [Zivotofsky v. Kerry](../cases/zivotofsky-2015.qmd) (2015). Held the recognition power is exclusively the President's, and rejected a general reading of Curtiss-Wright's 'sole organ' language.
+
 ## Where it sits
 
 - **Layer.** Constitution. The grants and limits every statute below draws on: Congress's war, money, and military powers in Article I and the President's command and foreign affairs powers in Article II. ([How the layers work](../study/index.qmd#the-authority-stack))
-- **Built upon by.** [War Powers Resolution](wpr-1973.qmd), [Militia Acts of 1792](militia-acts-1792.qmd), [UCMJ](ucmj-1950.qmd), [Declarations of War](declarations-of-war.qmd), [Title 10 U.S.C.](title10-usc.qmd).
+- **Built upon by.** [War Powers Resolution](wpr-1973.qmd), [Militia Acts of 1792](militia-acts-1792.qmd), [UCMJ](ucmj-1950.qmd), [Declarations of War](declarations-of-war.qmd), [Title 10 U.S.C.](title10-usc.qmd), [Defense appropriations (annual)](defense-approps-annual.qmd), [State-foreign ops appropriations](sfops-approps-annual.qmd), [Antideficiency Act](antideficiency.qmd).
 - **Era.** Founding and the early republic ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 1: Where the power comes from](../study/units/foundations.qmd) (core reading); [Unit 3: Deciding to use force](../study/units/war-powers.qmd) (further reading).
+- **Study.** [Unit 1: Where the power comes from](../study/units/foundations.qmd) (core reading); [Unit 3: Deciding to use force](../study/units/war-powers.qmd) (further reading); [Unit 4: The power of the purse](../study/units/purse.qmd) (further reading).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Venezuela WPR; Iran WPR; No Funds for Iran War Act; Lawful orders statement. [Rep. Sara Jacobs](../members/jacobs.qmd): Iran WPR; Deployed constituents.
 
 ## Connections
@@ -54,6 +62,9 @@ In force. Its allocation of war and foreign affairs powers is settled more by pr
 | related to | [Case-Zablocki Act](case-zablocki-1972.qmd){.subj} | Addresses executive agreements made outside the treaty clause. |
 | relied on by | [Declarations of War](declarations-of-war.qmd){.subj} | Exercise of the power to declare war, Art. I, Sec. 8, cl. 11. |
 | relied on by | [Title 10 U.S.C.](title10-usc.qmd){.subj} | Exercises the powers to raise armies, maintain a navy, and regulate the forces. |
+| relied on by | [Defense appropriations (annual)](defense-approps-annual.qmd){.subj} | Exercises the Appropriations Clause and Congress's power to raise and support armies, with army appropriations limited to two years. |
+| relied on by | [State-foreign ops appropriations](sfops-approps-annual.qmd){.subj} | Exercises the Appropriations Clause for foreign affairs and foreign assistance. |
+| relied on by | [Antideficiency Act](antideficiency.qmd){.subj} | Enforces the requirement that no money be drawn from the Treasury except under appropriations made by law. |
 
 [See this statute in the knowledge graph](../graph.html?focus=constitution-war-powers)
 

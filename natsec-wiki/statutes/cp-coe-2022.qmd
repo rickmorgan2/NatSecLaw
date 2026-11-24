@@ -42,13 +42,16 @@ Enacted as Sec. 1082 of the FY2023 [defense authorization](ndaa-annual.qmd), it 
 
 In force. The center was established under the statute. A June 2026 analysis of a Defense Department Inspector General evaluation reported that its staff had fallen from nearly 40 to seven and that senior Defense officials had asked to eliminate it, which would require Congress to change the statute. Check current status.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Targeted provision. Single sections that grant a narrow authority, impose a condition, or require a report, often enacted in a defense authorization. Small in text, often decisive in practice. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [NDAA (annual)](ndaa-annual.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd).
 - **Era.** Sanctions, cyber, and great powers ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 11: Civilian harm and the conduct of operations](../study/units/civilian-harm.qmd) (core reading).
+- **Study.** [Unit 12: Civilian harm and the conduct of operations](../study/units/civilian-harm.qmd) (core reading).
+- **Who's involved.** [Civilian Protection Center](../whos-who.qmd#cp-coe).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Armed Services; CHMR compliance letter; Civilian Harm Transparency Act. [Rep. Sara Jacobs](../members/jacobs.qmd): Armed Services; CHMR compliance letter.
 
 ## Connections

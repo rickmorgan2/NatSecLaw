@@ -42,6 +42,13 @@ It was the first statutory limit on post-2001 interrogation practice. Its jurisd
 
 In force as amended. Its limits on habeas review were narrowed by the Supreme Court in Hamdan v. Rumsfeld (2006) and Boumediene v. Bush (2008).
 
+[Last checked November 10, 2026.]{.checked}
+
+## In the courts
+
+- [Hamdan](../cases/hamdan-2006.qmd) (2006). Held its bar on habeas jurisdiction did not reach cases already pending.
+- [Boumediene](../cases/boumediene-2008.qmd) (2008). Held its review procedures were not an adequate substitute for habeas corpus.
+
 ## Where it sits
 
 - **Layer.** Targeted provision. Single sections that grant a narrow authority, impose a condition, or require a report, often enacted in a defense authorization. Small in text, often decisive in practice. ([How the layers work](../study/index.qmd#the-authority-stack))
@@ -49,7 +56,7 @@ In force as amended. Its limits on habeas review were narrowed by the Supreme Co
 - **Built upon by.** [Military Commissions Act](mil-commissions-2006.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd).
 - **Era.** After September 11 ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 11: Civilian harm and the conduct of operations](../study/units/civilian-harm.qmd) (core reading).
+- **Study.** [Unit 12: Civilian harm and the conduct of operations](../study/units/civilian-harm.qmd) (core reading).
 
 ## Connections
 

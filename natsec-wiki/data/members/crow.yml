@@ -35,7 +35,7 @@ committees:
       special operations forces, defense intelligence, counterterrorism, and
       related science and technology programs.
     code_titles: [10, 32]
-    statutes: [ndaa-annual, title10-usc, goldwater-nichols-1986, nunn-cohen-1986,
+    statutes: [ndaa-annual, title10-usc, usai-2016, goldwater-nichols-1986, nunn-cohen-1986,
                sec127e-2004, sec394-cyber-2018, seccoop-2016, leahy-laws,
                reserve-mobilization, ucmj-1950, dpa-1950, wpr-1973, aumf-2001,
                civcas-policy-2018, cp-coe-2022]
@@ -95,7 +95,7 @@ initiatives:
       Introduced a bill to prohibit federal funding for military action against
       Iran, using Congress's appropriations power as the check instead of the
       War Powers Resolution's procedures.
-    statutes: [constitution-war-powers, wpr-1973]
+    statutes: [constitution-war-powers, wpr-1973, defense-approps-annual, case-church-1973]
     source:
       label: "Rep. Jason Crow's office, press releases (May 6, 2026)"
       url: "https://crow.house.gov/news/press-releases"

@@ -41,12 +41,15 @@ Not to be confused with the 2018 law that created the agency with the same initi
 
 Running on short extensions. The original ten-year term ended September 30, 2025 and the law lapsed twice before being extended through September 30, 2026. A continuing resolution then carried it into December 2026. A long-term renewal is tied to the FY2027 defense bill. Check current status.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [Homeland Security Act](hsa-2002.qmd).
 - **Era.** Sanctions, cyber, and great powers ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 6: Surveillance law](../study/units/surveillance.qmd) (further reading).
+- **Study.** [Unit 7: Surveillance law](../study/units/surveillance.qmd) (further reading).
+- **Who's involved.** [DHS](../whos-who.qmd#dhs).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Intelligence.
 
 ## Connections

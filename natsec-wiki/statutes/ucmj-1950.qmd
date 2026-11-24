@@ -42,6 +42,12 @@ It is the enforcement mechanism behind civilian control and the law of war insid
 
 In force. Heavily revised by the Military Justice Act of 2016 (FY2017 defense authorization) and by the FY2022 defense authorization, which moved prosecution decisions for sexual assault, murder, and other covered offenses from commanders to independent special trial counsel, effective December 2023.
 
+[Last checked November 10, 2026.]{.checked}
+
+## In the courts
+
+- [Hamdan](../cases/hamdan-2006.qmd) (2006). Held the commissions failed the UCMJ's requirement that their procedures be uniform with courts-martial as far as practicable.
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
@@ -49,7 +55,7 @@ In force. Heavily revised by the Military Justice Act of 2016 (FY2017 defense au
 - **Built upon by.** [NDAA (annual)](ndaa-annual.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd).
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (core reading); [Unit 11: Civilian harm and the conduct of operations](../study/units/civilian-harm.qmd) (further reading).
+- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (core reading); [Unit 12: Civilian harm and the conduct of operations](../study/units/civilian-harm.qmd) (further reading).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Armed Services; Lawful orders statement; Veterans. [Rep. Sara Jacobs](../members/jacobs.qmd): Armed Services; Military families.
 
 ## Connections

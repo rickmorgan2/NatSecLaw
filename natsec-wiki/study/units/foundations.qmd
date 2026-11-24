@@ -70,6 +70,40 @@ Bars private citizens from corresponding with a foreign government, without auth
 [Read it: [enacted text](https://www.govinfo.gov/link/statute/1/613), [current code](https://www.govinfo.gov/link/uscode/18/953?link-type=html)]{.reading-links} <label class="read-check"><input type="checkbox" data-read="logan-1799"> I have read this</label>
 :::
 
+### Court cases
+
+::: {.reading-card .case-card .domain-foundations}
+[Curtiss-Wright](../../cases/curtiss-wright-1936.qmd) [299 U.S. 304 (1936)]{.reading-year} [Court case]{.layer-badge}
+
+Upheld the delegation. Because foreign affairs powers rest on national sovereignty rather than on the Constitution's specific grants alone, Congress may give the President broader discretion abroad than at home.
+
+[Read it: [opinion](https://www.govinfo.gov/content/pkg/USREPORTS-299/pdf/USREPORTS-299-304.pdf)]{.reading-links} <label class="read-check"><input type="checkbox" data-read="curtiss-wright-1936"> I have read this</label>
+:::
+
+::: {.reading-card .case-card .domain-foundations}
+[Youngstown](../../cases/youngstown-1952.qmd) [343 U.S. 579 (1952)]{.reading-year} [Court case]{.layer-badge}
+
+Held the seizure unlawful. No statute authorized it, and the President's powers as Commander in Chief and chief executive did not extend to taking private property at home to settle a labor dispute; that was lawmaking reserved to Congress.
+
+[Read it: [opinion](https://www.govinfo.gov/content/pkg/USREPORTS-343/pdf/USREPORTS-343-579.pdf)]{.reading-links} <label class="read-check"><input type="checkbox" data-read="youngstown-1952"> I have read this</label>
+:::
+
+::: {.reading-card .case-card .domain-foundations}
+[INS v. Chadha](../../cases/chadha-1983.qmd) [462 U.S. 919 (1983)]{.reading-year} [Court case]{.layer-badge}
+
+No. Action with the effect of law must pass both houses and be presented to the President.
+
+[Read it: [opinion](https://www.govinfo.gov/content/pkg/USREPORTS-462/pdf/USREPORTS-462-919.pdf)]{.reading-links} <label class="read-check"><input type="checkbox" data-read="chadha-1983"> I have read this</label>
+:::
+
+::: {.reading-card .case-card .domain-foundations}
+[Zivotofsky v. Kerry](../../cases/zivotofsky-2015.qmd) [576 U.S. 1 (2015)]{.reading-year} [Court case]{.layer-badge}
+
+No. The power to recognize foreign states and governments belongs to the President alone, and Sec. 214(d) of the Foreign Relations Authorization Act, Fiscal Year 2003, which required the listing, unconstitutionally infringed it.
+
+[Read it: [opinion](https://www.govinfo.gov/content/pkg/USREPORTS-576/pdf/USREPORTS-576-1.pdf)]{.reading-links} <label class="read-check"><input type="checkbox" data-read="zivotofsky-2015"> I have read this</label>
+:::
+
 ## How they connect
 
 Core and further readings with the relationships recorded between them. Select a statute to highlight its links and get a link to its page; select a line to see why the two laws connect.
@@ -102,6 +136,24 @@ cat(mini_graph_legend(unit_ids, load_statutes(), load_edges()))
 
 **Declaration of war**
 :   A joint resolution or act under Article I declaring that a state of war exists. Congress has passed eleven, in five wars, the last in 1942.
+
+## Issues for Congress
+
+Questions that recur in oversight and legislation, with the main arguments on each side. There is no answer key; they are for discussion and briefing preparation.
+
+### 1. Should Congress return to formal declarations of war, or keep relying on authorizations for use of force?
+
+Congress has not declared war since 1942 ([Declarations of War](../../statutes/declarations-of-war.qmd)); statutory authorizations now do that work.
+
+- Proponents of declarations argue they force a clear, accountable decision and carry legal consequences, such as triggering the [Alien Enemies Act](../../statutes/alien-enemies-1798.qmd), that authorizations do not.
+- Others argue declarations fit wars between states, not operations against non-state groups, and that tailored authorizations can set purpose, scope, and duration more precisely.
+
+### 2. How much deference should Congress give the executive in foreign affairs?
+
+[Curtiss-Wright](../../cases/curtiss-wright-1936.qmd) and [Zivotofsky v. Kerry](../../cases/zivotofsky-2015.qmd) point in different directions on the reach of the President's foreign affairs power.
+
+- Those favoring deference cite the need for speed, secrecy, and a single voice abroad, and the President's recognition and diplomatic powers.
+- Those favoring a stronger congressional role cite Congress's Article I powers over war, commerce, and money, and [Justice Jackson's point](../../cases/youngstown-1952.qmd) that presidential power is weakest when it runs against Congress.
 
 ## Check yourself
 

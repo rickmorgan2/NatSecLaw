@@ -41,13 +41,20 @@ Its use has widened from munitions to pandemic supplies, critical minerals, and 
 
 Most authorities carry a sunset. They were extended from September 30, 2025 to January 30, 2026, then to September 30, 2026 by the FY2026 defense authorization. Whether they were extended again in fall 2026 was not confirmed at this wiki's last review. Section 721 (foreign investment review) is permanent. Check current status.
 
+[Last checked November 10, 2026.]{.checked}
+
+## In the courts
+
+- [Youngstown](../cases/youngstown-1952.qmd) (1952). Its property-taking provisions in Title II did not support the seizure; the government conceded their conditions were not met, and the concurrences found no implied seizure power in the act.
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Built upon by.** [FIRRMA (CFIUS)](firrma-2018.qmd), [NDAA (annual)](ndaa-annual.qmd).
 - **Codified in.** [Title 50 U.S.C.](title50-usc.qmd).
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (core reading); [Unit 10: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (further reading).
+- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (core reading); [Unit 11: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (further reading).
+- **Who's involved.** [Senate Banking](../whos-who.qmd#senate-banking), [CFIUS](../whos-who.qmd#cfius).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Armed Services; Aerospace industry. [Rep. Sara Jacobs](../members/jacobs.qmd): Defense industry and research.
 
 ## Connections

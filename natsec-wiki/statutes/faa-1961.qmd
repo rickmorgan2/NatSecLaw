@@ -42,14 +42,17 @@ Most later aid and security assistance law is written as an amendment or compani
 
 In force. It has not had a comprehensive reauthorization since 1985, so foreign aid policy is mostly set through annual appropriations acts.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [Mutual Security Act](mutual-security-1951.qmd).
-- **Built upon by.** [Hughes-Ryan Amendment](hughes-ryan-1974.qmd), [Leahy Laws](leahy-laws.qmd), [Global Fragility Act](gfa-2019.qmd), [Symington-Glenn Amendments](symington-glenn.qmd), [Helms-Burton Act](helms-burton-1996.qmd).
+- **Built upon by.** [Hughes-Ryan Amendment](hughes-ryan-1974.qmd), [Leahy Laws](leahy-laws.qmd), [Global Fragility Act](gfa-2019.qmd), [Symington-Glenn Amendments](symington-glenn.qmd), [Helms-Burton Act](helms-burton-1996.qmd), [State-foreign ops appropriations](sfops-approps-annual.qmd), [IMET](imet.qmd), [Peacekeeping Operations](pko-551.qmd), [Presidential drawdown (Sec. 506)](pda-506.qmd), [Excess Defense Articles](eda-516.qmd).
 - **Codified in.** [Title 22 U.S.C.](title22-usc.qmd).
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 9: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (core reading).
+- **Study.** [Unit 10: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (core reading).
+- **Who's involved.** [HFAC](../whos-who.qmd#hfac), [SFRC](../whos-who.qmd#sfrc).
 - **Member lenses.** [Rep. Sara Jacobs](../members/jacobs.qmd): Foreign Affairs; Security Sector Compacts Act.
 
 ## Connections
@@ -67,6 +70,12 @@ In force. It has not had a comprehensive reauthorization since 1985, so foreign 
 | amended by | [Symington-Glenn Amendments](symington-glenn.qmd){.subj} | Originally Secs. 669 and 670 of the Foreign Assistance Act. |
 | relied on by | [Helms-Burton Act](helms-burton-1996.qmd){.subj} | The embargo also rests on Sec. 620(a) of the Foreign Assistance Act. |
 | related to | [Security Cooperation (Ch. 16)](seccoop-2016.qmd){.subj} | Title 10 security cooperation runs alongside Title 22 security assistance. |
+| relied on by | [State-foreign ops appropriations](sfops-approps-annual.qmd){.subj} | Provides the money for programs the Foreign Assistance Act authorizes; many accounts are named for FAA sections. |
+| constrained by | [Coup restriction (Sec. 7008)](sec7008-coup.qmd){.subj} | Cuts off assistance funded under the act to a government installed by military coup or decree. |
+| includes | [IMET](imet.qmd){.subj} | Chapter 5 of Part II of the Foreign Assistance Act, added in 1976. |
+| includes | [Peacekeeping Operations](pko-551.qmd){.subj} | Chapter 6 of Part II of the Foreign Assistance Act, added in 1978. |
+| includes | [Presidential drawdown (Sec. 506)](pda-506.qmd){.subj} | Sec. 506 of the Foreign Assistance Act. |
+| includes | [Excess Defense Articles](eda-516.qmd){.subj} | Sec. 516 of the Foreign Assistance Act, added in 1986. |
 
 [See this statute in the knowledge graph](../graph.html?focus=faa-1961)
 

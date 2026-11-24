@@ -42,6 +42,8 @@ The title of the U.S. Code that collects the laws on war powers, emergency power
 
 In force. It is not positive law: it is an editorial compilation of separate statutes, so the underlying acts control. Many sections were renumbered in 2013 and the former appendix was folded into the main title in 2015.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Statutes in this wiki codified here
 
 | Statute | Year | Citation | Status |
@@ -58,6 +60,7 @@ In force. It is not positive law: it is an editorial compilation of separate sta
 | [IEEPA](ieepa-1977.qmd){.subj} | 1977 | 50 U.S.C. 1701 et seq. | In force |
 | [FISA](fisa-1978.qmd){.subj} | 1978 | 50 U.S.C. 1801 et seq. | Partly expired |
 | [Intel Oversight Act](intel-oversight-1980.qmd){.subj} | 1980 | 50 U.S.C. 3091-3093 | In force |
+| [Boland Amendments](boland-1982.qmd){.subj} | 1982 | NA | Lapsed |
 | [1991 Gulf War AUMF](aumf-gulf-1991.qmd){.subj} | 1991 | 50 U.S.C. 1541 note | Repealed |
 | [Nunn-Lugar Act](nunn-lugar-1991.qmd){.subj} | 1991 | 22 U.S.C. 2551 note; 50 U.S.C. 3701 et seq. | In force |
 | [Iran Sanctions Act](iran-sanctions-1996.qmd){.subj} | 1996 | 50 U.S.C. 1701 note | In force |

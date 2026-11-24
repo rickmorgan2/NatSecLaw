@@ -40,11 +40,14 @@ Little used for decades, it has been the basis for tariffs on steel, aluminum, a
 
 In force and heavily used. It was not affected by the Supreme Court's February 2026 ruling that IEEPA does not authorize tariffs.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Targeted provision. Single sections that grant a narrow authority, impose a condition, or require a report, often enacted in a defense authorization. Small in text, often decisive in practice. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 4: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (further reading); [Unit 10: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (further reading).
+- **Study.** [Unit 5: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (further reading); [Unit 11: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (further reading).
+- **Who's involved.** [BIS](../whos-who.qmd#bis).
 
 ## Connections
 

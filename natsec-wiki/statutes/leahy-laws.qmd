@@ -42,13 +42,15 @@ They operate at the level of the unit, which lets the United States keep working
 
 In force. The State Department version is Section 620M of the Foreign Assistance Act; the Defense Department version was made permanent in Title 10 in 2014.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Targeted provision. Single sections that grant a narrow authority, impose a condition, or require a report, often enacted in a defense authorization. Small in text, often decisive in practice. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Builds on.** [Foreign Assistance Act](faa-1961.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd), [Title 22 U.S.C.](title22-usc.qmd).
 - **Era.** End of the Cold War ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 9: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (core reading); [Unit 10: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (further reading); [Unit 11: Civilian harm and the conduct of operations](../study/units/civilian-harm.qmd) (core reading).
+- **Study.** [Unit 10: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (core reading); [Unit 11: Arms transfers, export controls, and investment screening](../study/units/arms-transfers.qmd) (further reading); [Unit 12: Civilian harm and the conduct of operations](../study/units/civilian-harm.qmd) (core reading).
 - **Member lenses.** [Rep. Jason Crow](../members/crow.qmd): Armed Services; Civilian Harm in Partnerships Act; Civilians in Conflict Caucus. [Rep. Sara Jacobs](../members/jacobs.qmd): Foreign Affairs; Armed Services; Security Sector Compacts Act; Civilian Harm in Partnerships Act; Upholding Human Rights Abroad Act; Civilians in Conflict Caucus.
 
 ## Connections
@@ -58,6 +60,7 @@ In force. The State Department version is Section 620M of the Foreign Assistance
 | amends | [Foreign Assistance Act](faa-1961.qmd){.subj} | The State Department Leahy law is Sec. 620M of the Foreign Assistance Act. |
 | constrains | [Arms Export Control Act](aeca-1976.qmd){.subj} | Bars arms and assistance to units credibly implicated in gross human rights violations. |
 | constrains | [Security Cooperation (Ch. 16)](seccoop-2016.qmd){.subj} | 10 U.S.C. 362 applies the same bar to Defense Department assistance. |
+| constrains | [IMET](imet.qmd){.subj} | Units and individuals nominated for IMET training must be vetted for gross violations of human rights. |
 | related to | [Civilian Casualty Policy](civcas-policy-2018.qmd){.subj} | Both tie military practice to accountability for harm to civilians: one for U.S. operations, one for foreign partner units. |
 
 [See this statute in the knowledge graph](../graph.html?focus=leahy-laws)

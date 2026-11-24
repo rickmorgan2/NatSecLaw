@@ -1,6 +1,6 @@
 ---
 title: "Flashcards"
-subtitle: "Every statute and every key term. Tap or click a card to flip it."
+subtitle: "Every statute, court case, and key term, with spaced review. Tap or click a card to flip it."
 toc: false
 ---
 
@@ -8,10 +8,11 @@ toc: false
 source("R/helpers.R")
 statutes <- load_statutes()
 units    <- load_units()
+cases    <- load_cases()
 links    <- official_links(statutes)
 
 unit_of <- function(id) {
-  hits <- purrr::keep(units, \(u) id %in% c(u$core, u$further))
+  hits <- purrr::keep(units, \(u) id %in% c(u$core, u$further, unlist(u$cases)))
   paste(purrr::map_chr(hits, "id"), collapse = " ")
 }
 
@@ -26,6 +27,16 @@ statute_cards <- statutes |>
     units = purrr::map_chr(id, unit_of)
   )
 
+case_cards <- cases |>
+  dplyr::transmute(
+    kind = "case", id, front = short, hint = paste(year, "· Supreme Court"),
+    back = plain_wiki(holding, statutes),
+    meta = paste0(name, ", ", citation, " (", year, ")"),
+    domain, historic = FALSE, url = paste0("../cases/", id, ".html"),
+    official = opinion_url,
+    units = purrr::map_chr(id, unit_of)
+  )
+
 term_cards <- purrr::map(units, \(u) purrr::map(u$terms, \(t) tibble::tibble(
   kind = "term", id = paste0(u$id, "-", tolower(gsub("[^A-Za-z]+", "-", t$term))),
   front = t$term, hint = paste0("Key term, Unit ", u$number), back = t$definition,
@@ -34,7 +45,7 @@ term_cards <- purrr::map(units, \(u) purrr::map(u$terms, \(t) tibble::tibble(
 )) |> purrr::list_rbind()) |>
   purrr::list_rbind()
 
-cards <- dplyr::bind_rows(statute_cards, term_cards)
+cards <- dplyr::bind_rows(statute_cards, case_cards, term_cards)
 ```
 
 ```{r}
@@ -44,11 +55,12 @@ unit_opts <- paste0("<option value=\"", purrr::map_chr(units, "id"), "\">Unit ",
 dom_opts <- paste0("<option value=\"", names(domain_short), "\">", domain_short, "</option>", collapse = "")
 cat(
   "<div class=\"fc-controls\">",
-  "<label>Deck <select id=\"fc-kind\"><option value=\"all\">Statutes and terms</option>",
-  "<option value=\"statute\">Statutes</option><option value=\"term\">Key terms</option></select></label>",
+  "<label>Deck <select id=\"fc-kind\"><option value=\"all\">Everything</option>",
+  "<option value=\"statute\">Statutes</option><option value=\"case\">Court cases</option>",
+  "<option value=\"term\">Key terms</option></select></label>",
   "<label>Unit <select id=\"fc-unit\"><option value=\"\">All units</option>", unit_opts, "</select></label>",
   "<label>Domain <select id=\"fc-domain\"><option value=\"\">All domains</option>", dom_opts, "</select></label>",
-  "<label class=\"inline-toggle\"><input type=\"checkbox\" id=\"fc-unknown\"> Only cards I don't know yet</label>",
+  "<label class=\"inline-toggle\"><input type=\"checkbox\" id=\"fc-due\"> Only cards due for review</label>",
   "<button type=\"button\" id=\"fc-shuffle\" class=\"link-button\">Shuffle</button>",
   "</div>",
   "<div class=\"fc-stage\">",
@@ -71,20 +83,40 @@ cat(
 (function () {
   var all = window.FLASHCARDS || [];
   var deck = [], i = 0, flipped = false;
-  function known(id) { try { return localStorage.getItem("wiki-card-" + id) === "1"; } catch (e) { return false; } }
-  function setKnown(id, v) { try { localStorage.setItem("wiki-card-" + id, v ? "1" : "0"); } catch (e) {} }
+
+  // Spaced review in five boxes. "I know this" moves a card up a box and schedules it
+  // further out; "Still learning" sends it back to box 1, due tomorrow.
+  var DAYS = [0, 1, 3, 7, 14, 30], DAY_MS = 86400000;
+  function load(id) {
+    try {
+      var raw = localStorage.getItem("wiki-box-" + id);
+      if (raw) return JSON.parse(raw);
+      // cards marked known before spaced review start in box 2
+      if (localStorage.getItem("wiki-card-" + id) === "1") return { b: 2, d: 0 };
+    } catch (e) {}
+    return { b: 0, d: 0 };
+  }
+  function save(id, rec) { try { localStorage.setItem("wiki-box-" + id, JSON.stringify(rec)); } catch (e) {} }
+  function due(id) { return load(id).d <= Date.now(); }
+  function mastered(id) { return load(id).b >= 4; }
+  function grade(id, knew) {
+    var r = load(id);
+    r.b = knew ? Math.min(r.b + 1, 5) : 1;
+    r.d = Date.now() + DAYS[r.b] * DAY_MS;
+    save(id, r);
+  }
   function val(id) { return document.getElementById(id).value; }
 
   function build(shuffle) {
     var kind = val("fc-kind"), unit = val("fc-unit"), dom = val("fc-domain");
-    var onlyUnknown = document.getElementById("fc-unknown").checked;
+    var onlyDue = document.getElementById("fc-due").checked;
     var hide = window.wikiHideHistoric && window.wikiHideHistoric();
     deck = all.filter(function (c) {
       if (kind !== "all" && c.kind !== kind) return false;
       if (unit && (" " + c.units + " ").indexOf(" " + unit + " ") < 0) return false;
       if (dom && c.domain !== dom) return false;
       if (hide && c.historic) return false;
-      if (onlyUnknown && known(c.id)) return false;
+      if (onlyDue && !due(c.id)) return false;
       return true;
     });
     if (shuffle) for (var k = deck.length - 1; k > 0; k--) {
@@ -96,27 +128,28 @@ cat(
   function draw() {
     var card = document.getElementById("fc-card");
     var status = document.getElementById("fc-status");
-    var knownCount = deck.filter(function (c) { return known(c.id); }).length;
     if (!deck.length) {
-      card.innerHTML = '<div class="fc-front"><p>No cards match. Change the filters above.</p></div>';
+      card.innerHTML = '<div class="fc-front"><p>No cards match. Change the filters above, or come back when more cards are due.</p></div>';
       status.textContent = ""; return;
     }
     var c = deck[i];
+    var dueCount = deck.filter(function (x) { return due(x.id); }).length;
+    var doneCount = deck.filter(function (x) { return mastered(x.id); }).length;
     card.classList.toggle("flipped", flipped);
-    card.classList.toggle("is-known", known(c.id));
+    card.classList.toggle("is-known", mastered(c.id));
     card.setAttribute("data-domain", c.domain || "");
     card.innerHTML = flipped
       ? '<div class="fc-back"><p>' + c.back + '</p><p class="fc-meta">' + c.meta + '</p><p class="fc-links"><a href="' + c.url + '">Open the page</a>' +
-        (c.official ? ' · <a href="' + c.official + '" target="_blank" rel="noopener">Official text</a>' : '') + '</p></div>'
+        (c.official ? ' · <a href="' + c.official + '" target="_blank" rel="noopener">' + (c.kind === "case" ? "Opinion" : "Official text") + '</a>' : '') + '</p></div>'
       : '<div class="fc-front"><div class="fc-title">' + c.front + '</div><div class="fc-hint">' + c.hint + '</div><div class="fc-tap">Tap or click to flip</div></div>';
-    status.textContent = "Card " + (i + 1) + " of " + deck.length + " · You know " + knownCount + " of these";
+    status.textContent = "Card " + (i + 1) + " of " + deck.length + " · " + dueCount + " due for review · " + doneCount + " well learned";
   }
 
   function move(d) { if (!deck.length) return; i = (i + d + deck.length) % deck.length; flipped = false; draw(); }
   function flip() { flipped = !flipped; draw(); }
 
   document.addEventListener("DOMContentLoaded", function () {
-    ["fc-kind", "fc-unit", "fc-domain", "fc-unknown"].forEach(function (id) {
+    ["fc-kind", "fc-unit", "fc-domain", "fc-due"].forEach(function (id) {
       document.getElementById(id).addEventListener("change", function () { build(false); });
     });
     document.getElementById("fc-shuffle").addEventListener("click", function () { build(true); });
@@ -133,8 +166,8 @@ cat(
     });
     document.getElementById("fc-prev").addEventListener("click", function () { move(-1); });
     document.getElementById("fc-next").addEventListener("click", function () { move(1); });
-    document.getElementById("fc-know").addEventListener("click", function () { if (deck.length) { setKnown(deck[i].id, true); move(1); } });
-    document.getElementById("fc-again").addEventListener("click", function () { if (deck.length) { setKnown(deck[i].id, false); move(1); } });
+    document.getElementById("fc-know").addEventListener("click", function () { if (deck.length) { grade(deck[i].id, true); move(1); } });
+    document.getElementById("fc-again").addEventListener("click", function () { if (deck.length) { grade(deck[i].id, false); move(1); } });
     document.addEventListener("keydown", function (e) {
       if (e.target.tagName === "SELECT" || e.target.tagName === "INPUT") return;
       if (e.key === " ") { e.preventDefault(); flip(); }
@@ -148,4 +181,6 @@ cat(
 </script>
 ```
 
-Your tally is saved in this browser only. On a phone, swipe the card left or right to move. On a keyboard, space flips and the arrow keys move.
+**How review works.** Each card sits in one of five boxes. Marking a card *I know this* moves it up a box and schedules it further out: 1, 3, 7, 14, then 30 days. *Still learning* sends it back to the first box, due again tomorrow. Tick **Only cards due for review** for a daily session. Your record is saved in this browser only.
+
+On a phone, swipe the card left or right to move. On a keyboard, space flips and the arrow keys move.

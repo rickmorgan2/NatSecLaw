@@ -40,12 +40,14 @@ It gave statutory backing to the interagency atrocity prevention structure first
 
 In force. The annual reporting requirement had an initial six-year term.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Codified in.** [Title 22 U.S.C.](title22-usc.qmd).
 - **Era.** Sanctions, cyber, and great powers ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 9: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (core reading); [Unit 11: Civilian harm and the conduct of operations](../study/units/civilian-harm.qmd) (further reading).
+- **Study.** [Unit 10: Foreign assistance, fragility, and partners](../study/units/assistance.qmd) (core reading); [Unit 12: Civilian harm and the conduct of operations](../study/units/civilian-harm.qmd) (further reading).
 - **Member lenses.** [Rep. Sara Jacobs](../members/jacobs.qmd): Foreign Affairs; Stand Up for Sudan Act; Sudanese Peace Act.
 
 ## Connections

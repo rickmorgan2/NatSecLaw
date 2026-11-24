@@ -41,6 +41,8 @@ It is the missing step between the [National Security Act](nsa-1947.qmd) and the
 
 In force as carried forward and strengthened by the 1986 reorganization. The core command provisions today are 10 U.S.C. 113 (Secretary of Defense), 162 (chain of command and assignment of forces), and 164 (combatant commanders).
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))
@@ -48,7 +50,8 @@ In force as carried forward and strengthened by the 1986 reorganization. The cor
 - **Built upon by.** [Goldwater-Nichols Act](goldwater-nichols-1986.qmd).
 - **Codified in.** [Title 10 U.S.C.](title10-usc.qmd).
 - **Era.** Building the national security state ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (core reading); [Unit 7: Organizing and commanding the military](../study/units/defense-organization.qmd) (further reading).
+- **Study.** [Unit 2: Building the national security state, 1947 to 1958](../study/units/national-security-state.qmd) (core reading); [Unit 8: Organizing and commanding the military](../study/units/defense-organization.qmd) (further reading).
+- **Who's involved.** [DoD](../whos-who.qmd#dod), [Combatant commands](../whos-who.qmd#cocoms).
 
 ## Connections
 

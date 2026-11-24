@@ -40,6 +40,8 @@ It is cited far more often than it is used, usually as a political charge agains
 
 In force. There have been two indictments, in 1803 and 1852, and no convictions.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Targeted provision. Single sections that grant a narrow authority, impose a condition, or require a report, often enacted in a defense authorization. Small in text, often decisive in practice. ([How the layers work](../study/index.qmd#the-authority-stack))

@@ -40,6 +40,8 @@ It establishes that the decision to use force abroad belongs to the government a
 
 In force as recodified. Prosecutions are rare.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Framework statute. Standing laws that create institutions or general procedures other laws and executive actions plug into, such as the National Security Act, the War Powers Resolution, IEEPA, and FISA. ([How the layers work](../study/index.qmd#the-authority-stack))

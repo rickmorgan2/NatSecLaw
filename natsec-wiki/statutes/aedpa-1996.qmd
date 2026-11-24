@@ -42,12 +42,18 @@ Designation is a foreign policy decision with criminal law consequences inside t
 
 In force as amended.
 
+[Last checked November 10, 2026.]{.checked}
+
+## In the courts
+
+- [Humanitarian Law Project](../cases/hlp-2010.qmd) (2010). Upheld the material-support ban in 18 U.S.C. 2339B, enacted by the act, against vagueness and First Amendment challenges as applied.
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))
 - **Built upon by.** [USA PATRIOT Act](patriot-2001.qmd).
 - **Era.** End of the Cold War ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 4: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (further reading).
+- **Study.** [Unit 5: Emergency and economic powers](../study/units/emergencies-sanctions.qmd) (further reading).
 
 ## Connections
 

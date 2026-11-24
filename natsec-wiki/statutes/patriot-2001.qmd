@@ -44,6 +44,8 @@ It reshaped [FISA](fisa-1978.qmd) and the material support offenses created by [
 
 Most of the act is permanent. Section 215 (business records) and section 206 (roving wiretaps), along with the lone wolf provision, expired on March 15, 2020 and have not been renewed.
 
+[Last checked November 10, 2026.]{.checked}
+
 ## Where it sits
 
 - **Layer.** Specific authorization. Laws aimed at a particular conflict, country, program, or problem. Most work through a framework statute: an AUMF through the War Powers Resolution, a sanctions act through IEEPA. ([How the layers work](../study/index.qmd#the-authority-stack))
@@ -51,7 +53,7 @@ Most of the act is permanent. Section 215 (business records) and section 206 (ro
 - **Built upon by.** [USA FREEDOM Act](usa-freedom-2015.qmd).
 - **Codified in.** [Title 50 U.S.C.](title50-usc.qmd).
 - **Era.** After September 11 ([timeline](../study/timeline.qmd)).
-- **Study.** [Unit 6: Surveillance law](../study/units/surveillance.qmd) (core reading).
+- **Study.** [Unit 7: Surveillance law](../study/units/surveillance.qmd) (core reading).
 
 ## Connections
 
