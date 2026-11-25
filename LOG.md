@@ -6,6 +6,52 @@ Work log, newest first. One `### <task>` entry per unit of work under each date.
 
 ## 2026-11-24
 
+### Repository renamed from house-knowledge to NatSecLaw (uncommitted; D-001)
+
+**Task:** Rename the GitHub repository and the local folder to NatSecLaw, because the old name no longer fit, and update every reference to it.
+
+**What changed**
+- On GitHub, the owner renamed the repository to `rickmorgan2/NatSecLaw`, and its homepage field is now `https://rickmorgan2.github.io/NatSecLaw/`.
+- Locally, the folder is now `Documents\NatSecLaw`, and `origin` points at `https://github.com/rickmorgan2/NatSecLaw.git`.
+- Replaced the old name and URL in:
+  - `README.md`: title and site link;
+  - `CLAUDE.md`: the Pages URL and the Actions API URL;
+  - `natsec-wiki/README.md`: the one-time setup URL;
+  - the close-up-shop skill description.
+- `DECISIONS.md`: D-001's status line gives the new URL and records the old name.
+- No re-render was needed. `docs/` has no absolute links to the repo or the Pages URL.
+- Checked on 2026-11-24:
+
+| Check | Result |
+|---|---|
+| New site: home, `study/`, `statutes/wpr-1973.html`, `cases/`, `v1/`, `search.json` | all 200 |
+| Old site, `rickmorgan2.github.io/house-knowledge/` | 404 |
+| GitHub API: name, homepage, `has_pages` | `NatSecLaw`, new URL, true |
+| "house-knowledge" anywhere outside `archive/` | only the D-001 history note |
+
+**Why / decisions**
+- No new D-ID. D-001's status line records the rename.
+
+**Open threads**
+- Commit and push the rename edits and this entry (owner). The push won't start a Pages deploy, because `docs/` is unchanged.
+- Send the new link to anyone who has the old one. GitHub doesn't redirect Pages URLs after a rename; git clone and push URLs do redirect.
+- Suggested, not decided: the tagline "Better know a district" (README line 2 and the GitHub repo description) may no longer fit now that the member lenses are parked. The description can only be changed on github.com, because `gh` isn't installed.
+- Review the 31 Issues for Congress for balance (owner).
+- Unverified in the wiki:
+  - Boland I's section number;
+  - first enactment of Sec. 7008 and Sec. 8005;
+  - the account that funds the Ukraine initiative;
+  - Who's who role text.
+- Review the layer assignments (D-005), which are editorial.
+- Watch list in `natsec-wiki/CLAUDE_README.md`. The FY2027 continuing resolution expires December 11, 2026.
+- Congress.gov and CRS links were never fetched (403 to scripts); spot-check them by hand.
+- Pages workflow: Node 20 deprecation warnings, and one transient deploy failure on 8f9d9dd. Bump the action versions if it recurs.
+- Parked lenses: the unverified Jacobs items and the 120th Congress committee assignments matter only if the lenses return. They're in the watch list and `parked/members/README.md`.
+- The local server isn't running.
+
+**Notes for picking this up**
+- Don't rely on the git redirect from the old repo URL. GitHub drops it if a new repository is ever created under the name `house-knowledge`.
+
 ### Member lenses taken off the site (committed in 07faecc and 725feb6; D-017)
 
 **Task:** Drop the Crow and Jacobs member lenses for now, at the owner's request, without losing them.
