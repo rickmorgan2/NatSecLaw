@@ -32,6 +32,7 @@ From `natsec-wiki/`:
 ## Gotchas
 
 - On Windows, stop `serve` before `render`: the server locks `docs/` and the render fails with os error 32.
+- A full render clears `docs/` before rebuilding it, so a render that fails partway leaves `docs/` incomplete. Commit only after `check` passes.
 - `R/post_render.R` copies `../archive/natsec-wiki-v1/docs` into `docs/v1` on a full render. On a machine without `archive/` it skips the copy, so `v1/` could drop off the published site. Check `docs/v1/` before committing a render made elsewhere.
 - Congress.gov, uscode.house.gov, gao.gov, loc.gov, and several agency sites refuse scripted requests (403); check those links by hand. GovInfo answers scripts and hosts the U.S. Code, the Statutes at Large, public laws, and the bound U.S. Reports, so verify against it.
 - On Windows, `Rscript -e` breaks when the code contains `|`; put test code in a file.

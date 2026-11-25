@@ -132,7 +132,7 @@ One entry per decision, newest at the bottom. Status is one of Accepted, Propose
 ## D-017: Member lenses off the site for now
 
 - **Date:** 2026-11-24
-- **Status:** Accepted. Not yet committed.
+- **Status:** Accepted. Committed in 07faecc and 725feb6; published November 24, 2026.
 - **Context:** After retargeting the wiki to congressional staff and interns (D-010), the owner asked to drop the member lenses for now.
 - **Decision:** Take the Crow and Jacobs lenses, their comparison page, and every link to them off the site. Keep their data and page templates in `natsec-wiki/parked/members/` with restore instructions, rather than deleting them. Statute entries that cite a member's office as a source for a fact keep that citation.
 - **Consequences:** No Members menu, member pages, or "Member lenses" lines on statute pages. The build skips member pages while `data/members/` is empty. The lens watch list items are parked with the files.

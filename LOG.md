@@ -6,6 +6,47 @@ Work log, newest first. One `### <task>` entry per unit of work under each date.
 
 ## 2026-11-24
 
+### Member lenses taken off the site (committed in 07faecc and 725feb6; D-017)
+
+**Task:** Drop the Crow and Jacobs member lenses for now, at the owner's request, without losing them.
+
+**What changed**
+- Moved (`git mv`) `data/members/crow.yml`, `data/members/jacobs.yml`, `members/_lens.qmd` and `members/index.qmd` into `natsec-wiki/parked/members/`, with a README giving restore steps. Deleted the generated `members/crow.qmd` and `members/jacobs.qmd`.
+- `_quarto.yml`: removed the Members menu and the `members/*.qmd` render pattern; added `"!parked/"` to the render list.
+- `R/build_pages.R`: builds member pages and member source rows only when `data/members/` has files. The build line leaves out the member count when there are none.
+- Removed links and mentions from:
+  - the home page counts and the study guide tools;
+  - the civilian harm unit: its links to member pages, and an answer that cited "both members' records";
+  - Sources: the member section, and the Congress.gov note in `reference_sources.csv`;
+  - About: the member section, the statute-page description, and the accuracy note. It adds "Member lenses withdrawn";
+  - Manifest, both READMEs, `CLAUDE.md`, `CLAUDE_README.md`, and the close-up-shop skill.
+- Kept: three source citations to Rep. Crow's office in statute entries (two on `wpr-1973`, one in `08_civilian_harm.yml`). They support specific facts and are not lens content.
+- Build: "Built 102 statute pages, 12 case pages, 28 who's who entries, 12 study units, 202 edges, 320 source links (284 official)."
+- Check: 138 pages, 0 broken internal links; 10 pages at phone width, 0 problems.
+- Published: the run for 725feb6 succeeded, and `members/crow.html` now returns 404 on the live site.
+
+**Why / decisions**
+- D-017: the lenses are parked rather than deleted, so restoring them is a file move, not a rebuild. D-003 is marked paused.
+
+**What failed**
+- Quarto's `"*.qmd"` render pattern also matches files in subfolders, so the parked comparison page rendered and failed (`members[[1]]`). Fixed with `"!parked/"`.
+- With no member files, `purrr::list_rbind()` returned NULL and `dplyr::transmute()` failed while building `all_sources.csv`. Fixed with a guard (`if (length(members))`).
+- A failed full render leaves `docs/` partly emptied, because Quarto clears the output folder first. The next successful render restored it.
+
+**Open threads**
+- Review the 31 Issues for Congress for balance (owner).
+- Unverified in the wiki:
+  - Boland I's section number;
+  - first enactment of Sec. 7008 and Sec. 8005;
+  - the account that funds the Ukraine initiative;
+  - Who's who role text.
+- Review the layer assignments (D-005), which are editorial.
+- Watch list in `natsec-wiki/CLAUDE_README.md` (November 10 list plus the November 24 additions). The FY2027 continuing resolution expires December 11, 2026.
+- Congress.gov and CRS links were never fetched (403 to scripts); spot-check by hand.
+- Pages workflow: Node 20 deprecation warnings, and one transient deploy failure on 8f9d9dd. Bump action versions if it recurs.
+- Parked lenses: the unverified Jacobs items and the 120th Congress committee assignments matter only if the lenses return. They are in the watch list and `parked/members/README.md`.
+- The local server is not running.
+
 ### Hill audience, power of the purse, programs, court cases, Who's who, study tools (committed in 8f9d9dd; D-010 to D-016)
 
 **Task:** Retarget the wiki to congressional staff, members, and interns, and add appropriations, security assistance programs, Supreme Court cases, a Who's who page, and study and quality tools. Case studies were declined for now (D-016).
