@@ -27,7 +27,7 @@ Full-text search needs a server, so it does not work when `docs/index.html` is o
 
 The workflow `.github/workflows/pages.yml` at the repo root publishes `natsec-wiki/docs`. No R runs on GitHub; it publishes the `docs/` you built locally, including `docs/v1`.
 
-One-time setup: on github.com open the repository's Settings, then Pages, and under "Build and deployment" set Source to "GitHub Actions". The site is then live at `https://rickmorgan2.github.io/house-knowledge/`. Pages on a private repository needs a paid GitHub plan; on a free account the repository must be public.
+One-time setup: on github.com open the repository's Settings, then Pages, and under "Build and deployment" set Source to "GitHub Actions". The site is then live at `https://rickmorgan2.github.io/NatSecLaw/`. Pages on a private repository needs a paid GitHub plan; on a free account the repository must be public.
 
 To update the site: edit files in `data/`, run `Rscript R/deploy.R render`, then commit (including `docs/`) and push. The workflow runs on any push to `main` that changes `docs/`, and can also be started by hand from the Actions tab.
 

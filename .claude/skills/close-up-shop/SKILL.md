@@ -1,6 +1,6 @@
 ---
 name: close-up-shop
-description: Session wrap-up for this repo (house-knowledge: the U.S. national security legislation wiki and study guide in natsec-wiki/). Use at the end of a work session, or before compacting, to write a durable record of the most recent work. Triggers on "close up shop", "let's close up shop", "/close-up-shop", "write a session summary", "session notes", "update the log", or similar. Summarizes work since the last LOG.md entry (not the whole session), adds a dated entry at the top of LOG.md, and updates DECISIONS.md, CLAUDE.md and natsec-wiki/CLAUDE_README.md if the session changed what they describe. Never commits or pushes.
+description: Session wrap-up for this repo (NatSecLaw: the U.S. national security legislation wiki and study guide in natsec-wiki/). Use at the end of a work session, or before compacting, to write a durable record of the most recent work. Triggers on "close up shop", "let's close up shop", "/close-up-shop", "write a session summary", "session notes", "update the log", or similar. Summarizes work since the last LOG.md entry (not the whole session), adds a dated entry at the top of LOG.md, and updates DECISIONS.md, CLAUDE.md and natsec-wiki/CLAUDE_README.md if the session changed what they describe. Never commits or pushes.
 ---
 
 # Close up shop

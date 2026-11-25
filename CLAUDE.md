@@ -9,7 +9,7 @@ What's true now about this repo. History is in `LOG.md`; decisions are in `DECIS
 | `natsec-wiki/` | The national security legislation wiki and study guide (version 2). Quarto site built with R. |
 | `natsec-wiki/CLAUDE_README.md` | Wiki schema, vocabularies, accuracy rules, watch list and statute inventory. **Read it before editing wiki data.** |
 | `natsec-wiki/docs/` | The generated site. Committed, because GitHub Pages publishes it. Never edit by hand. |
-| `.github/workflows/pages.yml` | Publishes `natsec-wiki/docs` to https://rickmorgan2.github.io/house-knowledge/ on any push that changes it (D-001). |
+| `.github/workflows/pages.yml` | Publishes `natsec-wiki/docs` to https://rickmorgan2.github.io/NatSecLaw/ on any push that changes it (D-001). |
 | `LOG.md`, `DECISIONS.md` | Session log (newest first) and decision record. Written by the `close-up-shop` skill. |
 | `.claude/skills/close-up-shop/` | End-of-session skill: `/close-up-shop`. |
 | `natsec-wiki/parked/members/` | The Crow and Jacobs member lenses, off the site for now (D-017); its README says how to restore them. |
@@ -38,4 +38,4 @@ From `natsec-wiki/`:
 - On Windows, `Rscript -e` breaks when the code contains `|`; put test code in a file.
 - To test on a phone, use chromote device emulation, as the `check` mode does; desktop Chrome's window can't be made narrower than about 500px.
 - A publish run can fail at `deploy-pages` with "No artifacts named github-pages"; re-run it from the Actions tab.
-- `gh` is not installed. Read Actions run status from the public API: `curl -s "https://api.github.com/repos/rickmorgan2/house-knowledge/actions/runs?per_page=3"`.
+- `gh` is not installed. Read Actions run status from the public API: `curl -s "https://api.github.com/repos/rickmorgan2/NatSecLaw/actions/runs?per_page=3"`.

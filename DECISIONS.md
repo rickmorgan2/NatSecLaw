@@ -7,7 +7,7 @@ One entry per decision, newest at the bottom. Status is one of Accepted, Propose
 ## D-001: Share the wiki as a public GitHub Pages site
 
 - **Date:** 2026-11-10
-- **Status:** Accepted. Live at https://rickmorgan2.github.io/house-knowledge/.
+- **Status:** Accepted. Live at https://rickmorgan2.github.io/NatSecLaw/ (the repository was named house-knowledge until November 24, 2026).
 - **Context:** The owner's friends will not install R or run code. Options offered were a public Pages link, a private host, or a zip of the built site; the owner chose the public link.
 - **Decision:** Commit the built site in `natsec-wiki/docs/`. `.github/workflows/pages.yml` uploads that folder with `upload-pages-artifact` and deploys it. No R or Quarto runs in CI. Pages source is set to "GitHub Actions".
 - **Consequences:** The site and repo are public. Every content change needs a local render before the commit. The root `.gitignore` no longer ignores `docs/`.
